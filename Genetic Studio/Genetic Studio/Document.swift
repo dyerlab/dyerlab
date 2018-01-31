@@ -10,13 +10,26 @@ import Cocoa
 
 class Document: NSDocument {
 
+    var population: Population
+    var results: String
+    
+    
+    
     override init() {
+        self.population = makeRandomPopulation()
+        self.results = "GeneticStudio\n©2018 Dyerlab\n"
+        
         super.init()
         // Add your subclass-specific initialization here.
+        
+        
     }
 
+    
+    
+    // MARK: Override Stuff
     override class var autosavesInPlace: Bool {
-        return true
+        return false
     }
 
     override func makeWindowControllers() {

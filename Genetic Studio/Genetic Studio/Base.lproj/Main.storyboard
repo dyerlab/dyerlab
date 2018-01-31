@@ -710,24 +710,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" preferredMaxLayoutWidth="246" translatesAutoresizingMaskIntoConstraints="NO" id="TyV-c9-G0C">
-                                <rect key="frame" x="116" y="124" width="248" height="22"/>
-                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Your document contents here" id="Cc7-nU-5Mv">
-                                    <font key="font" metaFont="system" size="18"/>
-                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <splitView fixedFrame="YES" arrangesAllSubviews="NO" dividerStyle="paneSplitter" translatesAutoresizingMaskIntoConstraints="NO" id="F65-wj-VQ3">
-                                <rect key="frame" x="181" y="95" width="163" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <splitView arrangesAllSubviews="NO" dividerStyle="paneSplitter" translatesAutoresizingMaskIntoConstraints="NO" id="HZ8-Vr-zcK">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                                 <subviews>
-                                    <customView fixedFrame="YES" id="HvY-UP-bHD">
-                                        <rect key="frame" x="0.0" y="0.0" width="163" height="42"/>
+                                    <customView fixedFrame="YES" id="XAa-fi-LYk" customClass="NSTableView">
+                                        <rect key="frame" x="0.0" y="0.0" width="480" height="127"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </customView>
-                                    <customView fixedFrame="YES" id="skB-S8-5sM">
-                                        <rect key="frame" x="0.0" y="52" width="163" height="44"/>
+                                    <customView fixedFrame="YES" id="JGN-vN-qPM" customClass="NSTextView">
+                                        <rect key="frame" x="0.0" y="137" width="480" height="133"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </customView>
                                 </subviews>
@@ -738,10 +729,17 @@
                             </splitView>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="TyV-c9-G0C" secondAttribute="centerY" id="Rxv-Yd-F43"/>
-                            <constraint firstAttribute="centerX" secondItem="TyV-c9-G0C" secondAttribute="centerX" id="Zn4-Y4-lbg"/>
+                            <constraint firstAttribute="trailing" secondItem="HZ8-Vr-zcK" secondAttribute="trailing" id="1D8-X4-nNO"/>
+                            <constraint firstAttribute="bottom" secondItem="HZ8-Vr-zcK" secondAttribute="bottom" id="RJq-h0-ohA"/>
+                            <constraint firstItem="HZ8-Vr-zcK" firstAttribute="top" secondItem="ERx-hH-rdd" secondAttribute="top" id="Set-0P-wJx"/>
+                            <constraint firstItem="HZ8-Vr-zcK" firstAttribute="leading" secondItem="ERx-hH-rdd" secondAttribute="leading" id="xGZ-Yg-Fy7"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="splitView" destination="HZ8-Vr-zcK" id="tMl-Jv-tRq"/>
+                        <outlet property="tableView" destination="XAa-fi-LYk" id="NCZ-L8-Cid"/>
+                        <outlet property="textView" destination="JGN-vN-qPM" id="U43-MW-bRM"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="112" y="1203"/>

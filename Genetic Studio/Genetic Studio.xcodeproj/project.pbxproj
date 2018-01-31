@@ -13,6 +13,15 @@
 		2A7EE3932020DD6500959826 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7EE3922020DD6500959826 /* Assets.xcassets */; };
 		2A7EE3962020DD6500959826 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A7EE3942020DD6500959826 /* Main.storyboard */; };
 		2A7EE3A22020DD6500959826 /* Genetic_StudioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7EE3A12020DD6500959826 /* Genetic_StudioTests.swift */; };
+		2AB244262021527400344758 /* Population.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB244252021527400344758 /* Population.swift */; };
+		2AB24428202152B800344758 /* Individual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB24427202152B800344758 /* Individual.swift */; };
+		2AB2442A2021534400344758 /* Locus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB244292021534400344758 /* Locus.swift */; };
+		2AB24431202156DB00344758 /* SCNVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB2442E202156DB00344758 /* SCNVector.swift */; };
+		2AB24432202156DB00344758 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB2442F202156DB00344758 /* Double.swift */; };
+		2AB24433202156DB00344758 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB24430202156DB00344758 /* CGFloat.swift */; };
+		2AB24436202157F100344758 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB24435202157F100344758 /* Array.swift */; };
+		2AB244382021593E00344758 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB244372021593E00344758 /* Int.swift */; };
+		2AB2443A20215FBD00344758 /* NSTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB2443920215FBD00344758 /* NSTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +46,15 @@
 		2A7EE39D2020DD6500959826 /* Genetic StudioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Genetic StudioTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A7EE3A12020DD6500959826 /* Genetic_StudioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genetic_StudioTests.swift; sourceTree = "<group>"; };
 		2A7EE3A32020DD6500959826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AB244252021527400344758 /* Population.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Population.swift; sourceTree = "<group>"; };
+		2AB24427202152B800344758 /* Individual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Individual.swift; sourceTree = "<group>"; };
+		2AB244292021534400344758 /* Locus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locus.swift; sourceTree = "<group>"; };
+		2AB2442E202156DB00344758 /* SCNVector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNVector.swift; sourceTree = "<group>"; };
+		2AB2442F202156DB00344758 /* Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		2AB24430202156DB00344758 /* CGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
+		2AB24435202157F100344758 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		2AB244372021593E00344758 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		2AB2443920215FBD00344758 /* NSTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +99,12 @@
 				2A7EE38C2020DD6500959826 /* AppDelegate.swift */,
 				2A7EE38E2020DD6500959826 /* ViewController.swift */,
 				2A7EE3902020DD6500959826 /* Document.swift */,
-				2A7EE3922020DD6500959826 /* Assets.xcassets */,
 				2A7EE3942020DD6500959826 /* Main.storyboard */,
-				2A7EE3972020DD6500959826 /* Info.plist */,
+				2AB2442B202153BC00344758 /* Genetic */,
+				2AB24434202156E100344758 /* Overrides */,
+				2A7EE3922020DD6500959826 /* Assets.xcassets */,
 				2A7EE3982020DD6500959826 /* Genetic_Studio.entitlements */,
+				2A7EE3972020DD6500959826 /* Info.plist */,
 			);
 			path = "Genetic Studio";
 			sourceTree = "<group>";
@@ -96,6 +116,29 @@
 				2A7EE3A32020DD6500959826 /* Info.plist */,
 			);
 			path = "Genetic StudioTests";
+			sourceTree = "<group>";
+		};
+		2AB2442B202153BC00344758 /* Genetic */ = {
+			isa = PBXGroup;
+			children = (
+				2AB244252021527400344758 /* Population.swift */,
+				2AB24427202152B800344758 /* Individual.swift */,
+				2AB244292021534400344758 /* Locus.swift */,
+			);
+			path = Genetic;
+			sourceTree = "<group>";
+		};
+		2AB24434202156E100344758 /* Overrides */ = {
+			isa = PBXGroup;
+			children = (
+				2AB24430202156DB00344758 /* CGFloat.swift */,
+				2AB2442F202156DB00344758 /* Double.swift */,
+				2AB2442E202156DB00344758 /* SCNVector.swift */,
+				2AB24435202157F100344758 /* Array.swift */,
+				2AB244372021593E00344758 /* Int.swift */,
+				2AB2443920215FBD00344758 /* NSTextView.swift */,
+			);
+			path = Overrides;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,9 +243,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AB24433202156DB00344758 /* CGFloat.swift in Sources */,
+				2AB24436202157F100344758 /* Array.swift in Sources */,
+				2AB2442A2021534400344758 /* Locus.swift in Sources */,
 				2A7EE38F2020DD6500959826 /* ViewController.swift in Sources */,
+				2AB24432202156DB00344758 /* Double.swift in Sources */,
 				2A7EE38D2020DD6500959826 /* AppDelegate.swift in Sources */,
+				2AB244262021527400344758 /* Population.swift in Sources */,
+				2AB244382021593E00344758 /* Int.swift in Sources */,
+				2AB2443A20215FBD00344758 /* NSTextView.swift in Sources */,
 				2A7EE3912020DD6500959826 /* Document.swift in Sources */,
+				2AB24428202152B800344758 /* Individual.swift in Sources */,
+				2AB24431202156DB00344758 /* SCNVector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

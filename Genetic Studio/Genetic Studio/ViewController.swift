@@ -10,10 +10,18 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    @IBOutlet weak var splitView: NSSplitView!
+    
+    @IBOutlet weak var tableView: NSTableView!
+    
+    @IBOutlet var textView: NSTextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        print("VC::viewDidLoad()")
     }
 
     override var representedObject: Any? {
@@ -23,5 +31,8 @@ class ViewController: NSViewController {
     }
 
 
+    func appendToResults( text: String ) {
+        textView.append(string: text )
+    }
 }
 
