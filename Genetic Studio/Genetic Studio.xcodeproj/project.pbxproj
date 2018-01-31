@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A0EDB612022105500FE7082 /* GenotypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0EDB602022105500FE7082 /* GenotypeTableViewController.swift */; };
+		2A0EDB632022107600FE7082 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0EDB622022107600FE7082 /* ResultsViewController.swift */; };
 		2A7EE38D2020DD6500959826 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7EE38C2020DD6500959826 /* AppDelegate.swift */; };
 		2A7EE38F2020DD6500959826 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7EE38E2020DD6500959826 /* ViewController.swift */; };
 		2A7EE3912020DD6500959826 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7EE3902020DD6500959826 /* Document.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A0EDB602022105500FE7082 /* GenotypeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenotypeTableViewController.swift; sourceTree = "<group>"; };
+		2A0EDB622022107600FE7082 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		2A7EE3892020DD6500959826 /* Genetic Studio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Genetic Studio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A7EE38C2020DD6500959826 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A7EE38E2020DD6500959826 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A0EDB5F2022071D00FE7082 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2A0EDB602022105500FE7082 /* GenotypeTableViewController.swift */,
+				2A0EDB622022107600FE7082 /* ResultsViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		2A7EE3802020DD6500959826 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +118,7 @@
 				2A7EE3922020DD6500959826 /* Assets.xcassets */,
 				2A7EE3982020DD6500959826 /* Genetic_Studio.entitlements */,
 				2A7EE3972020DD6500959826 /* Info.plist */,
+				2A0EDB5F2022071D00FE7082 /* Views */,
 			);
 			path = "Genetic Studio";
 			sourceTree = "<group>";
@@ -246,11 +260,13 @@
 				2AB24433202156DB00344758 /* CGFloat.swift in Sources */,
 				2AB24436202157F100344758 /* Array.swift in Sources */,
 				2AB2442A2021534400344758 /* Locus.swift in Sources */,
+				2A0EDB632022107600FE7082 /* ResultsViewController.swift in Sources */,
 				2A7EE38F2020DD6500959826 /* ViewController.swift in Sources */,
 				2AB24432202156DB00344758 /* Double.swift in Sources */,
 				2A7EE38D2020DD6500959826 /* AppDelegate.swift in Sources */,
 				2AB244262021527400344758 /* Population.swift in Sources */,
 				2AB244382021593E00344758 /* Int.swift in Sources */,
+				2A0EDB612022105500FE7082 /* GenotypeTableViewController.swift in Sources */,
 				2AB2443A20215FBD00344758 /* NSTextView.swift in Sources */,
 				2A7EE3912020DD6500959826 /* Document.swift in Sources */,
 				2AB24428202152B800344758 /* Individual.swift in Sources */,
