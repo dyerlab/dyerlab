@@ -61,21 +61,46 @@ extension GenotypeTableViewController: NSTableViewDataSource {
 
 extension GenotypeTableViewController: NSTableViewDelegate {
     
+    
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
-        let id = tableColumn!.identifier
-        print("Asking for id: \(id.rawValue)")
-        
-        guard let vw = tableView.makeView(withIdentifier: id, owner: self) as? NSTableCellView else { print("bailing"); return nil }
-        
-        let key = id.rawValue
-        print("Asking for column \(key)")
-        vw.textField?.stringValue = population.getData(key: key, row: row)
-        
-        
-        //vw.textField?.stringValue = "Hello, world!"
+        guard let vw = tableView.makeView(withIdentifier: tableColumn!.identifier, owner: self) as? NSTableCellView else { return nil }
+
+        vw.textField?.stringValue = "bob"
         
         return vw
     }
+    
+    
+//
+//    func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
+//
+//        if let columnID = tableColumn?.identifier {
+//            print("in colID")
+//            let view = tableView.makeView(withIdentifier: columnID , owner: self ) as? NSTableCellView
+//            let key = columnID.rawValue
+//            let text = population.getData(key: key, row: row)
+//            print("got \(text) for \(key)")
+//            view?.textField?.stringValue = text
+//            return view
+//        }
+//        else {
+//            print("bailing")
+//            return nil
+//        }
+////        let id = tableColumn!.identifier
+////        print("Asking for id: \(id.rawValue)")
+////
+////        guard let vw = tableView.makeView(withIdentifier: id, owner: self) as? NSTableCellView else { print("bailing"); return nil }
+////
+////        let key = id.rawValue
+////        print("Asking for column \(key)")
+////        vw.textField?.stringValue = population.getData(key: key, row: row)
+//
+//
+//        //vw.textField?.stringValue = "Hello, world!"
+//
+//        //return vw
+//    }
     
 }
 
