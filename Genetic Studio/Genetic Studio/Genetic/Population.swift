@@ -20,8 +20,15 @@ public class Population {
         var ret = [String]()
         
         if self.individuals.count > 0 {
-            ret.append(contentsOf: self.individuals[0].strata.keys.sorted() )
-            ret.append(contentsOf: self.individuals[0].loci.keys.sorted() )
+            var sortedArray = self.individuals[0].strata.keys.sorted {
+                $0.compare($1, options: .numeric) == .orderedAscending
+            }
+            ret.append(contentsOf: sortedArray )
+            
+            sortedArray = self.individuals[0].loci.keys.sorted {
+                $0.compare($1, options: .numeric) == .orderedAscending
+            }
+            ret.append(contentsOf: sortedArray )
         }
         return ret
     }
