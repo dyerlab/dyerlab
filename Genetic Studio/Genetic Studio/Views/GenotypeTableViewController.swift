@@ -39,11 +39,40 @@ class GenotypeTableViewController: NSViewController {
         
         for key in keys {
             print("Using identifier: \(key)")
-            let ID = NSUserInterfaceItemIdentifier(rawValue: key )
-            let column = NSTableColumn(identifier: ID)
-            column.headerCell.stringValue = key
+            let column : NSTableColumn = NSTableColumn(identifier: NSUserInterfaceItemIdentifier(rawValue: key))
+            column.headerCell.title = key
             tableView.addTableColumn(column)
         }
+        
+        
+        //    let tColumn:NSTableColumn = NSTableColumn(identifier: columnDictionary["columnIdentifier"]! as! String)
+        //    tColumn.headerCell.title = columnDictionary["columnTitle"]! as! String
+        //    //Float to CGfloat conversion is required
+        //    tColumn.width = CGFloat(columnDefaultWidth)
+        //    tColumn.minWidth = CGFloat(columnDictionary["columnMinWidth"]! as! Float)
+        //    tColumn.maxWidth = CGFloat(columnDictionary["columnMaxWidth"]! as! Float)
+        //
+        //    if (columnDictionary["columnType"] as! String == "check"){
+        //    let checkBox = NSButtonCell()
+        //    checkBox.setButtonType(.SwitchButton)
+        //    checkBox.title = ""
+        //    checkBox.alignment = .Right
+        //    tColumn.dataCell = checkBox
+        //
+        //
+        //    }
+        //    //else use the default text field cell
+        //    //Applying sort descriptors to each column
+        //    let sortDescriptor = NSSortDescriptor( key: columnDictionary["columnIdentifier"]! as? String, ascending: true, selector: Selector("compare:"))
+        //
+        //    tColumn.sortDescriptorPrototype = sortDescriptor
+        //
+        //    self.tableView?.addTableColumn(tColumn)
+
+        
+        
+        
+        
     }
     
 }
@@ -56,21 +85,35 @@ extension GenotypeTableViewController: NSTableViewDataSource {
         return population?.individuals.count ?? 0
     }
     
+    func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
+        print("Hello")
+        if let key = tableColumn?.headerCell.title {
+            print("key is: \(key)")
+            return(key)
+        }
+        else {
+            return "Bob"
+        }
+    }
+    
 }
 
 
 extension GenotypeTableViewController: NSTableViewDelegate {
     
     
-    func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
-        guard let vw = tableView.makeView(withIdentifier: tableColumn!.identifier, owner: self) as? NSTableCellView else { return nil }
-
-        vw.textField?.stringValue = "bob"
-        
-        return vw
-    }
-    
-    
+//    func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
+//        if let key = tableColumn?.headerCell.title {
+//            let identifier = NSUserInterfaceItemIdentifier(rawValue: key)
+//            let view = tableView.makeView(withIdentifier: identifier, owner: self) as! NSTableCellView
+//            let value = population.getData(key: key, row: row)
+//            view.textField?.stringValue = value
+//            return view
+//        }
+//        else {
+//            return nil
+//        }
+//    }
 //
 //    func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
 //
