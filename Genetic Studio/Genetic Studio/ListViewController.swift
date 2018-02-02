@@ -10,6 +10,8 @@ import Cocoa
 
 class ListViewController: NSViewController {
 
+    @IBOutlet weak var theListView: NSOutlineView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
