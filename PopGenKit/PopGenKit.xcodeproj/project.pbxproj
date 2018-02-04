@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A2B407D2027506700F61F65 /* MatrixKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2B407A2027502800F61F65 /* MatrixKit.framework */; };
 		2A31288A2025F1CF00B3370B /* AlleleFrequencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3128892025F1CF00B3370B /* AlleleFrequencies.swift */; };
 		2A31288E2026A40E00B3370B /* AnalysisBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A31288D2026A40E00B3370B /* AnalysisBase.swift */; };
 		2A3128932026AF4A00B3370B /* Population.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFB55002025DD9700BBF93C /* Population.swift */; };
@@ -27,6 +28,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2A2B40792027502800F61F65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A2B40742027502800F61F65 /* MatrixKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2A6A2888202731190005A9C4;
+			remoteInfo = MatrixKit;
+		};
+		2A2B407B2027502800F61F65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A2B40742027502800F61F65 /* MatrixKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2A6A2891202731190005A9C4;
+			remoteInfo = MatrixKitTests;
+		};
 		2AFB54EF2025DC9600BBF93C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2AFB54DB2025DC9600BBF93C /* Project object */;
@@ -37,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A2B40742027502800F61F65 /* MatrixKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MatrixKit.xcodeproj; path = ../MatrixKit/MatrixKit.xcodeproj; sourceTree = "<group>"; };
 		2A3128892025F1CF00B3370B /* AlleleFrequencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlleleFrequencies.swift; sourceTree = "<group>"; };
 		2A31288D2026A40E00B3370B /* AnalysisBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisBase.swift; sourceTree = "<group>"; };
 		2A3128962026B02800B3370B /* LocusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocusTests.swift; sourceTree = "<group>"; };
@@ -60,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A2B407D2027506700F61F65 /* MatrixKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +91,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A2B407120274EC500F61F65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A2B40742027502800F61F65 /* MatrixKit.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A2B40752027502800F61F65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A2B407A2027502800F61F65 /* MatrixKit.framework */,
+				2A2B407C2027502800F61F65 /* MatrixKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		2A31288F2026AEA300B3370B /* Analyses */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +149,7 @@
 				2AFB54E62025DC9600BBF93C /* PopGenKit */,
 				2AFB54F12025DC9600BBF93C /* PopGenKitTests */,
 				2AFB54E52025DC9600BBF93C /* Products */,
+				2A2B407120274EC500F61F65 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -233,6 +268,12 @@
 			mainGroup = 2AFB54DA2025DC9600BBF93C;
 			productRefGroup = 2AFB54E52025DC9600BBF93C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2A2B40752027502800F61F65 /* Products */;
+					ProjectRef = 2A2B40742027502800F61F65 /* MatrixKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2AFB54E32025DC9600BBF93C /* PopGenKit */,
@@ -240,6 +281,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2A2B407A2027502800F61F65 /* MatrixKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MatrixKit.framework;
+			remoteRef = 2A2B40792027502800F61F65 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2A2B407C2027502800F61F65 /* MatrixKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MatrixKitTests.xctest;
+			remoteRef = 2A2B407B2027502800F61F65 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2AFB54E22025DC9600BBF93C /* Resources */ = {

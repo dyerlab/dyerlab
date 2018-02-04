@@ -8,7 +8,7 @@
 
 import Foundation
 import Accelerate
-
+import MatrixKit
 
 public class Locus {
     public var alleles: [String]
@@ -37,8 +37,9 @@ public class Locus {
 
 extension Locus {
     
-    public func asVector( alleles: [String], standardized: Bool = false ) -> [Double] {
-        var ret = Array<Double>(repeating: 0.0, count: alleles.count)
+    public func asVector( alleles: [String], standardized: Bool = false ) -> Vector {
+        var ret = Vector(repeating:0.0, count: alleles.count )
+
         for allele in self.alleles {
             if let idx = alleles.index(of: allele) {
                 ret[idx] += 1.0

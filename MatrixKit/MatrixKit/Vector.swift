@@ -31,6 +31,7 @@ public func +( left: Vector, right: Vector ) -> Vector {
     return ret
 }
 
+
 public func *( left: Vector, right: Vector ) -> Vector {
     let N = left.count
     assert(N == right.count, "Arrays not the same size")
@@ -50,3 +51,6 @@ public func /( left: Vector, right: Vector ) -> Vector {
     }
     return ret
 }
+
+
+
