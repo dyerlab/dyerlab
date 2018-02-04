@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A31288A2025F1CF00B3370B /* AlleleFrequencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3128892025F1CF00B3370B /* AlleleFrequencies.swift */; };
+		2A31288E2026A40E00B3370B /* AnalysisBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A31288D2026A40E00B3370B /* AnalysisBase.swift */; };
+		2A3128932026AF4A00B3370B /* Population.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFB55002025DD9700BBF93C /* Population.swift */; };
+		2A3128942026AF6100B3370B /* Individual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFB55022025DD9700BBF93C /* Individual.swift */; };
+		2A3128952026AF6400B3370B /* Locus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFB55012025DD9700BBF93C /* Locus.swift */; };
+		2A3128972026B02800B3370B /* LocusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3128962026B02800B3370B /* LocusTests.swift */; };
+		2A3128992026B28F00B3370B /* IndividualTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3128982026B28F00B3370B /* IndividualTests.swift */; };
+		2A31289B2026B58700B3370B /* PopulationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A31289A2026B58700B3370B /* PopulationTests.swift */; };
+		2AFB54EE2025DC9600BBF93C /* PopGenKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AFB54E42025DC9600BBF93C /* PopGenKit.framework */; };
+		2AFB54F32025DC9600BBF93C /* PopGenKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFB54F22025DC9600BBF93C /* PopGenKitTests.swift */; };
+		2AFB54F52025DC9600BBF93C /* PopGenKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AFB54E72025DC9600BBF93C /* PopGenKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AFB55032025DD9700BBF93C /* Population.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFB55002025DD9700BBF93C /* Population.swift */; };
+		2AFB55042025DD9700BBF93C /* Locus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFB55012025DD9700BBF93C /* Locus.swift */; };
+		2AFB55052025DD9700BBF93C /* Individual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFB55022025DD9700BBF93C /* Individual.swift */; };
+		2AFB55072025E90600BBF93C /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFB55062025E90600BBF93C /* Array.swift */; };
+		2AFB550B2025E9D200BBF93C /* FileIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFB550A2025E9D200BBF93C /* FileIO.swift */; };
+		2AFB550C2025E9D200BBF93C /* FileIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFB550A2025E9D200BBF93C /* FileIO.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2AFB54EF2025DC9600BBF93C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AFB54DB2025DC9600BBF93C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AFB54E32025DC9600BBF93C;
+			remoteInfo = PopGenKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A3128892025F1CF00B3370B /* AlleleFrequencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlleleFrequencies.swift; sourceTree = "<group>"; };
+		2A31288D2026A40E00B3370B /* AnalysisBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisBase.swift; sourceTree = "<group>"; };
+		2A3128962026B02800B3370B /* LocusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocusTests.swift; sourceTree = "<group>"; };
+		2A3128982026B28F00B3370B /* IndividualTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualTests.swift; sourceTree = "<group>"; };
+		2A31289A2026B58700B3370B /* PopulationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationTests.swift; sourceTree = "<group>"; };
+		2AFB54E42025DC9600BBF93C /* PopGenKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PopGenKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AFB54E72025DC9600BBF93C /* PopGenKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopGenKit.h; sourceTree = "<group>"; };
+		2AFB54E82025DC9600BBF93C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AFB54ED2025DC9600BBF93C /* PopGenKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopGenKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AFB54F22025DC9600BBF93C /* PopGenKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopGenKitTests.swift; sourceTree = "<group>"; };
+		2AFB54F42025DC9600BBF93C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AFB55002025DD9700BBF93C /* Population.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Population.swift; sourceTree = "<group>"; };
+		2AFB55012025DD9700BBF93C /* Locus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locus.swift; sourceTree = "<group>"; };
+		2AFB55022025DD9700BBF93C /* Individual.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Individual.swift; sourceTree = "<group>"; };
+		2AFB55062025E90600BBF93C /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		2AFB550A2025E9D200BBF93C /* FileIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileIO.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2AFB54E02025DC9600BBF93C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AFB54EA2025DC9600BBF93C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AFB54EE2025DC9600BBF93C /* PopGenKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A31288F2026AEA300B3370B /* Analyses */ = {
+			isa = PBXGroup;
+			children = (
+				2A31288D2026A40E00B3370B /* AnalysisBase.swift */,
+				2A3128892025F1CF00B3370B /* AlleleFrequencies.swift */,
+			);
+			path = Analyses;
+			sourceTree = "<group>";
+		};
+		2A3128902026AEB200B3370B /* Genetic */ = {
+			isa = PBXGroup;
+			children = (
+				2AFB55012025DD9700BBF93C /* Locus.swift */,
+				2AFB55022025DD9700BBF93C /* Individual.swift */,
+				2AFB55002025DD9700BBF93C /* Population.swift */,
+			);
+			path = Genetic;
+			sourceTree = "<group>";
+		};
+		2A3128912026AEE100B3370B /* IO */ = {
+			isa = PBXGroup;
+			children = (
+				2AFB550A2025E9D200BBF93C /* FileIO.swift */,
+			);
+			path = IO;
+			sourceTree = "<group>";
+		};
+		2A3128922026AEE900B3370B /* Overloads */ = {
+			isa = PBXGroup;
+			children = (
+				2AFB55062025E90600BBF93C /* Array.swift */,
+			);
+			path = Overloads;
+			sourceTree = "<group>";
+		};
+		2AFB54DA2025DC9600BBF93C = {
+			isa = PBXGroup;
+			children = (
+				2AFB54E62025DC9600BBF93C /* PopGenKit */,
+				2AFB54F12025DC9600BBF93C /* PopGenKitTests */,
+				2AFB54E52025DC9600BBF93C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2AFB54E52025DC9600BBF93C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AFB54E42025DC9600BBF93C /* PopGenKit.framework */,
+				2AFB54ED2025DC9600BBF93C /* PopGenKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2AFB54E62025DC9600BBF93C /* PopGenKit */ = {
+			isa = PBXGroup;
+			children = (
+				2A31288F2026AEA300B3370B /* Analyses */,
+				2A3128902026AEB200B3370B /* Genetic */,
+				2A3128912026AEE100B3370B /* IO */,
+				2A3128922026AEE900B3370B /* Overloads */,
+				2AFB54E72025DC9600BBF93C /* PopGenKit.h */,
+				2AFB54E82025DC9600BBF93C /* Info.plist */,
+			);
+			path = PopGenKit;
+			sourceTree = "<group>";
+		};
+		2AFB54F12025DC9600BBF93C /* PopGenKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				2AFB54F22025DC9600BBF93C /* PopGenKitTests.swift */,
+				2AFB54F42025DC9600BBF93C /* Info.plist */,
+				2A3128962026B02800B3370B /* LocusTests.swift */,
+				2A3128982026B28F00B3370B /* IndividualTests.swift */,
+				2A31289A2026B58700B3370B /* PopulationTests.swift */,
+			);
+			path = PopGenKitTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2AFB54E12025DC9600BBF93C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AFB54F52025DC9600BBF93C /* PopGenKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2AFB54E32025DC9600BBF93C /* PopGenKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AFB54F82025DC9600BBF93C /* Build configuration list for PBXNativeTarget "PopGenKit" */;
+			buildPhases = (
+				2AFB54DF2025DC9600BBF93C /* Sources */,
+				2AFB54E02025DC9600BBF93C /* Frameworks */,
+				2AFB54E12025DC9600BBF93C /* Headers */,
+				2AFB54E22025DC9600BBF93C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PopGenKit;
+			productName = PopGenKit;
+			productReference = 2AFB54E42025DC9600BBF93C /* PopGenKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2AFB54EC2025DC9600BBF93C /* PopGenKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AFB54FB2025DC9600BBF93C /* Build configuration list for PBXNativeTarget "PopGenKitTests" */;
+			buildPhases = (
+				2AFB54E92025DC9600BBF93C /* Sources */,
+				2AFB54EA2025DC9600BBF93C /* Frameworks */,
+				2AFB54EB2025DC9600BBF93C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AFB54F02025DC9600BBF93C /* PBXTargetDependency */,
+			);
+			name = PopGenKitTests;
+			productName = PopGenKitTests;
+			productReference = 2AFB54ED2025DC9600BBF93C /* PopGenKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2AFB54DB2025DC9600BBF93C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Rodney Dyer";
+				TargetAttributes = {
+					2AFB54E32025DC9600BBF93C = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					2AFB54EC2025DC9600BBF93C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2AFB54DE2025DC9600BBF93C /* Build configuration list for PBXProject "PopGenKit" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2AFB54DA2025DC9600BBF93C;
+			productRefGroup = 2AFB54E52025DC9600BBF93C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2AFB54E32025DC9600BBF93C /* PopGenKit */,
+				2AFB54EC2025DC9600BBF93C /* PopGenKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2AFB54E22025DC9600BBF93C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AFB54EB2025DC9600BBF93C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2AFB54DF2025DC9600BBF93C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AFB55052025DD9700BBF93C /* Individual.swift in Sources */,
+				2AFB55072025E90600BBF93C /* Array.swift in Sources */,
+				2AFB55042025DD9700BBF93C /* Locus.swift in Sources */,
+				2A31288E2026A40E00B3370B /* AnalysisBase.swift in Sources */,
+				2A31288A2025F1CF00B3370B /* AlleleFrequencies.swift in Sources */,
+				2AFB550B2025E9D200BBF93C /* FileIO.swift in Sources */,
+				2AFB55032025DD9700BBF93C /* Population.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AFB54E92025DC9600BBF93C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A3128952026AF6400B3370B /* Locus.swift in Sources */,
+				2A3128942026AF6100B3370B /* Individual.swift in Sources */,
+				2A3128992026B28F00B3370B /* IndividualTests.swift in Sources */,
+				2A3128972026B02800B3370B /* LocusTests.swift in Sources */,
+				2A3128932026AF4A00B3370B /* Population.swift in Sources */,
+				2AFB54F32025DC9600BBF93C /* PopGenKitTests.swift in Sources */,
+				2A31289B2026B58700B3370B /* PopulationTests.swift in Sources */,
+				2AFB550C2025E9D200BBF93C /* FileIO.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2AFB54F02025DC9600BBF93C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AFB54E32025DC9600BBF93C /* PopGenKit */;
+			targetProxy = 2AFB54EF2025DC9600BBF93C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2AFB54F62025DC9600BBF93C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2AFB54F72025DC9600BBF93C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2AFB54F92025DC9600BBF93C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 626QFAP74Z;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = PopGenKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dyerlab.PopGenKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		2AFB54FA2025DC9600BBF93C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 626QFAP74Z;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = PopGenKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dyerlab.PopGenKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		2AFB54FC2025DC9600BBF93C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 626QFAP74Z;
+				INFOPLIST_FILE = PopGenKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dyerlab.PopGenKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		2AFB54FD2025DC9600BBF93C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 626QFAP74Z;
+				INFOPLIST_FILE = PopGenKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dyerlab.PopGenKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2AFB54DE2025DC9600BBF93C /* Build configuration list for PBXProject "PopGenKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AFB54F62025DC9600BBF93C /* Debug */,
+				2AFB54F72025DC9600BBF93C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AFB54F82025DC9600BBF93C /* Build configuration list for PBXNativeTarget "PopGenKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AFB54F92025DC9600BBF93C /* Debug */,
+				2AFB54FA2025DC9600BBF93C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AFB54FB2025DC9600BBF93C /* Build configuration list for PBXNativeTarget "PopGenKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AFB54FC2025DC9600BBF93C /* Debug */,
+				2AFB54FD2025DC9600BBF93C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2AFB54DB2025DC9600BBF93C /* Project object */;
+}

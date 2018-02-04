@@ -2,6 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:PopGenKit/PopGenKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Population Map/Population Map.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:GenotypeGrid/GenotypeGrid.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Population Graphs/Population Graphs.xcodeproj">
    </FileRef>
 </Workspace>
