@@ -25,5 +25,19 @@ class PopulationTests: XCTestCase {
         
         XCTAssertEqual(pop.count, 100 )
         XCTAssertEqual(pop.keys.count, 21)
+        
+        var keys = pop.keysForType(type: IndividualDataType.Strata)
+        XCTAssertEqual( keys.count, 1 )
+        XCTAssertEqual( keys, ["Population"])
+        
+        keys = pop.keysForType(type: IndividualDataType.Coordinates)
+        XCTAssertEqual( keys.count, 0 )
+        
+        keys = pop.keysForType(type: IndividualDataType.External )
+        XCTAssertEqual( keys.count, 0 )
+        
+        keys = pop.keysForType(type: IndividualDataType.Loci)
+        XCTAssertEqual( keys.count, 20 )
+        
     }
 }

@@ -16,8 +16,9 @@
 		2A3128972026B02800B3370B /* LocusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3128962026B02800B3370B /* LocusTests.swift */; };
 		2A3128992026B28F00B3370B /* IndividualTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3128982026B28F00B3370B /* IndividualTests.swift */; };
 		2A31289B2026B58700B3370B /* PopulationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A31289A2026B58700B3370B /* PopulationTests.swift */; };
+		2A461AB32027572E000AE72E /* arapat.csv in Resources */ = {isa = PBXBuildFile; fileRef = 2A461AB02027572E000AE72E /* arapat.csv */; };
+		2A461AB620276015000AE72E /* FileIOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A461AB520276015000AE72E /* FileIOTests.swift */; };
 		2AFB54EE2025DC9600BBF93C /* PopGenKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AFB54E42025DC9600BBF93C /* PopGenKit.framework */; };
-		2AFB54F32025DC9600BBF93C /* PopGenKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFB54F22025DC9600BBF93C /* PopGenKitTests.swift */; };
 		2AFB54F52025DC9600BBF93C /* PopGenKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AFB54E72025DC9600BBF93C /* PopGenKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2AFB55032025DD9700BBF93C /* Population.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFB55002025DD9700BBF93C /* Population.swift */; };
 		2AFB55042025DD9700BBF93C /* Locus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFB55012025DD9700BBF93C /* Locus.swift */; };
@@ -58,11 +59,12 @@
 		2A3128962026B02800B3370B /* LocusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocusTests.swift; sourceTree = "<group>"; };
 		2A3128982026B28F00B3370B /* IndividualTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualTests.swift; sourceTree = "<group>"; };
 		2A31289A2026B58700B3370B /* PopulationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationTests.swift; sourceTree = "<group>"; };
+		2A461AB02027572E000AE72E /* arapat.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = arapat.csv; sourceTree = "<group>"; };
+		2A461AB520276015000AE72E /* FileIOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileIOTests.swift; sourceTree = "<group>"; };
 		2AFB54E42025DC9600BBF93C /* PopGenKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PopGenKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AFB54E72025DC9600BBF93C /* PopGenKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopGenKit.h; sourceTree = "<group>"; };
 		2AFB54E82025DC9600BBF93C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AFB54ED2025DC9600BBF93C /* PopGenKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopGenKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2AFB54F22025DC9600BBF93C /* PopGenKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopGenKitTests.swift; sourceTree = "<group>"; };
 		2AFB54F42025DC9600BBF93C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AFB55002025DD9700BBF93C /* Population.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Population.swift; sourceTree = "<group>"; };
 		2AFB55012025DD9700BBF93C /* Locus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locus.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 		2AFB54E62025DC9600BBF93C /* PopGenKit */ = {
 			isa = PBXGroup;
 			children = (
+				2A461AB02027572E000AE72E /* arapat.csv */,
 				2A31288F2026AEA300B3370B /* Analyses */,
 				2A3128902026AEB200B3370B /* Genetic */,
 				2A3128912026AEE100B3370B /* IO */,
@@ -178,11 +181,11 @@
 		2AFB54F12025DC9600BBF93C /* PopGenKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				2AFB54F22025DC9600BBF93C /* PopGenKitTests.swift */,
 				2AFB54F42025DC9600BBF93C /* Info.plist */,
 				2A3128962026B02800B3370B /* LocusTests.swift */,
 				2A3128982026B28F00B3370B /* IndividualTests.swift */,
 				2A31289A2026B58700B3370B /* PopulationTests.swift */,
+				2A461AB520276015000AE72E /* FileIOTests.swift */,
 			);
 			path = PopGenKitTests;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A461AB32027572E000AE72E /* arapat.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,11 +340,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A3128952026AF6400B3370B /* Locus.swift in Sources */,
+				2A461AB620276015000AE72E /* FileIOTests.swift in Sources */,
 				2A3128942026AF6100B3370B /* Individual.swift in Sources */,
 				2A3128992026B28F00B3370B /* IndividualTests.swift in Sources */,
 				2A3128972026B02800B3370B /* LocusTests.swift in Sources */,
 				2A3128932026AF4A00B3370B /* Population.swift in Sources */,
-				2AFB54F32025DC9600BBF93C /* PopGenKitTests.swift in Sources */,
 				2A31289B2026B58700B3370B /* PopulationTests.swift in Sources */,
 				2AFB550C2025E9D200BBF93C /* FileIO.swift in Sources */,
 			);

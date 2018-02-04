@@ -19,7 +19,13 @@ public class Locus {
     }
     
     public init(_ vals: [String]){
-        self.alleles = vals.sorted()
+        if vals.count == 1 && vals[0].contains(":") {
+            let alleles = vals[0].components(separatedBy: ":")
+            self.alleles = alleles
+        }
+        else {
+            self.alleles = vals.sorted()
+        }
     }
     
     public func isHeterozygote() -> Bool {

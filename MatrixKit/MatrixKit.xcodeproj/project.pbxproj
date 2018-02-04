@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A461ABA2027826C000AE72E /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A461AB92027826C000AE72E /* Array.swift */; };
 		2A6A2892202731190005A9C4 /* MatrixKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A6A2888202731190005A9C4 /* MatrixKit.framework */; };
 		2A6A2897202731190005A9C4 /* MatrixKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6A2896202731190005A9C4 /* MatrixKitTests.swift */; };
 		2A6A2899202731190005A9C4 /* MatrixKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6A288B202731190005A9C4 /* MatrixKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A461AB92027826C000AE72E /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		2A6A2888202731190005A9C4 /* MatrixKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MatrixKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A6A288B202731190005A9C4 /* MatrixKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatrixKit.h; sourceTree = "<group>"; };
 		2A6A288C202731190005A9C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				2A6A288C202731190005A9C4 /* Info.plist */,
 				2A6A28A22027312F0005A9C4 /* Vector.swift */,
 				2A6A28A5202732B80005A9C4 /* Matrix.swift */,
+				2A461AB92027826C000AE72E /* Array.swift */,
 			);
 			path = MatrixKit;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A461ABA2027826C000AE72E /* Array.swift in Sources */,
 				2A6A28A6202732B80005A9C4 /* Matrix.swift in Sources */,
 				2A6A28A32027312F0005A9C4 /* Vector.swift in Sources */,
 			);

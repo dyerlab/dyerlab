@@ -58,6 +58,24 @@ public class Individual {
         self.external = [String:Double]()
     }
     
+    public func keysForType( type: IndividualDataType) -> [String] {
+        var ret: [String]
+        switch type {
+        case .Strata:
+            ret = Array<String>( strata.keys )
+        case .Coordinates:
+            ret = Array<String>( coords.keys )
+        case .External:
+            ret = Array<String>( external.keys )
+        case .Loci:
+            ret = Array<String>( loci.keys )
+        default:
+            ret = []
+        }
+        
+        return ret;
+    }
+    
     public func type( key: String ) -> IndividualDataType {
         if loci.keys.contains(key) {
             return .Loci
@@ -91,9 +109,6 @@ public class Individual {
         }
     }
     
-    
-
-    
 }
 
 
@@ -112,6 +127,7 @@ extension Individual: Equatable {
 // MARK: CustomStringConvertible
 
 extension Individual: CustomStringConvertible {
+    
     public var description: String {
         get {
             var ret = ""
@@ -121,5 +137,6 @@ extension Individual: CustomStringConvertible {
             return ret
         }
     }
+    
 }
 

@@ -40,11 +40,7 @@ public class Population {
         self.individuals = Array<Individual>()
     }
     
-    
-    func data( key: String, row: Int ) -> String {
-        assert(individuals.count > row )
-        return individuals[row].data(key)
-    }
+
     
 }
 
@@ -90,7 +86,44 @@ extension Population {
     }
     
     
+    func data( key: String, row: Int ) -> String {
+        assert(individuals.count > row )
+        return individuals[row].data(key)
+    }
+    
+    
 }
 
+// MARK: Extension for printing
 
+extension Population: CustomStringConvertible {
+    
+    public var summary: String {
+        get {
+            var ret = "\nPopulation:\n"
+            ret += String(" - \(self.count) Individuals\n")
+            if self.individuals.count > 0 {
+                var keys = individuals[0].keysForType(type: .Strata)
+                ret += String(" - \(keys.count) Strata values\n")
+                keys = individuals[0].keysForType(type: .Coordinates)
+                ret += String(" - \(keys.count) Coordinate values\n")
+                keys = individuals[0].keysForType(type: .External)
+                ret += String(" - \(keys.count) External variables\n")
+                keys = individuals[0].keysForType(type: .Loci)
+                ret += String(" - \(keys.count) Locus variables\n")
+            }
+            return ret
+        }
+    }
+    
+    public var description: String {
+        get {
+            var ret = ""
+            for individual in self.individuals {
+                ret += String("\(individual)")
+            }
+            return ret
+        }
+    }
+}
 

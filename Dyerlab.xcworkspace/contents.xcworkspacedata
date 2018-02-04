@@ -2,10 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:MatrixKit/MatrixKit.xcodeproj">
+      location = "group:PopGenKit/PopGenKit.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:PopGenKit/PopGenKit.xcodeproj">
+      location = "group:MatrixKit/MatrixKit.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Population Map/Population Map.xcodeproj">
