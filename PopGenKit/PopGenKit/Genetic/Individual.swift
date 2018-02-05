@@ -115,11 +115,16 @@ public class Individual {
 
 // MARK: Equatable
 extension Individual: Equatable {
+    
     public static func == (left: Individual, right: Individual ) -> Bool {
         return left.coords == right.coords &&
             left.strata == right.strata &&
             left.loci == right.loci &&
             left.external == right.external
+    }
+    
+    public static func !=(left: Individual, right: Individual) -> Bool {
+        return !(left == right)
     }
 }
 
