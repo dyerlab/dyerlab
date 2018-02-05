@@ -6,9 +6,21 @@
 //  Copyright © 2018 Rodney Dyer. All rights reserved.
 //
 
+
+
+
 import Foundation
 import Accelerate
 import MatrixKit
+
+/**
+ The base class for a genotype
+ 
+ This is the base class for a genotype.  Alleles are represented as String objects
+ allowing numeric or alphabetical (or emoji if you need it) represnttion.
+ 
+ :author: Rodney J. Dyer
+*/
 
 public class Locus {
     public var alleles: [String]
@@ -18,6 +30,17 @@ public class Locus {
         }
     }
     
+    
+    /**
+     Default init() routine
+     
+     This method instantiates a <i>Locus</i> object.
+     
+     :param: vals Either an array of string values OR if it is only one
+     entry long, it tries to split vals on ":"
+     
+     :returns:   Locus A fully constructed Locus object.
+     */
     public init(_ vals: [String]){
         if vals.count == 1 && vals[0].contains(":") {
             let alleles = vals[0].components(separatedBy: ":")
