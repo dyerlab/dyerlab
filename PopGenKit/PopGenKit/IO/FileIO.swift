@@ -65,7 +65,7 @@ public func loadPopulation( path: String, strata: Int, coords: Int, external: In
     
     // must have loaded in the stuff
     if data.count > 0 {
-        let headers = data[1] as [String]
+        let headers = data[0] as [String]
         for i in 1..<data.count {
             let theInd = Individual()
             let line = data[i]

@@ -29,9 +29,6 @@ class FileIOTests: XCTestCase {
     func testGrabArapat() {
         let pop = loadArapat()
         
-        print(" \(pop)")
-        
-        
         XCTAssertEqual( pop.count,363)
     }
 }

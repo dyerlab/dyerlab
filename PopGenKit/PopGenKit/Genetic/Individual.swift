@@ -137,7 +137,7 @@ extension Individual: CustomStringConvertible {
         get {
             var ret = ""
             for key in self.keys {
-                ret += String("\(self.data(key))")
+                ret += String("\(self.data(key)) ")
             }
             return ret
         }

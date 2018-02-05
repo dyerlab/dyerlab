@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2A2B407D2027506700F61F65 /* MatrixKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2B407A2027502800F61F65 /* MatrixKit.framework */; };
-		2A31288A2025F1CF00B3370B /* AlleleFrequencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3128892025F1CF00B3370B /* AlleleFrequencies.swift */; };
+		2A31288A2025F1CF00B3370B /* Frequencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3128892025F1CF00B3370B /* Frequencies.swift */; };
 		2A31288E2026A40E00B3370B /* AnalysisBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A31288D2026A40E00B3370B /* AnalysisBase.swift */; };
 		2A3128932026AF4A00B3370B /* Population.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFB55002025DD9700BBF93C /* Population.swift */; };
 		2A3128942026AF6100B3370B /* Individual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFB55022025DD9700BBF93C /* Individual.swift */; };
@@ -18,8 +18,9 @@
 		2A31289B2026B58700B3370B /* PopulationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A31289A2026B58700B3370B /* PopulationTests.swift */; };
 		2A461AB32027572E000AE72E /* arapat.csv in Resources */ = {isa = PBXBuildFile; fileRef = 2A461AB02027572E000AE72E /* arapat.csv */; };
 		2A461AB620276015000AE72E /* FileIOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A461AB520276015000AE72E /* FileIOTests.swift */; };
-		2A8424A5202880730036B1CF /* AlleleFrequencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3128892025F1CF00B3370B /* AlleleFrequencies.swift */; };
+		2A8424A5202880730036B1CF /* Frequencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3128892025F1CF00B3370B /* Frequencies.swift */; };
 		2A8424A8202883E70036B1CF /* AnalysisBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A31288D2026A40E00B3370B /* AnalysisBase.swift */; };
+		2A8424AA202889630036B1CF /* FrequenciesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8424A9202889630036B1CF /* FrequenciesTest.swift */; };
 		2AFB54EE2025DC9600BBF93C /* PopGenKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AFB54E42025DC9600BBF93C /* PopGenKit.framework */; };
 		2AFB54F52025DC9600BBF93C /* PopGenKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AFB54E72025DC9600BBF93C /* PopGenKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2AFB55032025DD9700BBF93C /* Population.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFB55002025DD9700BBF93C /* Population.swift */; };
@@ -56,13 +57,14 @@
 
 /* Begin PBXFileReference section */
 		2A2B40742027502800F61F65 /* MatrixKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MatrixKit.xcodeproj; path = ../MatrixKit/MatrixKit.xcodeproj; sourceTree = "<group>"; };
-		2A3128892025F1CF00B3370B /* AlleleFrequencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlleleFrequencies.swift; sourceTree = "<group>"; };
+		2A3128892025F1CF00B3370B /* Frequencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frequencies.swift; sourceTree = "<group>"; };
 		2A31288D2026A40E00B3370B /* AnalysisBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisBase.swift; sourceTree = "<group>"; };
 		2A3128962026B02800B3370B /* LocusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocusTests.swift; sourceTree = "<group>"; };
 		2A3128982026B28F00B3370B /* IndividualTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualTests.swift; sourceTree = "<group>"; };
 		2A31289A2026B58700B3370B /* PopulationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationTests.swift; sourceTree = "<group>"; };
 		2A461AB02027572E000AE72E /* arapat.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = arapat.csv; sourceTree = "<group>"; };
 		2A461AB520276015000AE72E /* FileIOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileIOTests.swift; sourceTree = "<group>"; };
+		2A8424A9202889630036B1CF /* FrequenciesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequenciesTest.swift; sourceTree = "<group>"; };
 		2AFB54E42025DC9600BBF93C /* PopGenKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PopGenKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AFB54E72025DC9600BBF93C /* PopGenKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopGenKit.h; sourceTree = "<group>"; };
 		2AFB54E82025DC9600BBF93C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -116,7 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				2A31288D2026A40E00B3370B /* AnalysisBase.swift */,
-				2A3128892025F1CF00B3370B /* AlleleFrequencies.swift */,
+				2A3128892025F1CF00B3370B /* Frequencies.swift */,
 			);
 			path = Analyses;
 			sourceTree = "<group>";
@@ -188,6 +190,7 @@
 				2A3128982026B28F00B3370B /* IndividualTests.swift */,
 				2A31289A2026B58700B3370B /* PopulationTests.swift */,
 				2A461AB520276015000AE72E /* FileIOTests.swift */,
+				2A8424A9202889630036B1CF /* FrequenciesTest.swift */,
 			);
 			path = PopGenKitTests;
 			sourceTree = "<group>";
@@ -331,7 +334,7 @@
 				2AFB55072025E90600BBF93C /* Array.swift in Sources */,
 				2AFB55042025DD9700BBF93C /* Locus.swift in Sources */,
 				2A31288E2026A40E00B3370B /* AnalysisBase.swift in Sources */,
-				2A31288A2025F1CF00B3370B /* AlleleFrequencies.swift in Sources */,
+				2A31288A2025F1CF00B3370B /* Frequencies.swift in Sources */,
 				2AFB550B2025E9D200BBF93C /* FileIO.swift in Sources */,
 				2AFB55032025DD9700BBF93C /* Population.swift in Sources */,
 			);
@@ -344,7 +347,8 @@
 				2A3128952026AF6400B3370B /* Locus.swift in Sources */,
 				2A461AB620276015000AE72E /* FileIOTests.swift in Sources */,
 				2A3128942026AF6100B3370B /* Individual.swift in Sources */,
-				2A8424A5202880730036B1CF /* AlleleFrequencies.swift in Sources */,
+				2A8424AA202889630036B1CF /* FrequenciesTest.swift in Sources */,
+				2A8424A5202880730036B1CF /* Frequencies.swift in Sources */,
 				2A8424A8202883E70036B1CF /* AnalysisBase.swift in Sources */,
 				2A3128992026B28F00B3370B /* IndividualTests.swift in Sources */,
 				2A3128972026B02800B3370B /* LocusTests.swift in Sources */,

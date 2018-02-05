@@ -2,9 +2,9 @@
 
 import Cocoa
 
-var x = [0.75,0.25]
+var vals = [0.75,0.25]
 
-print(x)
+print(vals)
 
-let val = 1-x.map{$0*$0}.reduce(0,+)
+let val = 1-vals.map{$0*$0}.reduce(0,+)
 print(val)

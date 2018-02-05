@@ -78,8 +78,10 @@ extension Population {
                 ret.append(individual.strata[key]!)
             case .External:
                 ret.append(individual.external[key]!)
-            default:
+            case .Coordinates:
                 ret.append(individual.coords[key]!)
+            default:
+                ret.append("")
             }
         }
         return ret
@@ -120,7 +122,7 @@ extension Population: CustomStringConvertible {
         get {
             var ret = ""
             for individual in self.individuals {
-                ret += String("\(individual)")
+                ret += String("\(individual)\n")
             }
             return ret
         }
