@@ -8,14 +8,14 @@
 
 import Foundation
 
-class Frequencies: AnalysisBase {
-    var name: String
+public class Frequencies: AnalysisBase  {
+    public var name: String
     var loci: [Locus]
     var counts = [String:Double]()
     var N: Double = 0.0
     var Ho: Double = 0.0
     var HoN: Double = 0.0
-    var results: String {
+    public var results: String {
         get {
             var ret = "<table><tr><td>Allele</td><td>Frequency</td></tr>"
             let keys = self.counts.keys.sorted()
@@ -28,15 +28,37 @@ class Frequencies: AnalysisBase {
         }
     }
     
-    init(loci: [Locus], locusName: String) {
+    public init(loci: [Locus], locusName: String) {
         self.name = String("Allele Frequencies: \(locusName)")
         self.loci = loci
     }
     
-    func run() {
+    public func getFrequency(_ key: String ) -> Double {
+        if counts.keys.contains(key) {
+            return counts[key]! / N
+        }
+        else {
+            return 0.0
+        }
+    }
+    
+    public func getHo() -> Double {
+        return HoN > 0.0 ? Ho/HoN : 0.0
+    }
+    
+    public func getHe() -> Double {
+        let vals = Array<Double>(counts.values)
+        return 1.0 - vals.map{$0*$0}.reduce(0, +)
+        
+    }
+    
+    public func run() {
         for locus in loci {
             if locus.ploidy > 0 {
                 HoN += 1.0
+                if locus.isHeterozygote() {
+                    Ho += 1.0
+                }
             }
             for allele in locus.alleles {
                 if !(counts.keys.contains(allele)) {
@@ -50,16 +72,7 @@ class Frequencies: AnalysisBase {
         }
     }
     
-    func getFrequency(_ key: String ) -> Double {
-        if counts.keys.contains(key) {
-            return counts[key]! / N
-        }
-        else {
-            return 0.0
-        }
-    }
     
 }
-
 
 

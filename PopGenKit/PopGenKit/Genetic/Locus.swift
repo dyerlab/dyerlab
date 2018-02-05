@@ -51,6 +51,14 @@ public class Locus {
         }
     }
     
+    /**
+     Heterozygosity flag
+     
+     Defined as true only if there are more than one allele at the locus (e.g.,
+     haploids will never return true.
+     
+     :returns: Bool Indicating more than one allele.
+     */
     public func isHeterozygote() -> Bool {
         return NSSet(array: self.alleles).allObjects.count > 1
     }

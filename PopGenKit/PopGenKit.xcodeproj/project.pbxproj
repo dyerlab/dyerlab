@@ -18,6 +18,8 @@
 		2A31289B2026B58700B3370B /* PopulationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A31289A2026B58700B3370B /* PopulationTests.swift */; };
 		2A461AB32027572E000AE72E /* arapat.csv in Resources */ = {isa = PBXBuildFile; fileRef = 2A461AB02027572E000AE72E /* arapat.csv */; };
 		2A461AB620276015000AE72E /* FileIOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A461AB520276015000AE72E /* FileIOTests.swift */; };
+		2A8424A5202880730036B1CF /* AlleleFrequencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3128892025F1CF00B3370B /* AlleleFrequencies.swift */; };
+		2A8424A8202883E70036B1CF /* AnalysisBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A31288D2026A40E00B3370B /* AnalysisBase.swift */; };
 		2AFB54EE2025DC9600BBF93C /* PopGenKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AFB54E42025DC9600BBF93C /* PopGenKit.framework */; };
 		2AFB54F52025DC9600BBF93C /* PopGenKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AFB54E72025DC9600BBF93C /* PopGenKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2AFB55032025DD9700BBF93C /* Population.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFB55002025DD9700BBF93C /* Population.swift */; };
@@ -342,6 +344,8 @@
 				2A3128952026AF6400B3370B /* Locus.swift in Sources */,
 				2A461AB620276015000AE72E /* FileIOTests.swift in Sources */,
 				2A3128942026AF6100B3370B /* Individual.swift in Sources */,
+				2A8424A5202880730036B1CF /* AlleleFrequencies.swift in Sources */,
+				2A8424A8202883E70036B1CF /* AnalysisBase.swift in Sources */,
 				2A3128992026B28F00B3370B /* IndividualTests.swift in Sources */,
 				2A3128972026B02800B3370B /* LocusTests.swift in Sources */,
 				2A3128932026AF4A00B3370B /* Population.swift in Sources */,

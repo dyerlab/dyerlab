@@ -135,70 +135,42 @@
     },
     {
       "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Locus.swift",
-      "line": null,
-      "symbol": "Locus",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Locus.swift",
-      "line": null,
-      "symbol": "Locus",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Locus.swift",
-      "line": null,
-      "symbol": "Locus",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Locus.swift",
-      "line": 16,
-      "symbol": "Locus",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Locus.swift",
-      "line": 17,
+      "line": 26,
       "symbol": "Locus.alleles",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Locus.swift",
-      "line": 18,
+      "line": 27,
       "symbol": "Locus.ploidy",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Locus.swift",
-      "line": 45,
+      "line": 54,
       "symbol": "Locus.isHeterozygote()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Locus.swift",
-      "line": 49,
+      "line": 58,
       "symbol": "Locus.isEmpty()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Locus.swift",
-      "line": 60,
+      "line": 69,
       "symbol": "Locus.asVector(alleles:standardized:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Locus.swift",
-      "line": 98,
+      "line": 107,
       "symbol": "Locus.!=(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
