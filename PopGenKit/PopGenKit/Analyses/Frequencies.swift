@@ -18,7 +18,9 @@ public class Frequencies: AnalysisBase  {
     public var results: String {
         get {
             var ret = "<table><tr><td>Allele</td><td>Frequency</td></tr>"
-            let keys = self.counts.keys.sorted()
+            let keys = self.counts.keys.sorted {
+                $0.compare($1, options: .numeric) == .orderedAscending
+            }
             for key in keys {
                 let freq = getFrequency(key)
                 ret += String("<tr><td>\(key)</td><td>\(freq)</td></tr>")
@@ -47,8 +49,14 @@ public class Frequencies: AnalysisBase  {
     }
     
     public func getHe() -> Double {
-        let vals = Array<Double>(counts.values)
-        return 1.0 - vals.map{$0*$0}.reduce(0, +)
+        var vals = Array<Double>(counts.values)
+        if N > 0 {
+            vals = vals.map {$0 / N}
+            return 1.0 - vals.map{$0*$0}.reduce(0,+)
+        }
+        else {
+            return 0.0
+        }
         
     }
     

@@ -27,17 +27,26 @@ class PopulationTests: XCTestCase {
         XCTAssertEqual(pop.keys.count, 21)
         
         var keys = pop.keysForType(type: IndividualDataType.Strata)
+        print("Strata: \(keys)")
         XCTAssertEqual( keys.count, 1 )
         XCTAssertEqual( keys, ["Population"])
         
         keys = pop.keysForType(type: IndividualDataType.Coordinates)
+        print("Coordinates: \(keys)")
         XCTAssertEqual( keys.count, 0 )
         
         keys = pop.keysForType(type: IndividualDataType.External )
+        print("External: \(keys)")
         XCTAssertEqual( keys.count, 0 )
         
         keys = pop.keysForType(type: IndividualDataType.Loci)
+        print("Loci: \(keys)")
         XCTAssertEqual( keys.count, 20 )
         
+        
+        
+        
     }
+    
+    
 }
