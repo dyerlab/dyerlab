@@ -17,7 +17,7 @@ import Foundation
  :author: Rodney J. Dyer
  */
 
-class SNP : Locus {
+public class SNP : Locus {
     public var depth: Int
     
     /**
@@ -28,20 +28,16 @@ class SNP : Locus {
       - DP Combimed depth across samples
       - AD Allele depth
      */
-    init(raw: String, alleles: [String] ) {
+    public init(raw: String, alleles: [String] ) {
         let line = raw.split(separator: ":")
         self.depth = 0
-        self.allele_depth = (0,0)
-        let alleles: [String]
+        var alleles: [String] = []
         if line.count > 2 {
-            alleles = line[0].components(separatedBy: "/")
-            self.depth = Int( line[1] ) ?? 0
-            let ad = line[2].components(separatedBy: ",")
-        }
-        else {
-            alleles = []
+            if line[0] != "./." {
+                alleles = line[0].components(separatedBy: "/")
+                self.depth = Int( line[1] ) ?? 0
+            }
         }
         super.init(alleles)
-
     }
 }

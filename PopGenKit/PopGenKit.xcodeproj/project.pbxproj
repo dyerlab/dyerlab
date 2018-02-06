@@ -25,6 +25,7 @@
 		2AAB5F922029EA6500717EE5 /* SNPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAB5F912029EA6500717EE5 /* SNPTests.swift */; };
 		2AAB5F942029ED1600717EE5 /* VCF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAB5F932029ED1600717EE5 /* VCF.swift */; };
 		2AAB5F962029F05900717EE5 /* VCFTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAB5F952029F05900717EE5 /* VCFTests.swift */; };
+		2AC714DC202A10CA00B49AEF /* VCF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAB5F932029ED1600717EE5 /* VCF.swift */; };
 		2AFB54EE2025DC9600BBF93C /* PopGenKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AFB54E42025DC9600BBF93C /* PopGenKit.framework */; };
 		2AFB54F52025DC9600BBF93C /* PopGenKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AFB54E72025DC9600BBF93C /* PopGenKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2AFB55032025DD9700BBF93C /* Population.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFB55002025DD9700BBF93C /* Population.swift */; };
@@ -195,12 +196,12 @@
 			isa = PBXGroup;
 			children = (
 				2AFB54F42025DC9600BBF93C /* Info.plist */,
+				2AAB5F952029F05900717EE5 /* VCFTests.swift */,
+				2AAB5F912029EA6500717EE5 /* SNPTests.swift */,
+				2A461AB520276015000AE72E /* FileIOTests.swift */,
 				2A3128962026B02800B3370B /* LocusTests.swift */,
 				2A3128982026B28F00B3370B /* IndividualTests.swift */,
 				2A31289A2026B58700B3370B /* PopulationTests.swift */,
-				2A461AB520276015000AE72E /* FileIOTests.swift */,
-				2AAB5F912029EA6500717EE5 /* SNPTests.swift */,
-				2AAB5F952029F05900717EE5 /* VCFTests.swift */,
 			);
 			path = PopGenKitTests;
 			sourceTree = "<group>";
@@ -357,9 +358,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A3128952026AF6400B3370B /* Locus.swift in Sources */,
+				2AC714DC202A10CA00B49AEF /* VCF.swift in Sources */,
 				2A461AB620276015000AE72E /* FileIOTests.swift in Sources */,
 				2A3128942026AF6100B3370B /* Individual.swift in Sources */,
-				2A8424AA202889630036B1CF /* FrequenciesTest.swift in Sources */,
 				2A8424A5202880730036B1CF /* Frequencies.swift in Sources */,
 				2A8424A8202883E70036B1CF /* AnalysisBase.swift in Sources */,
 				2AAB5F922029EA6500717EE5 /* SNPTests.swift in Sources */,
