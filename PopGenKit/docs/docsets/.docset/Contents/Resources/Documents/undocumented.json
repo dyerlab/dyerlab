@@ -149,28 +149,21 @@
     },
     {
       "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Locus.swift",
-      "line": 54,
-      "symbol": "Locus.isHeterozygote()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Locus.swift",
-      "line": 58,
+      "line": 66,
       "symbol": "Locus.isEmpty()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Locus.swift",
-      "line": 69,
+      "line": 77,
       "symbol": "Locus.asVector(alleles:standardized:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Locus.swift",
-      "line": 107,
+      "line": 115,
       "symbol": "Locus.!=(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
