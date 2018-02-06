@@ -18,7 +18,9 @@ public class Frequencies: AnalysisBase  {
     public var results: String {
         get {
             var ret = "<table><tr><td>Allele</td><td>Frequency</td></tr>"
-            let keys = self.counts.keys.sorted()
+            let keys = self.counts.keys.sorted {
+                $0.compare($1, options: .numeric) == .orderedAscending
+            }
             for key in keys {
                 let freq = getFrequency(key)
                 ret += String("<tr><td>\(key)</td><td>\(freq)</td></tr>")

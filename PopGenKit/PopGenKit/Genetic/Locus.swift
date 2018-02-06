@@ -42,12 +42,12 @@ public class Locus {
      :returns:   Locus A fully constructed Locus object.
      */
     public init(_ vals: [String]){
-        if vals.count == 1 && vals[0].contains(":") {
-            let alleles = vals[0].components(separatedBy: ":")
-            self.alleles = alleles
+        let alleles = vals.filter {$0 != "" }
+        if alleles.count == 1 && alleles[0].contains(":") {
+            self.alleles = vals[0].components(separatedBy: ":")
         }
         else {
-            self.alleles = vals.sorted()
+            self.alleles = alleles.sorted()
         }
     }
     
