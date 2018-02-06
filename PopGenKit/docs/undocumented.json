@@ -1,264 +1,327 @@
 {
   "warnings": [
     {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Individual.swift",
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Analyses/AlleleFrequencies.swift",
+      "line": 11,
+      "symbol": "Frequencies",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Analyses/AlleleFrequencies.swift",
+      "line": 12,
+      "symbol": "Frequencies.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Analyses/AlleleFrequencies.swift",
+      "line": 18,
+      "symbol": "Frequencies.results",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Analyses/AlleleFrequencies.swift",
+      "line": 31,
+      "symbol": "Frequencies.init(loci:locusName:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Analyses/AlleleFrequencies.swift",
+      "line": 36,
+      "symbol": "Frequencies.getFrequency(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Analyses/AlleleFrequencies.swift",
+      "line": 45,
+      "symbol": "Frequencies.getHo()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Analyses/AlleleFrequencies.swift",
+      "line": 49,
+      "symbol": "Frequencies.getHe()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Analyses/AlleleFrequencies.swift",
+      "line": 55,
+      "symbol": "Frequencies.run()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Genetic/Individual.swift",
       "line": null,
       "symbol": "Individual",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Individual.swift",
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Genetic/Individual.swift",
       "line": null,
       "symbol": "Individual",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Individual.swift",
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Genetic/Individual.swift",
       "line": 12,
       "symbol": "IndividualDataType",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Individual.swift",
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Genetic/Individual.swift",
       "line": 13,
       "symbol": "IndividualDataType.All",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Individual.swift",
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Genetic/Individual.swift",
       "line": 14,
       "symbol": "IndividualDataType.Strata",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Individual.swift",
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Genetic/Individual.swift",
       "line": 15,
       "symbol": "IndividualDataType.Coordinates",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Individual.swift",
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Genetic/Individual.swift",
       "line": 16,
       "symbol": "IndividualDataType.External",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Individual.swift",
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Genetic/Individual.swift",
       "line": 17,
       "symbol": "IndividualDataType.Loci",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Individual.swift",
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Genetic/Individual.swift",
       "line": 18,
       "symbol": "IndividualDataType.Unknown",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Individual.swift",
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Genetic/Individual.swift",
       "line": 21,
       "symbol": "Individual",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Individual.swift",
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Genetic/Individual.swift",
       "line": 23,
       "symbol": "Individual.strata",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Individual.swift",
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Genetic/Individual.swift",
       "line": 24,
       "symbol": "Individual.loci",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Individual.swift",
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Genetic/Individual.swift",
       "line": 25,
       "symbol": "Individual.coords",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Individual.swift",
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Genetic/Individual.swift",
       "line": 26,
       "symbol": "Individual.external",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Individual.swift",
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Genetic/Individual.swift",
       "line": 27,
       "symbol": "Individual.keys",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Individual.swift",
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Genetic/Individual.swift",
       "line": 54,
       "symbol": "Individual.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Individual.swift",
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Genetic/Individual.swift",
       "line": 61,
       "symbol": "Individual.keysForType(type:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Individual.swift",
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Genetic/Individual.swift",
       "line": 79,
       "symbol": "Individual.type(key:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Individual.swift",
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Genetic/Individual.swift",
       "line": 97,
       "symbol": "Individual.data(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Locus.swift",
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Genetic/Individual.swift",
+      "line": 126,
+      "symbol": "Individual.!=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Genetic/Locus.swift",
       "line": 26,
       "symbol": "Locus.alleles",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Locus.swift",
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Genetic/Locus.swift",
       "line": 27,
       "symbol": "Locus.ploidy",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Locus.swift",
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Genetic/Locus.swift",
       "line": 66,
       "symbol": "Locus.isEmpty()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Locus.swift",
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Genetic/Locus.swift",
       "line": 77,
       "symbol": "Locus.asVector(alleles:standardized:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Locus.swift",
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Genetic/Locus.swift",
       "line": 115,
       "symbol": "Locus.!=(_:_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Population.swift",
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Genetic/Population.swift",
       "line": null,
       "symbol": "Population",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Population.swift",
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Genetic/Population.swift",
       "line": null,
       "symbol": "Population",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Population.swift",
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Genetic/Population.swift",
       "line": 11,
       "symbol": "Population",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Population.swift",
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Genetic/Population.swift",
       "line": 13,
       "symbol": "Population.individuals",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Population.swift",
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Genetic/Population.swift",
       "line": 14,
       "symbol": "Population.count",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Population.swift",
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Genetic/Population.swift",
       "line": 19,
       "symbol": "Population.keys",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Population.swift",
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Genetic/Population.swift",
       "line": 52,
       "symbol": "Population.keysForType(type:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Population.swift",
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Genetic/Population.swift",
       "line": 68,
       "symbol": "Population.getValues(key:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Genetic/Population.swift",
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Genetic/Population.swift",
       "line": 101,
       "symbol": "Population.summary",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/IO/FileIO.swift",
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/IO/FileIO.swift",
       "line": 13,
       "symbol": "makeRandomPopulation()",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/IO/FileIO.swift",
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/IO/FileIO.swift",
       "line": 46,
       "symbol": "loadPopulation(path:strata:coords:external:loci:)",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/IO/FileIO.swift",
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/IO/FileIO.swift",
       "line": 96,
       "symbol": "loadArapat()",
       "symbol_kind": "source.lang.swift.decl.function.free",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/rodney/Desktop/Dyerlab/PopGenKit/PopGenKit/Overloads/Array.swift",
+      "file": "/Users/rodney/Desktop/dyerlab/PopGenKit/PopGenKit/Overloads/Array.swift",
       "line": 13,
       "symbol": "Array.randomElement()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/rodney/Desktop/Dyerlab/PopGenKit"
+  "source_directory": "/Users/rodney/Desktop/dyerlab/PopGenKit"
 }
