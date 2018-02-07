@@ -26,3 +26,7 @@ let trimmedString = raw.condensedWhitespace.components(separatedBy: " ")
 let c = raw.components(separatedBy: .whitespacesAndNewlines).filter { !$0.isEmpty }
 
 print(c)
+
+let alleles = ["A", "C"]
+let idx = [0,0]
+print( alleles[idx])

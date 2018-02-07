@@ -31,13 +31,15 @@ public class SNP : Locus {
     public init(raw: String, alleles: [String] ) {
         let line = raw.split(separator: ":")
         self.depth = 0
-        var alleles: [String] = []
+        var vals: [String] = []
         if line.count > 2 {
             if line[0] != "./." {
-                alleles = line[0].components(separatedBy: "/")
+                let x = line[0].components(separatedBy: "/").map { Int($0)!}
+                vals = [ alleles[ x[0] ], alleles[ x[1] ] ]
+                
                 self.depth = Int( line[1] ) ?? 0
             }
         }
-        super.init(alleles)
+        super.init(vals)
     }
 }

@@ -46,17 +46,16 @@ public class VCF {
             metaData.Information = line[7]
             metaData.Format = line[8]
             
-            print("meta data is:")
-            print("\(metaData)")
-
             for i in 9..<line.count {
-                self.snps.append( SNP(raw: line[i], alleles: metaData.Alleles) )
+                let snp = SNP(raw: line[i], alleles: metaData.Alleles)
+                self.snps.append( snp )
             }
+            
         } else {
             print("ERROR, LINE WAS TOO SHORT")
         }
         
-        self.snps = [SNP]()
+        
     }
     
 }
