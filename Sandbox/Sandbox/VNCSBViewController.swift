@@ -12,6 +12,7 @@ class VNCSBViewController: NSViewController {
 
     @IBOutlet weak var vncTableView: NSTableView!
     
+    let delegate = NSApplication.shared.delegate as! NSApplicationDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,5 +21,5 @@ class VNCSBViewController: NSViewController {
         print("VNCSBViewController in EFFECT 'yal")
     }
     
-    
+
 }
