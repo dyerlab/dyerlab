@@ -24,6 +24,6 @@ class VCFTests: XCTestCase {
         print("VCF Made")
         let vcf = VCF(sample)
         
-        XCTAssertEqual( vcf.count, 155)
+        XCTAssertEqual( vcf.count, 183)
     }
 }

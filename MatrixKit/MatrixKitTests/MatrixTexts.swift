@@ -54,6 +54,22 @@ class MatrixTexts: XCTestCase {
         XCTAssertEqual(c, [2.0, 4.0] )
         
     }
+    
+    
+    func testOperators() {
+        var X: Matrix = Matrix(rows: 2, cols: 2 )
+        X[0,0] = 1.0
+        X[0,1] = 2.0
+        X[1,0] = 3.0
+        X[1,1] = 4.0
+        
+        var Y = X + X
+        XCTAssertEqual( Y[0,0], 2.0 )
+        XCTAssertEqual( Y[0,1], 4.0 )
+        XCTAssertEqual( Y[1,0], 6.0 )
+        XCTAssertEqual( Y[1,1], 8.0 )
+        
+    }
 
 
 
