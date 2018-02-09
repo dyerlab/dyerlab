@@ -12,9 +12,9 @@ import Foundation
 @NSApplicationMain
 class MyAppDelegate: NSObject, NSApplicationDelegate {
     
-    var filePath: String = String() {
+    public var importFilePath: String = String() {
         didSet {
-            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "Load VNC"), object: nil)
+            NotificationCenter.default.post(name: .loadVNCFileNotifiation, object: nil)
             print("Sending 'Load VNC' notification")
         }
     }
@@ -36,13 +36,13 @@ class MyAppDelegate: NSObject, NSApplicationDelegate {
         openDialog.allowsMultipleSelection = false
         openDialog.title = "Select VNC File"
         if openDialog.runModal() == NSApplication.ModalResponse.OK {
-            self.filePath = openDialog.url!.path
+            self.importFilePath = openDialog.url!.path
         } else {
             print("canceled")
         }
     }
     
-
+//https://forums.developer.apple.com/thread/27471
 
 
 }

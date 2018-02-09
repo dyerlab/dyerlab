@@ -16,9 +16,20 @@ class VNCSBViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
+        
         
         print("VNCSBViewController in EFFECT 'yal")
+        
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector( VNCSBViewController.loadVNC(notification:)),
+                                               name: .loadVNCFileNotifiation,
+                                               object: nil)
+    }
+    
+    @objc private func loadVNC(notification: Notification) {
+        print("pulling VNC from app delegate after receiving notification niño!")
+        
+        
     }
     
 
