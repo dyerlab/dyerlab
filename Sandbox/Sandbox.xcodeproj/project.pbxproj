@@ -14,6 +14,7 @@
 		2A9B7FAE202B3E7500852EFE /* PopGenKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9B7FAD202B3E7500852EFE /* PopGenKit.framework */; };
 		2A9B7FAF202B3E7500852EFE /* PopGenKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9B7FAD202B3E7500852EFE /* PopGenKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2A9B7FBD202B425A00852EFE /* VNCSBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9B7FBC202B425A00852EFE /* VNCSBViewController.swift */; };
+		2AE5EF1E202DDF5B0063118A /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE5EF1D202DDF5B0063118A /* Notifications.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +41,7 @@
 		2A9B7FA7202B3E3D00852EFE /* Sandbox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sandbox.entitlements; sourceTree = "<group>"; };
 		2A9B7FAD202B3E7500852EFE /* PopGenKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PopGenKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A9B7FBC202B425A00852EFE /* VNCSBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VNCSBViewController.swift; sourceTree = "<group>"; };
+		2AE5EF1D202DDF5B0063118A /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		2A9B7F9C202B3E3D00852EFE /* Sandbox */ = {
 			isa = PBXGroup;
 			children = (
+				2AE5EF1D202DDF5B0063118A /* Notifications.swift */,
 				2A9B7F9D202B3E3D00852EFE /* MyAppDelegate.swift */,
 				2A9B7F9F202B3E3D00852EFE /* ViewController.swift */,
 				2A9B7FA1202B3E3D00852EFE /* Assets.xcassets */,
@@ -157,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AE5EF1E202DDF5B0063118A /* Notifications.swift in Sources */,
 				2A9B7FA0202B3E3D00852EFE /* ViewController.swift in Sources */,
 				2A9B7FBD202B425A00852EFE /* VNCSBViewController.swift in Sources */,
 				2A9B7F9E202B3E3D00852EFE /* MyAppDelegate.swift in Sources */,

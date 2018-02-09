@@ -69,4 +69,4 @@ fastlane/test_output
 
 # Dyer Stuff
 .DS_Store
-
+*.vcf
