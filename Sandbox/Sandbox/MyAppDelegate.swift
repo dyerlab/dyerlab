@@ -32,7 +32,7 @@ class MyAppDelegate: NSObject, NSApplicationDelegate {
         let openDialog = NSOpenPanel()
         openDialog.canChooseDirectories = false
         openDialog.canChooseFiles = true
-        openDialog.allowedFileTypes = ["vnc"]
+//        openDialog.allowedFileTypes = ["vnc"]
         openDialog.allowsMultipleSelection = false
         openDialog.title = "Select VNC File"
         if openDialog.runModal() == NSApplication.ModalResponse.OK {

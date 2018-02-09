@@ -57,9 +57,9 @@
 		2A9B7F91202B3E3D00852EFE = {
 			isa = PBXGroup;
 			children = (
-				2A9B7FAD202B3E7500852EFE /* PopGenKit.framework */,
 				2A9B7F9C202B3E3D00852EFE /* Sandbox */,
 				2A9B7F9B202B3E3D00852EFE /* Products */,
+				2A9B7FAD202B3E7500852EFE /* PopGenKit.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,18 +79,10 @@
 				2A9B7FA1202B3E3D00852EFE /* Assets.xcassets */,
 				2A9B7FA3202B3E3D00852EFE /* Main.storyboard */,
 				2A9B7FBC202B425A00852EFE /* VNCSBViewController.swift */,
-				2A9B7FB5202B3F0D00852EFE /* VNC View */,
 				2A9B7FA6202B3E3D00852EFE /* Info.plist */,
 				2A9B7FA7202B3E3D00852EFE /* Sandbox.entitlements */,
 			);
 			path = Sandbox;
-			sourceTree = "<group>";
-		};
-		2A9B7FB5202B3F0D00852EFE /* VNC View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "VNC View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
