@@ -12,8 +12,6 @@ class VNCSBViewController: NSViewController {
 
     @IBOutlet weak var vncTableView: NSTableView!
     
-    let delegate = NSApplication.shared.delegate! as NSApplicationDelegate
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,6 +26,13 @@ class VNCSBViewController: NSViewController {
     
     @objc private func loadVNC(notification: Notification) {
         print("pulling VNC from app delegate after receiving notification niño!")
+        
+        if let delegate = NSApplication.shared.delegate as? MyAppDelegate {
+            let path = delegate.importFilePath
+            print("loadVNC with path \(path)")
+        } else  {
+            print("Cannot load path, delegate could not be coerced")
+        }
         
         
     }
