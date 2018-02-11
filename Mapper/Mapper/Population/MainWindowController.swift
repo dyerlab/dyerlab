@@ -41,7 +41,12 @@ class MainWindowController : NSWindowController {
                 zoomRect = MKMapRectUnion(zoomRect, pointRect)
             }
         }
-        mapView.setVisibleMapRect(zoomRect, animated: true)
+        
+        let dx = zoomRect.size.width * -0.2
+        let dy = zoomRect.size.height * -0.2
+        
+        let newRect: MKMapRect = MKMapRectInset(zoomRect, dx , dy)
+        mapView.setVisibleMapRect(newRect, animated: true)
     }
     
     override func windowDidLoad() {
