@@ -64,17 +64,34 @@ class MainWindowController : NSWindowController {
                                      subtitle: "An Awesome Place to Eat",
                                      coordinate: CLLocationCoordinate2DMake(37.551187, -77.458865)))
         
-        
-        
+        var e1 = mapView.annotations.map { $0.coordinate }
+        let geoline = MKGeodesicPolyline(coordinates: &e1, count: 3)
+
+        mapView?.add(geoline)
         
         centerMap()
         
-        
-        
-        
+        mapView?.delegate = self
     }
     
+}
+
+
+extension MainWindowController: MKMapViewDelegate {
     
-    
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+        
+        if overlay is MKGeodesicPolyline {
+            let renderer = MKPolylineRenderer(overlay: overlay)
+            renderer.strokeColor = NSColor.orange
+            renderer.lineWidth = 3
+            return renderer
+        }
+        else {
+            return MKOverlayRenderer()
+        }
+    }
     
 }
+
+

@@ -20,6 +20,4 @@ class PopulationNode: NSObject, MKAnnotation {
         self.subtitle = subtitle
         self.coordinate = coordinate
     }
-    
-    
 }

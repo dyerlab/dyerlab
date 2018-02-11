@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A1EF52A20309937009464E5 /* PopulationEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1EF52920309937009464E5 /* PopulationEdge.swift */; };
 		2ADABD3B202FD7CB00E8D95D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADABD3A202FD7CB00E8D95D /* AppDelegate.swift */; };
 		2ADABD3D202FD7CB00E8D95D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ADABD3C202FD7CB00E8D95D /* Assets.xcassets */; };
 		2ADABD40202FD7CB00E8D95D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ADABD3E202FD7CB00E8D95D /* MainMenu.xib */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A1EF52920309937009464E5 /* PopulationEdge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationEdge.swift; sourceTree = "<group>"; };
 		2ADABD37202FD7CB00E8D95D /* Mapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ADABD3A202FD7CB00E8D95D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2ADABD3C202FD7CB00E8D95D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				2ADABD5C202FE38300E8D95D /* MKCoordianteRegion.swift */,
 				2ADABD56202FD82800E8D95D /* MainWindowController.swift */,
 				2ADABD58202FD8A700E8D95D /* MainWindowController.xib */,
+				2A1EF52920309937009464E5 /* PopulationEdge.swift */,
 			);
 			path = Population;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			files = (
 				2ADABD5B202FDEFF00E8D95D /* PopulationNode.swift in Sources */,
 				2ADABD57202FD82800E8D95D /* MainWindowController.swift in Sources */,
+				2A1EF52A20309937009464E5 /* PopulationEdge.swift in Sources */,
 				2ADABD3B202FD7CB00E8D95D /* AppDelegate.swift in Sources */,
 				2ADABD5D202FE38300E8D95D /* MKCoordianteRegion.swift in Sources */,
 			);
