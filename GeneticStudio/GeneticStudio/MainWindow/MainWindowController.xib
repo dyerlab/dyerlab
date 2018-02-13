@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MainWindowController" customModule="GeneticStudio" customModuleProvider="target">
+            <connections>
+                <outlet property="mainWindow" destination="F0z-JX-Cv5" id="g1y-hq-nxI"/>
+                <outlet property="splitView" destination="sxh-jO-UrM" id="vWc-SX-HKA"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" fullSizeContentView="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="42" y="274" width="1058" height="720"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+            <view key="contentView" wantsLayer="YES" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="1058" height="720"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <splitView arrangesAllSubviews="NO" dividerStyle="paneSplitter" vertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sxh-jO-UrM">
+                        <rect key="frame" x="0.0" y="0.0" width="1058" height="720"/>
+                        <subviews>
+                            <customView fixedFrame="YES" id="0hg-1v-TKX">
+                                <rect key="frame" x="0.0" y="0.0" width="204" height="720"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </customView>
+                            <customView fixedFrame="YES" id="adG-jN-dQO">
+                                <rect key="frame" x="214" y="0.0" width="844" height="720"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </customView>
+                        </subviews>
+                        <holdingPriorities>
+                            <real value="250"/>
+                            <real value="250"/>
+                        </holdingPriorities>
+                    </splitView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="sxh-jO-UrM" secondAttribute="trailing" id="Ckb-bj-aCS"/>
+                    <constraint firstAttribute="bottom" secondItem="sxh-jO-UrM" secondAttribute="bottom" id="Kin-Uk-cP1"/>
+                    <constraint firstItem="sxh-jO-UrM" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" id="NZP-N8-lb6"/>
+                    <constraint firstItem="sxh-jO-UrM" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" id="gtU-rx-GEn"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="-360" y="-23"/>
+        </window>
+    </objects>
+</document>
