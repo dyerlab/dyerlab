@@ -11,8 +11,6 @@ import Cocoa
 class MainWindowController: NSWindowController {
 
     @IBOutlet weak var splitView: NSSplitView!
-
-    var dataOutlineVC: DataOutlineViewController?
     
     
     override var windowNibName: NSNib.Name? {
@@ -22,15 +20,15 @@ class MainWindowController: NSWindowController {
     override func windowDidLoad() {
         super.windowDidLoad()
 
-        if let outlineView: NSOutlineView = NSView.loadFromNib(nibName: "DataOutlineViewController", owner: self) as? NSOutlineView {
-            self.dataOutlineVC = DataOutlineViewController()
-            self.dataOutlineVC?.outlineView = outlineView
-        }
 //        if let loadedNavButtons: NavigationButtonsView = NSView.loadFromNib(nibName: "NavigationButtonsView", owner: self) as? NavigationButtonsView {
 //            // Do whatever you want with loadedNavButtons
 //        }
         
         
+    }
+    
+    @IBAction func importData( sender: AnyObject? ) {
+        print("importData being called")
     }
   
 }

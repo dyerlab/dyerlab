@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A3FBBCA20328483009B2EC3 /* DataOutlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3FBBC820328483009B2EC3 /* DataOutlineViewController.swift */; };
-		2A3FBBCB20328483009B2EC3 /* DataOutlineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3FBBC920328483009B2EC3 /* DataOutlineViewController.xib */; };
 		2A3FBBCD203289CB009B2EC3 /* NSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3FBBCC203289CB009B2EC3 /* NSView.swift */; };
 		2AA859EF20327E7200BD108F /* PopGenKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA859EE20327E7200BD108F /* PopGenKit.framework */; };
 		2AA859F020327E7200BD108F /* PopGenKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA859EE20327E7200BD108F /* PopGenKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -45,8 +43,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2A3FBBC820328483009B2EC3 /* DataOutlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOutlineViewController.swift; sourceTree = "<group>"; };
-		2A3FBBC920328483009B2EC3 /* DataOutlineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataOutlineViewController.xib; sourceTree = "<group>"; };
 		2A3FBBCC203289CB009B2EC3 /* NSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSView.swift; sourceTree = "<group>"; };
 		2AA859EE20327E7200BD108F /* PopGenKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PopGenKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AB8C4E7203277E200AAC0D1 /* GeneticStudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeneticStudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,8 +132,6 @@
 			children = (
 				2AB8C50C2032788B00AAC0D1 /* MainWindowController.swift */,
 				2AB8C50D2032788B00AAC0D1 /* MainWindowController.xib */,
-				2A3FBBC820328483009B2EC3 /* DataOutlineViewController.swift */,
-				2A3FBBC920328483009B2EC3 /* DataOutlineViewController.xib */,
 			);
 			path = MainWindow;
 			sourceTree = "<group>";
@@ -229,7 +223,6 @@
 				2AB8C4ED203277E200AAC0D1 /* Assets.xcassets in Resources */,
 				2AB8C50F2032788B00AAC0D1 /* MainWindowController.xib in Resources */,
 				2AB8C4F0203277E200AAC0D1 /* MainMenu.xib in Resources */,
-				2A3FBBCB20328483009B2EC3 /* DataOutlineViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,7 +240,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A3FBBCA20328483009B2EC3 /* DataOutlineViewController.swift in Sources */,
 				2AB8C50E2032788B00AAC0D1 /* MainWindowController.swift in Sources */,
 				2AB8C4EB203277E200AAC0D1 /* AppDelegate.swift in Sources */,
 				2A3FBBCD203289CB009B2EC3 /* NSView.swift in Sources */,
