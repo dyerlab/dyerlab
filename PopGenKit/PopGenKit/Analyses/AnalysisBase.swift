@@ -13,6 +13,4 @@ protocol AnalysisBase {
     var name: String {get}
     var results: String {get}
     
-    func run()
-    
 }

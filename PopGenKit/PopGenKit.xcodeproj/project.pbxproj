@@ -3,231 +3,148 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A2B407D2027506700F61F65 /* MatrixKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2B407A2027502800F61F65 /* MatrixKit.framework */; };
-		2A31288A2025F1CF00B3370B /* Frequencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3128892025F1CF00B3370B /* Frequencies.swift */; };
-		2A31288E2026A40E00B3370B /* AnalysisBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A31288D2026A40E00B3370B /* AnalysisBase.swift */; };
-		2A3128932026AF4A00B3370B /* Population.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFB55002025DD9700BBF93C /* Population.swift */; };
-		2A3128942026AF6100B3370B /* Individual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFB55022025DD9700BBF93C /* Individual.swift */; };
-		2A3128952026AF6400B3370B /* Locus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFB55012025DD9700BBF93C /* Locus.swift */; };
-		2A3128972026B02800B3370B /* LocusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3128962026B02800B3370B /* LocusTests.swift */; };
-		2A3128992026B28F00B3370B /* IndividualTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3128982026B28F00B3370B /* IndividualTests.swift */; };
-		2A31289B2026B58700B3370B /* PopulationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A31289A2026B58700B3370B /* PopulationTests.swift */; };
-		2A461AB32027572E000AE72E /* arapat.csv in Resources */ = {isa = PBXBuildFile; fileRef = 2A461AB02027572E000AE72E /* arapat.csv */; };
-		2A461AB620276015000AE72E /* FileIOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A461AB520276015000AE72E /* FileIOTests.swift */; };
-		2A8424A5202880730036B1CF /* Frequencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3128892025F1CF00B3370B /* Frequencies.swift */; };
-		2A8424A8202883E70036B1CF /* AnalysisBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A31288D2026A40E00B3370B /* AnalysisBase.swift */; };
-		2AAB5F8D2029E7BD00717EE5 /* SNP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAB5F8C2029E7BD00717EE5 /* SNP.swift */; };
-		2AAB5F902029E7D300717EE5 /* SNP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAB5F8C2029E7BD00717EE5 /* SNP.swift */; };
-		2AAB5F922029EA6500717EE5 /* SNPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAB5F912029EA6500717EE5 /* SNPTests.swift */; };
-		2AAB5F942029ED1600717EE5 /* VCF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAB5F932029ED1600717EE5 /* VCF.swift */; };
-		2AAB5F962029F05900717EE5 /* VCFTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAB5F952029F05900717EE5 /* VCFTests.swift */; };
-		2AC714DC202A10CA00B49AEF /* VCF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAB5F932029ED1600717EE5 /* VCF.swift */; };
-		2AFB54EE2025DC9600BBF93C /* PopGenKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AFB54E42025DC9600BBF93C /* PopGenKit.framework */; };
-		2AFB54F52025DC9600BBF93C /* PopGenKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AFB54E72025DC9600BBF93C /* PopGenKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2AFB55032025DD9700BBF93C /* Population.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFB55002025DD9700BBF93C /* Population.swift */; };
-		2AFB55042025DD9700BBF93C /* Locus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFB55012025DD9700BBF93C /* Locus.swift */; };
-		2AFB55052025DD9700BBF93C /* Individual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFB55022025DD9700BBF93C /* Individual.swift */; };
-		2AFB55072025E90600BBF93C /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFB55062025E90600BBF93C /* Array.swift */; };
-		2AFB550B2025E9D200BBF93C /* FileIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFB550A2025E9D200BBF93C /* FileIO.swift */; };
-		2AFB550C2025E9D200BBF93C /* FileIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFB550A2025E9D200BBF93C /* FileIO.swift */; };
+		2A4E3A17214D4CE30024EAA2 /* PopulationFrequencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4E3A16214D4CE30024EAA2 /* PopulationFrequencies.swift */; };
+		2A8392AE214D29E9004EE7D2 /* MatrixKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A8392AD214D29E9004EE7D2 /* MatrixKit.framework */; };
+		2A9E82FF214C46CD005C39E1 /* arapat.csv in Resources */ = {isa = PBXBuildFile; fileRef = 2A9E82FE214C46CD005C39E1 /* arapat.csv */; };
+		2AE4128A214C3CB600395CD5 /* PopGenKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AE4127C214C3CB600395CD5 /* PopGenKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AE412CA214C3DF300395CD5 /* AnalysisBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE412C6214C3DF300395CD5 /* AnalysisBase.swift */; };
+		2AE412CB214C3DF300395CD5 /* FileIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE412C7214C3DF300395CD5 /* FileIO.swift */; };
+		2AE412CC214C3DF300395CD5 /* Frequencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE412C8214C3DF300395CD5 /* Frequencies.swift */; };
+		2AE412CD214C3DF300395CD5 /* Individual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE412C9214C3DF300395CD5 /* Individual.swift */; };
+		2AE412D0214C3E3600395CD5 /* Population.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE412CE214C3E3600395CD5 /* Population.swift */; };
+		2AE412D1214C3E3600395CD5 /* Locus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE412CF214C3E3600395CD5 /* Locus.swift */; };
+		2AE412D3214C410000395CD5 /* CLLocationCoordinate2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE412D2214C410000395CD5 /* CLLocationCoordinate2D.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		2A2B40792027502800F61F65 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2A2B40742027502800F61F65 /* MatrixKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 2A6A2888202731190005A9C4;
-			remoteInfo = MatrixKit;
-		};
-		2A2B407B2027502800F61F65 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2A2B40742027502800F61F65 /* MatrixKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 2A6A2891202731190005A9C4;
-			remoteInfo = MatrixKitTests;
-		};
-		2AFB54EF2025DC9600BBF93C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2AFB54DB2025DC9600BBF93C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2AFB54E32025DC9600BBF93C;
-			remoteInfo = PopGenKit;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		2A2B40742027502800F61F65 /* MatrixKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MatrixKit.xcodeproj; path = ../MatrixKit/MatrixKit.xcodeproj; sourceTree = "<group>"; };
-		2A3128892025F1CF00B3370B /* Frequencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frequencies.swift; sourceTree = "<group>"; };
-		2A31288D2026A40E00B3370B /* AnalysisBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisBase.swift; sourceTree = "<group>"; };
-		2A3128962026B02800B3370B /* LocusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocusTests.swift; sourceTree = "<group>"; };
-		2A3128982026B28F00B3370B /* IndividualTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualTests.swift; sourceTree = "<group>"; };
-		2A31289A2026B58700B3370B /* PopulationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationTests.swift; sourceTree = "<group>"; };
-		2A461AB02027572E000AE72E /* arapat.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = arapat.csv; sourceTree = "<group>"; };
-		2A461AB520276015000AE72E /* FileIOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileIOTests.swift; sourceTree = "<group>"; };
-		2AAB5F8C2029E7BD00717EE5 /* SNP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNP.swift; sourceTree = "<group>"; };
-		2AAB5F912029EA6500717EE5 /* SNPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNPTests.swift; sourceTree = "<group>"; };
-		2AAB5F932029ED1600717EE5 /* VCF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCF.swift; sourceTree = "<group>"; };
-		2AAB5F952029F05900717EE5 /* VCFTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCFTests.swift; sourceTree = "<group>"; };
-		2AFB54E42025DC9600BBF93C /* PopGenKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PopGenKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2AFB54E72025DC9600BBF93C /* PopGenKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopGenKit.h; sourceTree = "<group>"; };
-		2AFB54E82025DC9600BBF93C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2AFB54ED2025DC9600BBF93C /* PopGenKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopGenKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2AFB54F42025DC9600BBF93C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2AFB55002025DD9700BBF93C /* Population.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Population.swift; sourceTree = "<group>"; };
-		2AFB55012025DD9700BBF93C /* Locus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locus.swift; sourceTree = "<group>"; };
-		2AFB55022025DD9700BBF93C /* Individual.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Individual.swift; sourceTree = "<group>"; };
-		2AFB55062025E90600BBF93C /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
-		2AFB550A2025E9D200BBF93C /* FileIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileIO.swift; sourceTree = "<group>"; };
+		2A4E3A16214D4CE30024EAA2 /* PopulationFrequencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationFrequencies.swift; sourceTree = "<group>"; };
+		2A8392AD214D29E9004EE7D2 /* MatrixKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MatrixKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A9E82FE214C46CD005C39E1 /* arapat.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = arapat.csv; sourceTree = "<group>"; };
+		2AE41279214C3CB600395CD5 /* PopGenKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PopGenKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AE4127C214C3CB600395CD5 /* PopGenKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopGenKit.h; sourceTree = "<group>"; };
+		2AE4127D214C3CB600395CD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AE412C6214C3DF300395CD5 /* AnalysisBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalysisBase.swift; sourceTree = "<group>"; };
+		2AE412C7214C3DF300395CD5 /* FileIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileIO.swift; sourceTree = "<group>"; };
+		2AE412C8214C3DF300395CD5 /* Frequencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Frequencies.swift; sourceTree = "<group>"; };
+		2AE412C9214C3DF300395CD5 /* Individual.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Individual.swift; sourceTree = "<group>"; };
+		2AE412CE214C3E3600395CD5 /* Population.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Population.swift; sourceTree = "<group>"; };
+		2AE412CF214C3E3600395CD5 /* Locus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locus.swift; sourceTree = "<group>"; };
+		2AE412D2214C410000395CD5 /* CLLocationCoordinate2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationCoordinate2D.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2AFB54E02025DC9600BBF93C /* Frameworks */ = {
+		2AE41275214C3CB600395CD5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A2B407D2027506700F61F65 /* MatrixKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2AFB54EA2025DC9600BBF93C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2AFB54EE2025DC9600BBF93C /* PopGenKit.framework in Frameworks */,
+				2A8392AE214D29E9004EE7D2 /* MatrixKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2A2B407120274EC500F61F65 /* Frameworks */ = {
+		2A8392AC214D29E8004EE7D2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2A2B40742027502800F61F65 /* MatrixKit.xcodeproj */,
+				2A8392AD214D29E9004EE7D2 /* MatrixKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2A2B40752027502800F61F65 /* Products */ = {
+		2A9E82FA214C4667005C39E1 /* Genetics */ = {
 			isa = PBXGroup;
 			children = (
-				2A2B407A2027502800F61F65 /* MatrixKit.framework */,
-				2A2B407C2027502800F61F65 /* MatrixKitTests.xctest */,
+				2AE412CF214C3E3600395CD5 /* Locus.swift */,
+				2AE412C9214C3DF300395CD5 /* Individual.swift */,
+				2AE412CE214C3E3600395CD5 /* Population.swift */,
 			);
-			name = Products;
+			path = Genetics;
 			sourceTree = "<group>";
 		};
-		2A31288F2026AEA300B3370B /* Analyses */ = {
+		2A9E82FB214C4678005C39E1 /* Analyses */ = {
 			isa = PBXGroup;
 			children = (
-				2A31288D2026A40E00B3370B /* AnalysisBase.swift */,
-				2A3128892025F1CF00B3370B /* Frequencies.swift */,
+				2AE412C6214C3DF300395CD5 /* AnalysisBase.swift */,
+				2AE412C8214C3DF300395CD5 /* Frequencies.swift */,
+				2A4E3A16214D4CE30024EAA2 /* PopulationFrequencies.swift */,
 			);
 			path = Analyses;
 			sourceTree = "<group>";
 		};
-		2A3128902026AEB200B3370B /* Genetic */ = {
+		2A9E82FC214C4685005C39E1 /* IO */ = {
 			isa = PBXGroup;
 			children = (
-				2AAB5F932029ED1600717EE5 /* VCF.swift */,
-				2AAB5F8C2029E7BD00717EE5 /* SNP.swift */,
-				2AFB55012025DD9700BBF93C /* Locus.swift */,
-				2AFB55022025DD9700BBF93C /* Individual.swift */,
-				2AFB55002025DD9700BBF93C /* Population.swift */,
-			);
-			path = Genetic;
-			sourceTree = "<group>";
-		};
-		2A3128912026AEE100B3370B /* IO */ = {
-			isa = PBXGroup;
-			children = (
-				2AFB550A2025E9D200BBF93C /* FileIO.swift */,
+				2AE412C7214C3DF300395CD5 /* FileIO.swift */,
 			);
 			path = IO;
 			sourceTree = "<group>";
 		};
-		2A3128922026AEE900B3370B /* Overloads */ = {
+		2A9E82FD214C468C005C39E1 /* Overrides */ = {
 			isa = PBXGroup;
 			children = (
-				2AFB55062025E90600BBF93C /* Array.swift */,
+				2AE412D2214C410000395CD5 /* CLLocationCoordinate2D.swift */,
 			);
-			path = Overloads;
+			path = Overrides;
 			sourceTree = "<group>";
 		};
-		2AFB54DA2025DC9600BBF93C = {
+		2AE4126F214C3CB600395CD5 = {
 			isa = PBXGroup;
 			children = (
-				2AFB54E62025DC9600BBF93C /* PopGenKit */,
-				2AFB54F12025DC9600BBF93C /* PopGenKitTests */,
-				2AFB54E52025DC9600BBF93C /* Products */,
-				2A2B407120274EC500F61F65 /* Frameworks */,
+				2AE4127B214C3CB600395CD5 /* PopGenKit */,
+				2AE4127A214C3CB600395CD5 /* Products */,
+				2A8392AC214D29E8004EE7D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		2AFB54E52025DC9600BBF93C /* Products */ = {
+		2AE4127A214C3CB600395CD5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2AFB54E42025DC9600BBF93C /* PopGenKit.framework */,
-				2AFB54ED2025DC9600BBF93C /* PopGenKitTests.xctest */,
+				2AE41279214C3CB600395CD5 /* PopGenKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2AFB54E62025DC9600BBF93C /* PopGenKit */ = {
+		2AE4127B214C3CB600395CD5 /* PopGenKit */ = {
 			isa = PBXGroup;
 			children = (
-				2A461AB02027572E000AE72E /* arapat.csv */,
-				2A31288F2026AEA300B3370B /* Analyses */,
-				2A3128902026AEB200B3370B /* Genetic */,
-				2A3128912026AEE100B3370B /* IO */,
-				2A3128922026AEE900B3370B /* Overloads */,
-				2AFB54E72025DC9600BBF93C /* PopGenKit.h */,
-				2AFB54E82025DC9600BBF93C /* Info.plist */,
+				2A9E82FE214C46CD005C39E1 /* arapat.csv */,
+				2AE4127D214C3CB600395CD5 /* Info.plist */,
+				2AE4127C214C3CB600395CD5 /* PopGenKit.h */,
+				2A9E82FA214C4667005C39E1 /* Genetics */,
+				2A9E82FB214C4678005C39E1 /* Analyses */,
+				2A9E82FC214C4685005C39E1 /* IO */,
+				2A9E82FD214C468C005C39E1 /* Overrides */,
 			);
 			path = PopGenKit;
-			sourceTree = "<group>";
-		};
-		2AFB54F12025DC9600BBF93C /* PopGenKitTests */ = {
-			isa = PBXGroup;
-			children = (
-				2AFB54F42025DC9600BBF93C /* Info.plist */,
-				2AAB5F952029F05900717EE5 /* VCFTests.swift */,
-				2AAB5F912029EA6500717EE5 /* SNPTests.swift */,
-				2A461AB520276015000AE72E /* FileIOTests.swift */,
-				2A3128962026B02800B3370B /* LocusTests.swift */,
-				2A3128982026B28F00B3370B /* IndividualTests.swift */,
-				2A31289A2026B58700B3370B /* PopulationTests.swift */,
-			);
-			path = PopGenKitTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2AFB54E12025DC9600BBF93C /* Headers */ = {
+		2AE41276214C3CB600395CD5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AFB54F52025DC9600BBF93C /* PopGenKit.h in Headers */,
+				2AE4128A214C3CB600395CD5 /* PopGenKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2AFB54E32025DC9600BBF93C /* PopGenKit */ = {
+		2AE41278214C3CB600395CD5 /* PopGenKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2AFB54F82025DC9600BBF93C /* Build configuration list for PBXNativeTarget "PopGenKit" */;
+			buildConfigurationList = 2AE4128D214C3CB600395CD5 /* Build configuration list for PBXNativeTarget "PopGenKit" */;
 			buildPhases = (
-				2AFB54DF2025DC9600BBF93C /* Sources */,
-				2AFB54E02025DC9600BBF93C /* Frameworks */,
-				2AFB54E12025DC9600BBF93C /* Headers */,
-				2AFB54E22025DC9600BBF93C /* Resources */,
+				2AE41274214C3CB600395CD5 /* Sources */,
+				2AE41275214C3CB600395CD5 /* Frameworks */,
+				2AE41276214C3CB600395CD5 /* Headers */,
+				2AE41277214C3CB600395CD5 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -235,157 +152,73 @@
 			);
 			name = PopGenKit;
 			productName = PopGenKit;
-			productReference = 2AFB54E42025DC9600BBF93C /* PopGenKit.framework */;
+			productReference = 2AE41279214C3CB600395CD5 /* PopGenKit.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		2AFB54EC2025DC9600BBF93C /* PopGenKitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2AFB54FB2025DC9600BBF93C /* Build configuration list for PBXNativeTarget "PopGenKitTests" */;
-			buildPhases = (
-				2AFB54E92025DC9600BBF93C /* Sources */,
-				2AFB54EA2025DC9600BBF93C /* Frameworks */,
-				2AFB54EB2025DC9600BBF93C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2AFB54F02025DC9600BBF93C /* PBXTargetDependency */,
-			);
-			name = PopGenKitTests;
-			productName = PopGenKitTests;
-			productReference = 2AFB54ED2025DC9600BBF93C /* PopGenKitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2AFB54DB2025DC9600BBF93C /* Project object */ = {
+		2AE41270214C3CB600395CD5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Rodney Dyer";
 				TargetAttributes = {
-					2AFB54E32025DC9600BBF93C = {
-						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 0920;
-						ProvisioningStyle = Automatic;
-					};
-					2AFB54EC2025DC9600BBF93C = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+					2AE41278214C3CB600395CD5 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
-			buildConfigurationList = 2AFB54DE2025DC9600BBF93C /* Build configuration list for PBXProject "PopGenKit" */;
-			compatibilityVersion = "Xcode 8.0";
+			buildConfigurationList = 2AE41273214C3CB600395CD5 /* Build configuration list for PBXProject "PopGenKit" */;
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 2AFB54DA2025DC9600BBF93C;
-			productRefGroup = 2AFB54E52025DC9600BBF93C /* Products */;
+			mainGroup = 2AE4126F214C3CB600395CD5;
+			productRefGroup = 2AE4127A214C3CB600395CD5 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 2A2B40752027502800F61F65 /* Products */;
-					ProjectRef = 2A2B40742027502800F61F65 /* MatrixKit.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
-				2AFB54E32025DC9600BBF93C /* PopGenKit */,
-				2AFB54EC2025DC9600BBF93C /* PopGenKitTests */,
+				2AE41278214C3CB600395CD5 /* PopGenKit */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		2A2B407A2027502800F61F65 /* MatrixKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = MatrixKit.framework;
-			remoteRef = 2A2B40792027502800F61F65 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		2A2B407C2027502800F61F65 /* MatrixKitTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = MatrixKitTests.xctest;
-			remoteRef = 2A2B407B2027502800F61F65 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
-		2AFB54E22025DC9600BBF93C /* Resources */ = {
+		2AE41277214C3CB600395CD5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A461AB32027572E000AE72E /* arapat.csv in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2AFB54EB2025DC9600BBF93C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				2A9E82FF214C46CD005C39E1 /* arapat.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2AFB54DF2025DC9600BBF93C /* Sources */ = {
+		2AE41274214C3CB600395CD5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AAB5F942029ED1600717EE5 /* VCF.swift in Sources */,
-				2AFB55052025DD9700BBF93C /* Individual.swift in Sources */,
-				2AFB55072025E90600BBF93C /* Array.swift in Sources */,
-				2AFB55042025DD9700BBF93C /* Locus.swift in Sources */,
-				2AAB5F8D2029E7BD00717EE5 /* SNP.swift in Sources */,
-				2A31288E2026A40E00B3370B /* AnalysisBase.swift in Sources */,
-				2A31288A2025F1CF00B3370B /* Frequencies.swift in Sources */,
-				2AFB550B2025E9D200BBF93C /* FileIO.swift in Sources */,
-				2AFB55032025DD9700BBF93C /* Population.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2AFB54E92025DC9600BBF93C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2A3128952026AF6400B3370B /* Locus.swift in Sources */,
-				2AC714DC202A10CA00B49AEF /* VCF.swift in Sources */,
-				2A461AB620276015000AE72E /* FileIOTests.swift in Sources */,
-				2A3128942026AF6100B3370B /* Individual.swift in Sources */,
-				2A8424A5202880730036B1CF /* Frequencies.swift in Sources */,
-				2A8424A8202883E70036B1CF /* AnalysisBase.swift in Sources */,
-				2AAB5F922029EA6500717EE5 /* SNPTests.swift in Sources */,
-				2A3128992026B28F00B3370B /* IndividualTests.swift in Sources */,
-				2AAB5F902029E7D300717EE5 /* SNP.swift in Sources */,
-				2AAB5F962029F05900717EE5 /* VCFTests.swift in Sources */,
-				2A3128972026B02800B3370B /* LocusTests.swift in Sources */,
-				2A3128932026AF4A00B3370B /* Population.swift in Sources */,
-				2A31289B2026B58700B3370B /* PopulationTests.swift in Sources */,
-				2AFB550C2025E9D200BBF93C /* FileIO.swift in Sources */,
+				2AE412D1214C3E3600395CD5 /* Locus.swift in Sources */,
+				2AE412CD214C3DF300395CD5 /* Individual.swift in Sources */,
+				2AE412CA214C3DF300395CD5 /* AnalysisBase.swift in Sources */,
+				2A4E3A17214D4CE30024EAA2 /* PopulationFrequencies.swift in Sources */,
+				2AE412CB214C3DF300395CD5 /* FileIO.swift in Sources */,
+				2AE412CC214C3DF300395CD5 /* Frequencies.swift in Sources */,
+				2AE412D0214C3E3600395CD5 /* Population.swift in Sources */,
+				2AE412D3214C410000395CD5 /* CLLocationCoordinate2D.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		2AFB54F02025DC9600BBF93C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2AFB54E32025DC9600BBF93C /* PopGenKit */;
-			targetProxy = 2AFB54EF2025DC9600BBF93C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		2AFB54F62025DC9600BBF93C /* Debug */ = {
+		2AE4128B214C3CB600395CD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -395,10 +228,12 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -406,6 +241,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -445,7 +281,7 @@
 			};
 			name = Debug;
 		};
-		2AFB54F72025DC9600BBF93C /* Release */ = {
+		2AE4128C214C3CB600395CD5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -455,10 +291,12 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -466,6 +304,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -491,13 +330,14 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		2AFB54F92025DC9600BBF93C /* Debug */ = {
+		2AE4128E214C3CB600395CD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -512,7 +352,12 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = PopGenKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dyerlab.PopGenKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -521,7 +366,7 @@
 			};
 			name = Debug;
 		};
-		2AFB54FA2025DC9600BBF93C /* Release */ = {
+		2AE4128F214C3CB600395CD5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -536,7 +381,12 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = PopGenKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dyerlab.PopGenKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -544,67 +394,28 @@
 			};
 			name = Release;
 		};
-		2AFB54FC2025DC9600BBF93C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 626QFAP74Z;
-				INFOPLIST_FILE = PopGenKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dyerlab.PopGenKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Debug;
-		};
-		2AFB54FD2025DC9600BBF93C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 626QFAP74Z;
-				INFOPLIST_FILE = PopGenKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dyerlab.PopGenKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2AFB54DE2025DC9600BBF93C /* Build configuration list for PBXProject "PopGenKit" */ = {
+		2AE41273214C3CB600395CD5 /* Build configuration list for PBXProject "PopGenKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2AFB54F62025DC9600BBF93C /* Debug */,
-				2AFB54F72025DC9600BBF93C /* Release */,
+				2AE4128B214C3CB600395CD5 /* Debug */,
+				2AE4128C214C3CB600395CD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2AFB54F82025DC9600BBF93C /* Build configuration list for PBXNativeTarget "PopGenKit" */ = {
+		2AE4128D214C3CB600395CD5 /* Build configuration list for PBXNativeTarget "PopGenKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2AFB54F92025DC9600BBF93C /* Debug */,
-				2AFB54FA2025DC9600BBF93C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2AFB54FB2025DC9600BBF93C /* Build configuration list for PBXNativeTarget "PopGenKitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2AFB54FC2025DC9600BBF93C /* Debug */,
-				2AFB54FD2025DC9600BBF93C /* Release */,
+				2AE4128E214C3CB600395CD5 /* Debug */,
+				2AE4128F214C3CB600395CD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2AFB54DB2025DC9600BBF93C /* Project object */;
+	rootObject = 2AE41270214C3CB600395CD5 /* Project object */;
 }
