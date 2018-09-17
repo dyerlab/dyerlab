@@ -9,11 +9,22 @@
 import Foundation
 
 public class Edge {
-    var neighbor: Vertex
-    var weight: Double
+    public var node1: Node
+    public var node2: Node
+    public var weight: Double
     
-    init() {
-        self.weight = 0.0
-        self.neighbor = Vertex()
+    init(node1: Node, node2: Node, weight: Double = 1.0) {
+        self.weight = weight
+        self.node1 = node1
+        self.node2 = node2
     }
 }
+
+
+extension Edge : Equatable {
+    
+    public static func ==(left: Edge, right: Edge ) -> Bool {
+        return left.node1 == right.node1 && left.node2 == right.node2
+    }
+}
+

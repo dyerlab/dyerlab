@@ -7,23 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AA56470214E7DB200462270 /* MatrixKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA5646F214E7DB200462270 /* MatrixKit.framework */; };
+		2AA56472214E7EAF00462270 /* DegreeCentrality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA56471214E7EAF00462270 /* DegreeCentrality.swift */; };
+		2AA56474214E83B700462270 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA56473214E83B700462270 /* Path.swift */; };
+		2AA56476214E842700462270 /* FloydWarshallDistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA56475214E842700462270 /* FloydWarshallDistance.swift */; };
 		2AFAAAA0214C5D3A00FCC14F /* PopGraphKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AFAAA9E214C5D3A00FCC14F /* PopGraphKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2AFAAAA7214C5FF500FCC14F /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFAAAA6214C5FF500FCC14F /* Vertex.swift */; };
+		2AFAAAA7214C5FF500FCC14F /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFAAAA6214C5FF500FCC14F /* Node.swift */; };
 		2AFAAAA9214C603600FCC14F /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFAAAA8214C603600FCC14F /* Edge.swift */; };
 		2AFAAAAB214C606A00FCC14F /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFAAAAA214C606A00FCC14F /* Graph.swift */; };
-		2AFAAAAD214C666A00FCC14F /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFAAAAC214C666A00FCC14F /* Path.swift */; };
-		2AFAAAAF214C66A900FCC14F /* Dijkstra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFAAAAE214C66A900FCC14F /* Dijkstra.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2AA5646F214E7DB200462270 /* MatrixKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MatrixKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AA56471214E7EAF00462270 /* DegreeCentrality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DegreeCentrality.swift; sourceTree = "<group>"; };
+		2AA56473214E83B700462270 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
+		2AA56475214E842700462270 /* FloydWarshallDistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloydWarshallDistance.swift; sourceTree = "<group>"; };
 		2AFAAA9B214C5D3A00FCC14F /* PopGraphKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PopGraphKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AFAAA9E214C5D3A00FCC14F /* PopGraphKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopGraphKit.h; sourceTree = "<group>"; };
 		2AFAAA9F214C5D3A00FCC14F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2AFAAAA6214C5FF500FCC14F /* Vertex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		2AFAAAA6214C5FF500FCC14F /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		2AFAAAA8214C603600FCC14F /* Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
 		2AFAAAAA214C606A00FCC14F /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
-		2AFAAAAC214C666A00FCC14F /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
-		2AFAAAAE214C66A900FCC14F /* Dijkstra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dijkstra.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AA56470214E7DB200462270 /* MatrixKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AA5646E214E7DB200462270 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2AA5646F214E7DB200462270 /* MatrixKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2AFAAA91214C5D3A00FCC14F = {
 			isa = PBXGroup;
 			children = (
 				2AFAAA9D214C5D3A00FCC14F /* PopGraphKit */,
 				2AFAAA9C214C5D3A00FCC14F /* Products */,
+				2AA5646E214E7DB200462270 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,11 +72,12 @@
 			children = (
 				2AFAAA9E214C5D3A00FCC14F /* PopGraphKit.h */,
 				2AFAAA9F214C5D3A00FCC14F /* Info.plist */,
-				2AFAAAA6214C5FF500FCC14F /* Vertex.swift */,
+				2AFAAAA6214C5FF500FCC14F /* Node.swift */,
 				2AFAAAA8214C603600FCC14F /* Edge.swift */,
 				2AFAAAAA214C606A00FCC14F /* Graph.swift */,
-				2AFAAAAC214C666A00FCC14F /* Path.swift */,
-				2AFAAAAE214C66A900FCC14F /* Dijkstra.swift */,
+				2AA56471214E7EAF00462270 /* DegreeCentrality.swift */,
+				2AA56473214E83B700462270 /* Path.swift */,
+				2AA56475214E842700462270 /* FloydWarshallDistance.swift */,
 			);
 			path = PopGraphKit;
 			sourceTree = "<group>";
@@ -146,11 +161,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AA56472214E7EAF00462270 /* DegreeCentrality.swift in Sources */,
+				2AA56476214E842700462270 /* FloydWarshallDistance.swift in Sources */,
 				2AFAAAAB214C606A00FCC14F /* Graph.swift in Sources */,
 				2AFAAAA9214C603600FCC14F /* Edge.swift in Sources */,
-				2AFAAAAD214C666A00FCC14F /* Path.swift in Sources */,
-				2AFAAAA7214C5FF500FCC14F /* Vertex.swift in Sources */,
-				2AFAAAAF214C66A900FCC14F /* Dijkstra.swift in Sources */,
+				2AA56474214E83B700462270 /* Path.swift in Sources */,
+				2AFAAAA7214C5FF500FCC14F /* Node.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

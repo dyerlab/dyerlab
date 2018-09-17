@@ -7,36 +7,47 @@
 //
 
 import Foundation
+import MatrixKit
 
 public class Graph {
-    private var vertices: Array<Vertex>
-    public var isDirected: Bool
+
+    public var nodes: [Node]
+    public var edges: [Edge]
+    public var path: String!
+    public var nodeLabels: [String] {
+        get {
+            return nodes.map { $0.label }
+        }
+    }
     
     init() {
-        vertices = Array<Vertex>()
-        isDirected = false
+        self.nodes = [Node]()
+        self.edges = [Edge]()
     }
     
-    public func addVertex( label: String ) -> Vertex {
-        let childVertex = Vertex()
-        childVertex.label = label
-        self.vertices.append(childVertex)
-        return childVertex
-    }
+}
+
+
+// MARK: Conversion Functions
+
+extension Graph {
+
     
-    public func addEdge( source: Vertex, neighbor: Vertex, weight: Double ) {
-        let newEdge = Edge()
+    public func toMatrix() -> Matrix {
+        let N = nodes.count
+        var A = Matrix(rows: N, cols: N)
         
-        newEdge.neighbor = neighbor
-        newEdge.weight = weight
-        source.neighbors.append(newEdge)
-        
-        if !isDirected {
-            let reverseEdge = Edge()
-            reverseEdge.neighbor = source
-            reverseEdge.weight = weight
-            neighbor.neighbors.append( reverseEdge )
+        for edge in self.edges {
+            
+            if let idx1 = nodes.index(of: edge.node1) {
+                if let idx2 = nodes.index(of: edge.node2) {
+                    A[idx1,idx2] = edge.weight
+                }
+            }
+            
         }
         
+        return A
     }
+    
 }

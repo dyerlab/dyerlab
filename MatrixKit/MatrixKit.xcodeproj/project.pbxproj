@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2A72F2F7214BE96A00CEC359 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A72F2F6214BE96A00CEC359 /* Matrix.swift */; };
 		2A72F2F9214BE9D200CEC359 /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A72F2F8214BE9D200CEC359 /* Vector.swift */; };
+		2AA56478214E84AC00462270 /* IdentityMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA56477214E84AC00462270 /* IdentityMatrix.swift */; };
 		2AC84CF4214BD9D900E5A226 /* MatrixKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AC84CE6214BD9D900E5A226 /* MatrixKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2AC84CFE214BDAAD00E5A226 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC84CFD214BDAAD00E5A226 /* Array.swift */; };
 /* End PBXBuildFile section */
@@ -16,6 +17,7 @@
 /* Begin PBXFileReference section */
 		2A72F2F6214BE96A00CEC359 /* Matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
 		2A72F2F8214BE9D200CEC359 /* Vector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
+		2AA56477214E84AC00462270 /* IdentityMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityMatrix.swift; sourceTree = "<group>"; };
 		2AC84CE3214BD9D900E5A226 /* MatrixKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MatrixKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AC84CE6214BD9D900E5A226 /* MatrixKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatrixKit.h; sourceTree = "<group>"; };
 		2AC84CE7214BD9D900E5A226 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				2AC84CFD214BDAAD00E5A226 /* Array.swift */,
 				2A72F2F6214BE96A00CEC359 /* Matrix.swift */,
 				2A72F2F8214BE9D200CEC359 /* Vector.swift */,
+				2AA56477214E84AC00462270 /* IdentityMatrix.swift */,
 			);
 			path = MatrixKit;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				2A72F2F7214BE96A00CEC359 /* Matrix.swift in Sources */,
 				2A72F2F9214BE9D200CEC359 /* Vector.swift in Sources */,
+				2AA56478214E84AC00462270 /* IdentityMatrix.swift in Sources */,
 				2AC84CFE214BDAAD00E5A226 /* Array.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

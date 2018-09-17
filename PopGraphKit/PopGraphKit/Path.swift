@@ -2,19 +2,18 @@
 //  Path.swift
 //  PopGraphKit
 //
-//  Created by Rodney Dyer on 9/14/18.
+//  Created by Rodney Dyer on 9/16/18.
 //  Copyright © 2018 Rodney Dyer. All rights reserved.
 //
 
 import Foundation
 
-public class Path {
-    var total: Double
-    var destination: Vertex
-    var previous: Path?
+public struct Path {
     
-    init() {
-        destination = Vertex()
-        total = 0.0
+    public var edges: [Edge]
+    
+    public init() {
+        self.edges = [Edge]()
     }
+    
 }

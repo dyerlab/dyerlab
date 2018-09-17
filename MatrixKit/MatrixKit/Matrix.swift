@@ -8,21 +8,6 @@
 
 import Foundation
 
-/**
- Produces an Identity Matrix
- 
- - Parameters:
-    - N: Number of rows and columns
- 
- - Returns: A square matrix of zeros except for down the diagonal.
- */
-public func IdentityMatrix(_ N: Int) -> Matrix {
-    var ret = Matrix(rows: N, cols: N)
-    for i in 0..<N {
-        ret[i,i] = 1.0
-    }
-    return ret
-}
 
 
 /**
@@ -33,11 +18,11 @@ public func IdentityMatrix(_ N: Int) -> Matrix {
 public struct Matrix {
     
     /// Rows in the matrix
-    let rows: Int
+    public let rows: Int
     /// Cols in the matrix
-    let cols: Int
+    public let cols: Int
     /// Values are stored as a `[Double] == Vector`
-    var values: Vector
+    public var values: Vector
     
     /// Optional value for row names
     public var rowNames: [String]
@@ -80,6 +65,22 @@ public struct Matrix {
         self.values = values
         self.rowNames = [String]()
         self.colNames = [String]()
+    }
+    
+    /**
+     Copy constructor for duplicating an instance of a matrix.
+     
+     - Parameters:
+        - matrix: An existing `Matrix` object.
+     
+     - Returns: A fully constructed `Matrix` object.
+     */
+    public init( matrix: Matrix ) {
+        self.rows = matrix.rows
+        self.cols = matrix.cols
+        self.values = Vector( matrix.values )
+        self.rowNames = matrix.rowNames
+        self.colNames = matrix.colNames
     }
     
     func validIndex( row: Int, col: Int ) -> Bool {
@@ -266,6 +267,11 @@ public extension Matrix {
         var ret = X
         ret.values = ret.values / val;
         return ret
+    }
+    
+    /// Sum the entire matrix
+    public func sum() -> Double {
+        return self.values.reduce(0.0, + )
     }
     
 }
