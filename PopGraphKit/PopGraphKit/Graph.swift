@@ -20,12 +20,44 @@ public class Graph {
         }
     }
     
-    init() {
+    public init() {
         self.nodes = [Node]()
         self.edges = [Edge]()
     }
     
+
+    
+    
+    
 }
+
+
+// MARK: Adding Nodes & Edges
+
+extension Graph {
+    
+    public func indexForNode( label: String ) -> Int! {
+        return self.nodes.lastIndex(where: { $0.label == label } )
+    }
+    
+    public func addNode( label: String ) {
+        self.nodes.append( Node(label: label) )
+    }
+    
+    public func addEdge( from: String, to: String, weight: Double = 1.0) {
+        let idx1 = indexForNode(label: from)
+        let idx2 = indexForNode(label: to )
+        
+        if idx1 != nil && idx2 != nil {
+            edges.append( Edge(node1: nodes[idx1!],
+                               node2: nodes[idx2!],
+                               weight: weight)
+            )
+        }
+    }
+}
+
+
 
 
 // MARK: Conversion Functions
@@ -51,3 +83,5 @@ extension Graph {
     }
     
 }
+
+

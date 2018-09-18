@@ -13,7 +13,7 @@ public class Edge {
     public var node2: Node
     public var weight: Double
     
-    init(node1: Node, node2: Node, weight: Double = 1.0) {
+    public init(node1: Node, node2: Node, weight: Double = 1.0) {
         self.weight = weight
         self.node1 = node1
         self.node2 = node2

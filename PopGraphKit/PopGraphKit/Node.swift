@@ -19,11 +19,10 @@ public class Node {
         }
     }
     
-    init(label: String) {
+    public init(label: String) {
         self.label = label
         self.edges = Array<Edge>()
     }
-    
     
 }
 

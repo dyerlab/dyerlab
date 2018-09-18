@@ -9,7 +9,7 @@
 import Foundation
 import MatrixKit
 
-public func floydWarshallDistance( graph: Graph ) -> Matrix {
+public func ShortestDistanceFloydWarshall( graph: Graph ) -> Matrix {
     let A = graph.toMatrix()
     let gMax = A.sum()
     let N = A.rows

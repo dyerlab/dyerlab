@@ -23,6 +23,9 @@
 		2A8392A7214D27DB004EE7D2 /* MatrixKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A8392A6214D27DB004EE7D2 /* MatrixKit.framework */; };
 		2A8392A9214D27E1004EE7D2 /* PopGraphKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A8392A8214D27E1004EE7D2 /* PopGraphKit.framework */; };
 		2A8392AB214D27EC004EE7D2 /* PopGenKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A8392AA214D27EC004EE7D2 /* PopGenKit.framework */; };
+		2AAA441D2150062900968211 /* testNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAA441C2150062900968211 /* testNode.swift */; };
+		2AF840B8215194E60031A7B2 /* testEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF840B7215194E60031A7B2 /* testEdge.swift */; };
+		2AF840BA2151953D0031A7B2 /* testGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF840B92151953D0031A7B2 /* testGraph.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		2A8392A6214D27DB004EE7D2 /* MatrixKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MatrixKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A8392A8214D27E1004EE7D2 /* PopGraphKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PopGraphKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A8392AA214D27EC004EE7D2 /* PopGenKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PopGenKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AAA441C2150062900968211 /* testNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testNode.swift; sourceTree = "<group>"; };
+		2AF840B7215194E60031A7B2 /* testEdge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testEdge.swift; sourceTree = "<group>"; };
+		2AF840B92151953D0031A7B2 /* testGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testGraph.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +73,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A8392AB214D27EC004EE7D2 /* PopGenKit.framework in Frameworks */,
-				2A8392A9214D27E1004EE7D2 /* PopGraphKit.framework in Frameworks */,
 				2A8392A7214D27DB004EE7D2 /* MatrixKit.framework in Frameworks */,
+				2A8392A9214D27E1004EE7D2 /* PopGraphKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +134,9 @@
 				2A4E3A10214D3B9A0024EAA2 /* testPopulation.swift */,
 				2A4E3A12214D42870024EAA2 /* testPopGenKitFileIO.swift */,
 				2A4E3A14214D49770024EAA2 /* testFrequencies.swift */,
+				2AAA441C2150062900968211 /* testNode.swift */,
+				2AF840B7215194E60031A7B2 /* testEdge.swift */,
+				2AF840B92151953D0031A7B2 /* testGraph.swift */,
 			);
 			path = DyerlabTestingSuiteTests;
 			sourceTree = "<group>";
@@ -201,9 +210,11 @@
 				TargetAttributes = {
 					2A83926D214D2761004EE7D2 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 					2A83927F214D2762004EE7D2 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 						TestTargetID = 2A83926D214D2761004EE7D2;
 					};
 				};
@@ -265,10 +276,13 @@
 				2A8392A0214D279D004EE7D2 /* testVector.swift in Sources */,
 				2A4E3A15214D49770024EAA2 /* testFrequencies.swift in Sources */,
 				2A4E3A11214D3B9A0024EAA2 /* testPopulation.swift in Sources */,
+				2AAA441D2150062900968211 /* testNode.swift in Sources */,
 				2A8392A4214D27AA004EE7D2 /* testLocus.swift in Sources */,
 				2A4E3A13214D42870024EAA2 /* testPopGenKitFileIO.swift in Sources */,
+				2AF840BA2151953D0031A7B2 /* testGraph.swift in Sources */,
 				2A4E3A0F214D2DF60024EAA2 /* testIndividual.swift in Sources */,
 				2A839285214D2762004EE7D2 /* DyerlabTestingSuiteTests.swift in Sources */,
+				2AF840B8215194E60031A7B2 /* testEdge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,7 +437,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dyerlab.DyerlabTestingSuite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -443,7 +457,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dyerlab.DyerlabTestingSuite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -464,7 +478,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dyerlab.DyerlabTestingSuiteTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DyerlabTestingSuite.app/Contents/MacOS/DyerlabTestingSuite";
 			};
 			name = Debug;
@@ -486,7 +500,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dyerlab.DyerlabTestingSuiteTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DyerlabTestingSuite.app/Contents/MacOS/DyerlabTestingSuite";
 			};
 			name = Release;
