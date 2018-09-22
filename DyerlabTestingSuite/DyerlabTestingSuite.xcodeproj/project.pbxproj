@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A3287532152B1BB0026002D /* testShortestDistances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3287522152B1BB0026002D /* testShortestDistances.swift */; };
+		2A3287552152B6AA0026002D /* testCentrality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3287542152B6AA0026002D /* testCentrality.swift */; };
 		2A4E3A0F214D2DF60024EAA2 /* testIndividual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4E3A0E214D2DF60024EAA2 /* testIndividual.swift */; };
 		2A4E3A11214D3B9A0024EAA2 /* testPopulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4E3A10214D3B9A0024EAA2 /* testPopulation.swift */; };
 		2A4E3A13214D42870024EAA2 /* testPopGenKitFileIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4E3A12214D42870024EAA2 /* testPopGenKitFileIO.swift */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A3287522152B1BB0026002D /* testShortestDistances.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testShortestDistances.swift; sourceTree = "<group>"; };
+		2A3287542152B6AA0026002D /* testCentrality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testCentrality.swift; sourceTree = "<group>"; };
 		2A4E3A0E214D2DF60024EAA2 /* testIndividual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testIndividual.swift; sourceTree = "<group>"; };
 		2A4E3A10214D3B9A0024EAA2 /* testPopulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testPopulation.swift; sourceTree = "<group>"; };
 		2A4E3A12214D42870024EAA2 /* testPopGenKitFileIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testPopGenKitFileIO.swift; sourceTree = "<group>"; };
@@ -95,7 +99,6 @@
 				2A839283214D2762004EE7D2 /* DyerlabTestingSuiteTests */,
 				2A83928E214D2762004EE7D2 /* DyerlabTestingSuiteUITests */,
 				2A83926F214D2761004EE7D2 /* Products */,
-				2A8392A5214D27DA004EE7D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +140,8 @@
 				2AAA441C2150062900968211 /* testNode.swift */,
 				2AF840B7215194E60031A7B2 /* testEdge.swift */,
 				2AF840B92151953D0031A7B2 /* testGraph.swift */,
+				2A3287522152B1BB0026002D /* testShortestDistances.swift */,
+				2A3287542152B6AA0026002D /* testCentrality.swift */,
 			);
 			path = DyerlabTestingSuiteTests;
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 		2A83928E214D2762004EE7D2 /* DyerlabTestingSuiteUITests */ = {
 			isa = PBXGroup;
 			children = (
+				2A8392A5214D27DA004EE7D2 /* Frameworks */,
 				2A83928F214D2762004EE7D2 /* DyerlabTestingSuiteUITests.swift */,
 				2A839291214D2762004EE7D2 /* Info.plist */,
 			);
@@ -158,6 +164,7 @@
 				2A8392A8214D27E1004EE7D2 /* PopGraphKit.framework */,
 			);
 			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,9 +286,11 @@
 				2AAA441D2150062900968211 /* testNode.swift in Sources */,
 				2A8392A4214D27AA004EE7D2 /* testLocus.swift in Sources */,
 				2A4E3A13214D42870024EAA2 /* testPopGenKitFileIO.swift in Sources */,
+				2A3287532152B1BB0026002D /* testShortestDistances.swift in Sources */,
 				2AF840BA2151953D0031A7B2 /* testGraph.swift in Sources */,
 				2A4E3A0F214D2DF60024EAA2 /* testIndividual.swift in Sources */,
 				2A839285214D2762004EE7D2 /* DyerlabTestingSuiteTests.swift in Sources */,
+				2A3287552152B6AA0026002D /* testCentrality.swift in Sources */,
 				2AF840B8215194E60031A7B2 /* testEdge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

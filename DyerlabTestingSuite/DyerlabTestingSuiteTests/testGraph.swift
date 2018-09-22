@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import MatrixKit
 import PopGraphKit
 
 class testGraph: XCTestCase {
@@ -30,8 +31,26 @@ class testGraph: XCTestCase {
         G.addEdge(from: "Bob", to: "Alice" )
         G.addEdge(from: "Bob", to: "Susan" )
         G.addEdge(from: "Susan", to: "Alice" )
-        G.addEdge(from: "David", to: "Susan" )
+        G.addEdge(from: "David", to: "Susan", weight: 2.0 )
         
+        XCTAssertEqual(G.indexForNode(label: "Bob")!, 0)
+        XCTAssertEqual(G.indexForNode(label: "Susan")!, 2)
+        
+        let A = G.toMatrix()
+        XCTAssertEqual(A.cols, A.rows)
+        XCTAssertEqual(A.cols, 4)
+        
+        var B = Matrix(rows: 4, cols: 4)
+        B[0,1] = 1.0
+        B[1,0] = 1.0
+        B[0,2] = 1.0
+        B[2,0] = 1.0
+        B[1,2] = 1.0
+        B[2,1] = 1.0
+        B[2,3] = 2.0
+        B[3,2] = 2.0
+        
+        XCTAssertEqual(A,B)
         
     }
 

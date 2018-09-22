@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2AA85FCF2156D8A600DA17B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA85FCE2156D8A600DA17B8 /* AppDelegate.swift */; };
+		2AA85FD12156D8A600DA17B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA85FD02156D8A600DA17B8 /* ViewController.swift */; };
+		2AA85FD32156D8A600DA17B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AA85FD22156D8A600DA17B8 /* Assets.xcassets */; };
+		2AA85FD62156D8A600DA17B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AA85FD42156D8A600DA17B8 /* Main.storyboard */; };
+		2AA85FE22156D8A700DA17B8 /* GeneticStudioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA85FE12156D8A700DA17B8 /* GeneticStudioTests.swift */; };
+		2AA85FED2156D8A700DA17B8 /* GeneticStudioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA85FEC2156D8A700DA17B8 /* GeneticStudioUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2AA85FDE2156D8A700DA17B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AA85FC32156D8A600DA17B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AA85FCA2156D8A600DA17B8;
+			remoteInfo = GeneticStudio;
+		};
+		2AA85FE92156D8A700DA17B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AA85FC32156D8A600DA17B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AA85FCA2156D8A600DA17B8;
+			remoteInfo = GeneticStudio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2AA85FCB2156D8A600DA17B8 /* GeneticStudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeneticStudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AA85FCE2156D8A600DA17B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2AA85FD02156D8A600DA17B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2AA85FD22156D8A600DA17B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2AA85FD52156D8A600DA17B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2AA85FD72156D8A600DA17B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AA85FD82156D8A600DA17B8 /* GeneticStudio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GeneticStudio.entitlements; sourceTree = "<group>"; };
+		2AA85FDD2156D8A700DA17B8 /* GeneticStudioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeneticStudioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AA85FE12156D8A700DA17B8 /* GeneticStudioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneticStudioTests.swift; sourceTree = "<group>"; };
+		2AA85FE32156D8A700DA17B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AA85FE82156D8A700DA17B8 /* GeneticStudioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeneticStudioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AA85FEC2156D8A700DA17B8 /* GeneticStudioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneticStudioUITests.swift; sourceTree = "<group>"; };
+		2AA85FEE2156D8A700DA17B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2AA85FC82156D8A600DA17B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AA85FDA2156D8A700DA17B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AA85FE52156D8A700DA17B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2AA85FC22156D8A600DA17B8 = {
+			isa = PBXGroup;
+			children = (
+				2AA85FCD2156D8A600DA17B8 /* GeneticStudio */,
+				2AA85FE02156D8A700DA17B8 /* GeneticStudioTests */,
+				2AA85FEB2156D8A700DA17B8 /* GeneticStudioUITests */,
+				2AA85FCC2156D8A600DA17B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2AA85FCC2156D8A600DA17B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AA85FCB2156D8A600DA17B8 /* GeneticStudio.app */,
+				2AA85FDD2156D8A700DA17B8 /* GeneticStudioTests.xctest */,
+				2AA85FE82156D8A700DA17B8 /* GeneticStudioUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2AA85FCD2156D8A600DA17B8 /* GeneticStudio */ = {
+			isa = PBXGroup;
+			children = (
+				2AA85FCE2156D8A600DA17B8 /* AppDelegate.swift */,
+				2AA85FD02156D8A600DA17B8 /* ViewController.swift */,
+				2AA85FD22156D8A600DA17B8 /* Assets.xcassets */,
+				2AA85FD42156D8A600DA17B8 /* Main.storyboard */,
+				2AA85FD72156D8A600DA17B8 /* Info.plist */,
+				2AA85FD82156D8A600DA17B8 /* GeneticStudio.entitlements */,
+			);
+			path = GeneticStudio;
+			sourceTree = "<group>";
+		};
+		2AA85FE02156D8A700DA17B8 /* GeneticStudioTests */ = {
+			isa = PBXGroup;
+			children = (
+				2AA85FE12156D8A700DA17B8 /* GeneticStudioTests.swift */,
+				2AA85FE32156D8A700DA17B8 /* Info.plist */,
+			);
+			path = GeneticStudioTests;
+			sourceTree = "<group>";
+		};
+		2AA85FEB2156D8A700DA17B8 /* GeneticStudioUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2AA85FEC2156D8A700DA17B8 /* GeneticStudioUITests.swift */,
+				2AA85FEE2156D8A700DA17B8 /* Info.plist */,
+			);
+			path = GeneticStudioUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2AA85FCA2156D8A600DA17B8 /* GeneticStudio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AA85FF12156D8A700DA17B8 /* Build configuration list for PBXNativeTarget "GeneticStudio" */;
+			buildPhases = (
+				2AA85FC72156D8A600DA17B8 /* Sources */,
+				2AA85FC82156D8A600DA17B8 /* Frameworks */,
+				2AA85FC92156D8A600DA17B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeneticStudio;
+			productName = GeneticStudio;
+			productReference = 2AA85FCB2156D8A600DA17B8 /* GeneticStudio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2AA85FDC2156D8A700DA17B8 /* GeneticStudioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AA85FF42156D8A700DA17B8 /* Build configuration list for PBXNativeTarget "GeneticStudioTests" */;
+			buildPhases = (
+				2AA85FD92156D8A700DA17B8 /* Sources */,
+				2AA85FDA2156D8A700DA17B8 /* Frameworks */,
+				2AA85FDB2156D8A700DA17B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AA85FDF2156D8A700DA17B8 /* PBXTargetDependency */,
+			);
+			name = GeneticStudioTests;
+			productName = GeneticStudioTests;
+			productReference = 2AA85FDD2156D8A700DA17B8 /* GeneticStudioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2AA85FE72156D8A700DA17B8 /* GeneticStudioUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AA85FF72156D8A700DA17B8 /* Build configuration list for PBXNativeTarget "GeneticStudioUITests" */;
+			buildPhases = (
+				2AA85FE42156D8A700DA17B8 /* Sources */,
+				2AA85FE52156D8A700DA17B8 /* Frameworks */,
+				2AA85FE62156D8A700DA17B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AA85FEA2156D8A700DA17B8 /* PBXTargetDependency */,
+			);
+			name = GeneticStudioUITests;
+			productName = GeneticStudioUITests;
+			productReference = 2AA85FE82156D8A700DA17B8 /* GeneticStudioUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2AA85FC32156D8A600DA17B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Rodney Dyer";
+				TargetAttributes = {
+					2AA85FCA2156D8A600DA17B8 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					2AA85FDC2156D8A700DA17B8 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 2AA85FCA2156D8A600DA17B8;
+					};
+					2AA85FE72156D8A700DA17B8 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 2AA85FCA2156D8A600DA17B8;
+					};
+				};
+			};
+			buildConfigurationList = 2AA85FC62156D8A600DA17B8 /* Build configuration list for PBXProject "GeneticStudio" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2AA85FC22156D8A600DA17B8;
+			productRefGroup = 2AA85FCC2156D8A600DA17B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2AA85FCA2156D8A600DA17B8 /* GeneticStudio */,
+				2AA85FDC2156D8A700DA17B8 /* GeneticStudioTests */,
+				2AA85FE72156D8A700DA17B8 /* GeneticStudioUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2AA85FC92156D8A600DA17B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AA85FD32156D8A600DA17B8 /* Assets.xcassets in Resources */,
+				2AA85FD62156D8A600DA17B8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AA85FDB2156D8A700DA17B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AA85FE62156D8A700DA17B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2AA85FC72156D8A600DA17B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AA85FD12156D8A600DA17B8 /* ViewController.swift in Sources */,
+				2AA85FCF2156D8A600DA17B8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AA85FD92156D8A700DA17B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AA85FE22156D8A700DA17B8 /* GeneticStudioTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AA85FE42156D8A700DA17B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AA85FED2156D8A700DA17B8 /* GeneticStudioUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2AA85FDF2156D8A700DA17B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AA85FCA2156D8A600DA17B8 /* GeneticStudio */;
+			targetProxy = 2AA85FDE2156D8A700DA17B8 /* PBXContainerItemProxy */;
+		};
+		2AA85FEA2156D8A700DA17B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AA85FCA2156D8A600DA17B8 /* GeneticStudio */;
+			targetProxy = 2AA85FE92156D8A700DA17B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2AA85FD42156D8A600DA17B8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2AA85FD52156D8A600DA17B8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2AA85FEF2156D8A700DA17B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2AA85FF02156D8A700DA17B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		2AA85FF22156D8A700DA17B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GeneticStudio/GeneticStudio.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 626QFAP74Z;
+				INFOPLIST_FILE = GeneticStudio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dyerlab.GeneticStudio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		2AA85FF32156D8A700DA17B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GeneticStudio/GeneticStudio.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 626QFAP74Z;
+				INFOPLIST_FILE = GeneticStudio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dyerlab.GeneticStudio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		2AA85FF52156D8A700DA17B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 626QFAP74Z;
+				INFOPLIST_FILE = GeneticStudioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dyerlab.GeneticStudioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeneticStudio.app/Contents/MacOS/GeneticStudio";
+			};
+			name = Debug;
+		};
+		2AA85FF62156D8A700DA17B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 626QFAP74Z;
+				INFOPLIST_FILE = GeneticStudioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dyerlab.GeneticStudioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeneticStudio.app/Contents/MacOS/GeneticStudio";
+			};
+			name = Release;
+		};
+		2AA85FF82156D8A700DA17B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 626QFAP74Z;
+				INFOPLIST_FILE = GeneticStudioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dyerlab.GeneticStudioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = GeneticStudio;
+			};
+			name = Debug;
+		};
+		2AA85FF92156D8A700DA17B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 626QFAP74Z;
+				INFOPLIST_FILE = GeneticStudioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dyerlab.GeneticStudioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = GeneticStudio;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2AA85FC62156D8A600DA17B8 /* Build configuration list for PBXProject "GeneticStudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AA85FEF2156D8A700DA17B8 /* Debug */,
+				2AA85FF02156D8A700DA17B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AA85FF12156D8A700DA17B8 /* Build configuration list for PBXNativeTarget "GeneticStudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AA85FF22156D8A700DA17B8 /* Debug */,
+				2AA85FF32156D8A700DA17B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AA85FF42156D8A700DA17B8 /* Build configuration list for PBXNativeTarget "GeneticStudioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AA85FF52156D8A700DA17B8 /* Debug */,
+				2AA85FF62156D8A700DA17B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AA85FF72156D8A700DA17B8 /* Build configuration list for PBXNativeTarget "GeneticStudioUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AA85FF82156D8A700DA17B8 /* Debug */,
+				2AA85FF92156D8A700DA17B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2AA85FC32156D8A600DA17B8 /* Project object */;
+}

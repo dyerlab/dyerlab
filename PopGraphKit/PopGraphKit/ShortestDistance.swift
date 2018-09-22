@@ -14,15 +14,21 @@ public func ShortestDistanceFloydWarshall( graph: Graph ) -> Matrix {
     let gMax = A.sum()
     let N = A.rows
     var D = Matrix(rows: N, cols: N)
-
+    
     D.values = A.values.map { $0 == 0 ? gMax : $0}
+    D.colNames = A.colNames
     
     for k in 0..<N {
         for i in 0..<N {
             for j in 0..<N {
-                let newDist = D[i,k] + D[k,j]
-                if newDist < gMax {
-                    D[i,j] = D[i,j] < gMax ? min( D[i,j], newDist ) : newDist
+                if i != j {
+                    let newDist = D[i,k] + D[k,j]
+                    if newDist < gMax  {
+                        D[i,j] = D[i,j] < gMax ? min( D[i,j], newDist ) : newDist
+                    }
+                }
+                else {
+                    D[i,j] = 0.0
                 }
             }
         }

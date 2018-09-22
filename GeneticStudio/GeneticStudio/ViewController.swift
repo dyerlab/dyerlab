@@ -1,25 +1,19 @@
 //
 //  ViewController.swift
-//  DyerlabTestingSuite
+//  GeneticStudio
 //
-//  Created by Rodney Dyer on 9/15/18.
+//  Created by Rodney Dyer on 9/22/18.
 //  Copyright © 2018 Rodney Dyer. All rights reserved.
 //
 
 import Cocoa
-import SceneKit
-import PopGraphKit
 
 class ViewController: NSViewController {
 
-    @IBOutlet var SceneView: SCNView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        SceneView.backgroundColor = NSColor.black
-        print("in vdl")
-        
+        // Do any additional setup after loading the view.
     }
 
     override var representedObject: Any? {

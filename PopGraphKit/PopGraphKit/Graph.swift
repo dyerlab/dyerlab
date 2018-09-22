@@ -25,10 +25,6 @@ public class Graph {
         self.edges = [Edge]()
     }
     
-
-    
-    
-    
 }
 
 
@@ -49,10 +45,13 @@ extension Graph {
         let idx2 = indexForNode(label: to )
         
         if idx1 != nil && idx2 != nil {
-            edges.append( Edge(node1: nodes[idx1!],
-                               node2: nodes[idx2!],
-                               weight: weight)
-            )
+            let edge = Edge(node1: nodes[idx1!],
+                            node2: nodes[idx2!],
+                            weight: weight)
+            nodes[idx1!].edges.append(edge)
+            nodes[idx2!].edges.append(edge)
+            edges.append( edge )
+            
         }
     }
 }
@@ -74,11 +73,13 @@ extension Graph {
             if let idx1 = nodes.index(of: edge.node1) {
                 if let idx2 = nodes.index(of: edge.node2) {
                     A[idx1,idx2] = edge.weight
+                    A[idx2,idx1] = edge.weight
                 }
             }
-            
         }
         
+        A.colNames = self.nodeLabels
+        A.rowNames = self.nodeLabels
         return A
     }
     
