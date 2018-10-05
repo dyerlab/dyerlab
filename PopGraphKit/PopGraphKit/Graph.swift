@@ -25,6 +25,28 @@ public class Graph {
         self.edges = [Edge]()
     }
     
+    public init(adjacency: Matrix) {
+        self.nodes = [Node]()
+        self.edges = [Edge]()
+        let N = adjacency.rows
+        if adjacency.colNames.count == N {
+            
+            for label in adjacency.colNames {
+                nodes.append( Node(label: label) )
+            }
+
+            for i in 0..<N {
+                for j in (i+1)..<N {
+                    if adjacency[i,j] != 0 {
+                        addEdge(from: adjacency.colNames[i],
+                                to: adjacency.colNames[j],
+                                weight: adjacency[i,j])
+                    }
+                }
+            }
+        }
+    }
+    
 }
 
 
@@ -82,6 +104,8 @@ extension Graph {
         A.rowNames = self.nodeLabels
         return A
     }
+    
+    
     
 }
 

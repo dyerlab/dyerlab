@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A2663022155793000F0A5BD /* PopGraphScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2663012155793000F0A5BD /* PopGraphScene.swift */; };
-		2A2663042155796700F0A5BD /* PopGraphNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2663032155796700F0A5BD /* PopGraphNode.swift */; };
+		2A762C1B2159415D00D9D5E7 /* LophoGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A762C1A2159415D00D9D5E7 /* LophoGraph.swift */; };
+		2A762C1E215959C700D9D5E7 /* LayoutFR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A762C1D215959C700D9D5E7 /* LayoutFR.swift */; };
+		2A79FFD9215D2AFD008A47EA /* HumanGraph.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A79FFD8215D2AFD008A47EA /* HumanGraph.json */; };
 		2AA56472214E7EAF00462270 /* Centrality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA56471214E7EAF00462270 /* Centrality.swift */; };
 		2AA56474214E83B700462270 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA56473214E83B700462270 /* Path.swift */; };
 		2AA56476214E842700462270 /* ShortestDistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA56475214E842700462270 /* ShortestDistance.swift */; };
-		2AA860392156E3BC00DA17B8 /* PopGraphKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AFAAA9B214C5D3A00FCC14F /* PopGraphKit.framework */; };
 		2AA860402156E3D900DA17B8 /* MatrixKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA8603F2156E3CB00DA17B8 /* MatrixKit.framework */; };
 		2AFAAAA0214C5D3A00FCC14F /* PopGraphKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AFAAA9E214C5D3A00FCC14F /* PopGraphKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2AFAAAA7214C5FF500FCC14F /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFAAAA6214C5FF500FCC14F /* Node.swift */; };
@@ -31,8 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2A2663012155793000F0A5BD /* PopGraphScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopGraphScene.swift; sourceTree = "<group>"; };
-		2A2663032155796700F0A5BD /* PopGraphNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopGraphNode.swift; sourceTree = "<group>"; };
+		2A762C1A2159415D00D9D5E7 /* LophoGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LophoGraph.swift; sourceTree = "<group>"; };
+		2A762C1D215959C700D9D5E7 /* LayoutFR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutFR.swift; sourceTree = "<group>"; };
+		2A79FFD8215D2AFD008A47EA /* HumanGraph.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HumanGraph.json; sourceTree = "<group>"; };
 		2AA5646F214E7DB200462270 /* MatrixKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MatrixKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AA56471214E7EAF00462270 /* Centrality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Centrality.swift; sourceTree = "<group>"; };
 		2AA56473214E83B700462270 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
@@ -51,7 +52,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AA860392156E3BC00DA17B8 /* PopGraphKit.framework in Frameworks */,
 				2AA860402156E3D900DA17B8 /* MatrixKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,6 +96,7 @@
 		2AFAAA9D214C5D3A00FCC14F /* PopGraphKit */ = {
 			isa = PBXGroup;
 			children = (
+				2A79FFD8215D2AFD008A47EA /* HumanGraph.json */,
 				2AFAAA9E214C5D3A00FCC14F /* PopGraphKit.h */,
 				2AFAAA9F214C5D3A00FCC14F /* Info.plist */,
 				2AFAAAA6214C5FF500FCC14F /* Node.swift */,
@@ -104,8 +105,8 @@
 				2AA56471214E7EAF00462270 /* Centrality.swift */,
 				2AA56473214E83B700462270 /* Path.swift */,
 				2AA56475214E842700462270 /* ShortestDistance.swift */,
-				2A2663012155793000F0A5BD /* PopGraphScene.swift */,
-				2A2663032155796700F0A5BD /* PopGraphNode.swift */,
+				2A762C1A2159415D00D9D5E7 /* LophoGraph.swift */,
+				2A762C1D215959C700D9D5E7 /* LayoutFR.swift */,
 			);
 			path = PopGraphKit;
 			sourceTree = "<group>";
@@ -195,6 +196,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A79FFD9215D2AFD008A47EA /* HumanGraph.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,13 +208,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AA56472214E7EAF00462270 /* Centrality.swift in Sources */,
-				2A2663022155793000F0A5BD /* PopGraphScene.swift in Sources */,
 				2AA56476214E842700462270 /* ShortestDistance.swift in Sources */,
+				2A762C1B2159415D00D9D5E7 /* LophoGraph.swift in Sources */,
 				2AFAAAAB214C606A00FCC14F /* Graph.swift in Sources */,
 				2AFAAAA9214C603600FCC14F /* Edge.swift in Sources */,
 				2AA56474214E83B700462270 /* Path.swift in Sources */,
-				2A2663042155796700F0A5BD /* PopGraphNode.swift in Sources */,
 				2AFAAAA7214C5FF500FCC14F /* Node.swift in Sources */,
+				2A762C1E215959C700D9D5E7 /* LayoutFR.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

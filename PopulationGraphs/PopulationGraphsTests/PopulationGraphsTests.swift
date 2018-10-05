@@ -1,15 +1,15 @@
 //
-//  GeneticStudioTests.swift
-//  GeneticStudioTests
+//  PopulationGraphsTests.swift
+//  PopulationGraphsTests
 //
-//  Created by Rodney Dyer on 9/27/18.
+//  Created by Rodney Dyer on 9/22/18.
 //  Copyright © 2018 Rodney Dyer. All rights reserved.
 //
 
 import XCTest
-@testable import GeneticStudio
+@testable import PopulationGraphs
 
-class GeneticStudioTests: XCTestCase {
+class PopulationGraphsTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

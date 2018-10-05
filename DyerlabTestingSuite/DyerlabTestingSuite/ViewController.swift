@@ -17,7 +17,6 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        SceneView.backgroundColor = NSColor.black
         print("in vdl")
         
     }

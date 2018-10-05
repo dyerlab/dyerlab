@@ -5,6 +5,9 @@
       location = "group:GeneticStudio/GeneticStudio.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:PopulationGraphs/PopulationGraphs.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:DyerlabTestingSuite/DyerlabTestingSuite.xcodeproj">
    </FileRef>
    <FileRef

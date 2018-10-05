@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  GeneticStudio
+//  PopulationGraphs
 //
-//  Created by Rodney Dyer on 9/27/18.
+//  Created by Rodney Dyer on 9/22/18.
 //  Copyright © 2018 Rodney Dyer. All rights reserved.
 //
 
@@ -22,5 +22,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
 
+    func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
+        return true
+    }
 }
 

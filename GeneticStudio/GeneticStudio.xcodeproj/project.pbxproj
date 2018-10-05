@@ -7,63 +7,83 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2AA85FCF2156D8A600DA17B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA85FCE2156D8A600DA17B8 /* AppDelegate.swift */; };
-		2AA85FD12156D8A600DA17B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA85FD02156D8A600DA17B8 /* ViewController.swift */; };
-		2AA85FD32156D8A600DA17B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AA85FD22156D8A600DA17B8 /* Assets.xcassets */; };
-		2AA85FD62156D8A600DA17B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AA85FD42156D8A600DA17B8 /* Main.storyboard */; };
-		2AA85FE22156D8A700DA17B8 /* GeneticStudioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA85FE12156D8A700DA17B8 /* GeneticStudioTests.swift */; };
-		2AA85FED2156D8A700DA17B8 /* GeneticStudioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA85FEC2156D8A700DA17B8 /* GeneticStudioUITests.swift */; };
+		2A5F5AB8215D2DDE00F7A937 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5F5AB7215D2DDE00F7A937 /* AppDelegate.swift */; };
+		2A5F5ABC215D2DDE00F7A937 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A5F5ABB215D2DDE00F7A937 /* Assets.xcassets */; };
+		2A5F5ABF215D2DDE00F7A937 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A5F5ABD215D2DDE00F7A937 /* Main.storyboard */; };
+		2A5F5ACB215D2DDE00F7A937 /* GeneticStudioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5F5ACA215D2DDE00F7A937 /* GeneticStudioTests.swift */; };
+		2A5F5AD6215D2DDE00F7A937 /* GeneticStudioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5F5AD5215D2DDE00F7A937 /* GeneticStudioUITests.swift */; };
+		2A5F5AE8215D2EF100F7A937 /* PopGenKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5F5AE7215D2EF100F7A937 /* PopGenKit.framework */; };
+		2A5F5AEA215D2EFB00F7A937 /* MatrixKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5F5AE9215D2EFB00F7A937 /* MatrixKit.framework */; };
+		2A5F5AEC215D2FC400F7A937 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5F5AEB215D2FC400F7A937 /* MainWindowController.swift */; };
+		2A5F5AF1215D367200F7A937 /* SideBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A5F5AF0215D367200F7A937 /* SideBar.xib */; };
+		2A5F5AF3215D50F000F7A937 /* SidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5F5AF2215D50F000F7A937 /* SidebarViewController.swift */; };
+		2A89B0072167894C00979265 /* GenotypeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A89B0062167894C00979265 /* GenotypeTable.swift */; };
+		2AC80AE62166335400B4BFC4 /* GenotypeTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AC80AE52166335400B4BFC4 /* GenotypeTable.xib */; };
+		2AC80AE92166336D00B4BFC4 /* GenotypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC80AE82166336D00B4BFC4 /* GenotypeTableViewController.swift */; };
+		2AC80AEB2167804000B4BFC4 /* SideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC80AEA2167804000B4BFC4 /* SideBar.swift */; };
+		2AC80AED216782E100B4BFC4 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC80AEC216782E100B4BFC4 /* NibLoadable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2AA85FDE2156D8A700DA17B8 /* PBXContainerItemProxy */ = {
+		2A5F5AC7215D2DDE00F7A937 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2AA85FC32156D8A600DA17B8 /* Project object */;
+			containerPortal = 2A5F5AAC215D2DDE00F7A937 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2AA85FCA2156D8A600DA17B8;
+			remoteGlobalIDString = 2A5F5AB3215D2DDE00F7A937;
 			remoteInfo = GeneticStudio;
 		};
-		2AA85FE92156D8A700DA17B8 /* PBXContainerItemProxy */ = {
+		2A5F5AD2215D2DDE00F7A937 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2AA85FC32156D8A600DA17B8 /* Project object */;
+			containerPortal = 2A5F5AAC215D2DDE00F7A937 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2AA85FCA2156D8A600DA17B8;
+			remoteGlobalIDString = 2A5F5AB3215D2DDE00F7A937;
 			remoteInfo = GeneticStudio;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2AA85FCB2156D8A600DA17B8 /* GeneticStudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeneticStudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2AA85FCE2156D8A600DA17B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2AA85FD02156D8A600DA17B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2AA85FD22156D8A600DA17B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2AA85FD52156D8A600DA17B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2AA85FD72156D8A600DA17B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2AA85FD82156D8A600DA17B8 /* GeneticStudio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GeneticStudio.entitlements; sourceTree = "<group>"; };
-		2AA85FDD2156D8A700DA17B8 /* GeneticStudioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeneticStudioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2AA85FE12156D8A700DA17B8 /* GeneticStudioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneticStudioTests.swift; sourceTree = "<group>"; };
-		2AA85FE32156D8A700DA17B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2AA85FE82156D8A700DA17B8 /* GeneticStudioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeneticStudioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2AA85FEC2156D8A700DA17B8 /* GeneticStudioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneticStudioUITests.swift; sourceTree = "<group>"; };
-		2AA85FEE2156D8A700DA17B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A5F5AB4215D2DDE00F7A937 /* GeneticStudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeneticStudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A5F5AB7215D2DDE00F7A937 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2A5F5ABB215D2DDE00F7A937 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A5F5ABE215D2DDE00F7A937 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2A5F5AC0215D2DDE00F7A937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A5F5AC1215D2DDE00F7A937 /* GeneticStudio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GeneticStudio.entitlements; sourceTree = "<group>"; };
+		2A5F5AC6215D2DDE00F7A937 /* GeneticStudioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeneticStudioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A5F5ACA215D2DDE00F7A937 /* GeneticStudioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneticStudioTests.swift; sourceTree = "<group>"; };
+		2A5F5ACC215D2DDE00F7A937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A5F5AD1215D2DDE00F7A937 /* GeneticStudioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeneticStudioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A5F5AD5215D2DDE00F7A937 /* GeneticStudioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneticStudioUITests.swift; sourceTree = "<group>"; };
+		2A5F5AD7215D2DDE00F7A937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A5F5AE7215D2EF100F7A937 /* PopGenKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PopGenKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A5F5AE9215D2EFB00F7A937 /* MatrixKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MatrixKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A5F5AEB215D2FC400F7A937 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		2A5F5AF0215D367200F7A937 /* SideBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideBar.xib; sourceTree = "<group>"; };
+		2A5F5AF2215D50F000F7A937 /* SidebarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewController.swift; sourceTree = "<group>"; };
+		2A89B0062167894C00979265 /* GenotypeTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenotypeTable.swift; sourceTree = "<group>"; };
+		2AC80AE52166335400B4BFC4 /* GenotypeTable.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenotypeTable.xib; sourceTree = "<group>"; };
+		2AC80AE82166336D00B4BFC4 /* GenotypeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenotypeTableViewController.swift; sourceTree = "<group>"; };
+		2AC80AEA2167804000B4BFC4 /* SideBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBar.swift; sourceTree = "<group>"; };
+		2AC80AEC216782E100B4BFC4 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2AA85FC82156D8A600DA17B8 /* Frameworks */ = {
+		2A5F5AB1215D2DDE00F7A937 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A5F5AEA215D2EFB00F7A937 /* MatrixKit.framework in Frameworks */,
+				2A5F5AE8215D2EF100F7A937 /* PopGenKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A5F5AC3215D2DDE00F7A937 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2AA85FDA2156D8A700DA17B8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2AA85FE52156D8A700DA17B8 /* Frameworks */ = {
+		2A5F5ACE215D2DDE00F7A937 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -73,67 +93,116 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2AA85FC22156D8A600DA17B8 = {
+		2A5F5AAB215D2DDE00F7A937 = {
 			isa = PBXGroup;
 			children = (
-				2AA85FCD2156D8A600DA17B8 /* GeneticStudio */,
-				2AA85FE02156D8A700DA17B8 /* GeneticStudioTests */,
-				2AA85FEB2156D8A700DA17B8 /* GeneticStudioUITests */,
-				2AA85FCC2156D8A600DA17B8 /* Products */,
+				2A5F5AB6215D2DDE00F7A937 /* GeneticStudio */,
+				2A5F5AC9215D2DDE00F7A937 /* GeneticStudioTests */,
+				2A5F5AD4215D2DDE00F7A937 /* GeneticStudioUITests */,
+				2A5F5AB5215D2DDE00F7A937 /* Products */,
+				2A5F5AE6215D2EF100F7A937 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		2AA85FCC2156D8A600DA17B8 /* Products */ = {
+		2A5F5AB5215D2DDE00F7A937 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2AA85FCB2156D8A600DA17B8 /* GeneticStudio.app */,
-				2AA85FDD2156D8A700DA17B8 /* GeneticStudioTests.xctest */,
-				2AA85FE82156D8A700DA17B8 /* GeneticStudioUITests.xctest */,
+				2A5F5AB4215D2DDE00F7A937 /* GeneticStudio.app */,
+				2A5F5AC6215D2DDE00F7A937 /* GeneticStudioTests.xctest */,
+				2A5F5AD1215D2DDE00F7A937 /* GeneticStudioUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2AA85FCD2156D8A600DA17B8 /* GeneticStudio */ = {
+		2A5F5AB6215D2DDE00F7A937 /* GeneticStudio */ = {
 			isa = PBXGroup;
 			children = (
-				2AA85FCE2156D8A600DA17B8 /* AppDelegate.swift */,
-				2AA85FD02156D8A600DA17B8 /* ViewController.swift */,
-				2AA85FD22156D8A600DA17B8 /* Assets.xcassets */,
-				2AA85FD42156D8A600DA17B8 /* Main.storyboard */,
-				2AA85FD72156D8A600DA17B8 /* Info.plist */,
-				2AA85FD82156D8A600DA17B8 /* GeneticStudio.entitlements */,
+				2A5F5AB7215D2DDE00F7A937 /* AppDelegate.swift */,
+				2A5F5AEF215D350D00F7A937 /* MainWindow */,
+				2A5F5AE3215D2E2C00F7A937 /* Components */,
+				2A5F5ABB215D2DDE00F7A937 /* Assets.xcassets */,
+				2A5F5AC0215D2DDE00F7A937 /* Info.plist */,
+				2A5F5AC1215D2DDE00F7A937 /* GeneticStudio.entitlements */,
 			);
 			path = GeneticStudio;
 			sourceTree = "<group>";
 		};
-		2AA85FE02156D8A700DA17B8 /* GeneticStudioTests */ = {
+		2A5F5AC9215D2DDE00F7A937 /* GeneticStudioTests */ = {
 			isa = PBXGroup;
 			children = (
-				2AA85FE12156D8A700DA17B8 /* GeneticStudioTests.swift */,
-				2AA85FE32156D8A700DA17B8 /* Info.plist */,
+				2A5F5ACA215D2DDE00F7A937 /* GeneticStudioTests.swift */,
+				2A5F5ACC215D2DDE00F7A937 /* Info.plist */,
 			);
 			path = GeneticStudioTests;
 			sourceTree = "<group>";
 		};
-		2AA85FEB2156D8A700DA17B8 /* GeneticStudioUITests */ = {
+		2A5F5AD4215D2DDE00F7A937 /* GeneticStudioUITests */ = {
 			isa = PBXGroup;
 			children = (
-				2AA85FEC2156D8A700DA17B8 /* GeneticStudioUITests.swift */,
-				2AA85FEE2156D8A700DA17B8 /* Info.plist */,
+				2A5F5AD5215D2DDE00F7A937 /* GeneticStudioUITests.swift */,
+				2A5F5AD7215D2DDE00F7A937 /* Info.plist */,
 			);
 			path = GeneticStudioUITests;
+			sourceTree = "<group>";
+		};
+		2A5F5AE3215D2E2C00F7A937 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2AC80AEC216782E100B4BFC4 /* NibLoadable.swift */,
+				2AC80AE42166327B00B4BFC4 /* Sidebar */,
+				2AC80AE72166335C00B4BFC4 /* GenotypeTable */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2A5F5AE6215D2EF100F7A937 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A5F5AE7215D2EF100F7A937 /* PopGenKit.framework */,
+				2A5F5AE9215D2EFB00F7A937 /* MatrixKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A5F5AEF215D350D00F7A937 /* MainWindow */ = {
+			isa = PBXGroup;
+			children = (
+				2A5F5AEB215D2FC400F7A937 /* MainWindowController.swift */,
+				2A5F5ABD215D2DDE00F7A937 /* Main.storyboard */,
+			);
+			path = MainWindow;
+			sourceTree = "<group>";
+		};
+		2AC80AE42166327B00B4BFC4 /* Sidebar */ = {
+			isa = PBXGroup;
+			children = (
+				2A5F5AF0215D367200F7A937 /* SideBar.xib */,
+				2AC80AEA2167804000B4BFC4 /* SideBar.swift */,
+				2A5F5AF2215D50F000F7A937 /* SidebarViewController.swift */,
+			);
+			path = Sidebar;
+			sourceTree = "<group>";
+		};
+		2AC80AE72166335C00B4BFC4 /* GenotypeTable */ = {
+			isa = PBXGroup;
+			children = (
+				2AC80AE52166335400B4BFC4 /* GenotypeTable.xib */,
+				2A89B0062167894C00979265 /* GenotypeTable.swift */,
+				2AC80AE82166336D00B4BFC4 /* GenotypeTableViewController.swift */,
+			);
+			path = GenotypeTable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2AA85FCA2156D8A600DA17B8 /* GeneticStudio */ = {
+		2A5F5AB3215D2DDE00F7A937 /* GeneticStudio */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2AA85FF12156D8A700DA17B8 /* Build configuration list for PBXNativeTarget "GeneticStudio" */;
+			buildConfigurationList = 2A5F5ADA215D2DDE00F7A937 /* Build configuration list for PBXNativeTarget "GeneticStudio" */;
 			buildPhases = (
-				2AA85FC72156D8A600DA17B8 /* Sources */,
-				2AA85FC82156D8A600DA17B8 /* Frameworks */,
-				2AA85FC92156D8A600DA17B8 /* Resources */,
+				2A5F5AB0215D2DDE00F7A937 /* Sources */,
+				2A5F5AB1215D2DDE00F7A937 /* Frameworks */,
+				2A5F5AB2215D2DDE00F7A937 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -141,69 +210,69 @@
 			);
 			name = GeneticStudio;
 			productName = GeneticStudio;
-			productReference = 2AA85FCB2156D8A600DA17B8 /* GeneticStudio.app */;
+			productReference = 2A5F5AB4215D2DDE00F7A937 /* GeneticStudio.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2AA85FDC2156D8A700DA17B8 /* GeneticStudioTests */ = {
+		2A5F5AC5215D2DDE00F7A937 /* GeneticStudioTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2AA85FF42156D8A700DA17B8 /* Build configuration list for PBXNativeTarget "GeneticStudioTests" */;
+			buildConfigurationList = 2A5F5ADD215D2DDE00F7A937 /* Build configuration list for PBXNativeTarget "GeneticStudioTests" */;
 			buildPhases = (
-				2AA85FD92156D8A700DA17B8 /* Sources */,
-				2AA85FDA2156D8A700DA17B8 /* Frameworks */,
-				2AA85FDB2156D8A700DA17B8 /* Resources */,
+				2A5F5AC2215D2DDE00F7A937 /* Sources */,
+				2A5F5AC3215D2DDE00F7A937 /* Frameworks */,
+				2A5F5AC4215D2DDE00F7A937 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2AA85FDF2156D8A700DA17B8 /* PBXTargetDependency */,
+				2A5F5AC8215D2DDE00F7A937 /* PBXTargetDependency */,
 			);
 			name = GeneticStudioTests;
 			productName = GeneticStudioTests;
-			productReference = 2AA85FDD2156D8A700DA17B8 /* GeneticStudioTests.xctest */;
+			productReference = 2A5F5AC6215D2DDE00F7A937 /* GeneticStudioTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2AA85FE72156D8A700DA17B8 /* GeneticStudioUITests */ = {
+		2A5F5AD0215D2DDE00F7A937 /* GeneticStudioUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2AA85FF72156D8A700DA17B8 /* Build configuration list for PBXNativeTarget "GeneticStudioUITests" */;
+			buildConfigurationList = 2A5F5AE0215D2DDE00F7A937 /* Build configuration list for PBXNativeTarget "GeneticStudioUITests" */;
 			buildPhases = (
-				2AA85FE42156D8A700DA17B8 /* Sources */,
-				2AA85FE52156D8A700DA17B8 /* Frameworks */,
-				2AA85FE62156D8A700DA17B8 /* Resources */,
+				2A5F5ACD215D2DDE00F7A937 /* Sources */,
+				2A5F5ACE215D2DDE00F7A937 /* Frameworks */,
+				2A5F5ACF215D2DDE00F7A937 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2AA85FEA2156D8A700DA17B8 /* PBXTargetDependency */,
+				2A5F5AD3215D2DDE00F7A937 /* PBXTargetDependency */,
 			);
 			name = GeneticStudioUITests;
 			productName = GeneticStudioUITests;
-			productReference = 2AA85FE82156D8A700DA17B8 /* GeneticStudioUITests.xctest */;
+			productReference = 2A5F5AD1215D2DDE00F7A937 /* GeneticStudioUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2AA85FC32156D8A600DA17B8 /* Project object */ = {
+		2A5F5AAC215D2DDE00F7A937 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Rodney Dyer";
 				TargetAttributes = {
-					2AA85FCA2156D8A600DA17B8 = {
+					2A5F5AB3215D2DDE00F7A937 = {
 						CreatedOnToolsVersion = 10.0;
 					};
-					2AA85FDC2156D8A700DA17B8 = {
+					2A5F5AC5215D2DDE00F7A937 = {
 						CreatedOnToolsVersion = 10.0;
-						TestTargetID = 2AA85FCA2156D8A600DA17B8;
+						TestTargetID = 2A5F5AB3215D2DDE00F7A937;
 					};
-					2AA85FE72156D8A700DA17B8 = {
+					2A5F5AD0215D2DDE00F7A937 = {
 						CreatedOnToolsVersion = 10.0;
-						TestTargetID = 2AA85FCA2156D8A600DA17B8;
+						TestTargetID = 2A5F5AB3215D2DDE00F7A937;
 					};
 				};
 			};
-			buildConfigurationList = 2AA85FC62156D8A600DA17B8 /* Build configuration list for PBXProject "GeneticStudio" */;
+			buildConfigurationList = 2A5F5AAF215D2DDE00F7A937 /* Build configuration list for PBXProject "GeneticStudio" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -211,36 +280,38 @@
 				en,
 				Base,
 			);
-			mainGroup = 2AA85FC22156D8A600DA17B8;
-			productRefGroup = 2AA85FCC2156D8A600DA17B8 /* Products */;
+			mainGroup = 2A5F5AAB215D2DDE00F7A937;
+			productRefGroup = 2A5F5AB5215D2DDE00F7A937 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2AA85FCA2156D8A600DA17B8 /* GeneticStudio */,
-				2AA85FDC2156D8A700DA17B8 /* GeneticStudioTests */,
-				2AA85FE72156D8A700DA17B8 /* GeneticStudioUITests */,
+				2A5F5AB3215D2DDE00F7A937 /* GeneticStudio */,
+				2A5F5AC5215D2DDE00F7A937 /* GeneticStudioTests */,
+				2A5F5AD0215D2DDE00F7A937 /* GeneticStudioUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2AA85FC92156D8A600DA17B8 /* Resources */ = {
+		2A5F5AB2215D2DDE00F7A937 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AA85FD32156D8A600DA17B8 /* Assets.xcassets in Resources */,
-				2AA85FD62156D8A600DA17B8 /* Main.storyboard in Resources */,
+				2A5F5ABC215D2DDE00F7A937 /* Assets.xcassets in Resources */,
+				2AC80AE62166335400B4BFC4 /* GenotypeTable.xib in Resources */,
+				2A5F5AF1215D367200F7A937 /* SideBar.xib in Resources */,
+				2A5F5ABF215D2DDE00F7A937 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2AA85FDB2156D8A700DA17B8 /* Resources */ = {
+		2A5F5AC4215D2DDE00F7A937 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2AA85FE62156D8A700DA17B8 /* Resources */ = {
+		2A5F5ACF215D2DDE00F7A937 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -250,51 +321,56 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2AA85FC72156D8A600DA17B8 /* Sources */ = {
+		2A5F5AB0215D2DDE00F7A937 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AA85FD12156D8A600DA17B8 /* ViewController.swift in Sources */,
-				2AA85FCF2156D8A600DA17B8 /* AppDelegate.swift in Sources */,
+				2AC80AEB2167804000B4BFC4 /* SideBar.swift in Sources */,
+				2A89B0072167894C00979265 /* GenotypeTable.swift in Sources */,
+				2A5F5AEC215D2FC400F7A937 /* MainWindowController.swift in Sources */,
+				2A5F5AB8215D2DDE00F7A937 /* AppDelegate.swift in Sources */,
+				2AC80AED216782E100B4BFC4 /* NibLoadable.swift in Sources */,
+				2AC80AE92166336D00B4BFC4 /* GenotypeTableViewController.swift in Sources */,
+				2A5F5AF3215D50F000F7A937 /* SidebarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2AA85FD92156D8A700DA17B8 /* Sources */ = {
+		2A5F5AC2215D2DDE00F7A937 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AA85FE22156D8A700DA17B8 /* GeneticStudioTests.swift in Sources */,
+				2A5F5ACB215D2DDE00F7A937 /* GeneticStudioTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2AA85FE42156D8A700DA17B8 /* Sources */ = {
+		2A5F5ACD215D2DDE00F7A937 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AA85FED2156D8A700DA17B8 /* GeneticStudioUITests.swift in Sources */,
+				2A5F5AD6215D2DDE00F7A937 /* GeneticStudioUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2AA85FDF2156D8A700DA17B8 /* PBXTargetDependency */ = {
+		2A5F5AC8215D2DDE00F7A937 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2AA85FCA2156D8A600DA17B8 /* GeneticStudio */;
-			targetProxy = 2AA85FDE2156D8A700DA17B8 /* PBXContainerItemProxy */;
+			target = 2A5F5AB3215D2DDE00F7A937 /* GeneticStudio */;
+			targetProxy = 2A5F5AC7215D2DDE00F7A937 /* PBXContainerItemProxy */;
 		};
-		2AA85FEA2156D8A700DA17B8 /* PBXTargetDependency */ = {
+		2A5F5AD3215D2DDE00F7A937 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2AA85FCA2156D8A600DA17B8 /* GeneticStudio */;
-			targetProxy = 2AA85FE92156D8A700DA17B8 /* PBXContainerItemProxy */;
+			target = 2A5F5AB3215D2DDE00F7A937 /* GeneticStudio */;
+			targetProxy = 2A5F5AD2215D2DDE00F7A937 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2AA85FD42156D8A600DA17B8 /* Main.storyboard */ = {
+		2A5F5ABD215D2DDE00F7A937 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2AA85FD52156D8A600DA17B8 /* Base */,
+				2A5F5ABE215D2DDE00F7A937 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -302,7 +378,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		2AA85FEF2156D8A700DA17B8 /* Debug */ = {
+		2A5F5AD8215D2DDE00F7A937 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -363,7 +439,7 @@
 			};
 			name = Debug;
 		};
-		2AA85FF02156D8A700DA17B8 /* Release */ = {
+		2A5F5AD9215D2DDE00F7A937 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -417,7 +493,7 @@
 			};
 			name = Release;
 		};
-		2AA85FF22156D8A700DA17B8 /* Debug */ = {
+		2A5F5ADB215D2DDE00F7A937 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -436,7 +512,7 @@
 			};
 			name = Debug;
 		};
-		2AA85FF32156D8A700DA17B8 /* Release */ = {
+		2A5F5ADC215D2DDE00F7A937 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -455,7 +531,7 @@
 			};
 			name = Release;
 		};
-		2AA85FF52156D8A700DA17B8 /* Debug */ = {
+		2A5F5ADE215D2DDE00F7A937 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -476,7 +552,7 @@
 			};
 			name = Debug;
 		};
-		2AA85FF62156D8A700DA17B8 /* Release */ = {
+		2A5F5ADF215D2DDE00F7A937 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -497,7 +573,7 @@
 			};
 			name = Release;
 		};
-		2AA85FF82156D8A700DA17B8 /* Debug */ = {
+		2A5F5AE1215D2DDE00F7A937 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -517,7 +593,7 @@
 			};
 			name = Debug;
 		};
-		2AA85FF92156D8A700DA17B8 /* Release */ = {
+		2A5F5AE2215D2DDE00F7A937 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -540,43 +616,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2AA85FC62156D8A600DA17B8 /* Build configuration list for PBXProject "GeneticStudio" */ = {
+		2A5F5AAF215D2DDE00F7A937 /* Build configuration list for PBXProject "GeneticStudio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2AA85FEF2156D8A700DA17B8 /* Debug */,
-				2AA85FF02156D8A700DA17B8 /* Release */,
+				2A5F5AD8215D2DDE00F7A937 /* Debug */,
+				2A5F5AD9215D2DDE00F7A937 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2AA85FF12156D8A700DA17B8 /* Build configuration list for PBXNativeTarget "GeneticStudio" */ = {
+		2A5F5ADA215D2DDE00F7A937 /* Build configuration list for PBXNativeTarget "GeneticStudio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2AA85FF22156D8A700DA17B8 /* Debug */,
-				2AA85FF32156D8A700DA17B8 /* Release */,
+				2A5F5ADB215D2DDE00F7A937 /* Debug */,
+				2A5F5ADC215D2DDE00F7A937 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2AA85FF42156D8A700DA17B8 /* Build configuration list for PBXNativeTarget "GeneticStudioTests" */ = {
+		2A5F5ADD215D2DDE00F7A937 /* Build configuration list for PBXNativeTarget "GeneticStudioTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2AA85FF52156D8A700DA17B8 /* Debug */,
-				2AA85FF62156D8A700DA17B8 /* Release */,
+				2A5F5ADE215D2DDE00F7A937 /* Debug */,
+				2A5F5ADF215D2DDE00F7A937 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2AA85FF72156D8A700DA17B8 /* Build configuration list for PBXNativeTarget "GeneticStudioUITests" */ = {
+		2A5F5AE0215D2DDE00F7A937 /* Build configuration list for PBXNativeTarget "GeneticStudioUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2AA85FF82156D8A700DA17B8 /* Debug */,
-				2AA85FF92156D8A700DA17B8 /* Release */,
+				2A5F5AE1215D2DDE00F7A937 /* Debug */,
+				2A5F5AE2215D2DDE00F7A937 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2AA85FC32156D8A600DA17B8 /* Project object */;
+	rootObject = 2A5F5AAC215D2DDE00F7A937 /* Project object */;
 }
