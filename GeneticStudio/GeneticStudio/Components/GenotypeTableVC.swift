@@ -9,13 +9,16 @@
 import Foundation
 import Cocoa
 
-class GenotypeTableViewController : NSViewController {
+class GenotypeTableVC : NSViewController {
     
     @IBOutlet weak var tableView: NSTableView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("GenotypeTableViewController::viewDidLoad()")
+        print("GenotypeTableVC::viewDidLoad()")
+        
+        while tableView.tableColumns.count > 0 {
+            tableView.removeTableColumn( tableView.tableColumns.first! )
+        }
     }
 }
