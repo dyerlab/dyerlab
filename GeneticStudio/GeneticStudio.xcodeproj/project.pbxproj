@@ -7,20 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A2DA14C21682F4C00AB54DC /* SplitViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DA14B21682F4C00AB54DC /* SplitViewVC.swift */; };
 		2A451FC22167F370006AD279 /* DefaultLayout.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A451FC12167F370006AD279 /* DefaultLayout.plist */; };
+		2A57B4B021777F4B00333B52 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A57B4AF21777F4B00333B52 /* TabViewController.swift */; };
+		2A57B4B2217786C100333B52 /* GenotypeTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A57B4B1217786C100333B52 /* GenotypeTableVC.swift */; };
 		2A5F5AB8215D2DDE00F7A937 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5F5AB7215D2DDE00F7A937 /* AppDelegate.swift */; };
 		2A5F5ABC215D2DDE00F7A937 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A5F5ABB215D2DDE00F7A937 /* Assets.xcassets */; };
 		2A5F5ABF215D2DDE00F7A937 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A5F5ABD215D2DDE00F7A937 /* Main.storyboard */; };
 		2A5F5ACB215D2DDE00F7A937 /* GeneticStudioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5F5ACA215D2DDE00F7A937 /* GeneticStudioTests.swift */; };
 		2A5F5AD6215D2DDE00F7A937 /* GeneticStudioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5F5AD5215D2DDE00F7A937 /* GeneticStudioUITests.swift */; };
-		2A5F5AE8215D2EF100F7A937 /* PopGenKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5F5AE7215D2EF100F7A937 /* PopGenKit.framework */; };
-		2A5F5AEA215D2EFB00F7A937 /* MatrixKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5F5AE9215D2EFB00F7A937 /* MatrixKit.framework */; };
 		2A5F5AEC215D2FC400F7A937 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5F5AEB215D2FC400F7A937 /* MainWindowController.swift */; };
 		2A5F5AF3215D50F000F7A937 /* SidebarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5F5AF2215D50F000F7A937 /* SidebarVC.swift */; };
 		2A89B00921678CC600979265 /* NSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A89B00821678CC600979265 /* NSView.swift */; };
-		2AC80AE92166336D00B4BFC4 /* GenotypeTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC80AE82166336D00B4BFC4 /* GenotypeTableVC.swift */; };
-		2AC80AED216782E100B4BFC4 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC80AEC216782E100B4BFC4 /* NibLoadable.swift */; };
+		2AB2508E216C17AF0079D13C /* NotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB2508D216C17AF0079D13C /* NotificationName.swift */; };
+		2AB25093216C31710079D13C /* SplitViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB25092216C31710079D13C /* SplitViewVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2A2DA14B21682F4C00AB54DC /* SplitViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewVC.swift; sourceTree = "<group>"; };
 		2A451FC12167F370006AD279 /* DefaultLayout.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DefaultLayout.plist; sourceTree = "<group>"; };
+		2A57B4AF21777F4B00333B52 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		2A57B4B1217786C100333B52 /* GenotypeTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenotypeTableVC.swift; sourceTree = "<group>"; };
 		2A5F5AB4215D2DDE00F7A937 /* GeneticStudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeneticStudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A5F5AB7215D2DDE00F7A937 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A5F5ABB215D2DDE00F7A937 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,8 +60,8 @@
 		2A5F5AEB215D2FC400F7A937 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		2A5F5AF2215D50F000F7A937 /* SidebarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarVC.swift; sourceTree = "<group>"; };
 		2A89B00821678CC600979265 /* NSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSView.swift; sourceTree = "<group>"; };
-		2AC80AE82166336D00B4BFC4 /* GenotypeTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenotypeTableVC.swift; sourceTree = "<group>"; };
-		2AC80AEC216782E100B4BFC4 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		2AB2508D216C17AF0079D13C /* NotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationName.swift; sourceTree = "<group>"; };
+		2AB25092216C31710079D13C /* SplitViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +69,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A5F5AEA215D2EFB00F7A937 /* MatrixKit.framework in Frameworks */,
-				2A5F5AE8215D2EF100F7A937 /* PopGenKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +89,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A57B4AA2177763E00333B52 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
 		2A5F5AAB215D2DDE00F7A937 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +123,8 @@
 				2A5F5AB7215D2DDE00F7A937 /* AppDelegate.swift */,
 				2A5F5AEF215D350D00F7A937 /* MainWindow */,
 				2A5F5AE3215D2E2C00F7A937 /* Components */,
+				2AB25091216C2F540079D13C /* Extensions */,
+				2A57B4AA2177763E00333B52 /* Subviews */,
 				2A5F5ABB215D2DDE00F7A937 /* Assets.xcassets */,
 				2A5F5AC0215D2DDE00F7A937 /* Info.plist */,
 				2A5F5AC1215D2DDE00F7A937 /* GeneticStudio.entitlements */,
@@ -147,11 +154,10 @@
 		2A5F5AE3215D2E2C00F7A937 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				2AC80AEC216782E100B4BFC4 /* NibLoadable.swift */,
-				2A89B00821678CC600979265 /* NSView.swift */,
-				2A2DA14B21682F4C00AB54DC /* SplitViewVC.swift */,
+				2AB25092216C31710079D13C /* SplitViewVC.swift */,
 				2A5F5AF2215D50F000F7A937 /* SidebarVC.swift */,
-				2AC80AE82166336D00B4BFC4 /* GenotypeTableVC.swift */,
+				2A57B4AF21777F4B00333B52 /* TabViewController.swift */,
+				2A57B4B1217786C100333B52 /* GenotypeTableVC.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -172,6 +178,15 @@
 				2A5F5ABD215D2DDE00F7A937 /* Main.storyboard */,
 			);
 			path = MainWindow;
+			sourceTree = "<group>";
+		};
+		2AB25091216C2F540079D13C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2A89B00821678CC600979265 /* NSView.swift */,
+				2AB2508D216C17AF0079D13C /* NotificationName.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,11 +321,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A5F5AEC215D2FC400F7A937 /* MainWindowController.swift in Sources */,
+				2AB2508E216C17AF0079D13C /* NotificationName.swift in Sources */,
 				2A89B00921678CC600979265 /* NSView.swift in Sources */,
 				2A5F5AB8215D2DDE00F7A937 /* AppDelegate.swift in Sources */,
-				2AC80AED216782E100B4BFC4 /* NibLoadable.swift in Sources */,
-				2AC80AE92166336D00B4BFC4 /* GenotypeTableVC.swift in Sources */,
-				2A2DA14C21682F4C00AB54DC /* SplitViewVC.swift in Sources */,
+				2A57B4B2217786C100333B52 /* GenotypeTableVC.swift in Sources */,
+				2AB25093216C31710079D13C /* SplitViewVC.swift in Sources */,
+				2A57B4B021777F4B00333B52 /* TabViewController.swift in Sources */,
 				2A5F5AF3215D50F000F7A937 /* SidebarVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,6 +10,15 @@ import Foundation
 import Cocoa
 
 
+enum SideBarSelection :Int {
+    case Data = 0
+    case Diversity
+    case Structure
+    case Distance
+    case PopGraph
+    case Undefined
+}
+
 class SidebarVC : NSViewController {
 
     @IBOutlet weak var tableView: NSTableView!
@@ -26,31 +35,51 @@ class SidebarVC : NSViewController {
         self.tableView.layer?.backgroundColor = CGColor.clear   
         self.tableView.delegate = self as NSTableViewDelegate
         self.tableView.dataSource = self
-
-        
-        
         
     }
     
 }
 
 
-extension SidebarVC : NSTableViewDataSource {
+extension SidebarVC : NSTableViewDataSource, NSTableViewDelegate {
     
     func numberOfRows(in tableView: NSTableView) -> Int {
         return self.tableViewData.count
     }
     
-    func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
-        let val = self.tableViewData[row]
-        print("Sending: \(val)")
-        return val
+    
+    func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView?{
+        var result:NSTableCellView
+        
+        result  = tableView.makeView( withIdentifier: (tableColumn?.identifier)!, owner: self) as! NSTableCellView
+        result.textField?.stringValue = tableViewData[row]
+        return result
     }
     
-}
-
-
-extension SidebarVC : NSTableViewDelegate {
     
-
+    func tableView(_ tableView: NSTableView, shouldSelectRow row: Int) -> Bool {
+        
+        switch row {
+        case 0:
+            NotificationCenter.default.post(name: .showGenotypeView, object: nil)
+            break
+        case 1:
+            NotificationCenter.default.post(name: .showDiversityView, object: nil)
+            break
+        case 2:
+            NotificationCenter.default.post(name: .showStructureView, object: nil)
+            break
+        case 3:
+            NotificationCenter.default.post(name: .showDistanceView, object: nil)
+            break
+        case 4:
+            NotificationCenter.default.post(name: .showPopGraphView, object: nil)
+            break
+        default:
+            break
+        }
+        
+        return true
+    }
+    
 }

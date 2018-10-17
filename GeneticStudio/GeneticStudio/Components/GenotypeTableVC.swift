@@ -1,24 +1,18 @@
 //
-//  GenotypeTableViewController.swift
+//  GenotypeTableVC.swift
 //  GeneticStudio
 //
-//  Created by Rodney Dyer on 10/4/18.
+//  Created by Rodney Dyer on 10/17/18.
 //  Copyright © 2018 Rodney Dyer. All rights reserved.
 //
 
-import Foundation
 import Cocoa
 
-class GenotypeTableVC : NSViewController {
-    
-    @IBOutlet weak var tableView: NSTableView!
-    
+class GenotypeTableVC: NSViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("GenotypeTableVC::viewDidLoad()")
-        
-        while tableView.tableColumns.count > 0 {
-            tableView.removeTableColumn( tableView.tableColumns.first! )
-        }
+        // Do view setup here.
     }
+    
 }
