@@ -47,6 +47,15 @@ class TabViewController: NSTabViewController {
         else if notification.name == .showDiversityView {
             self.selectedTabViewItemIndex = 1
         }
+        else if notification.name == .showStructureView {
+            self.selectedTabViewItemIndex = 2
+        }
+        else if notification.name == .showDistanceView {
+            self.selectedTabViewItemIndex = 3
+        }
+        else if notification.name == .showPopGraphView {
+            self.selectedTabViewItemIndex = 4
+        }
         else {
             print("don't have that many tabs yet.")
         }

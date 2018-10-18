@@ -690,7 +690,7 @@
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" visibleAtLaunch="NO" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" fullSizeContentView="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="54" y="487" width="467" height="425"/>
+                        <rect key="contentRect" x="54" y="487" width="712" height="627"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
@@ -702,7 +702,7 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-165" y="438"/>
+            <point key="canvasLocation" x="-223" y="357.5"/>
         </scene>
         <!--Split ViewVC-->
         <scene sceneID="ZNe-DN-qcU">
@@ -713,7 +713,7 @@
                         <splitViewItem id="aRC-Yj-eeh"/>
                     </splitViewItems>
                     <splitView key="splitView" dividerStyle="thin" vertical="YES" id="1rJ-B2-h4x">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="920" height="647"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <connections>
                             <outlet property="delegate" destination="tN0-jP-y96" id="jXn-Ta-FRD"/>
@@ -727,7 +727,7 @@
                 </splitViewController>
                 <customObject id="scM-1G-et7" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="494" y="437"/>
+            <point key="canvasLocation" x="724" y="361.5"/>
         </scene>
         <!--SidebarVC-->
         <scene sceneID="ENE-qf-JGF">
@@ -813,7 +813,7 @@
                 </viewController>
                 <customObject id="B8s-bm-2cy" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="384" y="1065"/>
+            <point key="canvasLocation" x="355" y="1190"/>
         </scene>
         <!--Tab View Controller-->
         <scene sceneID="WYE-bF-t0s">
@@ -827,13 +827,13 @@
                         <tabViewItem id="Lo5-ZR-9hV"/>
                     </tabViewItems>
                     <tabView key="tabView" focusRingType="none" drawsBackground="NO" allowsTruncatedLabels="NO" type="noTabsNoBorder" initialItem="JZZ-kw-kF5" id="BZd-8k-nbx">
-                        <rect key="frame" x="0.0" y="0.0" width="666" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="743" height="669"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <font key="font" metaFont="message"/>
                         <tabViewItems>
                             <tabViewItem label="Item 0" identifier="" id="JZZ-kw-kF5">
                                 <view key="view" id="biX-Cx-nIq">
-                                    <rect key="frame" x="0.0" y="0.0" width="666" height="600"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="743" height="669"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </view>
                             </tabViewItem>
@@ -851,6 +851,7 @@
                             </tabViewItem>
                             <tabViewItem label="Item 3" identifier="" id="rXS-v6-e3a">
                                 <view key="view" id="xRP-Ny-DYD">
+                                    <rect key="frame" x="0.0" y="0.0" width="666" height="600"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </view>
                             </tabViewItem>
@@ -870,7 +871,7 @@
                 </tabViewController>
                 <customObject id="lLW-BV-vRd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="854" y="1065"/>
+            <point key="canvasLocation" x="846.5" y="1224.5"/>
         </scene>
         <!--GenotypeVC-->
         <scene sceneID="1qs-X2-kBS">
@@ -995,7 +996,7 @@
                 </viewController>
                 <customObject id="Kp9-27-za6" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1527" y="534"/>
+            <point key="canvasLocation" x="1638" y="245"/>
         </scene>
         <!--DiversityVC-->
         <scene sceneID="Dbd-fn-r4X">
@@ -1006,8 +1007,8 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="TfN-P9-ANm">
-                                <rect key="frame" x="263" y="199" width="34" height="17"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="Alice" id="GvJ-kG-qQz">
+                                <rect key="frame" x="240" y="199" width="57" height="17"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Diversity" id="GvJ-kG-qQz">
                                     <font key="font" usesAppearanceFont="YES"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -1023,7 +1024,7 @@
                 </viewController>
                 <customObject id="4NN-J9-i6E" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1527" y="903"/>
+            <point key="canvasLocation" x="1638" y="989"/>
         </scene>
         <!--StructureVC-->
         <scene sceneID="zT4-dT-5VS">
@@ -1032,11 +1033,25 @@
                     <view key="view" id="DpS-ac-xRc">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tDh-Dn-khw">
+                                <rect key="frame" x="210" y="183" width="61" height="17"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Structure" id="hoK-MS-7AX">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="tDh-Dn-khw" firstAttribute="top" secondItem="DpS-ac-xRc" secondAttribute="top" constant="100" id="c1h-qY-kJ8"/>
+                            <constraint firstItem="tDh-Dn-khw" firstAttribute="leading" secondItem="DpS-ac-xRc" secondAttribute="leading" constant="212" id="rC0-nw-IKX"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="fnR-Mg-iJ6" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1527" y="1274"/>
+            <point key="canvasLocation" x="1638" y="1348"/>
         </scene>
         <!--DistanceVC-->
         <scene sceneID="LSd-xz-JKY">
@@ -1045,11 +1060,22 @@
                     <view key="view" id="PCY-RT-d8b">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5vT-b4-qi5">
+                                <rect key="frame" x="200" y="195" width="57" height="17"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Distance" id="KKb-Ft-EY3">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
                     </view>
                 </viewController>
                 <customObject id="e2I-Te-ybp" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1527" y="1653"/>
+            <point key="canvasLocation" x="1638" y="1704"/>
         </scene>
         <!--PopGraphVC-->
         <scene sceneID="VeG-od-QeJ">
@@ -1058,11 +1084,22 @@
                     <view key="view" id="RH6-RA-FiM">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rfb-i3-Fhv">
+                                <rect key="frame" x="237" y="165" width="65" height="17"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="PopGraph" id="NjT-V8-e3U">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
                     </view>
                 </viewController>
                 <customObject id="Llm-Rq-xm6" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1527" y="2018"/>
+            <point key="canvasLocation" x="1638" y="621"/>
         </scene>
     </scenes>
 </document>
