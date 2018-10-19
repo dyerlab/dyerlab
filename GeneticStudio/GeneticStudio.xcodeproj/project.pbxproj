@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A0521A62179EC5B007C6D3A /* PopGenKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5F5AE7215D2EF100F7A937 /* PopGenKit.framework */; };
+		2A0521A72179EC62007C6D3A /* MatrixKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5F5AE9215D2EFB00F7A937 /* MatrixKit.framework */; };
 		2A451FC22167F370006AD279 /* DefaultLayout.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A451FC12167F370006AD279 /* DefaultLayout.plist */; };
 		2A57B4B021777F4B00333B52 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A57B4AF21777F4B00333B52 /* TabViewController.swift */; };
 		2A57B4B2217786C100333B52 /* GenotypeTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A57B4B1217786C100333B52 /* GenotypeTableVC.swift */; };
@@ -18,6 +20,7 @@
 		2A5F5AEC215D2FC400F7A937 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5F5AEB215D2FC400F7A937 /* MainWindowController.swift */; };
 		2A5F5AF3215D50F000F7A937 /* SidebarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5F5AF2215D50F000F7A937 /* SidebarVC.swift */; };
 		2A89B00921678CC600979265 /* NSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A89B00821678CC600979265 /* NSView.swift */; };
+		2A8B29832178C6F8009184D5 /* NSTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8B29822178C6F8009184D5 /* NSTableView.swift */; };
 		2AB2508E216C17AF0079D13C /* NotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB2508D216C17AF0079D13C /* NotificationName.swift */; };
 		2AB25093216C31710079D13C /* SplitViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB25092216C31710079D13C /* SplitViewVC.swift */; };
 /* End PBXBuildFile section */
@@ -60,6 +63,7 @@
 		2A5F5AEB215D2FC400F7A937 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		2A5F5AF2215D50F000F7A937 /* SidebarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarVC.swift; sourceTree = "<group>"; };
 		2A89B00821678CC600979265 /* NSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSView.swift; sourceTree = "<group>"; };
+		2A8B29822178C6F8009184D5 /* NSTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSTableView.swift; sourceTree = "<group>"; };
 		2AB2508D216C17AF0079D13C /* NotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationName.swift; sourceTree = "<group>"; };
 		2AB25092216C31710079D13C /* SplitViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,6 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A0521A62179EC5B007C6D3A /* PopGenKit.framework in Frameworks */,
+				2A0521A72179EC62007C6D3A /* MatrixKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,7 +128,7 @@
 			children = (
 				2A5F5AB7215D2DDE00F7A937 /* AppDelegate.swift */,
 				2A5F5AEF215D350D00F7A937 /* MainWindow */,
-				2A5F5AE3215D2E2C00F7A937 /* Components */,
+				2A5F5AE3215D2E2C00F7A937 /* Controllers */,
 				2AB25091216C2F540079D13C /* Extensions */,
 				2A57B4AA2177763E00333B52 /* Subviews */,
 				2A5F5ABB215D2DDE00F7A937 /* Assets.xcassets */,
@@ -151,7 +157,7 @@
 			path = GeneticStudioUITests;
 			sourceTree = "<group>";
 		};
-		2A5F5AE3215D2E2C00F7A937 /* Components */ = {
+		2A5F5AE3215D2E2C00F7A937 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				2AB25092216C31710079D13C /* SplitViewVC.swift */,
@@ -159,7 +165,7 @@
 				2A57B4AF21777F4B00333B52 /* TabViewController.swift */,
 				2A57B4B1217786C100333B52 /* GenotypeTableVC.swift */,
 			);
-			path = Components;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		2A5F5AE6215D2EF100F7A937 /* Frameworks */ = {
@@ -185,6 +191,7 @@
 			children = (
 				2A89B00821678CC600979265 /* NSView.swift */,
 				2AB2508D216C17AF0079D13C /* NotificationName.swift */,
+				2A8B29822178C6F8009184D5 /* NSTableView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -320,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A8B29832178C6F8009184D5 /* NSTableView.swift in Sources */,
 				2A5F5AEC215D2FC400F7A937 /* MainWindowController.swift in Sources */,
 				2AB2508E216C17AF0079D13C /* NotificationName.swift in Sources */,
 				2A89B00921678CC600979265 /* NSView.swift in Sources */,

@@ -70,7 +70,7 @@ public class Population {
 }
 
 
-// MARK: Extractions
+// MARK: Extensions
 
 extension Population {
     
