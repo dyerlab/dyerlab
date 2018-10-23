@@ -32,6 +32,7 @@ class SidebarVC : NSViewController {
         super.viewDidLoad()
         print( "SidebarVC::viewDidLoad()" )
         
+
     }
     
     @IBAction func OnDataClick(_ sender: Any) {

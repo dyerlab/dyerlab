@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2A0521A62179EC5B007C6D3A /* PopGenKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5F5AE7215D2EF100F7A937 /* PopGenKit.framework */; };
 		2A0521A72179EC62007C6D3A /* MatrixKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5F5AE9215D2EFB00F7A937 /* MatrixKit.framework */; };
+		2A0521AA217A0E4C007C6D3A /* PopGraphVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0521A8217A0E4C007C6D3A /* PopGraphVC.swift */; };
+		2A0521AF217A10D2007C6D3A /* GraphScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0521AE217A10D2007C6D3A /* GraphScene.swift */; };
 		2A451FC22167F370006AD279 /* DefaultLayout.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A451FC12167F370006AD279 /* DefaultLayout.plist */; };
 		2A57B4B021777F4B00333B52 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A57B4AF21777F4B00333B52 /* TabViewController.swift */; };
 		2A57B4B2217786C100333B52 /* GenotypeTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A57B4B1217786C100333B52 /* GenotypeTableVC.swift */; };
@@ -23,6 +25,12 @@
 		2A8B29832178C6F8009184D5 /* NSTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8B29822178C6F8009184D5 /* NSTableView.swift */; };
 		2AB2508E216C17AF0079D13C /* NotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB2508D216C17AF0079D13C /* NotificationName.swift */; };
 		2AB25093216C31710079D13C /* SplitViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB25092216C31710079D13C /* SplitViewVC.swift */; };
+		2ACF6EE4217B69EB00FBBAD2 /* PopulationGraphVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACF6EE3217B69EB00FBBAD2 /* PopulationGraphVC.swift */; };
+		2ACF6EE6217B9F6E00FBBAD2 /* GraphNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACF6EE5217B9F6E00FBBAD2 /* GraphNode.swift */; };
+		2ACF6EE8217BA51300FBBAD2 /* PopulationGraphScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACF6EE7217BA51300FBBAD2 /* PopulationGraphScene.swift */; };
+		2AF57F95217A64F80080FCC6 /* SCNNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF57F94217A64F80080FCC6 /* SCNNode.swift */; };
+		2AF57F99217A66CA0080FCC6 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF57F98217A66CA0080FCC6 /* Graph.swift */; };
+		2AF57F9A217A68A30080FCC6 /* HumanGraph.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AF57F97217A655C0080FCC6 /* HumanGraph.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +51,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A0521A8217A0E4C007C6D3A /* PopGraphVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopGraphVC.swift; sourceTree = "<group>"; };
+		2A0521AC217A0EF3007C6D3A /* PopGraphKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PopGraphKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A0521AE217A10D2007C6D3A /* GraphScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphScene.swift; sourceTree = "<group>"; };
 		2A451FC12167F370006AD279 /* DefaultLayout.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DefaultLayout.plist; sourceTree = "<group>"; };
 		2A57B4AF21777F4B00333B52 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		2A57B4B1217786C100333B52 /* GenotypeTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenotypeTableVC.swift; sourceTree = "<group>"; };
@@ -66,6 +77,12 @@
 		2A8B29822178C6F8009184D5 /* NSTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSTableView.swift; sourceTree = "<group>"; };
 		2AB2508D216C17AF0079D13C /* NotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationName.swift; sourceTree = "<group>"; };
 		2AB25092216C31710079D13C /* SplitViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewVC.swift; sourceTree = "<group>"; };
+		2ACF6EE3217B69EB00FBBAD2 /* PopulationGraphVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationGraphVC.swift; sourceTree = "<group>"; };
+		2ACF6EE5217B9F6E00FBBAD2 /* GraphNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphNode.swift; sourceTree = "<group>"; };
+		2ACF6EE7217BA51300FBBAD2 /* PopulationGraphScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationGraphScene.swift; sourceTree = "<group>"; };
+		2AF57F94217A64F80080FCC6 /* SCNNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNNode.swift; sourceTree = "<group>"; };
+		2AF57F97217A655C0080FCC6 /* HumanGraph.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HumanGraph.json; sourceTree = "<group>"; };
+		2AF57F98217A66CA0080FCC6 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +115,8 @@
 		2A57B4AA2177763E00333B52 /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
+				2A0521A8217A0E4C007C6D3A /* PopGraphVC.swift */,
+				2A0521AE217A10D2007C6D3A /* GraphScene.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -131,7 +150,9 @@
 				2A5F5AE3215D2E2C00F7A937 /* Controllers */,
 				2AB25091216C2F540079D13C /* Extensions */,
 				2A57B4AA2177763E00333B52 /* Subviews */,
+				2AF57F96217A65040080FCC6 /* Graph Objects */,
 				2A5F5ABB215D2DDE00F7A937 /* Assets.xcassets */,
+				2AF57F97217A655C0080FCC6 /* HumanGraph.json */,
 				2A5F5AC0215D2DDE00F7A937 /* Info.plist */,
 				2A5F5AC1215D2DDE00F7A937 /* GeneticStudio.entitlements */,
 				2A451FC12167F370006AD279 /* DefaultLayout.plist */,
@@ -173,6 +194,7 @@
 			children = (
 				2A5F5AE7215D2EF100F7A937 /* PopGenKit.framework */,
 				2A5F5AE9215D2EFB00F7A937 /* MatrixKit.framework */,
+				2A0521AC217A0EF3007C6D3A /* PopGraphKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -194,6 +216,18 @@
 				2A8B29822178C6F8009184D5 /* NSTableView.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2AF57F96217A65040080FCC6 /* Graph Objects */ = {
+			isa = PBXGroup;
+			children = (
+				2AF57F94217A64F80080FCC6 /* SCNNode.swift */,
+				2AF57F98217A66CA0080FCC6 /* Graph.swift */,
+				2ACF6EE3217B69EB00FBBAD2 /* PopulationGraphVC.swift */,
+				2ACF6EE5217B9F6E00FBBAD2 /* GraphNode.swift */,
+				2ACF6EE7217BA51300FBBAD2 /* PopulationGraphScene.swift */,
+			);
+			path = "Graph Objects";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,6 +334,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AF57F9A217A68A30080FCC6 /* HumanGraph.json in Resources */,
 				2A451FC22167F370006AD279 /* DefaultLayout.plist in Resources */,
 				2A5F5ABC215D2DDE00F7A937 /* Assets.xcassets in Resources */,
 				2A5F5ABF215D2DDE00F7A937 /* Main.storyboard in Resources */,
@@ -328,10 +363,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A8B29832178C6F8009184D5 /* NSTableView.swift in Sources */,
+				2AF57F99217A66CA0080FCC6 /* Graph.swift in Sources */,
+				2ACF6EE4217B69EB00FBBAD2 /* PopulationGraphVC.swift in Sources */,
 				2A5F5AEC215D2FC400F7A937 /* MainWindowController.swift in Sources */,
+				2A0521AF217A10D2007C6D3A /* GraphScene.swift in Sources */,
 				2AB2508E216C17AF0079D13C /* NotificationName.swift in Sources */,
+				2AF57F95217A64F80080FCC6 /* SCNNode.swift in Sources */,
+				2A0521AA217A0E4C007C6D3A /* PopGraphVC.swift in Sources */,
 				2A89B00921678CC600979265 /* NSView.swift in Sources */,
 				2A5F5AB8215D2DDE00F7A937 /* AppDelegate.swift in Sources */,
+				2ACF6EE6217B9F6E00FBBAD2 /* GraphNode.swift in Sources */,
+				2ACF6EE8217BA51300FBBAD2 /* PopulationGraphScene.swift in Sources */,
 				2A57B4B2217786C100333B52 /* GenotypeTableVC.swift in Sources */,
 				2AB25093216C31710079D13C /* SplitViewVC.swift in Sources */,
 				2A57B4B021777F4B00333B52 /* TabViewController.swift in Sources */,

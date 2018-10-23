@@ -35,6 +35,8 @@ class TabViewController: NSTabViewController {
                                                selector: #selector(OnDidRequestDataSegue(_:)),
                                                name: .showPopGraphView,
                                                object: nil )
+        
+        
     }
     
 

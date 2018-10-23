@@ -19,8 +19,11 @@ class GenotypeTableVC: NSViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.gridColor = NSColor.clear
+        tableView.enclosingScrollView?.drawsBackground = false
+        //tableView.intercellSpacing = NSMakeSize(0, 0)
         
-        
+        self.addPopulation(thePop: loadArapat() )
     }
     
     
@@ -68,6 +71,7 @@ extension GenotypeTableVC: NSTableViewDelegate, NSTableViewDataSource {
             view.isBordered = false
             view.drawsBackground = false
             //view.backgroundColor = NSColor.white
+            //view.backgroundColor = NSColor.windowBackgroundColor
             view.alignment = NSTextAlignment.center
             return view
         }

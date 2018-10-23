@@ -16,5 +16,7 @@ class MainWindowController:  NSWindowController {
         
         print("MainWindowController::windowDidLoad()")
         
+        self.windowFrameAutosaveName = "GStudioWindowPosition"
     }
+    
 }

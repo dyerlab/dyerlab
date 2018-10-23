@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:DLab/DLab.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:GeneticStudio/GeneticStudio.xcodeproj">
    </FileRef>
    <FileRef
