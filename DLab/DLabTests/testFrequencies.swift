@@ -7,7 +7,8 @@
 //
 
 import XCTest
-import PopGenKit
+
+	
 
 class testFrequencies: XCTestCase {
 

@@ -1,6 +1,6 @@
 //
 //  FileIO.swift
-//  PopGenKit
+//  DLab
 //
 //  Created by Rodney Dyer on 2/3/18.
 //  Copyright © 2018 Rodney Dyer. All rights reserved.
@@ -8,7 +8,8 @@
 
 import Foundation
 import Cocoa
-import MatrixKit
+
+	
 
 /**
  Constructs a random populaiton.
@@ -155,7 +156,7 @@ public func loadPopulation( path: String, strata: Int, coords: Int, external: In
  */
 public func loadArapat() -> Population {
     
-    if let bundle = Bundle(identifier: "com.dyerlab.PopGenKit") {
+    if let bundle = Bundle(identifier: "com.dyerlab.DLab") {
         let path = bundle.path(forResource: "arapat", ofType: "csv")
         return loadPopulation(path: path!, strata: 4, coords: 2, external: 0, loci: 8)
     }

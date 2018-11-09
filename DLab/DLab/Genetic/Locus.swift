@@ -9,7 +9,8 @@
 
 import Foundation
 import Accelerate
-import MatrixKit
+
+	
 
 /**
  The base class for a genotype

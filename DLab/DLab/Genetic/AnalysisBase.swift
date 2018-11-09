@@ -1,6 +1,6 @@
 //
 //  AnalysisBase.swift
-//  PopGenKit
+//  DLab
 //
 //  Created by Rodney Dyer on 2/3/18.
 //  Copyright © 2018 Rodney Dyer. All rights reserved.

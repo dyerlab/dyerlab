@@ -7,8 +7,68 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A2DBD06217F54B000FF5314 /* FileIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBCFE217F54B000FF5314 /* FileIO.swift */; };
+		2A2DBD07217F54B000FF5314 /* Population.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBCFF217F54B000FF5314 /* Population.swift */; };
+		2A2DBD08217F54B000FF5314 /* arapat.csv in Resources */ = {isa = PBXBuildFile; fileRef = 2A2DBD00217F54B000FF5314 /* arapat.csv */; };
+		2A2DBD09217F54B000FF5314 /* Locus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD01217F54B000FF5314 /* Locus.swift */; };
+		2A2DBD0A217F54B000FF5314 /* Individual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD02217F54B000FF5314 /* Individual.swift */; };
+		2A2DBD0B217F54B000FF5314 /* Frequencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD03217F54B000FF5314 /* Frequencies.swift */; };
+		2A2DBD0C217F54B000FF5314 /* AnalysisBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD04217F54B000FF5314 /* AnalysisBase.swift */; };
+		2A2DBD0D217F54B000FF5314 /* PopulationFrequencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD05217F54B000FF5314 /* PopulationFrequencies.swift */; };
+		2A2DBD20217F54BD00FF5314 /* LayoutFR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD0F217F54BD00FF5314 /* LayoutFR.swift */; };
+		2A2DBD21217F54BD00FF5314 /* LophoGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD10217F54BD00FF5314 /* LophoGraph.swift */; };
+		2A2DBD22217F54BD00FF5314 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD11217F54BD00FF5314 /* Edge.swift */; };
+		2A2DBD23217F54BD00FF5314 /* Centrality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD12217F54BD00FF5314 /* Centrality.swift */; };
+		2A2DBD24217F54BD00FF5314 /* HumanGraph.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A2DBD13217F54BD00FF5314 /* HumanGraph.json */; };
+		2A2DBD25217F54BD00FF5314 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD14217F54BD00FF5314 /* Graph.swift */; };
+		2A2DBD26217F54BD00FF5314 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD15217F54BD00FF5314 /* Path.swift */; };
+		2A2DBD27217F54BD00FF5314 /* ShortestDistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD16217F54BD00FF5314 /* ShortestDistance.swift */; };
+		2A2DBD28217F54BD00FF5314 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD17217F54BD00FF5314 /* Node.swift */; };
+		2A2DBD29217F54BD00FF5314 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD19217F54BD00FF5314 /* Array.swift */; };
+		2A2DBD2A217F54BD00FF5314 /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD1A217F54BD00FF5314 /* Vector.swift */; };
+		2A2DBD2B217F54BD00FF5314 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD1B217F54BD00FF5314 /* Matrix.swift */; };
+		2A2DBD2C217F54BD00FF5314 /* IdentityMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD1C217F54BD00FF5314 /* IdentityMatrix.swift */; };
+		2A2DBD2D217F54BD00FF5314 /* CLLocationCoordinate2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD1E217F54BD00FF5314 /* CLLocationCoordinate2D.swift */; };
+		2A2DBD2E217F54BD00FF5314 /* SCNVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD1F217F54BD00FF5314 /* SCNVector.swift */; };
+		2A2DBD3C217F54E700FF5314 /* testShortestDistances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD2F217F54E700FF5314 /* testShortestDistances.swift */; };
+		2A2DBD3D217F54E700FF5314 /* testVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD30217F54E700FF5314 /* testVector.swift */; };
+		2A2DBD3E217F54E700FF5314 /* testGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD31217F54E700FF5314 /* testGraph.swift */; };
+		2A2DBD3F217F54E700FF5314 /* testNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD32217F54E700FF5314 /* testNode.swift */; };
+		2A2DBD40217F54E700FF5314 /* testMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD33217F54E700FF5314 /* testMatrix.swift */; };
+		2A2DBD41217F54E700FF5314 /* testIndividual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD34217F54E700FF5314 /* testIndividual.swift */; };
+		2A2DBD42217F54E700FF5314 /* testPopGenKitFileIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD35217F54E700FF5314 /* testPopGenKitFileIO.swift */; };
+		2A2DBD43217F54E700FF5314 /* testEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD36217F54E700FF5314 /* testEdge.swift */; };
+		2A2DBD44217F54E700FF5314 /* testPopulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD37217F54E700FF5314 /* testPopulation.swift */; };
+		2A2DBD45217F54E700FF5314 /* testArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD38217F54E700FF5314 /* testArray.swift */; };
+		2A2DBD46217F54E700FF5314 /* testCentrality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD39217F54E700FF5314 /* testCentrality.swift */; };
+		2A2DBD47217F54E700FF5314 /* testFrequencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD3A217F54E700FF5314 /* testFrequencies.swift */; };
+		2A2DBD48217F54E700FF5314 /* testLocus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD3B217F54E700FF5314 /* testLocus.swift */; };
+		2A2DBD4A217FA14100FF5314 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD49217FA14100FF5314 /* MainWindowController.swift */; };
+		2A2DBD4C217FA81500FF5314 /* MainWindowSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD4B217FA81500FF5314 /* MainWindowSplitViewController.swift */; };
+		2A3D5C2321873D78006FDA72 /* FileIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBCFE217F54B000FF5314 /* FileIO.swift */; };
+		2A3D5C2421873D78006FDA72 /* Population.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBCFF217F54B000FF5314 /* Population.swift */; };
+		2A3D5C2521873D78006FDA72 /* arapat.csv in Resources */ = {isa = PBXBuildFile; fileRef = 2A2DBD00217F54B000FF5314 /* arapat.csv */; };
+		2A3D5C2621873D78006FDA72 /* Locus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD01217F54B000FF5314 /* Locus.swift */; };
+		2A3D5C2721873D78006FDA72 /* Individual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD02217F54B000FF5314 /* Individual.swift */; };
+		2A3D5C2821873D78006FDA72 /* Frequencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD03217F54B000FF5314 /* Frequencies.swift */; };
+		2A3D5C2921873D78006FDA72 /* AnalysisBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD04217F54B000FF5314 /* AnalysisBase.swift */; };
+		2A3D5C2A21873D78006FDA72 /* PopulationFrequencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD05217F54B000FF5314 /* PopulationFrequencies.swift */; };
+		2A3D5C2B21873D7D006FDA72 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD19217F54BD00FF5314 /* Array.swift */; };
+		2A3D5C2C21873D7D006FDA72 /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD1A217F54BD00FF5314 /* Vector.swift */; };
+		2A3D5C2D21873D7D006FDA72 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD1B217F54BD00FF5314 /* Matrix.swift */; };
+		2A3D5C2E21873D7D006FDA72 /* IdentityMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD1C217F54BD00FF5314 /* IdentityMatrix.swift */; };
+		2A3D5C2F21873D81006FDA72 /* LayoutFR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD0F217F54BD00FF5314 /* LayoutFR.swift */; };
+		2A3D5C3021873D81006FDA72 /* LophoGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD10217F54BD00FF5314 /* LophoGraph.swift */; };
+		2A3D5C3121873D81006FDA72 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD11217F54BD00FF5314 /* Edge.swift */; };
+		2A3D5C3221873D81006FDA72 /* Centrality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD12217F54BD00FF5314 /* Centrality.swift */; };
+		2A3D5C3321873D81006FDA72 /* HumanGraph.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A2DBD13217F54BD00FF5314 /* HumanGraph.json */; };
+		2A3D5C3421873D81006FDA72 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD14217F54BD00FF5314 /* Graph.swift */; };
+		2A3D5C3521873D81006FDA72 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD15217F54BD00FF5314 /* Path.swift */; };
+		2A3D5C3621873D81006FDA72 /* ShortestDistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD16217F54BD00FF5314 /* ShortestDistance.swift */; };
+		2A3D5C3721873D81006FDA72 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD17217F54BD00FF5314 /* Node.swift */; };
+		2A3D5C3821873D86006FDA72 /* CLLocationCoordinate2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD1E217F54BD00FF5314 /* CLLocationCoordinate2D.swift */; };
+		2A3D5C3921873D86006FDA72 /* SCNVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD1F217F54BD00FF5314 /* SCNVector.swift */; };
 		2A78C917217F5149002F24D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A78C916217F5149002F24D3 /* AppDelegate.swift */; };
-		2A78C919217F5149002F24D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A78C918217F5149002F24D3 /* ViewController.swift */; };
 		2A78C91B217F514A002F24D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A78C91A217F514A002F24D3 /* Assets.xcassets */; };
 		2A78C91E217F514A002F24D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A78C91C217F514A002F24D3 /* Main.storyboard */; };
 		2A78C92D217F517F002F24D3 /* DLabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A78C92C217F517F002F24D3 /* DLabTests.swift */; };
@@ -25,9 +85,46 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A2DBCFE217F54B000FF5314 /* FileIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileIO.swift; sourceTree = "<group>"; };
+		2A2DBCFF217F54B000FF5314 /* Population.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Population.swift; sourceTree = "<group>"; };
+		2A2DBD00217F54B000FF5314 /* arapat.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = arapat.csv; sourceTree = "<group>"; };
+		2A2DBD01217F54B000FF5314 /* Locus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locus.swift; sourceTree = "<group>"; };
+		2A2DBD02217F54B000FF5314 /* Individual.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Individual.swift; sourceTree = "<group>"; };
+		2A2DBD03217F54B000FF5314 /* Frequencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Frequencies.swift; sourceTree = "<group>"; };
+		2A2DBD04217F54B000FF5314 /* AnalysisBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalysisBase.swift; sourceTree = "<group>"; };
+		2A2DBD05217F54B000FF5314 /* PopulationFrequencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopulationFrequencies.swift; sourceTree = "<group>"; };
+		2A2DBD0F217F54BD00FF5314 /* LayoutFR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutFR.swift; sourceTree = "<group>"; };
+		2A2DBD10217F54BD00FF5314 /* LophoGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LophoGraph.swift; sourceTree = "<group>"; };
+		2A2DBD11217F54BD00FF5314 /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
+		2A2DBD12217F54BD00FF5314 /* Centrality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Centrality.swift; sourceTree = "<group>"; };
+		2A2DBD13217F54BD00FF5314 /* HumanGraph.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HumanGraph.json; sourceTree = "<group>"; };
+		2A2DBD14217F54BD00FF5314 /* Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		2A2DBD15217F54BD00FF5314 /* Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
+		2A2DBD16217F54BD00FF5314 /* ShortestDistance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortestDistance.swift; sourceTree = "<group>"; };
+		2A2DBD17217F54BD00FF5314 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		2A2DBD19217F54BD00FF5314 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		2A2DBD1A217F54BD00FF5314 /* Vector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
+		2A2DBD1B217F54BD00FF5314 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
+		2A2DBD1C217F54BD00FF5314 /* IdentityMatrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentityMatrix.swift; sourceTree = "<group>"; };
+		2A2DBD1E217F54BD00FF5314 /* CLLocationCoordinate2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationCoordinate2D.swift; sourceTree = "<group>"; };
+		2A2DBD1F217F54BD00FF5314 /* SCNVector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNVector.swift; sourceTree = "<group>"; };
+		2A2DBD2F217F54E700FF5314 /* testShortestDistances.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testShortestDistances.swift; sourceTree = "<group>"; };
+		2A2DBD30217F54E700FF5314 /* testVector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testVector.swift; sourceTree = "<group>"; };
+		2A2DBD31217F54E700FF5314 /* testGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testGraph.swift; sourceTree = "<group>"; };
+		2A2DBD32217F54E700FF5314 /* testNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testNode.swift; sourceTree = "<group>"; };
+		2A2DBD33217F54E700FF5314 /* testMatrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testMatrix.swift; sourceTree = "<group>"; };
+		2A2DBD34217F54E700FF5314 /* testIndividual.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testIndividual.swift; sourceTree = "<group>"; };
+		2A2DBD35217F54E700FF5314 /* testPopGenKitFileIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testPopGenKitFileIO.swift; sourceTree = "<group>"; };
+		2A2DBD36217F54E700FF5314 /* testEdge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testEdge.swift; sourceTree = "<group>"; };
+		2A2DBD37217F54E700FF5314 /* testPopulation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testPopulation.swift; sourceTree = "<group>"; };
+		2A2DBD38217F54E700FF5314 /* testArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testArray.swift; sourceTree = "<group>"; };
+		2A2DBD39217F54E700FF5314 /* testCentrality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testCentrality.swift; sourceTree = "<group>"; };
+		2A2DBD3A217F54E700FF5314 /* testFrequencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testFrequencies.swift; sourceTree = "<group>"; };
+		2A2DBD3B217F54E700FF5314 /* testLocus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testLocus.swift; sourceTree = "<group>"; };
+		2A2DBD49217FA14100FF5314 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		2A2DBD4B217FA81500FF5314 /* MainWindowSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowSplitViewController.swift; sourceTree = "<group>"; };
 		2A78C913217F5149002F24D3 /* DLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A78C916217F5149002F24D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2A78C918217F5149002F24D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2A78C91A217F514A002F24D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A78C91D217F514A002F24D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2A78C91F217F514A002F24D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +152,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A2DBCFD217F54B000FF5314 /* Genetic */ = {
+			isa = PBXGroup;
+			children = (
+				2A2DBCFE217F54B000FF5314 /* FileIO.swift */,
+				2A2DBCFF217F54B000FF5314 /* Population.swift */,
+				2A2DBD00217F54B000FF5314 /* arapat.csv */,
+				2A2DBD01217F54B000FF5314 /* Locus.swift */,
+				2A2DBD02217F54B000FF5314 /* Individual.swift */,
+				2A2DBD03217F54B000FF5314 /* Frequencies.swift */,
+				2A2DBD04217F54B000FF5314 /* AnalysisBase.swift */,
+				2A2DBD05217F54B000FF5314 /* PopulationFrequencies.swift */,
+			);
+			path = Genetic;
+			sourceTree = "<group>";
+		};
+		2A2DBD0E217F54BD00FF5314 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				2A2DBD0F217F54BD00FF5314 /* LayoutFR.swift */,
+				2A2DBD10217F54BD00FF5314 /* LophoGraph.swift */,
+				2A2DBD11217F54BD00FF5314 /* Edge.swift */,
+				2A2DBD12217F54BD00FF5314 /* Centrality.swift */,
+				2A2DBD13217F54BD00FF5314 /* HumanGraph.json */,
+				2A2DBD14217F54BD00FF5314 /* Graph.swift */,
+				2A2DBD15217F54BD00FF5314 /* Path.swift */,
+				2A2DBD16217F54BD00FF5314 /* ShortestDistance.swift */,
+				2A2DBD17217F54BD00FF5314 /* Node.swift */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+		2A2DBD18217F54BD00FF5314 /* Matrix */ = {
+			isa = PBXGroup;
+			children = (
+				2A2DBD19217F54BD00FF5314 /* Array.swift */,
+				2A2DBD1A217F54BD00FF5314 /* Vector.swift */,
+				2A2DBD1B217F54BD00FF5314 /* Matrix.swift */,
+				2A2DBD1C217F54BD00FF5314 /* IdentityMatrix.swift */,
+			);
+			path = Matrix;
+			sourceTree = "<group>";
+		};
+		2A2DBD1D217F54BD00FF5314 /* Overrides */ = {
+			isa = PBXGroup;
+			children = (
+				2A2DBD1E217F54BD00FF5314 /* CLLocationCoordinate2D.swift */,
+				2A2DBD1F217F54BD00FF5314 /* SCNVector.swift */,
+			);
+			path = Overrides;
+			sourceTree = "<group>";
+		};
 		2A78C90A217F5149002F24D3 = {
 			isa = PBXGroup;
 			children = (
@@ -76,11 +224,15 @@
 		2A78C915217F5149002F24D3 /* DLab */ = {
 			isa = PBXGroup;
 			children = (
-				2A78C959217F52E2002F24D3 /* Matrix */,
 				2A78C916217F5149002F24D3 /* AppDelegate.swift */,
-				2A78C918217F5149002F24D3 /* ViewController.swift */,
-				2A78C91A217F514A002F24D3 /* Assets.xcassets */,
+				2A2DBD4B217FA81500FF5314 /* MainWindowSplitViewController.swift */,
+				2A2DBD49217FA14100FF5314 /* MainWindowController.swift */,
 				2A78C91C217F514A002F24D3 /* Main.storyboard */,
+				2A2DBD0E217F54BD00FF5314 /* Graph */,
+				2A2DBD18217F54BD00FF5314 /* Matrix */,
+				2A2DBCFD217F54B000FF5314 /* Genetic */,
+				2A2DBD1D217F54BD00FF5314 /* Overrides */,
+				2A78C91A217F514A002F24D3 /* Assets.xcassets */,
 				2A78C91F217F514A002F24D3 /* Info.plist */,
 				2A78C920217F514A002F24D3 /* DLab.entitlements */,
 			);
@@ -90,17 +242,23 @@
 		2A78C92B217F517F002F24D3 /* DLabTests */ = {
 			isa = PBXGroup;
 			children = (
+				2A2DBD38217F54E700FF5314 /* testArray.swift */,
+				2A2DBD39217F54E700FF5314 /* testCentrality.swift */,
+				2A2DBD36217F54E700FF5314 /* testEdge.swift */,
+				2A2DBD3A217F54E700FF5314 /* testFrequencies.swift */,
+				2A2DBD31217F54E700FF5314 /* testGraph.swift */,
+				2A2DBD34217F54E700FF5314 /* testIndividual.swift */,
+				2A2DBD3B217F54E700FF5314 /* testLocus.swift */,
+				2A2DBD33217F54E700FF5314 /* testMatrix.swift */,
+				2A2DBD32217F54E700FF5314 /* testNode.swift */,
+				2A2DBD35217F54E700FF5314 /* testPopGenKitFileIO.swift */,
+				2A2DBD37217F54E700FF5314 /* testPopulation.swift */,
+				2A2DBD2F217F54E700FF5314 /* testShortestDistances.swift */,
+				2A2DBD30217F54E700FF5314 /* testVector.swift */,
 				2A78C92C217F517F002F24D3 /* DLabTests.swift */,
 				2A78C92E217F517F002F24D3 /* Info.plist */,
 			);
 			path = DLabTests;
-			sourceTree = "<group>";
-		};
-		2A78C959217F52E2002F24D3 /* Matrix */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Matrix;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +343,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A78C91B217F514A002F24D3 /* Assets.xcassets in Resources */,
+				2A2DBD08217F54B000FF5314 /* arapat.csv in Resources */,
+				2A2DBD24217F54BD00FF5314 /* HumanGraph.json in Resources */,
 				2A78C91E217F514A002F24D3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,6 +353,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A3D5C3321873D81006FDA72 /* HumanGraph.json in Resources */,
+				2A3D5C2521873D78006FDA72 /* arapat.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +365,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A78C919217F5149002F24D3 /* ViewController.swift in Sources */,
+				2A2DBD2E217F54BD00FF5314 /* SCNVector.swift in Sources */,
+				2A2DBD2C217F54BD00FF5314 /* IdentityMatrix.swift in Sources */,
+				2A2DBD21217F54BD00FF5314 /* LophoGraph.swift in Sources */,
+				2A2DBD0A217F54B000FF5314 /* Individual.swift in Sources */,
+				2A2DBD2D217F54BD00FF5314 /* CLLocationCoordinate2D.swift in Sources */,
+				2A2DBD25217F54BD00FF5314 /* Graph.swift in Sources */,
+				2A2DBD22217F54BD00FF5314 /* Edge.swift in Sources */,
+				2A2DBD09217F54B000FF5314 /* Locus.swift in Sources */,
+				2A2DBD0B217F54B000FF5314 /* Frequencies.swift in Sources */,
+				2A2DBD0D217F54B000FF5314 /* PopulationFrequencies.swift in Sources */,
+				2A2DBD06217F54B000FF5314 /* FileIO.swift in Sources */,
+				2A2DBD27217F54BD00FF5314 /* ShortestDistance.swift in Sources */,
+				2A2DBD29217F54BD00FF5314 /* Array.swift in Sources */,
+				2A2DBD20217F54BD00FF5314 /* LayoutFR.swift in Sources */,
+				2A2DBD4A217FA14100FF5314 /* MainWindowController.swift in Sources */,
+				2A2DBD28217F54BD00FF5314 /* Node.swift in Sources */,
+				2A2DBD0C217F54B000FF5314 /* AnalysisBase.swift in Sources */,
+				2A2DBD23217F54BD00FF5314 /* Centrality.swift in Sources */,
+				2A2DBD2A217F54BD00FF5314 /* Vector.swift in Sources */,
+				2A2DBD2B217F54BD00FF5314 /* Matrix.swift in Sources */,
+				2A2DBD07217F54B000FF5314 /* Population.swift in Sources */,
+				2A2DBD26217F54BD00FF5314 /* Path.swift in Sources */,
+				2A2DBD4C217FA81500FF5314 /* MainWindowSplitViewController.swift in Sources */,
 				2A78C917217F5149002F24D3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,7 +396,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A2DBD41217F54E700FF5314 /* testIndividual.swift in Sources */,
+				2A2DBD40217F54E700FF5314 /* testMatrix.swift in Sources */,
+				2A3D5C3121873D81006FDA72 /* Edge.swift in Sources */,
+				2A3D5C3721873D81006FDA72 /* Node.swift in Sources */,
+				2A3D5C2C21873D7D006FDA72 /* Vector.swift in Sources */,
+				2A2DBD3F217F54E700FF5314 /* testNode.swift in Sources */,
+				2A3D5C2621873D78006FDA72 /* Locus.swift in Sources */,
+				2A3D5C2921873D78006FDA72 /* AnalysisBase.swift in Sources */,
+				2A2DBD3E217F54E700FF5314 /* testGraph.swift in Sources */,
+				2A3D5C3221873D81006FDA72 /* Centrality.swift in Sources */,
+				2A3D5C2E21873D7D006FDA72 /* IdentityMatrix.swift in Sources */,
+				2A2DBD3D217F54E700FF5314 /* testVector.swift in Sources */,
+				2A3D5C2F21873D81006FDA72 /* LayoutFR.swift in Sources */,
+				2A2DBD42217F54E700FF5314 /* testPopGenKitFileIO.swift in Sources */,
+				2A3D5C2421873D78006FDA72 /* Population.swift in Sources */,
+				2A3D5C3821873D86006FDA72 /* CLLocationCoordinate2D.swift in Sources */,
+				2A3D5C2A21873D78006FDA72 /* PopulationFrequencies.swift in Sources */,
+				2A2DBD3C217F54E700FF5314 /* testShortestDistances.swift in Sources */,
+				2A3D5C2821873D78006FDA72 /* Frequencies.swift in Sources */,
 				2A78C92D217F517F002F24D3 /* DLabTests.swift in Sources */,
+				2A3D5C3921873D86006FDA72 /* SCNVector.swift in Sources */,
+				2A2DBD47217F54E700FF5314 /* testFrequencies.swift in Sources */,
+				2A3D5C2321873D78006FDA72 /* FileIO.swift in Sources */,
+				2A3D5C2721873D78006FDA72 /* Individual.swift in Sources */,
+				2A2DBD44217F54E700FF5314 /* testPopulation.swift in Sources */,
+				2A3D5C2B21873D7D006FDA72 /* Array.swift in Sources */,
+				2A2DBD45217F54E700FF5314 /* testArray.swift in Sources */,
+				2A3D5C3621873D81006FDA72 /* ShortestDistance.swift in Sources */,
+				2A3D5C3421873D81006FDA72 /* Graph.swift in Sources */,
+				2A3D5C2D21873D7D006FDA72 /* Matrix.swift in Sources */,
+				2A3D5C3021873D81006FDA72 /* LophoGraph.swift in Sources */,
+				2A2DBD46217F54E700FF5314 /* testCentrality.swift in Sources */,
+				2A2DBD48217F54E700FF5314 /* testLocus.swift in Sources */,
+				2A2DBD43217F54E700FF5314 /* testEdge.swift in Sources */,
+				2A3D5C3521873D81006FDA72 /* Path.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

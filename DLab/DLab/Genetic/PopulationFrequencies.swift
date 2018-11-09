@@ -1,13 +1,14 @@
 //
 //  PopulationFrequencies.swift
-//  PopGenKit
+//  DLab
 //
 //  Created by Rodney Dyer on 9/15/18.
 //  Copyright © 2018 Rodney Dyer. All rights reserved.
 //
 
 import Foundation
-import MatrixKit
+
+	
 
 /**
  Basic structure for allele frequencies across loci.

@@ -7,19 +7,4 @@
    <FileRef
       location = "group:GeneticStudio/GeneticStudio.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "group:PopulationGraphs/PopulationGraphs.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:DyerlabTestingSuite/DyerlabTestingSuite.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:PopGenKit/PopGenKit.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:PopGraphKit/PopGraphKit.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:MatrixKit/MatrixKit.xcodeproj">
-   </FileRef>
 </Workspace>

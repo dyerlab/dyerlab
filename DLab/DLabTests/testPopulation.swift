@@ -7,8 +7,6 @@
 //
 
 import XCTest
-import PopGenKit
-
 
 class testPopulation: XCTestCase {
 

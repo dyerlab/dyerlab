@@ -7,7 +7,6 @@
 //
 
 import XCTest
-import PopGraphKit
 
 class testNode: XCTestCase {
 
@@ -31,13 +30,10 @@ class testNode: XCTestCase {
     
     func testEquality() {
         let n1 = Node(label: "A")
-        let n2 = Node(label: "A")
-        let n3 = Node(label: "B")
+        let n2 = Node(label: "B")
         
-        XCTAssertEqual(n1,n2)
-        XCTAssertNotEqual(n1,n3)
-        
- 
+        XCTAssertEqual(n1,n1)
+        XCTAssertNotEqual(n1,n2)
         
     }
 

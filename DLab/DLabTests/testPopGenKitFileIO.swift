@@ -7,7 +7,6 @@
 //
 
 import XCTest
-import PopGenKit
 
 class testPopGenKitFileIO: XCTestCase {
 
@@ -25,17 +24,21 @@ class testPopGenKitFileIO: XCTestCase {
         
         print(thePop.summary)
         
-        
-        print("Coord: \(thePop.individuals[0].coords)" )
-        XCTAssertTrue( thePop.individuals[0].hasCoord() )
-        
-        XCTAssertEqual( thePop.keysForType(type: .Strata).count, 4)
-        XCTAssertEqual( thePop.keysForType(type: .Latitude).count, 1)
-        XCTAssertEqual( thePop.keysForType(type: .Longitude).count, 1)
-        XCTAssertEqual( thePop.keysForType(type: .External).count, 0)
-        XCTAssertEqual( thePop.keysForType(type: .Loci).count, 8)
-        
-        XCTAssertEqual( thePop.count, 363 )
+        if thePop.count > 0 {
+            print("Coord: \(thePop.individuals[0].coords)" )
+            XCTAssertTrue( thePop.individuals[0].hasCoord() )
+            
+            XCTAssertEqual( thePop.keysForType(type: .Strata).count, 4)
+            XCTAssertEqual( thePop.keysForType(type: .Latitude).count, 1)
+            XCTAssertEqual( thePop.keysForType(type: .Longitude).count, 1)
+            XCTAssertEqual( thePop.keysForType(type: .External).count, 0)
+            XCTAssertEqual( thePop.keysForType(type: .Loci).count, 8)
+            
+            XCTAssertEqual( thePop.count, 363 )
+        }
+        else {
+            XCTAssert( false )
+        }
         
     }
     

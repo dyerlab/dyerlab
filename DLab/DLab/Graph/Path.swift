@@ -1,6 +1,6 @@
 //
 //  Path.swift
-//  PopGraphKit
+//  DLab
 //
 //  Created by Rodney Dyer on 9/16/18.
 //  Copyright © 2018 Rodney Dyer. All rights reserved.

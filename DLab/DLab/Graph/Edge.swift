@@ -1,6 +1,6 @@
 //
 //  Edge.swift
-//  PopGraphKit
+//  DLab
 //
 //  Created by Rodney Dyer on 9/14/18.
 //  Copyright © 2018 Rodney Dyer. All rights reserved.
@@ -36,6 +36,18 @@ public class Edge {
     }
     
 }
+
+extension Edge: Equatable {
+    
+    public static func == (lhs: Edge, rhs: Edge) -> Bool {
+        return lhs.node1 == rhs.node1 &&
+            lhs.node2 == rhs.node2 &&
+            lhs.weight == rhs.weight &&
+            lhs.line == rhs.line
+    }
+    
+}
+
 
 
 extension SCNNode {
