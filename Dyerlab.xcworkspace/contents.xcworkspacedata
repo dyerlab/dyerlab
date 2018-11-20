@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:popgraphAR/popgraphAR.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:DLab/DLab.xcodeproj">
    </FileRef>
    <FileRef

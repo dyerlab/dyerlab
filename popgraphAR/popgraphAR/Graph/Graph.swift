@@ -114,9 +114,9 @@ extension Graph {
     
     public func layout3D() {
         for node in self.nodes {
-            node.position = SCNVector3Make( CGFloat.random(in: -10.0...10.0),
-                                            CGFloat.random(in: -10.0...10.0),
-                                            CGFloat.random(in: -10.0...10.0) )
+            node.position = SCNVector3Make( Float(CGFloat.random(in: -10.0...10.0)),
+                                            Float(CGFloat.random(in: -10.0...10.0)),
+                                            Float(CGFloat.random(in: -10.0...10.0)) )
         }
     }
 }

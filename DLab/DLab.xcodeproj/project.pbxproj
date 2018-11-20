@@ -68,10 +68,16 @@
 		2A3D5C3721873D81006FDA72 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD17217F54BD00FF5314 /* Node.swift */; };
 		2A3D5C3821873D86006FDA72 /* CLLocationCoordinate2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD1E217F54BD00FF5314 /* CLLocationCoordinate2D.swift */; };
 		2A3D5C3921873D86006FDA72 /* SCNVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2DBD1F217F54BD00FF5314 /* SCNVector.swift */; };
+		2A4330AA2199C805006D7F9D /* SidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4330A82199C805006D7F9D /* SidebarViewController.swift */; };
+		2A4330B1219A1440006D7F9D /* NSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4330B0219A1440006D7F9D /* NSView.swift */; };
+		2A4F2B93219C673100E7F2FC /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F2B92219C673100E7F2FC /* Notifications.swift */; };
+		2A4F2B95219C6EB100E7F2FC /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F2B94219C6EB100E7F2FC /* TabViewController.swift */; };
 		2A78C917217F5149002F24D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A78C916217F5149002F24D3 /* AppDelegate.swift */; };
 		2A78C91B217F514A002F24D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A78C91A217F514A002F24D3 /* Assets.xcassets */; };
 		2A78C91E217F514A002F24D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A78C91C217F514A002F24D3 /* Main.storyboard */; };
 		2A78C92D217F517F002F24D3 /* DLabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A78C92C217F517F002F24D3 /* DLabTests.swift */; };
+		2AF70AE7219C93FD00897EAA /* GenotypeTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF70AE6219C93FD00897EAA /* GenotypeTableController.swift */; };
+		2AF95F32219DC8B800A81245 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF95F31219DC8B800A81245 /* GraphViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,17 +101,17 @@
 		2A2DBD05217F54B000FF5314 /* PopulationFrequencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopulationFrequencies.swift; sourceTree = "<group>"; };
 		2A2DBD0F217F54BD00FF5314 /* LayoutFR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutFR.swift; sourceTree = "<group>"; };
 		2A2DBD10217F54BD00FF5314 /* LophoGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LophoGraph.swift; sourceTree = "<group>"; };
-		2A2DBD11217F54BD00FF5314 /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
+		2A2DBD11217F54BD00FF5314 /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Edge.swift; path = ../../../popgraphAR/popgraphAR/Edge.swift; sourceTree = "<group>"; };
 		2A2DBD12217F54BD00FF5314 /* Centrality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Centrality.swift; sourceTree = "<group>"; };
 		2A2DBD13217F54BD00FF5314 /* HumanGraph.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HumanGraph.json; sourceTree = "<group>"; };
-		2A2DBD14217F54BD00FF5314 /* Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		2A2DBD14217F54BD00FF5314 /* Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Graph.swift; path = ../../../popgraphAR/popgraphAR/Graph.swift; sourceTree = "<group>"; };
 		2A2DBD15217F54BD00FF5314 /* Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
 		2A2DBD16217F54BD00FF5314 /* ShortestDistance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortestDistance.swift; sourceTree = "<group>"; };
 		2A2DBD17217F54BD00FF5314 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
-		2A2DBD19217F54BD00FF5314 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
-		2A2DBD1A217F54BD00FF5314 /* Vector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
-		2A2DBD1B217F54BD00FF5314 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
-		2A2DBD1C217F54BD00FF5314 /* IdentityMatrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentityMatrix.swift; sourceTree = "<group>"; };
+		2A2DBD19217F54BD00FF5314 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Array.swift; path = ../../../popgraphAR/popgraphAR/Array.swift; sourceTree = "<group>"; };
+		2A2DBD1A217F54BD00FF5314 /* Vector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Vector.swift; path = ../../../popgraphAR/popgraphAR/Vector.swift; sourceTree = "<group>"; };
+		2A2DBD1B217F54BD00FF5314 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Matrix.swift; path = ../../../popgraphAR/popgraphAR/Matrix.swift; sourceTree = "<group>"; };
+		2A2DBD1C217F54BD00FF5314 /* IdentityMatrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IdentityMatrix.swift; path = ../../../popgraphAR/popgraphAR/IdentityMatrix.swift; sourceTree = "<group>"; };
 		2A2DBD1E217F54BD00FF5314 /* CLLocationCoordinate2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationCoordinate2D.swift; sourceTree = "<group>"; };
 		2A2DBD1F217F54BD00FF5314 /* SCNVector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNVector.swift; sourceTree = "<group>"; };
 		2A2DBD2F217F54E700FF5314 /* testShortestDistances.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testShortestDistances.swift; sourceTree = "<group>"; };
@@ -123,6 +129,10 @@
 		2A2DBD3B217F54E700FF5314 /* testLocus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testLocus.swift; sourceTree = "<group>"; };
 		2A2DBD49217FA14100FF5314 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		2A2DBD4B217FA81500FF5314 /* MainWindowSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowSplitViewController.swift; sourceTree = "<group>"; };
+		2A4330A82199C805006D7F9D /* SidebarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewController.swift; sourceTree = "<group>"; };
+		2A4330B0219A1440006D7F9D /* NSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSView.swift; sourceTree = "<group>"; };
+		2A4F2B92219C673100E7F2FC /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		2A4F2B94219C6EB100E7F2FC /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		2A78C913217F5149002F24D3 /* DLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A78C916217F5149002F24D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A78C91A217F514A002F24D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -132,6 +142,9 @@
 		2A78C92A217F517F002F24D3 /* DLabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DLabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A78C92C217F517F002F24D3 /* DLabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLabTests.swift; sourceTree = "<group>"; };
 		2A78C92E217F517F002F24D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AF70AE6219C93FD00897EAA /* GenotypeTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenotypeTableController.swift; sourceTree = "<group>"; };
+		2AF95F31219DC8B800A81245 /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
+		2AF95F43219DDB8100A81245 /* Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +168,7 @@
 		2A2DBCFD217F54B000FF5314 /* Genetic */ = {
 			isa = PBXGroup;
 			children = (
+				2AF70AE6219C93FD00897EAA /* GenotypeTableController.swift */,
 				2A2DBCFE217F54B000FF5314 /* FileIO.swift */,
 				2A2DBCFF217F54B000FF5314 /* Population.swift */,
 				2A2DBD00217F54B000FF5314 /* arapat.csv */,
@@ -170,12 +184,14 @@
 		2A2DBD0E217F54BD00FF5314 /* Graph */ = {
 			isa = PBXGroup;
 			children = (
+				2AF95F31219DC8B800A81245 /* GraphViewController.swift */,
 				2A2DBD0F217F54BD00FF5314 /* LayoutFR.swift */,
 				2A2DBD10217F54BD00FF5314 /* LophoGraph.swift */,
 				2A2DBD11217F54BD00FF5314 /* Edge.swift */,
 				2A2DBD12217F54BD00FF5314 /* Centrality.swift */,
 				2A2DBD13217F54BD00FF5314 /* HumanGraph.json */,
 				2A2DBD14217F54BD00FF5314 /* Graph.swift */,
+				2AF95F43219DDB8100A81245 /* Edge.swift */,
 				2A2DBD15217F54BD00FF5314 /* Path.swift */,
 				2A2DBD16217F54BD00FF5314 /* ShortestDistance.swift */,
 				2A2DBD17217F54BD00FF5314 /* Node.swift */,
@@ -199,6 +215,8 @@
 			children = (
 				2A2DBD1E217F54BD00FF5314 /* CLLocationCoordinate2D.swift */,
 				2A2DBD1F217F54BD00FF5314 /* SCNVector.swift */,
+				2A4330B0219A1440006D7F9D /* NSView.swift */,
+				2A4F2B92219C673100E7F2FC /* Notifications.swift */,
 			);
 			path = Overrides;
 			sourceTree = "<group>";
@@ -225,12 +243,11 @@
 			isa = PBXGroup;
 			children = (
 				2A78C916217F5149002F24D3 /* AppDelegate.swift */,
-				2A2DBD4B217FA81500FF5314 /* MainWindowSplitViewController.swift */,
-				2A2DBD49217FA14100FF5314 /* MainWindowController.swift */,
 				2A78C91C217F514A002F24D3 /* Main.storyboard */,
+				2AF70AE8219C944300897EAA /* MainWindow */,
+				2A2DBCFD217F54B000FF5314 /* Genetic */,
 				2A2DBD0E217F54BD00FF5314 /* Graph */,
 				2A2DBD18217F54BD00FF5314 /* Matrix */,
-				2A2DBCFD217F54B000FF5314 /* Genetic */,
 				2A2DBD1D217F54BD00FF5314 /* Overrides */,
 				2A78C91A217F514A002F24D3 /* Assets.xcassets */,
 				2A78C91F217F514A002F24D3 /* Info.plist */,
@@ -259,6 +276,17 @@
 				2A78C92E217F517F002F24D3 /* Info.plist */,
 			);
 			path = DLabTests;
+			sourceTree = "<group>";
+		};
+		2AF70AE8219C944300897EAA /* MainWindow */ = {
+			isa = PBXGroup;
+			children = (
+				2A2DBD49217FA14100FF5314 /* MainWindowController.swift */,
+				2A2DBD4B217FA81500FF5314 /* MainWindowSplitViewController.swift */,
+				2A4330A82199C805006D7F9D /* SidebarViewController.swift */,
+				2A4F2B94219C6EB100E7F2FC /* TabViewController.swift */,
+			);
+			path = MainWindow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,19 +396,25 @@
 				2A2DBD2E217F54BD00FF5314 /* SCNVector.swift in Sources */,
 				2A2DBD2C217F54BD00FF5314 /* IdentityMatrix.swift in Sources */,
 				2A2DBD21217F54BD00FF5314 /* LophoGraph.swift in Sources */,
+				2A4F2B93219C673100E7F2FC /* Notifications.swift in Sources */,
 				2A2DBD0A217F54B000FF5314 /* Individual.swift in Sources */,
 				2A2DBD2D217F54BD00FF5314 /* CLLocationCoordinate2D.swift in Sources */,
+				2A4330AA2199C805006D7F9D /* SidebarViewController.swift in Sources */,
 				2A2DBD25217F54BD00FF5314 /* Graph.swift in Sources */,
+				2A4330B1219A1440006D7F9D /* NSView.swift in Sources */,
 				2A2DBD22217F54BD00FF5314 /* Edge.swift in Sources */,
 				2A2DBD09217F54B000FF5314 /* Locus.swift in Sources */,
 				2A2DBD0B217F54B000FF5314 /* Frequencies.swift in Sources */,
+				2A4F2B95219C6EB100E7F2FC /* TabViewController.swift in Sources */,
 				2A2DBD0D217F54B000FF5314 /* PopulationFrequencies.swift in Sources */,
+				2AF70AE7219C93FD00897EAA /* GenotypeTableController.swift in Sources */,
 				2A2DBD06217F54B000FF5314 /* FileIO.swift in Sources */,
 				2A2DBD27217F54BD00FF5314 /* ShortestDistance.swift in Sources */,
 				2A2DBD29217F54BD00FF5314 /* Array.swift in Sources */,
 				2A2DBD20217F54BD00FF5314 /* LayoutFR.swift in Sources */,
 				2A2DBD4A217FA14100FF5314 /* MainWindowController.swift in Sources */,
 				2A2DBD28217F54BD00FF5314 /* Node.swift in Sources */,
+				2AF95F32219DC8B800A81245 /* GraphViewController.swift in Sources */,
 				2A2DBD0C217F54B000FF5314 /* AnalysisBase.swift in Sources */,
 				2A2DBD23217F54BD00FF5314 /* Centrality.swift in Sources */,
 				2A2DBD2A217F54BD00FF5314 /* Vector.swift in Sources */,
