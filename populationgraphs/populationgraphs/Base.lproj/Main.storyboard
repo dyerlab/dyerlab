@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <plugIn identifier="com.apple.SceneKitIBPlugin" version="14460.31"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -81,6 +82,11 @@
                                                     </menuItem>
                                                 </items>
                                             </menu>
+                                        </menuItem>
+                                        <menuItem title="Import" keyEquivalent="i" id="wjo-7q-YgO">
+                                            <connections>
+                                                <action selector="OnImportGraph:" target="Ady-hI-5gd" id="Pto-Zk-bmE"/>
+                                            </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="m54-Is-iLE"/>
                                         <menuItem title="Close" keyEquivalent="w" id="DVo-aG-piG">
@@ -616,6 +622,17 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="hB3-LF-h0Y"/>
+                                        <menuItem title="Show Diagnostics" keyEquivalent="D" id="7i0-Eq-wCC">
+                                            <connections>
+                                                <action selector="OnToggleShowDiagnostics:" target="Ady-hI-5gd" id="RDK-kv-h5r"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Toggle Labels" keyEquivalent="L" id="pb4-6z-OJC">
+                                            <connections>
+                                                <action selector="OnToggleLabel:" target="Ady-hI-5gd" id="lQ0-ZW-M0U"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="LZU-3r-yYK"/>
                                         <menuItem title="Show Sidebar" keyEquivalent="s" id="kIP-vf-haE">
                                             <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
                                             <connections>
@@ -683,50 +700,50 @@
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
-                <windowController storyboardIdentifier="Document Window Controller" id="jGA-0Y-lOj" sceneMemberID="viewController">
+                <windowController storyboardIdentifier="Document Window Controller" id="jGA-0Y-lOj" customClass="MainWindowController" customModule="populationgraphs" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" titlebarAppearsTransparent="YES" id="Ckk-yw-fiv">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" fullSizeContentView="YES"/>
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="contentRect" x="196" y="240" width="482" height="437"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                         <connections>
                             <outlet property="delegate" destination="jGA-0Y-lOj" id="98r-iN-zZc"/>
                         </connections>
                     </window>
                     <connections>
-                        <segue destination="5gI-5U-AMq" kind="relationship" relationship="window.shadowedContentViewController" id="nsd-lR-9xd"/>
+                        <segue destination="LfQ-EW-AR8" kind="relationship" relationship="window.shadowedContentViewController" id="mpH-GK-K31"/>
                     </connections>
                 </windowController>
                 <customObject id="6f7-a7-6o1" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="602" y="237"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="hIz-AP-VOD">
+        <!--Popgraph View Controller-->
+        <scene sceneID="e3h-5i-1iD">
             <objects>
-                <viewController id="5gI-5U-AMq" customClass="ViewController" customModule="populationgraphs" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" wantsLayer="YES" id="ERx-hH-rdd">
-                        <rect key="frame" x="0.0" y="0.0" width="490" height="551"/>
+                <viewController id="LfQ-EW-AR8" customClass="PopgraphViewController" customModule="populationgraphs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="RnH-et-O1I">
+                        <rect key="frame" x="0.0" y="0.0" width="900" height="1031"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="fO4-qm-TBC" customClass="SKView">
-                                <rect key="frame" x="0.0" y="0.0" width="490" height="551"/>
-                            </customView>
+                            <sceneView translatesAutoresizingMaskIntoConstraints="NO" id="5BT-Mo-jXb">
+                                <rect key="frame" x="0.0" y="0.0" width="900" height="1031"/>
+                            </sceneView>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="fO4-qm-TBC" secondAttribute="trailing" id="QrI-QU-PVp"/>
-                            <constraint firstItem="fO4-qm-TBC" firstAttribute="leading" secondItem="ERx-hH-rdd" secondAttribute="leading" id="WtA-vk-nHs"/>
-                            <constraint firstAttribute="bottom" secondItem="fO4-qm-TBC" secondAttribute="bottom" id="gzN-CI-4DT"/>
-                            <constraint firstItem="fO4-qm-TBC" firstAttribute="top" secondItem="ERx-hH-rdd" secondAttribute="top" id="o5g-Qj-Na4"/>
+                            <constraint firstItem="5BT-Mo-jXb" firstAttribute="leading" secondItem="RnH-et-O1I" secondAttribute="leading" id="Q2f-7m-rCK"/>
+                            <constraint firstAttribute="bottom" secondItem="5BT-Mo-jXb" secondAttribute="bottom" id="UTK-vX-5K4"/>
+                            <constraint firstItem="5BT-Mo-jXb" firstAttribute="top" secondItem="RnH-et-O1I" secondAttribute="top" id="ge8-On-ZMt"/>
+                            <constraint firstAttribute="trailing" secondItem="5BT-Mo-jXb" secondAttribute="trailing" id="sDE-og-eFi"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="theView" destination="fO4-qm-TBC" id="UYY-QB-EZe"/>
+                        <outlet property="scnView" destination="5BT-Mo-jXb" id="etb-f7-79h"/>
                     </connections>
                 </viewController>
-                <customObject id="2Tp-Fl-jBw" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="y93-Id-rJd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="832.5"/>
+            <point key="canvasLocation" x="919" y="1236"/>
         </scene>
     </scenes>
 </document>

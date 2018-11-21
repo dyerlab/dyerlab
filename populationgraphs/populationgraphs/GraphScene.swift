@@ -1,57 +1,45 @@
 //
-//  GraphScene.swift
+//  PopgraphScene.swift
 //  populationgraphs
 //
-//  Created by Rodney Dyer on 11/17/18.
+//  Created by Rodney Dyer on 11/21/18.
 //  Copyright © 2018 Rodney Dyer. All rights reserved.
 //
 
 import Cocoa
-import SpriteKit
+import SceneKit
 
-class GraphScene: SKScene {
+class GraphScene: SCNScene {
     
-    let startupLabel = SKLabelNode(text: "p  o  p  g  r  a  p  h  s")
-    let defaultGraph = Graph.makeHumanGraph()
-
-}
-
-
-
-// MARK: Setup Gravity Models
-
-extension GraphScene  {
+    var cameraNode: SCNNode!
+    var lightNode: SCNNode!
+    var gridNode: SCNNode!
     
-    func configForOpening() {
+    func config() {
         
-        self.backgroundColor = NSColor.windowBackgroundColor
+        let ambientLight = SCNLight()
+        ambientLight.type = .ambient
+        ambientLight.intensity = 75.0
+        rootNode.light = ambientLight
         
-        startupLabel.position = CGPoint(x: size.width/2, y: size.height/2)
-        startupLabel.fontColor = NSColor.alternateSelectedControlColor
-        startupLabel.fontSize = 36.0
-        addChild(startupLabel)
+        gridNode = SCNNode(geometry: SCNBox(width: 1.0, height: 1.0, length: 1.0, chamferRadius: 0.1) )
+        gridNode.position = SCNVector3(x: 0.0, y: 0.0, z: 0.0)
+        rootNode.addChildNode( gridNode )
         
-        self.physicsBody = SKPhysicsBody(edgeLoopFrom: self.frame )
-        self.physicsWorld.contactDelegate = self
-        self.physicsWorld.gravity = CGVector(dx: 0, dy: -4.8)
+        cameraNode = SCNNode()
+        cameraNode.camera = SCNCamera()
+        cameraNode.position = SCNVector3(x: 0.0, y: 0.0, z: 50)
+        cameraNode.constraints = [ SCNLookAtConstraint(target: rootNode) ]
+        rootNode.addChildNode(cameraNode)
+
+        lightNode = SCNNode()
+        lightNode.light = SCNLight()
+        lightNode.light!.type = .omni
+        lightNode.position = SCNVector3(x: 0, y: 0, z: 50)
+        rootNode.addChildNode(lightNode)
         
-        defaultGraph.recenter(size: self.size)
-        self.addChild(defaultGraph.root)
-                
-    }
-    
-    
-    func configForNetwork() {
+        physicsWorld.gravity = SCNVector3(x: 0, y: 0, z: 0)
         
     }
-    
+
 }
-
-
-extension GraphScene : SKPhysicsContactDelegate {
-    
-}
-
-
-
-

@@ -6,6 +6,7 @@
 //  Copyright © 2018 Rodney Dyer. All rights reserved.
 //
 
+import Foundation
 import Cocoa
 
 class Document: NSDocument {
@@ -15,8 +16,7 @@ class Document: NSDocument {
     
     override init() {
         self.log = ""
-        self.graph = Graph()
-        
+        self.graph = Graph.makeHumanGraph()
         super.init()
     }
 
@@ -42,6 +42,30 @@ class Document: NSDocument {
         // Alternatively, you could remove this method and override read(from:ofType:) instead.
         // If you do, you should also override isEntireFileLoaded to return false if the contents are lazily loaded.
         throw NSError(domain: NSOSStatusErrorDomain, code: unimpErr, userInfo: nil)
+    }
+    
+    @IBAction func OnImportGraph(_ sender: AnyObject ) {
+        let dialog = NSOpenPanel()
+        
+        dialog.title = "Import Population Graph File"
+        dialog.showsResizeIndicator = true
+        dialog.showsHiddenFiles = false
+        dialog.canChooseDirectories = false
+        dialog.canCreateDirectories = false
+        dialog.allowsMultipleSelection = false
+        dialog.allowedFileTypes = ["json"]
+        
+        if( dialog.runModal() == NSApplication.ModalResponse.OK ) {
+            let result = dialog.url
+            
+            if result != nil {
+                let path = result!.path
+                NSLog( path )
+            }
+        }
+        else {
+            return
+        }
     }
 
 
