@@ -1,33 +1,23 @@
 //
 //  Document.swift
-//  populationgraphs
+//  geno
 //
-//  Created by Rodney Dyer on 11/17/18.
+//  Created by Rodney Dyer on 11/22/18.
 //  Copyright © 2018 Rodney Dyer. All rights reserved.
 //
 
-import Foundation
 import Cocoa
 
 class Document: NSDocument {
-
-    var log: String
-    var graph: Graph?
     
-    var viewControllers: [PopgraphViewController] {
-        var result: [PopgraphViewController] = []
-        for windowController in windowControllers {
-            if let viewController = windowController.contentViewController as? PopgraphViewController {
-                result.append(viewController)
-            }
-        }
-        return result
+    var population: Population?
+    var viewController: ViewController? {
+        return windowControllers[0].contentViewController as? ViewController
     }
-    
+
     override init() {
-        self.log = ""
-        //self.graph = Graph.makeHumanGraph()
         super.init()
+        // Add your subclass-specific initialization here.
     }
 
     override class var autosavesInPlace: Bool {
@@ -53,43 +43,54 @@ class Document: NSDocument {
         // If you do, you should also override isEntireFileLoaded to return false if the contents are lazily loaded.
         throw NSError(domain: NSOSStatusErrorDomain, code: unimpErr, userInfo: nil)
     }
-    
-    @IBAction func OnImportGraph(_ sender: AnyObject ) {
-        let dialog = NSOpenPanel()
+
+    @IBAction func OnImportData(_ sender: AnyObject ) {
+        //self.population = getArapatPopulation()
         
-        dialog.title = "Import Population Graph File"
-        dialog.showsResizeIndicator = true
-        dialog.showsHiddenFiles = false
-        dialog.canChooseDirectories = false
-        dialog.canCreateDirectories = false
-        dialog.allowsMultipleSelection = false
-        dialog.allowedFileTypes = ["json","pgraph"]
         
-        if( dialog.runModal() == NSApplication.ModalResponse.OK ) {
-            let result = dialog.url
+        let dialog = NSOpenPanel();
+        
+        dialog.title                   = "Choose a .vcf or .csv file";
+        dialog.showsResizeIndicator    = true;
+        dialog.showsHiddenFiles        = false;
+        dialog.canChooseDirectories    = true;
+        dialog.canCreateDirectories    = true;
+        dialog.allowsMultipleSelection = false;
+        dialog.allowedFileTypes        = ["vcf","csv"];
+        
+        if (dialog.runModal() == NSApplication.ModalResponse.OK) {
+            let result = dialog.url // Pathname of the file
             
-            if result != nil {
+            if (result != nil) {
                 let path = result!.path
-                let ext = URL(fileURLWithPath: path).pathExtension
-                if ext == "pgraph" {
-                    NSLog("Loading pgraph")
-                    graph = Graph.importFromPGraph(path)!
-                    graph?.moveAboveFloor()
-                    
-                    viewControllers.first?.scene.removeAllNodes()
-                    viewControllers.first?.scene.rootNode.addChildNode( graph!.root )
+                if path.hasSuffix("vcf") {
+                    self.population = loadVCF(path: path)
+                    self.viewController?.addPopulation( self.population! )
                 }
-                else if ext == "json" {
-                    NSLog("not implemented yet")
+                else if path.hasSuffix("csv") {
+                    // pass
                 }
-                NSLog( path )
             }
-        }
-        else {
+        } else {
+            // User clicked on "Cancel"
             return
         }
+        
+        
+        
+        
+        
+        
     }
-
 
 }
 
+
+
+
+extension Document {
+    
+    func getArapatPopulation() -> Population {
+        return loadArapat()
+    }
+}

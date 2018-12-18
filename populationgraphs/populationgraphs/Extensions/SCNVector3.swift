@@ -24,6 +24,10 @@ extension SCNVector3 {
         return SCNVector3Make(left.x/right, left.y/right, left.z/right)
     }
     
+    public static func * (left: SCNVector3, right: CGFloat) -> SCNVector3 {
+        return SCNVector3Make(left.x*right, left.y*right, left.z*right)
+    }
+    
     public func distanceTo(_ other: SCNVector3 ) -> CGFloat {
         let xd = other.x - self.x
         let yd = other.y - self.y
@@ -63,4 +67,17 @@ extension SCNVector3 {
         return SCNVector3(CGFloat(pitch), CGFloat(yaw), 0)
     }
     
+    
+}
+
+
+
+public func smallestElements( vec1: SCNVector3, vec2: SCNVector3) -> SCNVector3 {
+    return SCNVector3(x: Swift.min(vec1.x, vec2.x), y: Swift.min(vec1.y, vec2.y), z: Swift.min(vec1.z, vec2.z) )
+}
+
+
+
+public func largestElements( vec1: SCNVector3, vec2: SCNVector3) -> SCNVector3 {
+    return SCNVector3(x: Swift.max(vec1.x, vec2.x), y: Swift.max(vec1.y, vec2.y), z: Swift.max(vec1.z, vec2.z) )
 }

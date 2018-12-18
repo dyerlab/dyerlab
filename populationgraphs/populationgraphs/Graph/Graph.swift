@@ -13,6 +13,7 @@ class Graph {
     var nodes = Set<Node>()
     var edges = Set<Edge>()
     var root = SCNNode()
+    var temperature: Float = 100.0
     
     init() {
         
@@ -43,13 +44,108 @@ class Graph {
 extension Graph {
     
     
+    public func moveAboveFloor() {
+//        if nodes.count < 1 { return }
+//        
+//        var y = nodes.first?.position.y
+//        for (i,node) in nodes.enumerated() {
+//            if (node.position.y - node.geometry? < y {
+//                y = node.position.y
+//            }
+//        }
+//        var (mn, _) = nodeRanges()
+//        mn.x = 0
+//        mn.z = 0
+//        mn.y = mn.y + nodes
+//        
+//        translateNodes(offset: mn  )
+    }
+    
+    public func translateNodes( offset: SCNVector3 ) {
+        let action = SCNAction.moveBy(x: offset.x, y: offset.y, z: offset.z, duration: 1)
+        for (_,node) in nodes.enumerated() {
+            node.runAction(action)
+        }
+        for (_,edge) in edges.enumerated() {
+            edge.runAction(action)
+        }
+    }
+    
+    public func nodeRanges() -> (SCNVector3, SCNVector3) {
+        var mn = nodes.first!.position
+        var mx = nodes.first!.position
+
+        for (_, node) in self.nodes.enumerated() {
+            mn = smallestElements(vec1: mn, vec2: node.position)
+            mx = largestElements(vec1: mx, vec2: node.position)
+        }
+        
+        return (mn, mx)
+    }
 }
 
 // MARK: Stuff for input and output
 extension Graph {
     
+    
+    class func makeLophoGraph() -> Graph {
+        let graph = Graph()
+        
+        
+        
+        return graph
+    }
+    
+    
     class func importGraphFromJSON(_ path: String ) -> Graph {
         let ret = Graph()
+        
+        return ret
+    }
+    
+    class func importFromPGraph(_ path: String ) -> Graph? {
+        let ret = Graph()
+        
+        let url = URL(fileURLWithPath: path)
+        
+        do {
+            var contents = try String(contentsOf: url)
+            contents = contents.replacingOccurrences(of: "\r", with: "\n")
+            contents = contents.replacingOccurrences(of: "\n\n", with: "\n")
+            let rows = contents.components(separatedBy: "\n")
+            let header = rows[0].components(separatedBy: "\t")
+            if header.count == 2 {
+                let numNodes = Int(header[0])
+                let numEdges = Int(header[1])
+                for i in 1 ... numNodes! {
+                    let items = rows[i].components(separatedBy: "\t")
+                    if items.count == 3 {
+                        let size: CGFloat = CGFloat((items[1] as NSString).doubleValue)
+                        let node = Node()
+                        node.config(size: size, label: items[0])
+                        node.diffuseColor = hexStringToCGColor( hex: items[2] )
+                        ret.addNode(node: node )
+                    }
+                }
+                
+                for i in (numNodes!+1) ..< (numNodes! + numEdges!) {
+                    let items = rows[i].components(separatedBy: "\t")
+                    if items.count == 3 {
+                        let n1 = ret.getNode(label: items[0] )
+                        let n2 = ret.getNode(label: items[1] )
+                        let wt: CGFloat = CGFloat((items[2] as NSString).doubleValue)
+                        let edge = Edge(n1: n1!, n2: n2!, wt: wt)
+                        ret.addEdge(edge: edge )
+                    }
+                }
+                
+            } else {
+                return nil
+            }
+        }
+        catch {
+            print( error.localizedDescription )
+        }
         
         return ret
     }
@@ -191,12 +287,16 @@ extension Graph {
                                     ["Yakut", "Yi"]
                                 ]
         
+        let scaling:CGFloat = 5
         for i in 0..<radii.count {
             let node = Node()
             node.config(size: radii[i]/10.0, label: labels[i])
-            node.position = SCNVector3(x: coord[i][0] * 10.0, y: coord[i][1] * 10.0, z: coord[i][2] * 10.0)
+            node.position = SCNVector3(x: coord[i][0] * scaling, y: coord[i][1] * scaling, z: coord[i][2] * scaling)
             graph.addNode(node: node)
         }
+        
+        
+        
         
         for i in 0..<edges.count {
             let lbl1 = edges[i][0]

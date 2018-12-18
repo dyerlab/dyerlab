@@ -14,8 +14,11 @@
 		2A0FA37621A03C3700BAF6B5 /* populationgraphsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0FA37521A03C3700BAF6B5 /* populationgraphsTests.swift */; };
 		2A0FA38321A0401D00BAF6B5 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0FA38221A0401D00BAF6B5 /* Node.swift */; };
 		2A0FA38521A040CC00BAF6B5 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0FA38421A040CC00BAF6B5 /* Graph.swift */; };
+		2A53CB1F21B7FB0400A3A9E4 /* GraphOps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A53CB1E21B7FB0400A3A9E4 /* GraphOps.swift */; };
 		2A6C545521A5FFDA001211B3 /* PopgraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6C545421A5FFDA001211B3 /* PopgraphViewController.swift */; };
 		2AAE090721A3366900553F00 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAE090621A3366900553F00 /* Edge.swift */; };
+		2ABFC7D421BAC4A300E67170 /* NSColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABFC7D321BAC4A300E67170 /* NSColor.swift */; };
+		2ABFC7D621BAD63300E67170 /* CGColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABFC7D521BAD63300E67170 /* CGColor.swift */; };
 		2ADCA96F21A58CEB0052967F /* GraphScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCA96E21A58CEB0052967F /* GraphScene.swift */; };
 		2ADCA97321A5A09A0052967F /* SCNVector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCA97221A5A09A0052967F /* SCNVector3.swift */; };
 		2ADCA97521A5A0BB0052967F /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCA97421A5A0BB0052967F /* CGFloat.swift */; };
@@ -43,10 +46,13 @@
 		2A0FA37121A03C3700BAF6B5 /* populationgraphsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = populationgraphsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A0FA37521A03C3700BAF6B5 /* populationgraphsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = populationgraphsTests.swift; sourceTree = "<group>"; };
 		2A0FA37721A03C3700BAF6B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2A0FA38221A0401D00BAF6B5 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Node.swift; path = SpriteStuff/Node.swift; sourceTree = "<group>"; };
+		2A0FA38221A0401D00BAF6B5 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		2A0FA38421A040CC00BAF6B5 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		2A53CB1E21B7FB0400A3A9E4 /* GraphOps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphOps.swift; sourceTree = "<group>"; };
 		2A6C545421A5FFDA001211B3 /* PopgraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopgraphViewController.swift; sourceTree = "<group>"; };
 		2AAE090621A3366900553F00 /* Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
+		2ABFC7D321BAC4A300E67170 /* NSColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSColor.swift; sourceTree = "<group>"; };
+		2ABFC7D521BAD63300E67170 /* CGColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGColor.swift; sourceTree = "<group>"; };
 		2ADCA96E21A58CEB0052967F /* GraphScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphScene.swift; sourceTree = "<group>"; };
 		2ADCA97221A5A09A0052967F /* SCNVector3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNVector3.swift; sourceTree = "<group>"; };
 		2ADCA97421A5A0BB0052967F /* CGFloat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
@@ -95,11 +101,7 @@
 				2A0FA36021A03C3500BAF6B5 /* AppDelegate.swift */,
 				2ADCA97721A5BBA70052967F /* MainWindowController.swift */,
 				2A0FA36421A03C3500BAF6B5 /* Document.swift */,
-				2A6C545421A5FFDA001211B3 /* PopgraphViewController.swift */,
-				2ADCA96E21A58CEB0052967F /* GraphScene.swift */,
-				2A0FA38221A0401D00BAF6B5 /* Node.swift */,
-				2AAE090621A3366900553F00 /* Edge.swift */,
-				2A0FA38421A040CC00BAF6B5 /* Graph.swift */,
+				2A53CB1D21B7F18900A3A9E4 /* Graph */,
 				2ADCA97621A5A0CA0052967F /* Extensions */,
 				2A0FA36621A03C3700BAF6B5 /* Assets.xcassets */,
 				2A0FA36821A03C3700BAF6B5 /* Main.storyboard */,
@@ -118,11 +120,26 @@
 			path = populationgraphsTests;
 			sourceTree = "<group>";
 		};
+		2A53CB1D21B7F18900A3A9E4 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				2A6C545421A5FFDA001211B3 /* PopgraphViewController.swift */,
+				2ADCA96E21A58CEB0052967F /* GraphScene.swift */,
+				2A0FA38221A0401D00BAF6B5 /* Node.swift */,
+				2AAE090621A3366900553F00 /* Edge.swift */,
+				2A0FA38421A040CC00BAF6B5 /* Graph.swift */,
+				2A53CB1E21B7FB0400A3A9E4 /* GraphOps.swift */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
 		2ADCA97621A5A0CA0052967F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				2ADCA97221A5A09A0052967F /* SCNVector3.swift */,
 				2ADCA97421A5A0BB0052967F /* CGFloat.swift */,
+				2ABFC7D321BAC4A300E67170 /* NSColor.swift */,
+				2ABFC7D521BAD63300E67170 /* CGColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -230,7 +247,10 @@
 				2A0FA38521A040CC00BAF6B5 /* Graph.swift in Sources */,
 				2A6C545521A5FFDA001211B3 /* PopgraphViewController.swift in Sources */,
 				2ADCA97321A5A09A0052967F /* SCNVector3.swift in Sources */,
+				2A53CB1F21B7FB0400A3A9E4 /* GraphOps.swift in Sources */,
+				2ABFC7D421BAC4A300E67170 /* NSColor.swift in Sources */,
 				2ADCA97821A5BBA70052967F /* MainWindowController.swift in Sources */,
+				2ABFC7D621BAD63300E67170 /* CGColor.swift in Sources */,
 				2ADCA97521A5A0BB0052967F /* CGFloat.swift in Sources */,
 				2AAE090721A3366900553F00 /* Edge.swift in Sources */,
 				2A0FA38321A0401D00BAF6B5 /* Node.swift in Sources */,

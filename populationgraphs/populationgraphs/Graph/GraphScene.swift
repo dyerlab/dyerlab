@@ -14,8 +14,20 @@ class GraphScene: SCNScene {
     var cameraNode: SCNNode!
     var lightNode: SCNNode!
     var gridNode: SCNNode!
+    var groundNode: SCNNode!
+    
     
     func config() {
+    
+        let floor = SCNFloor()
+        floor.reflectivity = 0.1
+        let floorMaterial = SCNMaterial()
+        floorMaterial.diffuse.contents = NSColor.darkGray
+        floor.materials = [floorMaterial]
+        groundNode = SCNNode(geometry: floor)
+        groundNode.position = SCNVector3(x: 0, y: -11, z: 0)
+        rootNode.addChildNode(groundNode)
+        
         
         let ambientLight = SCNLight()
         ambientLight.type = .ambient
@@ -28,7 +40,7 @@ class GraphScene: SCNScene {
         
         cameraNode = SCNNode()
         cameraNode.camera = SCNCamera()
-        cameraNode.position = SCNVector3(x: 0.0, y: 0.0, z: 50)
+        cameraNode.position = SCNVector3(x: 0.0, y: 10.0, z: 50)
         cameraNode.constraints = [ SCNLookAtConstraint(target: rootNode) ]
         rootNode.addChildNode(cameraNode)
 
@@ -42,4 +54,21 @@ class GraphScene: SCNScene {
         
     }
 
+}
+
+
+
+
+extension GraphScene {
+    
+    public func removeAllNodes() {
+        rootNode.enumerateChildNodes { (node, stop) in
+            if node != cameraNode &&
+                node != lightNode &&
+                node != gridNode &&
+                node != groundNode {
+                node.removeFromParentNode()
+            }
+        }
+    }
 }
