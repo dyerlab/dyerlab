@@ -12,6 +12,12 @@ import SceneKit
 
 extension SCNVector3 {
     
+    static func random( mn: CGFloat, mx: CGFloat ) -> SCNVector3 {
+        return SCNVector3Make(CGFloat.random(in: mn...mx),
+                              CGFloat.random(in: mn...mx),
+                              CGFloat.random(in: mn...mx) )
+    }
+    
     public static func + (left: SCNVector3, right: SCNVector3 ) -> SCNVector3 {
         return SCNVector3Make(left.x + right.x, left.y+right.y, left.z+right.z)
     }
@@ -46,7 +52,14 @@ extension SCNVector3 {
         return sqrtf( Float(x*x + y*y + z*z) )
     }
     
+    public func normalized() -> SCNVector3 {
+        return (self.length() == 0) ? self :  self / CGFloat(self.length())
+    }
     
+    
+    public func abs() -> SCNVector3 {
+        return SCNVector3Make( CGFloat.abs(x), CGFloat.abs(y), CGFloat.abs(z) )
+    }
     
     
     static func lineEulerAngles( vector: SCNVector3 ) -> SCNVector3 {
@@ -72,6 +85,17 @@ extension SCNVector3 {
 
 
 
+public func limit(vec: SCNVector3, mn: CGFloat, mx: CGFloat ) -> SCNVector3 {
+    
+    let ret = SCNVector3(x: ( vec.x < mn ) ? mn : ((vec.x > mx) ? mx : vec.x),
+                         y: ( vec.y < mn ) ? mn : ((vec.y > mx) ? mx : vec.y),
+                         z: ( vec.z < mn ) ? mn : ((vec.z > mx) ? mx : vec.z))
+    
+    return ret
+}
+
+
+
 public func smallestElements( vec1: SCNVector3, vec2: SCNVector3) -> SCNVector3 {
     return SCNVector3(x: Swift.min(vec1.x, vec2.x), y: Swift.min(vec1.y, vec2.y), z: Swift.min(vec1.z, vec2.z) )
 }
@@ -81,3 +105,5 @@ public func smallestElements( vec1: SCNVector3, vec2: SCNVector3) -> SCNVector3 
 public func largestElements( vec1: SCNVector3, vec2: SCNVector3) -> SCNVector3 {
     return SCNVector3(x: Swift.max(vec1.x, vec2.x), y: Swift.max(vec1.y, vec2.y), z: Swift.max(vec1.z, vec2.z) )
 }
+
+

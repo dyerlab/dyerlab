@@ -19,6 +19,7 @@
 		2AAE090721A3366900553F00 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAE090621A3366900553F00 /* Edge.swift */; };
 		2ABFC7D421BAC4A300E67170 /* NSColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABFC7D321BAC4A300E67170 /* NSColor.swift */; };
 		2ABFC7D621BAD63300E67170 /* CGColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABFC7D521BAD63300E67170 /* CGColor.swift */; };
+		2AD86AD321CA8C80005DBDC0 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD86AD221CA8C80005DBDC0 /* Link.swift */; };
 		2ADCA96F21A58CEB0052967F /* GraphScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCA96E21A58CEB0052967F /* GraphScene.swift */; };
 		2ADCA97321A5A09A0052967F /* SCNVector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCA97221A5A09A0052967F /* SCNVector3.swift */; };
 		2ADCA97521A5A0BB0052967F /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCA97421A5A0BB0052967F /* CGFloat.swift */; };
@@ -53,6 +54,7 @@
 		2AAE090621A3366900553F00 /* Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
 		2ABFC7D321BAC4A300E67170 /* NSColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSColor.swift; sourceTree = "<group>"; };
 		2ABFC7D521BAD63300E67170 /* CGColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGColor.swift; sourceTree = "<group>"; };
+		2AD86AD221CA8C80005DBDC0 /* Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
 		2ADCA96E21A58CEB0052967F /* GraphScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphScene.swift; sourceTree = "<group>"; };
 		2ADCA97221A5A09A0052967F /* SCNVector3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNVector3.swift; sourceTree = "<group>"; };
 		2ADCA97421A5A0BB0052967F /* CGFloat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				2AAE090621A3366900553F00 /* Edge.swift */,
 				2A0FA38421A040CC00BAF6B5 /* Graph.swift */,
 				2A53CB1E21B7FB0400A3A9E4 /* GraphOps.swift */,
+				2AD86AD221CA8C80005DBDC0 /* Link.swift */,
 			);
 			path = Graph;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A0FA38521A040CC00BAF6B5 /* Graph.swift in Sources */,
+				2AD86AD321CA8C80005DBDC0 /* Link.swift in Sources */,
 				2A6C545521A5FFDA001211B3 /* PopgraphViewController.swift in Sources */,
 				2ADCA97321A5A09A0052967F /* SCNVector3.swift in Sources */,
 				2A53CB1F21B7FB0400A3A9E4 /* GraphOps.swift in Sources */,

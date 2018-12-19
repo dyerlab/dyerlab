@@ -43,10 +43,31 @@ class Graph {
 // MARK: Movement stuff
 extension Graph {
     
+    public func centroid() -> SCNVector3 {
+        var centroid = nodes.reduce(SCNVector3Zero, { result, node in
+            return result + node.position
+        })
+        
+        if nodes.count > 0 {
+            centroid = centroid / CGFloat(nodes.count)
+        }
+        
+        return centroid
+    }
+    
+    public func center( on position: SCNVector3 ) {
+        let offset = position - centroid() 
+        nodes.forEach( {node in
+            node.shift(displacement: offset)
+        })
+        edges.forEach( {edge in
+            edge.shift(displacement: offset)
+        })
+    }
     
     public func moveAboveFloor() {
 //        if nodes.count < 1 { return }
-//        
+//
 //        var y = nodes.first?.position.y
 //        for (i,node) in nodes.enumerated() {
 //            if (node.position.y - node.geometry? < y {
@@ -57,7 +78,7 @@ extension Graph {
 //        mn.x = 0
 //        mn.z = 0
 //        mn.y = mn.y + nodes
-//        
+//
 //        translateNodes(offset: mn  )
     }
     
@@ -120,7 +141,7 @@ extension Graph {
                 for i in 1 ... numNodes! {
                     let items = rows[i].components(separatedBy: "\t")
                     if items.count == 3 {
-                        let size: CGFloat = CGFloat((items[1] as NSString).doubleValue)
+                        let size: CGFloat = CGFloat((items[1] as NSString).doubleValue) / 10.0
                         let node = Node()
                         node.config(size: size, label: items[0])
                         node.diffuseColor = hexStringToCGColor( hex: items[2] )

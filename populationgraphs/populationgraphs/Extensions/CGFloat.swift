@@ -15,4 +15,11 @@ extension CGFloat {
         return deg * CGFloat.pi / 180.0
     }
     
+    public static func abs(_ val: CGFloat ) -> CGFloat {
+        return (val < 0.0 ) ? -1.0 * val : val
+    }
+    
 }
+
+
+

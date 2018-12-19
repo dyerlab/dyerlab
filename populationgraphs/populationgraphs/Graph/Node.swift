@@ -11,10 +11,18 @@ import SceneKit
 
 class Node: SCNNode {
     
+    var displacement: SCNVector3
+    var location: SCNVector3
     var diffuseColor: CGColor?
     var specularColor: CGColor?
     var labelNode: SCNNode!
     var radius: CGFloat = 1.0
+    var edges: [Edge]
+    var degree: Int {
+        get {
+            return edges.count
+        }
+    }
     var label : String {
         get {
             return (labelNode.geometry as! SCNText).string as! String
@@ -22,6 +30,10 @@ class Node: SCNNode {
     }
     
     override init() {
+        self.edges = [Edge]()
+        self.displacement = SCNVector3Zero
+        self.location = SCNVector3Zero
+        
         super.init()
         diffuseColor = CGColor.init( red: 168.0/255.0,
                                      green: 221.0/255.0,
@@ -29,9 +41,8 @@ class Node: SCNNode {
                                      alpha: 1.0 )
         specularColor = CGColor.white
         
-        position = SCNVector3.init(x: CGFloat.random(in: 0..<10),
-                                   y: CGFloat.random(in: 0..<10),
-                                   z: CGFloat.random(in: 0..<10) )
+        position = SCNVector3.random(mn: -50, mx: 50 )
+        location = position
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -55,14 +66,6 @@ class Node: SCNNode {
         sphere.firstMaterial!.diffuse.contents = diffuseColor
         sphere.firstMaterial!.specular.contents = specularColor
         self.geometry = sphere
-        
-        // Set up gravity physics body
-        let gravityField = SCNPhysicsField.radialGravity()
-        gravityField.strength = 7500
-        self.physicsField = gravityField
-        let shape = SCNPhysicsShape(geometry: sphere, options: nil)
-        let shapeBody = SCNPhysicsBody(type: .kinematic, shape: shape)
-        self.physicsBody = shapeBody
         
     }
     

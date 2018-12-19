@@ -15,7 +15,8 @@ class GraphScene: SCNScene {
     var lightNode: SCNNode!
     var gridNode: SCNNode!
     var groundNode: SCNNode!
-    
+    var temperature: CGFloat = 10.0
+
     
     func config() {
     
@@ -25,7 +26,7 @@ class GraphScene: SCNScene {
         floorMaterial.diffuse.contents = NSColor.darkGray
         floor.materials = [floorMaterial]
         groundNode = SCNNode(geometry: floor)
-        groundNode.position = SCNVector3(x: 0, y: -11, z: 0)
+        groundNode.position = SCNVector3(x: 0, y: -25, z: 0)
         rootNode.addChildNode(groundNode)
         
         
@@ -40,7 +41,8 @@ class GraphScene: SCNScene {
         
         cameraNode = SCNNode()
         cameraNode.camera = SCNCamera()
-        cameraNode.position = SCNVector3(x: 0.0, y: 10.0, z: 50)
+        cameraNode.camera?.zFar = 200.0
+        cameraNode.position = SCNVector3(x: 0.0, y: 10.0, z: 100)
         cameraNode.constraints = [ SCNLookAtConstraint(target: rootNode) ]
         rootNode.addChildNode(cameraNode)
 
@@ -50,7 +52,39 @@ class GraphScene: SCNScene {
         lightNode.position = SCNVector3(x: 0, y: 0, z: 50)
         rootNode.addChildNode(lightNode)
         
+        
+        
         physicsWorld.gravity = SCNVector3(x: 0, y: 0, z: 0)
+
+        
+        
+        
+//        let anc = SCNSphere(radius: 0.01)
+//        let ancNode = SCNNode(geometry: anc)
+//        ancNode.position = SCNVector3(x: 0, y: 0, z: 0)
+//
+//
+//        let node1 = Node()
+//        node1.config(size: 1, label: "bob")
+//        node1.position = SCNVector3(x: -8, y: 0, z: 0)
+//
+//        let node2 = Node()
+//        node2.config(size: 1, label: "alice")
+//        node2.position = SCNVector3(x: 8, y: 0, z: 0)
+//
+//
+//
+//        let edge = Edge(n1: node1, n2: node2, wt: 5)
+//        //let edge = SCNNode.lineBetween(nodeA: node1, nodeB: node2)
+//
+//        ancNode.addChildNode(node1)
+//        ancNode.addChildNode(node2)
+//        ancNode.addChildNode(edge)
+//
+//        rootNode.addChildNode(ancNode)
+        
+//        physicsWorld.addBehavior(edge.joint1!)
+//        physicsWorld.addBehavior(edge.joint2!)
         
     }
 
@@ -70,5 +104,11 @@ extension GraphScene {
                 node.removeFromParentNode()
             }
         }
+    }
+    
+    public func addGraph( graph: Graph ) {
+        rootNode.addChildNode(graph.root)
+        graph.center(on: SCNVector3Zero )
+        cameraNode.constraints = [ SCNLookAtConstraint(target: graph.root) ]
     }
 }

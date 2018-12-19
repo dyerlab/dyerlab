@@ -14,6 +14,7 @@ class PopgraphViewController: NSViewController {
     @IBOutlet weak var scnView: SCNView!
     
     var scene: GraphScene!
+    var timer: Timer!
     
     var document: Document? {
         get {
@@ -24,18 +25,26 @@ class PopgraphViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         scene = GraphScene()
         scene.config()
+        
         scnView.scene = scene
         scnView.allowsCameraControl = true
         scnView.backgroundColor = NSColor.windowBackgroundColor
         scnView.autoenablesDefaultLighting = true 
         
+        
+       
     }
     
     override func viewDidAppear() {
         if self.document != nil {
+            
+            
+            document!.graph = Graph.makeHumanGraph()
+            
+            
+            
             if document!.graph != nil {
                 scene.rootNode.addChildNode( document!.graph!.root )
             }
@@ -93,6 +102,11 @@ extension PopgraphViewController {
                 document!.graph?.moveAboveFloor()
                 print("moving")
                 
+            case 15: // R key
+                let action = SCNAction.move(to: SCNVector3(x: 0.0, y: 10.0, z: 50), duration: 0.5)
+                scene.cameraNode.runAction( action )
+                print("recentering camera")
+                
             case 33:  // { key
                 document!.graph?.nodes.forEach { $0.resize(val: (1.0/1.1) ) }
                 print("shrink node")
@@ -101,6 +115,18 @@ extension PopgraphViewController {
                 document!.graph?.nodes.forEach { $0.resize(val: 1.1) }
                 print("grow node")
                 
+            case 37:  // l key
+                minimizeSpring(graph: document!.graph! )
+                print("minimizing spring")
+                
+            case 69: // + key on keypad
+                document!.graph?.nodes.forEach { $0.physicsField?.strength = ($0.physicsField?.strength)! + 0.1 }
+                print("keypad plus: now \(document!.graph?.nodes.first?.physicsField?.strength ?? 0.0)")
+                
+            case 78: // - key on keypad
+                document!.graph?.nodes.forEach { $0.physicsField?.strength = ($0.physicsField?.strength)! - 0.1 }
+                print("keypad minus: now \(document!.graph?.nodes.first?.physicsField?.strength ?? 0.0)")
+
             default:
                 print("Unhandled keycode: \(event.keyCode)")
                 break;
@@ -134,5 +160,35 @@ extension PopgraphViewController {
     
     
     
+    
+}
+
+
+
+
+
+
+extension PopgraphViewController {
+    
+    public func toggleTimer() {
+        if timer == nil {
+            timer = Timer.scheduledTimer(timeInterval: 0.0, target: self, selector: #selector(self.timerFireMethod), userInfo: nil, repeats: true)
+        }
+        else if timer.isValid {
+            timer.invalidate()
+            timer = nil
+            scene.temperature = 10.0
+        }
+    }
+    
+    @objc public func timerFireMethod( timer: Timer ) {
+    
+        scene.temperature = (scene.temperature > 0.5) ? 0.9 * scene.temperature : 0.45
+        
+        
+        if !calculateNodeForces(graph: document!.graph!, temperature: scene.temperature) {
+            toggleTimer()
+        }
+    }
     
 }

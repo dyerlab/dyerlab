@@ -8,6 +8,7 @@
 
 import Foundation
 import Cocoa
+import SceneKit
 
 class Document: NSDocument {
 
@@ -74,10 +75,10 @@ class Document: NSDocument {
                 if ext == "pgraph" {
                     NSLog("Loading pgraph")
                     graph = Graph.importFromPGraph(path)!
-                    graph?.moveAboveFloor()
                     
                     viewControllers.first?.scene.removeAllNodes()
-                    viewControllers.first?.scene.rootNode.addChildNode( graph!.root )
+                    viewControllers.first?.scene.addGraph( graph: graph! )
+//                    viewControllers.first?.scene.rootNode.addChildNode( graph!.root )
                 }
                 else if ext == "json" {
                     NSLog("not implemented yet")
