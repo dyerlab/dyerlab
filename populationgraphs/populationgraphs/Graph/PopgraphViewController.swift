@@ -13,7 +13,7 @@ class PopgraphViewController: NSViewController {
 
     @IBOutlet weak var scnView: SCNView!
     
-    var scene: GraphScene!
+    var scene: PopGraphScene!
     var timer: Timer!
     
     var document: Document? {
@@ -25,7 +25,7 @@ class PopgraphViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        scene = GraphScene()
+        scene = PopGraphScene()
         scene.config()
         
         scnView.scene = scene

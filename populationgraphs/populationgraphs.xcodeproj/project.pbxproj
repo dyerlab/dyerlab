@@ -15,12 +15,13 @@
 		2A0FA38321A0401D00BAF6B5 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0FA38221A0401D00BAF6B5 /* Node.swift */; };
 		2A0FA38521A040CC00BAF6B5 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0FA38421A040CC00BAF6B5 /* Graph.swift */; };
 		2A53CB1F21B7FB0400A3A9E4 /* GraphOps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A53CB1E21B7FB0400A3A9E4 /* GraphOps.swift */; };
+		2A5FD70921CD07A7004A388E /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5FD70821CD07A7004A388E /* GraphViewController.swift */; };
 		2A6C545521A5FFDA001211B3 /* PopgraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6C545421A5FFDA001211B3 /* PopgraphViewController.swift */; };
 		2AAE090721A3366900553F00 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAE090621A3366900553F00 /* Edge.swift */; };
 		2ABFC7D421BAC4A300E67170 /* NSColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABFC7D321BAC4A300E67170 /* NSColor.swift */; };
 		2ABFC7D621BAD63300E67170 /* CGColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABFC7D521BAD63300E67170 /* CGColor.swift */; };
 		2AD86AD321CA8C80005DBDC0 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD86AD221CA8C80005DBDC0 /* Link.swift */; };
-		2ADCA96F21A58CEB0052967F /* GraphScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCA96E21A58CEB0052967F /* GraphScene.swift */; };
+		2ADCA96F21A58CEB0052967F /* PopGraphScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCA96E21A58CEB0052967F /* PopGraphScene.swift */; };
 		2ADCA97321A5A09A0052967F /* SCNVector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCA97221A5A09A0052967F /* SCNVector3.swift */; };
 		2ADCA97521A5A0BB0052967F /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCA97421A5A0BB0052967F /* CGFloat.swift */; };
 		2ADCA97821A5BBA70052967F /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCA97721A5BBA70052967F /* MainWindowController.swift */; };
@@ -50,12 +51,13 @@
 		2A0FA38221A0401D00BAF6B5 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		2A0FA38421A040CC00BAF6B5 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 		2A53CB1E21B7FB0400A3A9E4 /* GraphOps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphOps.swift; sourceTree = "<group>"; };
+		2A5FD70821CD07A7004A388E /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 		2A6C545421A5FFDA001211B3 /* PopgraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopgraphViewController.swift; sourceTree = "<group>"; };
 		2AAE090621A3366900553F00 /* Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
 		2ABFC7D321BAC4A300E67170 /* NSColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSColor.swift; sourceTree = "<group>"; };
 		2ABFC7D521BAD63300E67170 /* CGColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGColor.swift; sourceTree = "<group>"; };
 		2AD86AD221CA8C80005DBDC0 /* Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
-		2ADCA96E21A58CEB0052967F /* GraphScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphScene.swift; sourceTree = "<group>"; };
+		2ADCA96E21A58CEB0052967F /* PopGraphScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopGraphScene.swift; sourceTree = "<group>"; };
 		2ADCA97221A5A09A0052967F /* SCNVector3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNVector3.swift; sourceTree = "<group>"; };
 		2ADCA97421A5A0BB0052967F /* CGFloat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
 		2ADCA97721A5BBA70052967F /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
@@ -126,12 +128,13 @@
 			isa = PBXGroup;
 			children = (
 				2A6C545421A5FFDA001211B3 /* PopgraphViewController.swift */,
-				2ADCA96E21A58CEB0052967F /* GraphScene.swift */,
+				2ADCA96E21A58CEB0052967F /* PopGraphScene.swift */,
 				2A0FA38221A0401D00BAF6B5 /* Node.swift */,
 				2AAE090621A3366900553F00 /* Edge.swift */,
 				2A0FA38421A040CC00BAF6B5 /* Graph.swift */,
 				2A53CB1E21B7FB0400A3A9E4 /* GraphOps.swift */,
 				2AD86AD221CA8C80005DBDC0 /* Link.swift */,
+				2A5FD70821CD07A7004A388E /* GraphViewController.swift */,
 			);
 			path = Graph;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				2ADCA97321A5A09A0052967F /* SCNVector3.swift in Sources */,
 				2A53CB1F21B7FB0400A3A9E4 /* GraphOps.swift in Sources */,
 				2ABFC7D421BAC4A300E67170 /* NSColor.swift in Sources */,
+				2A5FD70921CD07A7004A388E /* GraphViewController.swift in Sources */,
 				2ADCA97821A5BBA70052967F /* MainWindowController.swift in Sources */,
 				2ABFC7D621BAD63300E67170 /* CGColor.swift in Sources */,
 				2ADCA97521A5A0BB0052967F /* CGFloat.swift in Sources */,
@@ -260,7 +264,7 @@
 				2A0FA38321A0401D00BAF6B5 /* Node.swift in Sources */,
 				2A0FA36121A03C3500BAF6B5 /* AppDelegate.swift in Sources */,
 				2A0FA36521A03C3500BAF6B5 /* Document.swift in Sources */,
-				2ADCA96F21A58CEB0052967F /* GraphScene.swift in Sources */,
+				2ADCA96F21A58CEB0052967F /* PopGraphScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

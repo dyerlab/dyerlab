@@ -9,7 +9,7 @@
 import Cocoa
 import SceneKit
 
-class GraphScene: SCNScene {
+class PopGraphScene: SCNScene {
     
     var cameraNode: SCNNode!
     var lightNode: SCNNode!
@@ -93,7 +93,7 @@ class GraphScene: SCNScene {
 
 
 
-extension GraphScene {
+extension PopGraphScene {
     
     public func removeAllNodes() {
         rootNode.enumerateChildNodes { (node, stop) in

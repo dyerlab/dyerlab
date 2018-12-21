@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
-        <plugIn identifier="com.apple.SceneKitIBPlugin" version="14460.31"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -718,32 +717,21 @@
             </objects>
             <point key="canvasLocation" x="602" y="237"/>
         </scene>
-        <!--Popgraph View Controller-->
+        <!--Graph View Controller-->
         <scene sceneID="e3h-5i-1iD">
             <objects>
-                <viewController id="LfQ-EW-AR8" customClass="PopgraphViewController" customModule="populationgraphs" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="RnH-et-O1I">
-                        <rect key="frame" x="0.0" y="0.0" width="900" height="1031"/>
+                <viewController id="LfQ-EW-AR8" customClass="GraphViewController" customModule="populationgraphs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="RnH-et-O1I" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="680" height="767"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <sceneView translatesAutoresizingMaskIntoConstraints="NO" id="5BT-Mo-jXb">
-                                <rect key="frame" x="0.0" y="0.0" width="900" height="1031"/>
-                            </sceneView>
-                        </subviews>
-                        <constraints>
-                            <constraint firstItem="5BT-Mo-jXb" firstAttribute="leading" secondItem="RnH-et-O1I" secondAttribute="leading" id="Q2f-7m-rCK"/>
-                            <constraint firstAttribute="bottom" secondItem="5BT-Mo-jXb" secondAttribute="bottom" id="UTK-vX-5K4"/>
-                            <constraint firstItem="5BT-Mo-jXb" firstAttribute="top" secondItem="RnH-et-O1I" secondAttribute="top" id="ge8-On-ZMt"/>
-                            <constraint firstAttribute="trailing" secondItem="5BT-Mo-jXb" secondAttribute="trailing" id="sDE-og-eFi"/>
-                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="scnView" destination="5BT-Mo-jXb" id="etb-f7-79h"/>
+                        <outlet property="skView" destination="RnH-et-O1I" id="XtK-pp-rsz"/>
                     </connections>
                 </viewController>
                 <customObject id="y93-Id-rJd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="919" y="1236"/>
+            <point key="canvasLocation" x="809" y="1103.5"/>
         </scene>
     </scenes>
 </document>
