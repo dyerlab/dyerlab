@@ -2,10 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Dyerlab.playground">
+      location = "group:popgraphs/popgraphs.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Chromosome Walking/Chromosome Walking.xcodeproj">
+      location = "group:Dyerlab.playground">
    </FileRef>
    <FileRef
       location = "group:popgraphAR/popgraphAR.xcodeproj">

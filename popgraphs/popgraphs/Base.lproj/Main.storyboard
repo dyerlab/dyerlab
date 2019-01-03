@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,11 +11,11 @@
                 <application id="hnw-xV-0zn" sceneMemberID="viewController">
                     <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
                         <items>
-                            <menuItem title="populationgraphs" id="1Xt-HY-uBw">
+                            <menuItem title="popgraphs" id="1Xt-HY-uBw">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="populationgraphs" systemMenu="apple" id="uQy-DD-JDr">
+                                <menu key="submenu" title="popgraphs" systemMenu="apple" id="uQy-DD-JDr">
                                     <items>
-                                        <menuItem title="About populationgraphs" id="5kV-Vb-QxS">
+                                        <menuItem title="About popgraphs" id="5kV-Vb-QxS">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
@@ -29,7 +29,7 @@
                                             <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                                        <menuItem title="Hide populationgraphs" keyEquivalent="h" id="Olw-nP-bQN">
+                                        <menuItem title="Hide popgraphs" keyEquivalent="h" id="Olw-nP-bQN">
                                             <connections>
                                                 <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
                                             </connections>
@@ -47,7 +47,7 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                                        <menuItem title="Quit populationgraphs" keyEquivalent="q" id="4sb-4s-VLi">
+                                        <menuItem title="Quit popgraphs" keyEquivalent="q" id="4sb-4s-VLi">
                                             <connections>
                                                 <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
                                             </connections>
@@ -81,11 +81,6 @@
                                                     </menuItem>
                                                 </items>
                                             </menu>
-                                        </menuItem>
-                                        <menuItem title="Import" keyEquivalent="i" id="wjo-7q-YgO">
-                                            <connections>
-                                                <action selector="OnImportGraph:" target="Ady-hI-5gd" id="Pto-Zk-bmE"/>
-                                            </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="m54-Is-iLE"/>
                                         <menuItem title="Close" keyEquivalent="w" id="DVo-aG-piG">
@@ -621,17 +616,6 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="hB3-LF-h0Y"/>
-                                        <menuItem title="Show Diagnostics" keyEquivalent="D" id="7i0-Eq-wCC">
-                                            <connections>
-                                                <action selector="OnToggleShowDiagnostics:" target="Ady-hI-5gd" id="RDK-kv-h5r"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem title="Toggle Labels" keyEquivalent="L" id="pb4-6z-OJC">
-                                            <connections>
-                                                <action selector="OnToggleLabel:" target="Ady-hI-5gd" id="lQ0-ZW-M0U"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem isSeparatorItem="YES" id="LZU-3r-yYK"/>
                                         <menuItem title="Show Sidebar" keyEquivalent="s" id="kIP-vf-haE">
                                             <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
                                             <connections>
@@ -676,7 +660,7 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                                     <items>
-                                        <menuItem title="populationgraphs Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                                        <menuItem title="popgraphs Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                             <connections>
                                                 <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
                                             </connections>
@@ -690,7 +674,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="populationgraphs" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="popgraphs" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -699,40 +683,54 @@
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
-                <windowController storyboardIdentifier="Document Window Controller" id="jGA-0Y-lOj" customClass="MainWindowController" customModule="populationgraphs" customModuleProvider="target" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" titlebarAppearsTransparent="YES" id="Ckk-yw-fiv">
+                <windowController id="B8D-0N-5wS" customClass="MainWindowController" customModule="popgraphs" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="482" height="437"/>
+                        <rect key="contentRect" x="196" y="240" width="978" height="767"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                         <connections>
-                            <outlet property="delegate" destination="jGA-0Y-lOj" id="98r-iN-zZc"/>
+                            <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
                     </window>
                     <connections>
-                        <segue destination="LfQ-EW-AR8" kind="relationship" relationship="window.shadowedContentViewController" id="mpH-GK-K31"/>
+                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
                     </connections>
                 </windowController>
-                <customObject id="6f7-a7-6o1" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="602" y="237"/>
+            <point key="canvasLocation" x="264" y="466.5"/>
         </scene>
-        <!--Graph View Controller-->
-        <scene sceneID="e3h-5i-1iD">
+        <!--View Controller-->
+        <scene sceneID="hIz-AP-VOD">
             <objects>
-                <customObject id="y93-Id-rJd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <viewController id="LfQ-EW-AR8" customClass="GraphViewController" customModule="populationgraphs" customModuleProvider="target" sceneMemberID="viewController">
-                    <customView key="view" id="fua-tY-hEh" customClass="SKView">
-                        <rect key="frame" x="0.0" y="0.0" width="992" height="1110"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    </customView>
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="popgraphs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
+                        <rect key="frame" x="0.0" y="0.0" width="978" height="767"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="BzU-iZ-6qJ" customClass="GraphView" customModule="popgraphs" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="978" height="767"/>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="BzU-iZ-6qJ" secondAttribute="bottom" id="04P-lw-pQW"/>
+                            <constraint firstItem="BzU-iZ-6qJ" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="CB4-gi-Ual"/>
+                            <constraint firstItem="BzU-iZ-6qJ" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="UTu-Ip-bMz"/>
+                            <constraint firstItem="BzU-iZ-6qJ" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="VDz-86-dyJ"/>
+                            <constraint firstAttribute="bottom" secondItem="BzU-iZ-6qJ" secondAttribute="bottom" id="hwn-xC-zek"/>
+                            <constraint firstAttribute="trailing" secondItem="BzU-iZ-6qJ" secondAttribute="trailing" id="pUT-27-i8l"/>
+                            <constraint firstAttribute="trailing" secondItem="BzU-iZ-6qJ" secondAttribute="trailing" id="pZS-SA-22M"/>
+                            <constraint firstItem="BzU-iZ-6qJ" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="wTR-EZ-qpz"/>
+                        </constraints>
+                    </view>
                     <connections>
-                        <outlet property="skView" destination="fua-tY-hEh" id="Yuk-Nu-RyX"/>
-                        <outlet property="theView" destination="fua-tY-hEh" id="16P-GM-uTc"/>
+                        <outlet property="theView" destination="BzU-iZ-6qJ" id="JTL-e0-yOb"/>
                     </connections>
                 </viewController>
+                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="602" y="1129"/>
+            <point key="canvasLocation" x="473" y="1385"/>
         </scene>
     </scenes>
 </document>

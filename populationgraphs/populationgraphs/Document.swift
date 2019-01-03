@@ -13,12 +13,12 @@ import SceneKit
 class Document: NSDocument {
 
     var log: String
-    var graph: Graph?
+    //var graph: Graph?
     
-    var viewControllers: [PopgraphViewController] {
-        var result: [PopgraphViewController] = []
+    var viewControllers: [GraphViewController] {
+        var result: [GraphViewController] = []
         for windowController in windowControllers {
-            if let viewController = windowController.contentViewController as? PopgraphViewController {
+            if let viewController = windowController.contentViewController as? GraphViewController {
                 result.append(viewController)
             }
         }
@@ -67,24 +67,23 @@ class Document: NSDocument {
         dialog.allowedFileTypes = ["json","pgraph"]
         
         if( dialog.runModal() == NSApplication.ModalResponse.OK ) {
-            let result = dialog.url
-            
-            if result != nil {
-                let path = result!.path
-                let ext = URL(fileURLWithPath: path).pathExtension
-                if ext == "pgraph" {
-                    NSLog("Loading pgraph")
-                    graph = Graph.importFromPGraph(path)!
-                    
-                    viewControllers.first?.scene.removeAllNodes()
-                    viewControllers.first?.scene.addGraph( graph: graph! )
-//                    viewControllers.first?.scene.rootNode.addChildNode( graph!.root )
-                }
-                else if ext == "json" {
-                    NSLog("not implemented yet")
-                }
-                NSLog( path )
-            }
+//            let result = dialog.url
+//            if result != nil {
+//                let path = result!.path
+//                let ext = URL(fileURLWithPath: path).pathExtension
+//                if ext == "pgraph" {
+//                    NSLog("Loading pgraph")
+//                    graph = Graph.importFromPGraph(path)!
+//                    
+//                    viewControllers.first?.scene.removeAllNodes()
+//                    viewControllers.first?.scene.addGraph( graph: graph! )
+////                    viewControllers.first?.scene.rootNode.addChildNode( graph!.root )
+//                }
+//                else if ext == "json" {
+//                    NSLog("not implemented yet")
+//                }
+//                NSLog( path )
+//            }
         }
         else {
             return
