@@ -10,7 +10,25 @@ import Cocoa
 import SpriteKit
 
 class GraphView: SKView {
-
+    
+    override init(frame frameRect: NSRect) {
+        super.init(frame: frameRect)
+        
+        self.showsFPS = true
+        self.showsFields = true
+        self.showsPhysics = true
+        self.showsNodeCount = true
+    }
+    
+    required init?(coder decoder: NSCoder) {
+        super.init(coder: decoder)
+        
+        self.showsFPS = true
+        self.showsFields = true
+        self.showsPhysics = true
+        self.showsNodeCount = true
+    }
+    
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
 
@@ -21,7 +39,7 @@ class GraphView: SKView {
     override func viewDidEndLiveResize() {
         print("Resizing")
         
-        (self.scene! as! GraphScene).makePhysicsBody( size: self.frame.size )
+        //(self.scene! as! GraphScene).makePhysicsBody( size: self.frame.size )
     }
     
     

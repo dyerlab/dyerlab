@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A03C06621DFB5FB008BC204 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A03C06521DFB5FB008BC204 /* SplitViewController.swift */; };
 		2A6DA2D921DE562900E19F3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6DA2D821DE562900E19F3A /* AppDelegate.swift */; };
-		2A6DA2DB21DE562900E19F3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6DA2DA21DE562900E19F3A /* ViewController.swift */; };
+		2A6DA2DB21DE562900E19F3A /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6DA2DA21DE562900E19F3A /* GraphViewController.swift */; };
 		2A6DA2DD21DE562A00E19F3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A6DA2DC21DE562A00E19F3A /* Assets.xcassets */; };
 		2A6DA2E021DE562A00E19F3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A6DA2DE21DE562A00E19F3A /* Main.storyboard */; };
 		2A6DA2EC21DE562A00E19F3A /* popgraphsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6DA2EB21DE562A00E19F3A /* popgraphsTests.swift */; };
@@ -19,6 +20,7 @@
 		2A6DA2FF21DE5C9800E19F3A /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6DA2FE21DE5C9800E19F3A /* Edge.swift */; };
 		2A6DA30121DE604300E19F3A /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6DA30021DE604300E19F3A /* Graph.swift */; };
 		2A6DA30321DE726800E19F3A /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6DA30221DE726800E19F3A /* GraphView.swift */; };
+		2A6DA30721DEA15200E19F3A /* CGVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6DA30621DEA15200E19F3A /* CGVector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,9 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A03C06521DFB5FB008BC204 /* SplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 		2A6DA2D521DE562900E19F3A /* popgraphs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = popgraphs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A6DA2D821DE562900E19F3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2A6DA2DA21DE562900E19F3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2A6DA2DA21DE562900E19F3A /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 		2A6DA2DC21DE562A00E19F3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A6DA2DF21DE562A00E19F3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2A6DA2E121DE562A00E19F3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		2A6DA2FE21DE5C9800E19F3A /* Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
 		2A6DA30021DE604300E19F3A /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 		2A6DA30221DE726800E19F3A /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		2A6DA30621DEA15200E19F3A /* CGVector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGVector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +96,8 @@
 			children = (
 				2A6DA2D821DE562900E19F3A /* AppDelegate.swift */,
 				2A6DA2FC21DE5A7F00E19F3A /* MainWindowController.swift */,
-				2A6DA2DA21DE562900E19F3A /* ViewController.swift */,
+				2A03C06521DFB5FB008BC204 /* SplitViewController.swift */,
+				2A6DA2DA21DE562900E19F3A /* GraphViewController.swift */,
 				2A6DA30221DE726800E19F3A /* GraphView.swift */,
 				2A6DA2F621DE56B000E19F3A /* GraphScene.swift */,
 				2A6DA30021DE604300E19F3A /* Graph.swift */,
@@ -103,6 +108,7 @@
 				2A6DA2E121DE562A00E19F3A /* Info.plist */,
 				2A6DA2E221DE562A00E19F3A /* popgraphs.entitlements */,
 				2A6DA2FA21DE587700E19F3A /* Node.png */,
+				2A6DA30621DEA15200E19F3A /* CGVector.swift */,
 			);
 			path = popgraphs;
 			sourceTree = "<group>";
@@ -217,14 +223,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A6DA2DB21DE562900E19F3A /* ViewController.swift in Sources */,
+				2A6DA2DB21DE562900E19F3A /* GraphViewController.swift in Sources */,
 				2A6DA2D921DE562900E19F3A /* AppDelegate.swift in Sources */,
 				2A6DA30121DE604300E19F3A /* Graph.swift in Sources */,
 				2A6DA2FF21DE5C9800E19F3A /* Edge.swift in Sources */,
 				2A6DA2F721DE56B000E19F3A /* GraphScene.swift in Sources */,
+				2A03C06621DFB5FB008BC204 /* SplitViewController.swift in Sources */,
 				2A6DA2F921DE584800E19F3A /* Node.swift in Sources */,
 				2A6DA2FD21DE5A7F00E19F3A /* MainWindowController.swift in Sources */,
 				2A6DA30321DE726800E19F3A /* GraphView.swift in Sources */,
+				2A6DA30721DEA15200E19F3A /* CGVector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

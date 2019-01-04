@@ -10,29 +10,36 @@ import Foundation
 import SpriteKit
 
 
-class Edge : SKShapeNode {
+class Edge  {
     var node1: Node
     var node2: Node
-    var spring: SKPhysicsJointSpring
+    var lineNode: SKShapeNode
     
-    
-    init( n1: Node, n2: Node ) {
+    init( n1: Node, n2: Node, weight: CGFloat ) {
         self.node1 = n1
         self.node2 = n2
-        
-        spring = SKPhysicsJointSpring.joint(withBodyA: node1.physicsBody!,
-                                                bodyB: node2.physicsBody!,
-                                                anchorA: CGPoint(x: 0.0, y: 0.0),
-                                                anchorB: CGPoint(x: 0.0, y: 0.0) )
-        
-        spring.frequency = 1.0
-        spring.damping = 0.98
-
-        super.init()
+        self.lineNode = SKShapeNode()
+        self.lineNode.isAntialiased = true
+        self.lineNode.zPosition = -1
+        self.lineNode.lineWidth = weight
+        self.node1.edges.append(self)
+        self.node2.edges.append(self)
+        makePath()
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func makePath() {
+        let path = CGMutablePath()
+        path.move(to: node1.position )
+        path.addLine(to: node2.position )
+        lineNode.path = path
+        lineNode.strokeColor = NSColor.alternateSelectedControlColor
+    }
+    
+    
 }
+
+

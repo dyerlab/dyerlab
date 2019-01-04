@@ -18,7 +18,10 @@ class MainWindowController: NSWindowController {
         // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
         
         windowFrameAutosaveName = "PopgraphsMainWindowAutosaveName"
-        print("Window is \(window?.frame.size)")
+        print("Window is \(window?.frame.size ?? CGSize(width: 0, height:0) )" )
+        
+        
+        
         
     }
 

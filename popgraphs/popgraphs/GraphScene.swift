@@ -11,7 +11,7 @@ import SpriteKit
 
 class GraphScene: SKScene {
     
-    var graph: Graph?
+    var selectedNode: Node? = nil
     
     override init(size: CGSize ) {
         
@@ -19,18 +19,9 @@ class GraphScene: SKScene {
         
         print("Init of Scene (\(size))")
         
-        graph = Graph(scene: self)
-        graph!.makeNode(radius: 25, label: "Bob")
-        graph!.makeNode(radius: 12, label: "Alice")
-        graph!.makeNode(radius: 18, label: "Darius")
-        graph!.makeEdge(label1: "Bob", label2: "Alice")
-        graph!.makeEdge(label1: "Bob", label2: "Darius")
-        graph!.makeEdge(label1: "Darius", label2: "Alice")
-        
-        
         self.scaleMode = .resizeFill
+        self.isUserInteractionEnabled = true
 
-        self.makePhysicsBody(size: size)
 
         
     }
@@ -45,14 +36,77 @@ class GraphScene: SKScene {
 
 extension GraphScene {
     
-    public func makePhysicsBody(size: CGSize ) {
-        let borderBody = SKPhysicsBody(edgeLoopFrom: CGRect(origin: CGPoint(x: 0, y: 0), size: size) )
-        borderBody.friction = 2
-        self.physicsBody = borderBody
+    override func mouseDown(with event: NSEvent) {
+        let location = event.location(in: self)
+        self.selectedNode = self.nodes(at: location).filter { $0 is Node }.first as? Node
+        if self.selectedNode != nil {
+            
+            print( self.selectedNode?.name ?? "nothing")
+        }
     }
+    
+    override func mouseUp(with event: NSEvent) {
+        self.selectedNode = nil
+    }
+    
+    
+    override func mouseDragged(with event: NSEvent) {
+        
+        if self.selectedNode != nil {
+            self.selectedNode?.position = event.location(in: self)
+            self.selectedNode?.didMove()
+        }
+    }
+    
 }
+
+
 
 
 extension GraphScene {
     
+    
+    public func addGraph( graph: Graph ) {
+        graph.nodes.forEach { self.addChild( $0 ) }
+        graph.edges.forEach { self.addChild( $0.lineNode ) }
+    }
+    
+    
+//    func calculateNodeForces(temp: CGFloat) -> Bool {
+//        var ret = false
+//        let numNodes = graph!.nodes.count
+//        let numEdges = graph!.edges.count
+//        let K = CGFloat(sqrtf( 1.0 * ( Float(self.size.width*self.size.height)/Float(numNodes))) * 50.0)
+//        
+//        for i in 0 ..< numNodes {
+//            let node1 = self.graph!.nodes[i]
+//            var xvel: CGFloat = 0.0
+//            var yvel: CGFloat = 0.0
+//            
+//            
+//            // repulsive Forces
+//            if node1 != self.selectedNode {
+//                for j in 0 ..< numNodes {
+//                    if i != j {
+//                        let node2 = self.graph!.nodes[j]
+//                        let vec = CGVector.init(pt1: node1.position, pt2: node2.position)
+//                        let l = CGFloat( (vec.dx * vec.dx + vec.dy * vec.dy) * 4.0 )
+//                        if l > 0 {
+//                            xvel = xvel + (vec.dx/l) * (K*K)/l
+//                            yvel = yvel + (vec.dy/l) * (K*K)/l
+//                        }
+//                    }
+//                }
+//            }
+//            
+//            // Attractive Forces
+//            for j in 0 ..< self.graph!.edges.count {
+//                let e = graph!.edges[j]
+//                
+//            }
+//        }
+//        
+//        
+//        return ret
+//    }
 }
