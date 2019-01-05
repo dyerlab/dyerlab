@@ -52,7 +52,8 @@ extension Graph {
 extension Graph {
     
     public func randomizePositions(size: CGSize ) {
-        nodes.forEach {$0.randomizeLocation(width: size.width, height: size.height) }
+        nodes.forEach { $0.randomizeLocation(width: size.width, height: size.height) }
+        nodes.forEach { $0.didMove() }
     }
 
 }

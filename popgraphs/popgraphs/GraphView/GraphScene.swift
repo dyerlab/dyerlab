@@ -21,9 +21,7 @@ class GraphScene: SKScene {
         
         self.scaleMode = .resizeFill
         self.isUserInteractionEnabled = true
-
-
-        
+       
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -69,6 +67,7 @@ extension GraphScene {
     public func addGraph( graph: Graph ) {
         graph.nodes.forEach { self.addChild( $0 ) }
         graph.edges.forEach { self.addChild( $0.lineNode ) }
+        graph.nodes.forEach { $0.didMove() }
     }
     
     
