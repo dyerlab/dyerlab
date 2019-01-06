@@ -9,9 +9,15 @@
 import Cocoa
 
 
+enum OutlineItemType {
+    case node
+    case edge
+}
+
 class OutlineItem: NSObject {
     let title: String
     var properties: [String:String] = [:]
+    var type: OutlineItemType
     override var description: String {
         var ret = "\(self.title): \n"
         for (key,val) in properties.enumerated() {
@@ -21,8 +27,9 @@ class OutlineItem: NSObject {
     }
 
     
-    init( title: String ) {
+    init( title: String, type: OutlineItemType ) {
         self.title = title
+        self.type = type
     }
 }
 

@@ -19,7 +19,8 @@ class SidebarViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        sidebarView.outlineView.delegate = self
+        sidebarView.outlineView.dataSource = self
         print("SidebarVC::viewDidLoad()")
     }
     
@@ -41,14 +42,14 @@ extension SidebarViewController {
         
         let nodeSet = OutlineSet(name: "Nodes")
         for node in graph.nodes {
-            let entry = OutlineItem(title: node.name! )
+            let entry = OutlineItem(title: node.name!, type: .node)
             nodeSet.children.append(entry)
         }
         popgraphCategory.children.append( nodeSet )
         
         let edgeSet = OutlineSet(name: "Edges")
         for edge in graph.edges {
-            let entry = OutlineItem(title: String("\(edge.node1.name!) - \(edge.node2.name!))") )
+            let entry = OutlineItem(title: String("\(edge.node1.name!) - \(edge.node2.name!)"), type: .edge )
             edgeSet.children.append( entry )
         }
         popgraphCategory.children.append( edgeSet )
@@ -57,12 +58,9 @@ extension SidebarViewController {
         print( "\(popgraphCategory)")
         
         categories.append( popgraphCategory )
-        
-        if let ov = sidebarView.outlineView {
-            ov.delegate = self
-            ov.dataSource = self
-            ov.reloadData()
-        }
+
+        sidebarView.outlineView.reloadData()
+        sidebarView.outlineView.expandItem( sidebarView.outlineView.item(atRow: 0) )
     }
     
 }
@@ -174,7 +172,19 @@ extension SidebarViewController : NSOutlineViewDelegate, NSOutlineViewDataSource
     
     func outlineViewSelectionDidChange(_ notification: Notification) {
         print("Selection Chagned in Outline View")
-        print(notification)
+        //print(notification)
+        
+        let idx = (notification.object as! NSOutlineView).selectedRow
+        if let obj = (notification.object as! NSOutlineView).item(atRow: idx) as? OutlineItem {
+            print("Pointing to item: \(obj.title)")
+            if obj.type == .node {
+                print("selecting node")
+                NotificationCenter.default.post(name: Node.selectNodeNotification,
+                                                object: nil,
+                                                userInfo:  ["Name": obj.title ] )
+            }
+        }
+        
         
         
     }

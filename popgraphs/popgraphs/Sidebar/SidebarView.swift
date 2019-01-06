@@ -29,6 +29,7 @@ class SidebarView: NSView {
         addSubview(contentView)
         contentView.frame = self.bounds
         contentView.autoresizingMask = [ .width, .height ]
+        
     }
     
     override func draw(_ dirtyRect: NSRect) {
