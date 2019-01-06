@@ -12,8 +12,18 @@ import Cocoa
 class OutlineItem: NSObject {
     let title: String
     var properties: [String:String] = [:]
+    override var description: String {
+        var ret = "\(self.title): \n"
+        for (key,val) in properties.enumerated() {
+            ret += "\(key): \(val)\n"
+        }
+        return ret
+    }
+
     
     init( title: String ) {
         self.title = title
     }
 }
+
+

@@ -12,10 +12,12 @@ import SpriteKit
 class GraphScene: SKScene {
     
     var selectedNode: Node? = nil
+    var theGraph: Graph?
     
     override init(size: CGSize ) {
         
         super.init(size: size)
+        self.backgroundColor = NSColor.windowBackgroundColor
         
         print("Init of Scene (\(size))")
         
@@ -64,11 +66,22 @@ extension GraphScene {
 extension GraphScene {
     
     
-    public func addGraph( graph: Graph ) {
+    public func setGraph( graph: Graph ) {
+        
+        if theGraph != nil {
+            theGraph!.nodes.forEach { $0.removeFromParent() }
+            theGraph!.edges.forEach { $0.lineNode.removeFromParent() }
+        }
+        
         graph.nodes.forEach { self.addChild( $0 ) }
         graph.edges.forEach { self.addChild( $0.lineNode ) }
+        graph.nodes.forEach { $0.randomizeLocation(width: self.size.width, height: self.size.height) }
         graph.nodes.forEach { $0.didMove() }
+        
+        self.theGraph = graph
     }
+    
+
     
     
 //    func calculateNodeForces(temp: CGFloat) -> Bool {

@@ -54,9 +54,18 @@ extension Node {
         return self.displacement == CGPoint(x: 0.0, y: 0.0)
     }
     
+    
+    // TODO: make sure it only is put in places where self and label will
     func randomizeLocation(width: CGFloat, height: CGFloat) {
-        self.position = CGPoint(x: CGFloat.random(in: 0...width),
-                                y: CGFloat.random(in: 0...height) )
+        let trueBounds = self.calculateAccumulatedFrame()
+        let l: CGFloat = 10.0 + trueBounds.size.width / 2.0
+        let r: CGFloat = width - 10.0 - trueBounds.size.width / 2.0
+        let t: CGFloat = height - 10.0 - trueBounds.size.height / 2.0
+        let b: CGFloat = 10.0 + trueBounds.size.height / 2.0
+        
+        
+        self.position = CGPoint(x: CGFloat.random(in: l...r),
+                                y: CGFloat.random(in: b...t) )
     }
 }
 

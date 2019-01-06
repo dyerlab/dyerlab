@@ -8,7 +8,16 @@
 
 import Cocoa
 
+
+
 class MainWindowController: NSWindowController {
+    
+    static let loadNewGraphNotification = Notification.Name("loadNewGraphNotificationName")
+    var popgraphVC: PopgraphViewController?
+    var sidebarVC: SidebarViewController?
+    
+    
+    var theGraph: Graph?
     
 //    var graphController: MainViewController? {
 //        get {
@@ -27,34 +36,24 @@ class MainWindowController: NSWindowController {
     
         //sssswindowFrameAutosaveName = "PopgraphsMainWindowAutosaveName"
         print("Window is \(window?.frame.size ?? CGSize(width: 0, height:0) )" )
+        
+        popgraphVC = (contentViewController?.children.filter {$0 is PopgraphViewController})!.first as? PopgraphViewController
+        sidebarVC = (contentViewController?.children.filter {$0 is SidebarViewController})!.first as? SidebarViewController
+        
     }
 
     @IBAction func OnImportFile(sender: Any?) {
-        print("OnImportFile()")
-        
-        let currentGraph = Graph()
-        currentGraph.makeNode(radius: 25, label: "Bob")
-        currentGraph.makeNode(radius: 12, label: "Alice")
-        currentGraph.makeNode(radius: 18, label: "Darius")
-        currentGraph.makeEdge(label1: "Bob", label2: "Alice", weight: 1.0)
-        currentGraph.makeEdge(label1: "Bob", label2: "Darius", weight: 2.0)
-        currentGraph.makeEdge(label1: "Darius", label2: "Alice", weight: 2.8)
-        
-//        
-//        if let ctrl = self.graphController {
-//            currentGraph.nodes.forEach {$0.randomizeLocation(width: ctrl.scene!.size.width, height: ctrl.scene!.size.height) }
-//            ctrl.scene!.addGraph( graph: currentGraph )
-//        }
-//        else {
-//            print("Cannot instantiate main content controller")
-//        }
-//        
-//        if let ctrl = self.summaryViewController {
-//            ctrl.setGraph( graph: currentGraph )
-//        }
-//        else {
-//            print("Cannot instantiate summary view controller")
-//        }
+        theGraph = Graph()
+        theGraph!.makeNode(radius: 25, label: "Bob")
+        theGraph!.makeNode(radius: 12, label: "Alice")
+        theGraph!.makeNode(radius: 18, label: "Darius")
+        theGraph!.makeEdge(label1: "Bob", label2: "Alice", weight: 1.0)
+        theGraph!.makeEdge(label1: "Bob", label2: "Darius", weight: 2.0)
+        theGraph!.makeEdge(label1: "Darius", label2: "Alice", weight: 2.8)
+
+        popgraphVC!.theScene?.setGraph( graph: theGraph! )
+        sidebarVC!.setGraph( graph: theGraph! )
+
     }
     
     

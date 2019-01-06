@@ -11,7 +11,8 @@ import Cocoa
 class SidebarView: NSView {
     
     @IBOutlet var contentView: NSView!
-    @IBOutlet weak var titleLabel: NSTextField!
+    
+    @IBOutlet weak var outlineView: NSOutlineView!
     
     override init(frame frameRect: NSRect) {
         super.init(frame: frameRect)

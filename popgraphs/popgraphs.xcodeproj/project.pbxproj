@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A0EA35321E23A65000F2514 /* PopgraphView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A0EA35221E23A65000F2514 /* PopgraphView.xib */; };
+		2A0EA35521E23A93000F2514 /* PopgraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0EA35421E23A93000F2514 /* PopgraphView.swift */; };
 		2A6DA2D921DE562900E19F3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6DA2D821DE562900E19F3A /* AppDelegate.swift */; };
 		2A6DA2DD21DE562A00E19F3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A6DA2DC21DE562A00E19F3A /* Assets.xcassets */; };
 		2A6DA2E021DE562A00E19F3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A6DA2DE21DE562A00E19F3A /* Main.storyboard */; };
@@ -17,17 +19,15 @@
 		2A6DA2FD21DE5A7F00E19F3A /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6DA2FC21DE5A7F00E19F3A /* MainWindowController.swift */; };
 		2A6DA2FF21DE5C9800E19F3A /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6DA2FE21DE5C9800E19F3A /* Edge.swift */; };
 		2A6DA30121DE604300E19F3A /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6DA30021DE604300E19F3A /* Graph.swift */; };
-		2A6DA30321DE726800E19F3A /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6DA30221DE726800E19F3A /* GraphView.swift */; };
 		2A6DA30721DEA15200E19F3A /* CGVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6DA30621DEA15200E19F3A /* CGVector.swift */; };
+		2A88775621E266FE007F2C44 /* OutlineSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A88775521E266FE007F2C44 /* OutlineSet.swift */; };
 		2AA46AFD21DFF6AF003BFCD0 /* OutlineCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA46AFC21DFF6AF003BFCD0 /* OutlineCategory.swift */; };
 		2AA46AFF21DFF6C7003BFCD0 /* OutlineItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA46AFE21DFF6C7003BFCD0 /* OutlineItem.swift */; };
-		2AA46B0221DFF766003BFCD0 /* OutlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA46B0021DFF766003BFCD0 /* OutlineViewController.swift */; };
-		2AA46B0621DFF971003BFCD0 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA46B0421DFF971003BFCD0 /* GraphViewController.swift */; };
+		2AA46B0621DFF971003BFCD0 /* PopgraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA46B0421DFF971003BFCD0 /* PopgraphViewController.swift */; };
 		2AA46B0921DFFB06003BFCD0 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA46B0821DFFB06003BFCD0 /* SplitViewController.swift */; };
 		2AA46B0F21E0E106003BFCD0 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA46B0E21E0E106003BFCD0 /* SidebarView.swift */; };
 		2AA46B1121E0E119003BFCD0 /* SidebarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AA46B1021E0E119003BFCD0 /* SidebarView.xib */; };
 		2AA46B1321E0E3AF003BFCD0 /* SidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA46B1221E0E3AF003BFCD0 /* SidebarViewController.swift */; };
-		2AA46B1521E0E565003BFCD0 /* GraphView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AA46B1421E0E565003BFCD0 /* GraphView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A0EA35221E23A65000F2514 /* PopgraphView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopgraphView.xib; sourceTree = "<group>"; };
+		2A0EA35421E23A93000F2514 /* PopgraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopgraphView.swift; sourceTree = "<group>"; };
 		2A6DA2D521DE562900E19F3A /* popgraphs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = popgraphs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A6DA2D821DE562900E19F3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A6DA2DC21DE562A00E19F3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,17 +58,15 @@
 		2A6DA2FC21DE5A7F00E19F3A /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		2A6DA2FE21DE5C9800E19F3A /* Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
 		2A6DA30021DE604300E19F3A /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
-		2A6DA30221DE726800E19F3A /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		2A6DA30621DEA15200E19F3A /* CGVector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGVector.swift; sourceTree = "<group>"; };
+		2A88775521E266FE007F2C44 /* OutlineSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineSet.swift; sourceTree = "<group>"; };
 		2AA46AFC21DFF6AF003BFCD0 /* OutlineCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineCategory.swift; sourceTree = "<group>"; };
 		2AA46AFE21DFF6C7003BFCD0 /* OutlineItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineItem.swift; sourceTree = "<group>"; };
-		2AA46B0021DFF766003BFCD0 /* OutlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineViewController.swift; sourceTree = "<group>"; };
-		2AA46B0421DFF971003BFCD0 /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
+		2AA46B0421DFF971003BFCD0 /* PopgraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopgraphViewController.swift; sourceTree = "<group>"; };
 		2AA46B0821DFFB06003BFCD0 /* SplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 		2AA46B0E21E0E106003BFCD0 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
 		2AA46B1021E0E119003BFCD0 /* SidebarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SidebarView.xib; sourceTree = "<group>"; };
 		2AA46B1221E0E3AF003BFCD0 /* SidebarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewController.swift; sourceTree = "<group>"; };
-		2AA46B1421E0E565003BFCD0 /* GraphView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GraphView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,10 +136,10 @@
 		2A97FC6F21DFDDF300C25EAF /* GraphView */ = {
 			isa = PBXGroup;
 			children = (
-				2AA46B0421DFF971003BFCD0 /* GraphViewController.swift */,
 				2A6DA2F621DE56B000E19F3A /* GraphScene.swift */,
-				2A6DA30221DE726800E19F3A /* GraphView.swift */,
-				2AA46B1421E0E565003BFCD0 /* GraphView.xib */,
+				2AA46B0421DFF971003BFCD0 /* PopgraphViewController.swift */,
+				2A0EA35421E23A93000F2514 /* PopgraphView.swift */,
+				2A0EA35221E23A65000F2514 /* PopgraphView.xib */,
 			);
 			path = GraphView;
 			sourceTree = "<group>";
@@ -158,8 +158,8 @@
 			isa = PBXGroup;
 			children = (
 				2AA46AFC21DFF6AF003BFCD0 /* OutlineCategory.swift */,
+				2A88775521E266FE007F2C44 /* OutlineSet.swift */,
 				2AA46AFE21DFF6C7003BFCD0 /* OutlineItem.swift */,
-				2AA46B0021DFF766003BFCD0 /* OutlineViewController.swift */,
 				2AA46B1221E0E3AF003BFCD0 /* SidebarViewController.swift */,
 				2AA46B0E21E0E106003BFCD0 /* SidebarView.swift */,
 				2AA46B1021E0E119003BFCD0 /* SidebarView.xib */,
@@ -248,8 +248,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A0EA35321E23A65000F2514 /* PopgraphView.xib in Resources */,
 				2A6DA2FB21DE587700E19F3A /* Node.png in Resources */,
-				2AA46B1521E0E565003BFCD0 /* GraphView.xib in Resources */,
 				2A6DA2DD21DE562A00E19F3A /* Assets.xcassets in Resources */,
 				2A6DA2E021DE562A00E19F3A /* Main.storyboard in Resources */,
 				2AA46B1121E0E119003BFCD0 /* SidebarView.xib in Resources */,
@@ -277,12 +277,12 @@
 				2A6DA2FF21DE5C9800E19F3A /* Edge.swift in Sources */,
 				2A6DA2F721DE56B000E19F3A /* GraphScene.swift in Sources */,
 				2AA46AFD21DFF6AF003BFCD0 /* OutlineCategory.swift in Sources */,
+				2A88775621E266FE007F2C44 /* OutlineSet.swift in Sources */,
 				2A6DA2F921DE584800E19F3A /* Node.swift in Sources */,
 				2A6DA2FD21DE5A7F00E19F3A /* MainWindowController.swift in Sources */,
-				2AA46B0621DFF971003BFCD0 /* GraphViewController.swift in Sources */,
+				2A0EA35521E23A93000F2514 /* PopgraphView.swift in Sources */,
+				2AA46B0621DFF971003BFCD0 /* PopgraphViewController.swift in Sources */,
 				2AA46AFF21DFF6C7003BFCD0 /* OutlineItem.swift in Sources */,
-				2AA46B0221DFF766003BFCD0 /* OutlineViewController.swift in Sources */,
-				2A6DA30321DE726800E19F3A /* GraphView.swift in Sources */,
 				2A6DA30721DEA15200E19F3A /* CGVector.swift in Sources */,
 				2AA46B1321E0E3AF003BFCD0 /* SidebarViewController.swift in Sources */,
 			);
