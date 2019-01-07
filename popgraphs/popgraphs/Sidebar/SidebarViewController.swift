@@ -54,14 +54,27 @@ extension SidebarViewController {
         }
         popgraphCategory.children.append( edgeSet )
         
-        print("Loaded Graph in SidebarVC")
-        print( "\(popgraphCategory)")
-        
         categories.append( popgraphCategory )
 
         sidebarView.outlineView.reloadData()
         sidebarView.outlineView.expandItem( sidebarView.outlineView.item(atRow: 0) )
     }
+    
+    
+    
+    
+    @IBAction func OnToggleLabels( sender: Any? ) {
+        theGraph?.nodes.forEach { $0.toggleLabel() }
+    }
+    
+    @IBAction func OnScaleNodesLarger( sender: Any? ) {
+        theGraph?.nodes.forEach { $0.rescale(scaleFactor: 1.1) }
+    }
+    
+    @IBAction func OnScaleNodesSmaller( sender: Any? ) {
+        theGraph?.nodes.forEach { $0.rescale(scaleFactor: 1.0/1.1) }
+    }
+    
     
 }
 

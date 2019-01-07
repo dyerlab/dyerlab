@@ -32,6 +32,8 @@ class Node: SKSpriteNode {
         self.labelNode.position = CGPoint(x: size, y: size)
         
         super.init( texture: texture, color: NSColor.white, size: texture.size() )
+        
+        // make effect node
         self.resize(radius: size)
         self.addChild(labelNode)
         self.registerForNotificaitons()
@@ -41,6 +43,7 @@ class Node: SKSpriteNode {
         fatalError("init(coder:) has not been implemented")
     }
     
+
 
     func registerForNotificaitons() {
         NotificationCenter.default.addObserver(self,
@@ -89,12 +92,15 @@ extension Node {
     
     func resize( radius: CGFloat ) {
         self.size = CGSize(width: radius, height: radius)
+        
     }
     
     
     func rescale( scaleFactor: CGFloat ) {
         self.size = CGSize(width: self.size.width * scaleFactor,
                            height:  self.size.height * scaleFactor)
+        self.labelNode.position = CGPoint(x: self.size.width, y: self.size.height)
+        
     }
     
     func toggleLabel() {
@@ -127,48 +133,14 @@ extension Node {
         
         // currently selected by not receiving notification 
         else if isSelected {
-            if let effectNodes = (self.children.filter {$0 is SKEffectNode}) as? [SKEffectNode] {
-                effectNodes.forEach { $0.removeFromParent() }
-            }
+                if let effectNodes = (self.children.filter {$0 is SKEffectNode}) as? [SKEffectNode] {
+                    effectNodes.forEach { $0.removeFromParent() }
+                }
             self.isSelected = false
         }
         
         
-//        if self.name == (notification.userInfo!["Name"]) as? String {
-//            print("\(String(describing: self.name)) == notification.unerinfo[name]")
-//            if !isSelected {
-//                let effectNode = SKEffectNode()
-//                effectNode.shouldRasterize = true
-//                let texture = SKTexture(imageNamed: "Node")
-//                let node = SKSpriteNode(texture: texture )
-//                node.size = CGSize(width: self.size.width + 5.0, height: self.size.height + 5.0)
-//                node.zPosition = -1
-//                effectNode.addChild(node)
-//                addChild(effectNode)
-//                effectNode.zPosition = -1
-//                effectNode.filter = CIFilter(name: "CIGaussianBlur",
-//                                             parameters: ["inputRadius": 20.0] )
-//                self.isSelected = true
-//            }
-//            else {
-//                if let effectNodes = (self.children.filter {$0 is SKEffectNode}) as? [SKEffectNode] {
-//                    effectNodes.forEach { $0.removeFromParent() }
-//                }
-//                self.isSelected = false
-//            }
-//
-//
-//
-//
-//        }
-//        else {
-//            print("\(String(describing: self.name)) != notification.unerinfo[name]")
-//            if let effectNodes = (self.children.filter {$0 is SKEffectNode}) as? [SKEffectNode] {
-//                effectNodes.forEach { $0.removeFromParent() }
-//            }
-//        }
-//
-//        self.isSelected = !self.isSelected
+
     }
 
 }
