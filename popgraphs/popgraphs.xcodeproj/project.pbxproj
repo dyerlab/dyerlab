@@ -167,8 +167,8 @@
 				2AA46B1221E0E3AF003BFCD0 /* SidebarViewController.swift */,
 				2AA46B0E21E0E106003BFCD0 /* SidebarView.swift */,
 				2AA46B1021E0E119003BFCD0 /* SidebarView.xib */,
-				2A19734F21E4021100279C6F /* NodeOutlineWidget.xib */,
 				2A43821D21E4F03600BFAE67 /* NodeOutlineWidget.swift */,
+				2A19734F21E4021100279C6F /* NodeOutlineWidget.xib */,
 			);
 			path = Sidebar;
 			sourceTree = "<group>";

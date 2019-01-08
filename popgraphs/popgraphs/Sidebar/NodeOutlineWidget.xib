@@ -7,6 +7,8 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NodeOutlineWidget" customModule="popgraphs" customModuleProvider="target">
             <connections>
+                <outlet property="colorWell" destination="c1M-Z9-yw5" id="5aJ-Fi-xwz"/>
+                <outlet property="contentView" destination="c22-O7-iKe" id="eXe-Tc-7mx"/>
                 <outlet property="nodeDegreeLabel" destination="20N-FI-gEc" id="rl8-rf-qeh"/>
                 <outlet property="nodeNameLabel" destination="0Z3-JN-9wg" id="5uu-4m-TZD"/>
                 <outlet property="nodeSizeLabel" destination="82b-aS-Yi7" id="Wxm-pp-RPw"/>
@@ -15,11 +17,11 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView id="c22-O7-iKe" customClass="NodeOutlineWidget" customModule="popgraphs" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="376" height="108"/>
+            <rect key="frame" x="0.0" y="0.0" width="376" height="98"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Z3-JN-9wg">
-                    <rect key="frame" x="18" y="66" width="340" height="32"/>
+                    <rect key="frame" x="18" y="66" width="288" height="32"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <textFieldCell key="cell" lineBreakMode="clipping" title="Node Label" id="fmU-CD-kIk">
                         <font key="font" size="19" name="AvenirNext-Medium"/>
@@ -65,8 +67,13 @@
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
+                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c1M-Z9-yw5">
+                    <rect key="frame" x="312" y="60" width="44" height="23"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.05813049898" green="0.055541899059999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </colorWell>
             </subviews>
-            <point key="canvasLocation" x="87" y="72"/>
+            <point key="canvasLocation" x="87" y="67"/>
         </customView>
     </objects>
 </document>
