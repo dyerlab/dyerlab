@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2A0EA35321E23A65000F2514 /* PopgraphView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A0EA35221E23A65000F2514 /* PopgraphView.xib */; };
 		2A0EA35521E23A93000F2514 /* PopgraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0EA35421E23A93000F2514 /* PopgraphView.swift */; };
+		2A19735021E4021100279C6F /* NodeOutlineWidget.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A19734F21E4021100279C6F /* NodeOutlineWidget.xib */; };
+		2A43821E21E4F03600BFAE67 /* NodeOutlineWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A43821D21E4F03600BFAE67 /* NodeOutlineWidget.swift */; };
 		2A6DA2D921DE562900E19F3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6DA2D821DE562900E19F3A /* AppDelegate.swift */; };
 		2A6DA2DD21DE562A00E19F3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A6DA2DC21DE562A00E19F3A /* Assets.xcassets */; };
 		2A6DA2E021DE562A00E19F3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A6DA2DE21DE562A00E19F3A /* Main.storyboard */; };
@@ -43,6 +45,8 @@
 /* Begin PBXFileReference section */
 		2A0EA35221E23A65000F2514 /* PopgraphView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopgraphView.xib; sourceTree = "<group>"; };
 		2A0EA35421E23A93000F2514 /* PopgraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopgraphView.swift; sourceTree = "<group>"; };
+		2A19734F21E4021100279C6F /* NodeOutlineWidget.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NodeOutlineWidget.xib; sourceTree = "<group>"; };
+		2A43821D21E4F03600BFAE67 /* NodeOutlineWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeOutlineWidget.swift; sourceTree = "<group>"; };
 		2A6DA2D521DE562900E19F3A /* popgraphs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = popgraphs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A6DA2D821DE562900E19F3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A6DA2DC21DE562A00E19F3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -163,6 +167,8 @@
 				2AA46B1221E0E3AF003BFCD0 /* SidebarViewController.swift */,
 				2AA46B0E21E0E106003BFCD0 /* SidebarView.swift */,
 				2AA46B1021E0E119003BFCD0 /* SidebarView.xib */,
+				2A19734F21E4021100279C6F /* NodeOutlineWidget.xib */,
+				2A43821D21E4F03600BFAE67 /* NodeOutlineWidget.swift */,
 			);
 			path = Sidebar;
 			sourceTree = "<group>";
@@ -252,6 +258,7 @@
 				2A6DA2FB21DE587700E19F3A /* Node.png in Resources */,
 				2A6DA2DD21DE562A00E19F3A /* Assets.xcassets in Resources */,
 				2A6DA2E021DE562A00E19F3A /* Main.storyboard in Resources */,
+				2A19735021E4021100279C6F /* NodeOutlineWidget.xib in Resources */,
 				2AA46B1121E0E119003BFCD0 /* SidebarView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +289,7 @@
 				2A6DA2FD21DE5A7F00E19F3A /* MainWindowController.swift in Sources */,
 				2A0EA35521E23A93000F2514 /* PopgraphView.swift in Sources */,
 				2AA46B0621DFF971003BFCD0 /* PopgraphViewController.swift in Sources */,
+				2A43821E21E4F03600BFAE67 /* NodeOutlineWidget.swift in Sources */,
 				2AA46AFF21DFF6C7003BFCD0 /* OutlineItem.swift in Sources */,
 				2A6DA30721DEA15200E19F3A /* CGVector.swift in Sources */,
 				2AA46B1321E0E3AF003BFCD0 /* SidebarViewController.swift in Sources */,

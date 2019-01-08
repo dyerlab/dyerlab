@@ -14,17 +14,17 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView id="c22-O7-iKe">
-            <rect key="frame" x="0.0" y="0.0" width="302" height="496"/>
+            <rect key="frame" x="0.0" y="0.0" width="302" height="764"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="22" horizontalPageScroll="10" verticalLineScroll="22" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mL2-g6-qZL">
-                    <rect key="frame" x="0.0" y="0.0" width="302" height="496"/>
+                <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="17" horizontalPageScroll="10" verticalLineScroll="17" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mL2-g6-qZL">
+                    <rect key="frame" x="0.0" y="0.0" width="302" height="764"/>
                     <clipView key="contentView" drawsBackground="NO" id="jPt-hN-2h7">
-                        <rect key="frame" x="0.0" y="0.0" width="302" height="496"/>
+                        <rect key="frame" x="0.0" y="0.0" width="302" height="764"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" multipleSelection="NO" autosaveColumns="NO" rowHeight="22" rowSizeStyle="automatic" viewBased="YES" indentationPerLevel="14" outlineTableColumn="jEz-gz-fP2" id="IRM-ie-lUv">
-                                <rect key="frame" x="0.0" y="0.0" width="302" height="496"/>
+                            <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" viewBased="YES" indentationPerLevel="14" outlineTableColumn="jEz-gz-fP2" id="IRM-ie-lUv">
+                                <rect key="frame" x="0.0" y="0.0" width="302" height="764"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <size key="intercellSpacing" width="3" height="0.0"/>
                                 <color key="backgroundColor" name="_sourceListBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -108,7 +108,7 @@
                 <constraint firstItem="mL2-g6-qZL" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="aEa-BQ-GzX"/>
                 <constraint firstItem="mL2-g6-qZL" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="k6h-ym-sn5"/>
             </constraints>
-            <point key="canvasLocation" x="50" y="266"/>
+            <point key="canvasLocation" x="-196" y="68"/>
         </customView>
     </objects>
     <resources>
