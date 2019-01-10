@@ -16,20 +16,16 @@ class MainWindowController: NSWindowController {
     var popgraphVC: PopgraphViewController?
     var sidebarVC: SidebarViewController?
     
-    
     var theGraph: Graph?
     
-//    var graphController: MainViewController? {
-//        get {
-//            return NSApplication.shared.keyWindow!.contentViewController?.children.filter {$0 is MainViewController}.first as? MainViewController
-//        }
-//    }
-//    var summaryViewController: SideBarController? {
-//        get {
-//            return NSApplication.shared.keyWindow!.contentViewController?.children.filter {$0 is SideBarController}.last as? SideBarController
-//        }
-//    }
-//    
+    var toolbar: NSToolbar!
+    
+    let toolbarItems: [[String: String]] = [
+                        ["title": "irrelevant :)",
+                         "icon": "",
+                         "identifier": "NavigationGroupToolbarItem"]
+                        ]
+    
 
     override func windowDidLoad() {
         super.windowDidLoad()
@@ -39,6 +35,10 @@ class MainWindowController: NSWindowController {
         
         popgraphVC = (contentViewController?.children.filter {$0 is PopgraphViewController})!.first as? PopgraphViewController
         sidebarVC = (contentViewController?.children.filter {$0 is SidebarViewController})!.first as? SidebarViewController
+        
+        
+        // make the toolbar
+        
         
     }
 
@@ -55,6 +55,16 @@ class MainWindowController: NSWindowController {
         sidebarVC!.setGraph( graph: theGraph! )
 
     }
+    
+    
+}
+
+
+
+
+
+extension MainWindowController : NSToolbarDelegate {
+   
     
     
 }

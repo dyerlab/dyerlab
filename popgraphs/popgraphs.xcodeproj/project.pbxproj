@@ -183,9 +183,9 @@
 		2ADC8C6B21E639F800245DC2 /* Mapping */ = {
 			isa = PBXGroup;
 			children = (
+				2ADC8C7021E69BCE00245DC2 /* Mappable.swift */,
 				2ADC8C6E21E69B6900245DC2 /* MapView.swift */,
 				2ADC8C6C21E69B5B00245DC2 /* MapView.xib */,
-				2ADC8C7021E69BCE00245DC2 /* Mappable.swift */,
 			);
 			path = Mapping;
 			sourceTree = "<group>";

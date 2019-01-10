@@ -715,6 +715,7 @@
                         </connections>
                     </window>
                     <connections>
+                        <outlet property="window" destination="IQv-IB-iLA" id="jvD-Vk-jXn"/>
                         <segue destination="gcb-96-FM9" kind="relationship" relationship="window.shadowedContentViewController" id="Rq4-a5-xVp"/>
                     </connections>
                 </windowController>
