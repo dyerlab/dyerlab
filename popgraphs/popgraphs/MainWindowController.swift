@@ -18,15 +18,8 @@ class MainWindowController: NSWindowController {
     
     var theGraph: Graph?
     
-    var toolbar: NSToolbar!
     
-    let toolbarItems: [[String: String]] = [
-                        ["title": "irrelevant :)",
-                         "icon": "",
-                         "identifier": "NavigationGroupToolbarItem"]
-                        ]
     
-
     override func windowDidLoad() {
         super.windowDidLoad()
     
@@ -37,7 +30,18 @@ class MainWindowController: NSWindowController {
         sidebarVC = (contentViewController?.children.filter {$0 is SidebarViewController})!.first as? SidebarViewController
         
         
-        // make the toolbar
+        
+//        if let titlebarController =
+//            self.storyboard?.instantiateController( withIdentifier: NSStoryboard.SceneIdentifier("titlebarViewController") ) as? NSTitlebarAccessoryViewController
+//        {
+//            // position of title bar
+//            titlebarController.layoutAttribute = .right
+//
+//            // set the titleBar
+//            self.window?.addTitlebarAccessoryViewController(
+//                titlebarController
+//            )
+//        }
         
         
     }
@@ -63,8 +67,3 @@ class MainWindowController: NSWindowController {
 
 
 
-extension MainWindowController : NSToolbarDelegate {
-   
-    
-    
-}

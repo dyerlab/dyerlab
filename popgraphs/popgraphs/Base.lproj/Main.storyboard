@@ -723,6 +723,35 @@
             </objects>
             <point key="canvasLocation" x="264" y="466.5"/>
         </scene>
+        <!--Titlebar Accessory View Controller-->
+        <scene sceneID="zPc-vJ-H7R">
+            <objects>
+                <viewController storyboardIdentifier="titlebarViewController" id="3bD-Pb-Uq1" customClass="NSTitlebarAccessoryViewController" sceneMemberID="viewController">
+                    <view key="view" id="YFw-8P-1qN">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="21"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <segmentedControl verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uO6-tA-CWM">
+                                <rect key="frame" x="361" y="-18" width="71" height="24"/>
+                                <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="LMJ-Kb-qIu">
+                                    <font key="font" metaFont="system"/>
+                                    <segments>
+                                        <segment width="32"/>
+                                        <segment width="32" selected="YES" tag="1"/>
+                                    </segments>
+                                </segmentedCell>
+                            </segmentedControl>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="uO6-tA-CWM" secondAttribute="trailing" constant="20" symbolic="YES" id="UwX-ii-olc"/>
+                            <constraint firstItem="uO6-tA-CWM" firstAttribute="top" secondItem="YFw-8P-1qN" secondAttribute="top" constant="16" id="t4t-Vs-yeD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="ql0-p0-v0Q" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079" y="51.5"/>
+        </scene>
         <!--Split View Controller-->
         <scene sceneID="MS3-KV-EQ0">
             <objects>
