@@ -10,5 +10,5 @@ import Foundation
 import MapKit
 
 protocol Mappable {
-    var coordinate: CLLocationCoordinate2D { get set }
+    var coordinate: CLLocationCoordinate2D? { get set }
 }

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <plugIn identifier="com.apple.MapKitIBPlugin" version="14460.31"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -191,7 +192,8 @@
                                                             <action selector="performFindPanelAction:" target="Ady-hI-5gd" id="NDo-RZ-v9R"/>
                                                         </connections>
                                                     </menuItem>
-                                                    <menuItem title="Find Previous" tag="3" keyEquivalent="G" id="OwM-mh-QMV">
+                                                    <menuItem title="Find Previous" tag="3" id="OwM-mh-QMV">
+                                                        <modifierMask key="keyEquivalentModifierMask"/>
                                                         <connections>
                                                             <action selector="performFindPanelAction:" target="Ady-hI-5gd" id="HOh-sY-3ay"/>
                                                         </connections>
@@ -620,6 +622,17 @@
                                                 <action selector="runToolbarCustomizationPalette:" target="Ady-hI-5gd" id="pQI-g3-MTW"/>
                                             </connections>
                                         </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="miX-V5-0ql"/>
+                                        <menuItem title="Graph View" keyEquivalent="G" id="AyP-kp-h5z">
+                                            <connections>
+                                                <action selector="SwitchToGraphViewWithSender:" target="Ady-hI-5gd" id="cNc-CE-17E"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Map View" keyEquivalent="M" id="xmN-UR-8TR">
+                                            <connections>
+                                                <action selector="SwitchToMapViewWithSender:" target="Ady-hI-5gd" id="Vrk-pA-RTH"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem isSeparatorItem="YES" id="hB3-LF-h0Y"/>
                                         <menuItem title="Show Node Labels" state="on" keyEquivalent="l" id="mzt-cA-7eX">
                                             <connections>
@@ -723,42 +736,13 @@
             </objects>
             <point key="canvasLocation" x="264" y="466.5"/>
         </scene>
-        <!--Titlebar Accessory View Controller-->
-        <scene sceneID="zPc-vJ-H7R">
-            <objects>
-                <viewController storyboardIdentifier="titlebarViewController" id="3bD-Pb-Uq1" customClass="NSTitlebarAccessoryViewController" sceneMemberID="viewController">
-                    <view key="view" id="YFw-8P-1qN">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="21"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <segmentedControl verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uO6-tA-CWM">
-                                <rect key="frame" x="361" y="-18" width="71" height="24"/>
-                                <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="LMJ-Kb-qIu">
-                                    <font key="font" metaFont="system"/>
-                                    <segments>
-                                        <segment width="32"/>
-                                        <segment width="32" selected="YES" tag="1"/>
-                                    </segments>
-                                </segmentedCell>
-                            </segmentedControl>
-                        </subviews>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="uO6-tA-CWM" secondAttribute="trailing" constant="20" symbolic="YES" id="UwX-ii-olc"/>
-                            <constraint firstItem="uO6-tA-CWM" firstAttribute="top" secondItem="YFw-8P-1qN" secondAttribute="top" constant="16" id="t4t-Vs-yeD"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <customObject id="ql0-p0-v0Q" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1079" y="51.5"/>
-        </scene>
         <!--Split View Controller-->
         <scene sceneID="MS3-KV-EQ0">
             <objects>
                 <splitViewController id="gcb-96-FM9" customClass="SplitViewController" customModule="popgraphs" customModuleProvider="target" sceneMemberID="viewController">
                     <splitViewItems>
                         <splitViewItem holdingPriority="249" id="7dA-lH-d2t"/>
-                        <splitViewItem id="fQ5-l9-E1G"/>
+                        <splitViewItem id="rrS-vc-ecl"/>
                     </splitViewItems>
                     <splitView key="splitView" dividerStyle="thin" vertical="YES" id="ftC-Ng-7k4">
                         <rect key="frame" x="-367" y="0.0" width="993" height="697"/>
@@ -770,7 +754,7 @@
                     <connections>
                         <outlet property="splitView" destination="ftC-Ng-7k4" id="qUU-yO-Y5a"/>
                         <segue destination="2dV-bq-xPB" kind="relationship" relationship="splitItems" id="Ibp-Km-h6H"/>
-                        <segue destination="viZ-Qa-2N9" kind="relationship" relationship="splitItems" id="CGW-qB-bZ6"/>
+                        <segue destination="ifm-OM-aTH" kind="relationship" relationship="splitItems" id="wd6-s3-ShA"/>
                     </connections>
                 </splitViewController>
                 <customObject id="5MT-6X-oeY" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -802,12 +786,12 @@
                 </viewController>
                 <customObject id="5FF-wL-7KQ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-126.5" y="2306"/>
+            <point key="canvasLocation" x="-110" y="2185"/>
         </scene>
         <!--Popgraph View Controller-->
         <scene sceneID="SP0-EH-dAU">
             <objects>
-                <viewController id="viZ-Qa-2N9" customClass="PopgraphViewController" customModule="popgraphs" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="popgraphViewController" id="viZ-Qa-2N9" customClass="PopgraphViewController" customModule="popgraphs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="Xvi-xN-FfT">
                         <rect key="frame" x="0.0" y="0.0" width="698" height="720"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -825,11 +809,39 @@
                     </view>
                     <connections>
                         <outlet property="popgraphView" destination="OcT-gB-uzV" id="wIh-mn-dy6"/>
+                        <outlet property="view" destination="OcT-gB-uzV" id="Gxw-5b-VV5"/>
                     </connections>
                 </viewController>
                 <customObject id="6Ea-ey-ct0" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="386" y="2348"/>
+            <point key="canvasLocation" x="379" y="2227"/>
+        </scene>
+        <!--Mapview View Controller-->
+        <scene sceneID="wX5-QR-Ufl">
+            <objects>
+                <viewController storyboardIdentifier="mapviewViewController" id="ifm-OM-aTH" customClass="MapviewViewController" customModule="popgraphs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="gKr-M0-LTG">
+                        <rect key="frame" x="0.0" y="0.0" width="788" height="720"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <mapView mapType="hybrid" translatesAutoresizingMaskIntoConstraints="NO" id="Dpx-Pz-zHL">
+                                <rect key="frame" x="0.0" y="0.0" width="788" height="720"/>
+                            </mapView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Dpx-Pz-zHL" firstAttribute="top" secondItem="gKr-M0-LTG" secondAttribute="top" id="4j2-U3-XnE"/>
+                            <constraint firstAttribute="bottom" secondItem="Dpx-Pz-zHL" secondAttribute="bottom" id="TON-Ag-tNP"/>
+                            <constraint firstItem="Dpx-Pz-zHL" firstAttribute="leading" secondItem="gKr-M0-LTG" secondAttribute="leading" id="UB9-Jw-j2V"/>
+                            <constraint firstAttribute="trailing" secondItem="Dpx-Pz-zHL" secondAttribute="trailing" id="fDp-jB-whX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="Dpx-Pz-zHL" id="i0Z-xf-oMu"/>
+                    </connections>
+                </viewController>
+                <customObject id="vHs-cc-5as" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1147" y="2227"/>
         </scene>
     </scenes>
 </document>

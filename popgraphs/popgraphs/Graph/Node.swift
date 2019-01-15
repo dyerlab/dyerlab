@@ -23,6 +23,7 @@ class Node: SKSpriteNode {
             return edges.count
         }
     }
+    var properties: [String: Any]
     
     init(label: String, size: CGFloat) {
         let texture = SKTexture(imageNamed: "Node")
@@ -30,6 +31,7 @@ class Node: SKSpriteNode {
         self.displacement = CGPoint(x: 0.0, y: 0.0)
         self.labelNode = SKLabelNode(text: label)
         self.labelNode.position = CGPoint(x: size, y: size)
+        self.properties = [String:Any]()
         
         super.init( texture: texture, color: NSColor.white, size: texture.size() )
         
@@ -138,9 +140,33 @@ extension Node {
                 }
             self.isSelected = false
         }
-        
-        
 
     }
 
+}
+
+
+
+
+import MapKit
+
+extension Node : Mappable {
+    
+    var coordinate: CLLocationCoordinate2D? {
+        get {
+            if self.properties.keys.contains("Coordinates") {
+                return self.properties["Coordinates"] as? CLLocationCoordinate2D
+            }
+            else {
+                return CLLocationCoordinate2D(latitude: 25.79, longitude: -111.35)
+            }
+        }
+        set {
+            self.properties["Coordinates"] = newValue
+        }
+    }
+    
+    
+    
+    
 }

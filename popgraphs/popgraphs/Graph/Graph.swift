@@ -8,6 +8,7 @@
 
 import Foundation
 import SpriteKit
+import MapKit
 
 class Graph {
     
@@ -57,3 +58,19 @@ extension Graph {
     }
 
 }
+
+
+
+//
+//extension Graph : Mappable {
+//    var coordinate: CLLocationCoordinate2D {
+//        get {
+//            
+//        }
+//        set {
+//            <#code#>
+//        }
+//    }
+//    
+//    
+//}

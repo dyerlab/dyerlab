@@ -11,6 +11,8 @@
 		2A0EA35521E23A93000F2514 /* PopgraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0EA35421E23A93000F2514 /* PopgraphView.swift */; };
 		2A19735021E4021100279C6F /* NodeOutlineWidget.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A19734F21E4021100279C6F /* NodeOutlineWidget.xib */; };
 		2A43821E21E4F03600BFAE67 /* NodeOutlineWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A43821D21E4F03600BFAE67 /* NodeOutlineWidget.swift */; };
+		2A44307A21E920A4004987FA /* MapviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A44307921E920A4004987FA /* MapviewViewController.swift */; };
+		2A44307C21E93919004987FA /* MappingFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A44307B21E93919004987FA /* MappingFuncs.swift */; };
 		2A6DA2D921DE562900E19F3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6DA2D821DE562900E19F3A /* AppDelegate.swift */; };
 		2A6DA2DD21DE562A00E19F3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A6DA2DC21DE562A00E19F3A /* Assets.xcassets */; };
 		2A6DA2E021DE562A00E19F3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A6DA2DE21DE562A00E19F3A /* Main.storyboard */; };
@@ -30,8 +32,6 @@
 		2AA46B0F21E0E106003BFCD0 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA46B0E21E0E106003BFCD0 /* SidebarView.swift */; };
 		2AA46B1121E0E119003BFCD0 /* SidebarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AA46B1021E0E119003BFCD0 /* SidebarView.xib */; };
 		2AA46B1321E0E3AF003BFCD0 /* SidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA46B1221E0E3AF003BFCD0 /* SidebarViewController.swift */; };
-		2ADC8C6D21E69B5B00245DC2 /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ADC8C6C21E69B5B00245DC2 /* MapView.xib */; };
-		2ADC8C6F21E69B6900245DC2 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADC8C6E21E69B6900245DC2 /* MapView.swift */; };
 		2ADC8C7121E69BCE00245DC2 /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADC8C7021E69BCE00245DC2 /* Mappable.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +50,8 @@
 		2A0EA35421E23A93000F2514 /* PopgraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopgraphView.swift; sourceTree = "<group>"; };
 		2A19734F21E4021100279C6F /* NodeOutlineWidget.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NodeOutlineWidget.xib; sourceTree = "<group>"; };
 		2A43821D21E4F03600BFAE67 /* NodeOutlineWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeOutlineWidget.swift; sourceTree = "<group>"; };
+		2A44307921E920A4004987FA /* MapviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapviewViewController.swift; sourceTree = "<group>"; };
+		2A44307B21E93919004987FA /* MappingFuncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappingFuncs.swift; sourceTree = "<group>"; };
 		2A6DA2D521DE562900E19F3A /* popgraphs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = popgraphs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A6DA2D821DE562900E19F3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A6DA2DC21DE562A00E19F3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,8 +76,6 @@
 		2AA46B0E21E0E106003BFCD0 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
 		2AA46B1021E0E119003BFCD0 /* SidebarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SidebarView.xib; sourceTree = "<group>"; };
 		2AA46B1221E0E3AF003BFCD0 /* SidebarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewController.swift; sourceTree = "<group>"; };
-		2ADC8C6C21E69B5B00245DC2 /* MapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
-		2ADC8C6E21E69B6900245DC2 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		2ADC8C7021E69BCE00245DC2 /* Mappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mappable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -183,9 +183,9 @@
 		2ADC8C6B21E639F800245DC2 /* Mapping */ = {
 			isa = PBXGroup;
 			children = (
+				2A44307921E920A4004987FA /* MapviewViewController.swift */,
 				2ADC8C7021E69BCE00245DC2 /* Mappable.swift */,
-				2ADC8C6E21E69B6900245DC2 /* MapView.swift */,
-				2ADC8C6C21E69B5B00245DC2 /* MapView.xib */,
+				2A44307B21E93919004987FA /* MappingFuncs.swift */,
 			);
 			path = Mapping;
 			sourceTree = "<group>";
@@ -277,7 +277,6 @@
 				2A6DA2E021DE562A00E19F3A /* Main.storyboard in Resources */,
 				2A19735021E4021100279C6F /* NodeOutlineWidget.xib in Resources */,
 				2AA46B1121E0E119003BFCD0 /* SidebarView.xib in Resources */,
-				2ADC8C6D21E69B5B00245DC2 /* MapView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A44307A21E920A4004987FA /* MapviewViewController.swift in Sources */,
 				2AA46B0921DFFB06003BFCD0 /* SplitViewController.swift in Sources */,
 				2A6DA2D921DE562900E19F3A /* AppDelegate.swift in Sources */,
 				2AA46B0F21E0E106003BFCD0 /* SidebarView.swift in Sources */,
@@ -305,8 +305,8 @@
 				2ADC8C7121E69BCE00245DC2 /* Mappable.swift in Sources */,
 				2A88775621E266FE007F2C44 /* OutlineSet.swift in Sources */,
 				2A6DA2F921DE584800E19F3A /* Node.swift in Sources */,
-				2ADC8C6F21E69B6900245DC2 /* MapView.swift in Sources */,
 				2A6DA2FD21DE5A7F00E19F3A /* MainWindowController.swift in Sources */,
+				2A44307C21E93919004987FA /* MappingFuncs.swift in Sources */,
 				2A0EA35521E23A93000F2514 /* PopgraphView.swift in Sources */,
 				2AA46B0621DFF971003BFCD0 /* PopgraphViewController.swift in Sources */,
 				2A43821E21E4F03600BFAE67 /* NodeOutlineWidget.swift in Sources */,
