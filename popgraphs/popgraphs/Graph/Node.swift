@@ -155,7 +155,11 @@ extension Node : Mappable {
     var coordinate: CLLocationCoordinate2D? {
         get {
             if self.properties.keys.contains("Coordinates") {
-                return self.properties["Coordinates"] as? CLLocationCoordinate2D
+                if self.properties.keys.contains("Coordinates") {
+                    return  (self.properties["Coordinates"] as! CLLocationCoordinate2D)
+                } else {
+                    return nil
+                }
             }
             else {
                 return CLLocationCoordinate2D(latitude: 25.79, longitude: -111.35)
@@ -165,8 +169,6 @@ extension Node : Mappable {
             self.properties["Coordinates"] = newValue
         }
     }
-    
-    
-    
+
     
 }

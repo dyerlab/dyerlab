@@ -61,16 +61,24 @@ extension Graph {
 
 
 
-//
-//extension Graph : Mappable {
-//    var coordinate: CLLocationCoordinate2D {
-//        get {
-//            
-//        }
-//        set {
-//            <#code#>
-//        }
-//    }
-//    
-//    
-//}
+
+
+
+
+
+
+
+
+
+
+extension Graph {
+
+    func readFromJSON( path: String ) -> Graph? {
+        let graph: Graph = Graph()
+        
+        
+        
+        return graph
+    }
+    
+}
