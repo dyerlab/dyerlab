@@ -14,6 +14,7 @@ class Edge  {
     var node1: Node
     var node2: Node
     var lineNode: SKShapeNode
+    var weight: CGFloat
     
     init( n1: Node, n2: Node, weight: CGFloat ) {
         self.node1 = n1
@@ -22,6 +23,7 @@ class Edge  {
         self.lineNode.isAntialiased = true
         self.lineNode.zPosition = -1
         self.lineNode.lineWidth = weight
+        self.weight = weight
         self.node1.edges.append(self)
         self.node2.edges.append(self)
         makePath()

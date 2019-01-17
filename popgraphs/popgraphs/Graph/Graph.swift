@@ -98,8 +98,8 @@ extension Graph {
     }
     
     
-    public func recenterNodes(newRect: CGRect) {
-        print("Recentering in space; \(newRect.size.width) x \(newRect.size.height)")
+    public func recenterNodes(width: CGFloat, height: CGFloat) {
+        
         
         if nodes.count < 1 {
             return
@@ -113,12 +113,98 @@ extension Graph {
         
         // figure out   ((bounds.min - pos.x) / bounds.width ) * newWidth = new.x
         nodes.forEach {
-            $0.displacement = CGPoint(x: (($0.position.x - bounds.minX) / bounds.width) * newRect.width,
-                                      y: (($0.position.y - bounds.minY) / bounds.height) * newRect.height)
+            $0.displacement = CGPoint(x: (($0.position.x - bounds.minX) / bounds.width) * width,
+                                      y: (($0.position.y - bounds.minY) / bounds.height) * height)
         }
         
         nodes.forEach { $0.move() }
         
+    }
+    
+    
+    public func layout() {
+        if nodes.count < 1 {
+            return
+        }
+        var dist: CGFloat
+        var delta, force: CGPoint
+        var temp: CGFloat = 100.0
+        let bounds = (nodes[0].parent?.scene?.size)!
+        let idealDist: CGFloat = 50.0 * (bounds.width * bounds.height) / CGFloat( nodes.count )
+
+        
+        print("Layout!!!!")
+        print("Bounds: \(bounds)")
+        
+        for iter in 0..<100 {
+            print("iter: \(iter)")
+            
+            // Repulsive Forces
+            for i in 0..<nodes.count {
+                nodes.forEach { $0.displacement = CGPoint(x:0.0, y:0.0) }
+                for j in 0..<nodes.count {
+                    if i != j {
+                        dist = nodes[i].position.distance(to: nodes[j].position )
+                        delta = nodes[i].position - nodes[j].position
+                        if dist < idealDist {
+                            force = delta / dist * ( pow(dist,2.0)/idealDist ) * 5.0
+                            nodes[i].displacement = nodes[i].displacement + force 
+                        }
+                    }
+                }
+            }
+            
+            // Attractive Forces
+            for i in 0..<edges.count {
+                let edge = edges[i]
+                delta = edge.node1.position - edge.node2.position
+                dist = edge.node1.position.distance(to: edge.node2.position)
+                force = delta / dist * ( pow(dist,2.0) / idealDist )
+                force = force * edge.weight
+                
+                edge.node1.displacement = edge.node1.displacement - force
+                edge.node2.displacement = edge.node2.displacement + force
+            }
+            
+         
+            // Limit movement a bit.
+            for node in self.nodes {
+                
+                
+                // Limit by temperature
+                if abs( node.displacement.x ) > temp {
+                    node.displacement.x = temp * ( abs(node.displacement.x) / node.displacement.x )
+                }
+                if abs( node.displacement.y ) > temp {
+                    node.displacement.y = temp * ( abs(node.displacement.y) / node.displacement.y )
+                }
+                
+                
+                // Make sure it is within bounds
+                let newPos = node.position + node.displacement
+
+                // Limit X to within bounds
+                if newPos.x < 0 {
+                    node.displacement.x = -1.0 * node.position.x + 10.0
+                }
+                else if newPos.x > bounds.width {
+                    node.displacement.x = bounds.width - node.position.x - 10.0
+                }
+                
+                // Limit Y to within bounds
+                if newPos.y < 0 {
+                    node.displacement.y = -1.0 * node.position.y + 10.0
+                }
+                else if newPos.y > bounds.height {
+                    node.displacement.y = bounds.height - node.position.y - 10.0
+                }
+             
+                node.position = node.position + node.displacement
+            }
+            
+            // Cool the annealing
+            temp = temp < 1.0 ? 1.0 : temp * 0.95
+        }
     }
     
 }

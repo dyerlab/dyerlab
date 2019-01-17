@@ -47,10 +47,10 @@ class MainWindowController: NSWindowController {
 
 extension MainWindowController : NSWindowDelegate {
     
-    func windowDidResize(_ notification: Notification) {
-        print("windowDidResize")
-        self.popgraphVC?.theScene?.didResize(rect: (self.popgraphVC?.popgraphView.frame)! )
-    }
+//    func windowDidResize(_ notification: Notification) {
+//        print("windowDidResize")
+//        //self.popgraphVC?.theScene?.didResize(rect: (self.popgraphVC?.popgraphView.frame)! )
+//    }
     
 }
 
@@ -110,6 +110,26 @@ extension MainWindowController  {
     @IBAction func ShiftGraphDown( sender: Any? ) {
         popgraphVC?.theScene?.theGraph?.shift(x:0.0, y:-10.0)
 
+    }
+    
+    @IBAction func OnToggleLabels( sender: Any? ) {
+        theGraph!.nodes.forEach {$0.toggleLabel() }
+    }
+    
+    @IBAction func OnScaleNodesLarger( sender: Any? ) {
+        theGraph!.nodes.forEach { $0.rescale(scaleFactor: 1.1 ) }
+    }
+    
+    @IBAction func OnScaleNodesSmaller( sender: Any? ) {
+        theGraph!.nodes.forEach { $0.rescale(scaleFactor: 1.0/1.1 ) }
+    }
+    
+    @IBAction func RandomizeGraphPositions( sender: Any? ) {
+        theGraph!.randomizePositions(size: popgraphVC!.view.bounds.size)
+    }
+    
+    @IBAction func LayoutGraphPositions( sender: Any? ) {
+        theGraph!.layout()
     }
     
 }

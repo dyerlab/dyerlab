@@ -61,12 +61,6 @@ extension GraphScene {
     }
     
     
-    func didResize(rect: CGRect) {
-        print("didResize: \(rect)")
-        theGraph?.recenterNodes(newRect: rect)
-    }
-    
-    
     // Override here to make sure edges catch up
     override func didEvaluateActions() {
         

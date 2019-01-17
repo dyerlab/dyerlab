@@ -54,20 +54,8 @@ class PopgraphViewController: NSViewController {
 extension PopgraphViewController {
     
    
-//    @IBAction func OnToggleLabels( sender: Any? ) {
-//        let nodes = self.theScene!.children.filter {$0 is Node } as! [Node]
-//        nodes.forEach { $0.toggleLabel() }
-//    }
-//    
-//    @IBAction func OnScaleNodesLarger( sender: Any? ) {
-//        let nodes = self.theScene!.children.filter {$0 is Node } as! [Node]
-//        nodes.forEach { $0.rescale(scaleFactor: 1.1)}
-//    }
-//    
-//    @IBAction func OnScaleNodesSmaller( sender: Any? ) {
-//        let nodes = self.theScene!.children.filter {$0 is Node } as! [Node]
-//        nodes.forEach { $0.rescale(scaleFactor: 1.0/1.1)}
-//    }
+
+    
     
 }
 

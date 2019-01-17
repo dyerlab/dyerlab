@@ -63,17 +63,7 @@ extension SidebarViewController {
     
     
     
-    @IBAction func OnToggleLabels( sender: Any? ) {
-        theGraph?.nodes.forEach { $0.toggleLabel() }
-    }
-    
-    @IBAction func OnScaleNodesLarger( sender: Any? ) {
-        theGraph?.nodes.forEach { $0.rescale(scaleFactor: 1.1) }
-    }
-    
-    @IBAction func OnScaleNodesSmaller( sender: Any? ) {
-        theGraph?.nodes.forEach { $0.rescale(scaleFactor: 1.0/1.1) }
-    }
+
     
     
 }
