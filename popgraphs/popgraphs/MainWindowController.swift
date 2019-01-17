@@ -27,45 +27,42 @@ class MainWindowController: NSWindowController {
         //sssswindowFrameAutosaveName = "PopgraphsMainWindowAutosaveName"
         print("Window is \(window?.frame.size ?? CGSize(width: 0, height:0) )" )
         
-        
-        
-        
-        
         sidebarVC = (contentViewController?.children.filter {$0 is SidebarViewController})!.first as? SidebarViewController
         
         // Load in other VC's from Storyboards
         let sb = NSStoryboard(name: "Main", bundle: nil)
         
-        
-        
-        //popgraphVC = sb.instantiateController(withIdentifier: "popgraphViewController") as? PopgraphViewController
         popgraphVC = (contentViewController?.children.filter {$0 is PopgraphViewController})!.first as? PopgraphViewController
         mapviewVC = sb.instantiateController(withIdentifier: "mapviewViewController") as? MapviewViewController
         
         splitviewVC = self.contentViewController as? SplitViewController
         
-        
-        //popgraphVC = (contentViewController?.children.filter {$0 is PopgraphViewController})!.first as? PopgraphViewController
-        
-        
-        
-//        if let titlebarController =
-//            self.storyboard?.instantiateController( withIdentifier: NSStoryboard.SceneIdentifier("titlebarViewController") ) as? NSTitlebarAccessoryViewController
-//        {
-//            // position of title bar
-//            titlebarController.layoutAttribute = .right
-//
-//            // set the titleBar
-//            self.window?.addTitlebarAccessoryViewController(
-//                titlebarController
-//            )
-//        }
-        
-        
     }
+    
+    
+    
 
+}
+
+
+extension MainWindowController : NSWindowDelegate {
+    
+    func windowDidResize(_ notification: Notification) {
+        print("windowDidResize")
+        self.popgraphVC?.theScene?.didResize(rect: (self.popgraphVC?.popgraphView.frame)! )
+    }
+    
+}
+
+
+
+
+// MARK: Actions
+extension MainWindowController  {
+
+    
     @IBAction func OnImportFile(sender: Any?) {
-
+        
         if let path = Bundle.main.path(forResource: "lopho", ofType: "json") {
             print("path: \(path)")
             theGraph = Graph.readFromJSON(path: path)
@@ -93,11 +90,26 @@ class MainWindowController: NSWindowController {
         } else {
             print("currently map view, not switching to self")
         }
+        
+    }
+    
+    @IBAction func ShiftGraphLeft( sender: Any? ) {
+        popgraphVC?.theScene?.theGraph?.shift(x: -10.0, y:0.0)
+    }
+    
+    @IBAction func ShiftGraphRight( sender: Any? ) {
+        popgraphVC?.theScene?.theGraph?.shift(x: 10.0, y:0.0)
 
     }
+    
+    @IBAction func ShiftGraphUp( sender: Any? ) {
+        popgraphVC?.theScene?.theGraph?.shift(x:0.0, y: 10.0)
+
+    }
+    
+    @IBAction func ShiftGraphDown( sender: Any? ) {
+        popgraphVC?.theScene?.theGraph?.shift(x:0.0, y:-10.0)
+
+    }
+    
 }
-
-
-
-
-

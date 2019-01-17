@@ -13,6 +13,11 @@ class Node: SKSpriteNode {
     
     static let selectNodeNotification = NSNotification.Name("selectNodeNotification")
 
+    override var position: CGPoint {
+        didSet {
+            self.didMove()
+        }
+    }
     var displacement: CGPoint
     let nodeCategoryBitmask: UInt32 = 0x1 << 1
     var edges: [Edge]
@@ -39,6 +44,7 @@ class Node: SKSpriteNode {
         self.resize(radius: size)
         self.addChild(labelNode)
         self.registerForNotificaitons()
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -69,6 +75,11 @@ extension Node {
         return self.displacement == CGPoint(x: 0.0, y: 0.0)
     }
     
+    func move() {
+        let mvmt = SKAction.move(to: self.displacement, duration: 2)
+        self.run(mvmt)
+        self.didMove()
+    }
     
     // TODO: make sure it only is put in places where self and label will
     func randomizeLocation(width: CGFloat, height: CGFloat) {
@@ -81,6 +92,10 @@ extension Node {
         
         self.position = CGPoint(x: CGFloat.random(in: l...r),
                                 y: CGFloat.random(in: b...t) )
+    }
+    
+    func setupPhysics() {
+        self.physicsBody = SKPhysicsBody(circleOfRadius: self.size.height)
     }
     
 }

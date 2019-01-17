@@ -50,13 +50,77 @@ extension Graph {
 
 
 
+// MARK: Positioning Nodes
+
 extension Graph {
     
     public func randomizePositions(size: CGSize ) {
         nodes.forEach { $0.randomizeLocation(width: size.width, height: size.height) }
         nodes.forEach { $0.didMove() }
     }
+    
+    public func shift(x: CGFloat, y: CGFloat ) {
+        print("Shifting Graph by: \(x) and \(y)")
+        let action = SKAction.move(by: CGVector(dx: x, dy: y), duration: 1)
+        nodes.forEach { $0.run(action, completion: $0.didMove) }
+    }
 
+    public func getNodeBounds() -> CGRect {
+        
+        if nodes.count < 1 {
+            return CGRect(x: 0, y: 0, width: 0, height: 0)
+        }
+        
+        var ptMn = nodes[0].position
+        var ptMx = nodes[0].position
+        
+        for i in 1..<nodes.count {
+            let node = nodes[i]
+            let bounds = node.calculateAccumulatedFrame()
+            
+            if bounds.minX < ptMn.x {
+                ptMn.x = (bounds.minX + bounds.size.width) + 50
+            } else if bounds.maxX > ptMx.x {
+                ptMx.x = bounds.maxX - 50
+            }
+            
+            if bounds.minY < ptMn.y {
+                ptMn.y = bounds.minY
+            } else if bounds.maxY > ptMx.y {
+                ptMx.y = bounds.maxY
+            }
+        }
+        
+        return CGRect(x: ptMn.x,
+                      y: ptMn.y,
+                      width: ptMx.x-ptMn.x,
+                      height: ptMx.y-ptMn.y)
+    }
+    
+    
+    public func recenterNodes(newRect: CGRect) {
+        print("Recentering in space; \(newRect.size.width) x \(newRect.size.height)")
+        
+        if nodes.count < 1 {
+            return
+        }
+        
+        var bounds = self.getNodeBounds()
+        bounds.origin.x = bounds.origin.x + 10
+        bounds.origin.y = bounds.origin.y + 10
+        bounds.size.width = bounds.size.width - 10
+        bounds.size.height = bounds.size.height - 10
+        
+        // figure out   ((bounds.min - pos.x) / bounds.width ) * newWidth = new.x
+        nodes.forEach {
+            $0.displacement = CGPoint(x: (($0.position.x - bounds.minX) / bounds.width) * newRect.width,
+                                      y: (($0.position.y - bounds.minY) / bounds.height) * newRect.height)
+        }
+        
+        nodes.forEach { $0.move() }
+        
+    }
+    
 }
 
 
@@ -76,9 +140,7 @@ extension Graph {
     class func readFromJSON( path: String ) -> Graph? {
         let graph: Graph = Graph()
         
-        if let res  = readInJSON(path: path) {
-            print( res.keys )
-            
+        if let res  = readInJSON(path: path) {            
             let nodes = res["nodes"] as! [Any]
             for i in 0..<nodes.count {
                 let d = nodes[i] as! [String:Any]
@@ -91,8 +153,6 @@ extension Graph {
                 for key in properties {
                     node.setProperty(key: key, value: d[key]!)
                 }
-                print("Created Node")
-                print(node)
                 graph.nodes.append(node)
             }
             

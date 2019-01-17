@@ -639,12 +639,12 @@
                                                 <action selector="OnToggleLabelsWithSender:" target="Ady-hI-5gd" id="bAZ-HD-gMR"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Incresase Node Size" keyEquivalent="" id="awd-R8-ADv">
+                                        <menuItem title="Incresase Node Size" keyEquivalent="+" id="awd-R8-ADv">
                                             <connections>
                                                 <action selector="OnScaleNodesLargerWithSender:" target="Ady-hI-5gd" id="8Z3-ec-4cb"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Decrease Node Size" keyEquivalent="" id="Wfb-n4-Gpv">
+                                        <menuItem title="Decrease Node Size" keyEquivalent="-" id="Wfb-n4-Gpv">
                                             <connections>
                                                 <action selector="OnScaleNodesSmallerWithSender:" target="Ady-hI-5gd" id="z62-2h-Qlb"/>
                                             </connections>
@@ -661,6 +661,40 @@
                                             <connections>
                                                 <action selector="toggleFullScreen:" target="Ady-hI-5gd" id="dU3-MA-1Rq"/>
                                             </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Graph" id="Bfv-Tl-F49">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Graph" id="hVe-Np-xCb">
+                                    <items>
+                                        <menuItem title="Shift Nodes" id="blR-Ko-8br">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <menu key="submenu" title="Shift Nodes" id="Bxr-9t-kBS">
+                                                <items>
+                                                    <menuItem title="Up" keyEquivalent="" id="3Xw-I4-5z5">
+                                                        <connections>
+                                                            <action selector="ShiftGraphUpWithSender:" target="Ady-hI-5gd" id="MCw-fW-Gif"/>
+                                                        </connections>
+                                                    </menuItem>
+                                                    <menuItem title="Right" keyEquivalent="" id="y3C-sx-lPG">
+                                                        <connections>
+                                                            <action selector="ShiftGraphRightWithSender:" target="Ady-hI-5gd" id="EFt-qN-4TQ"/>
+                                                        </connections>
+                                                    </menuItem>
+                                                    <menuItem title="Down" keyEquivalent="" id="7Tv-z9-Bn8">
+                                                        <connections>
+                                                            <action selector="ShiftGraphDownWithSender:" target="Ady-hI-5gd" id="jmO-XE-fBV"/>
+                                                        </connections>
+                                                    </menuItem>
+                                                    <menuItem title="Left" keyEquivalent="" id="0zM-Nu-Inl">
+                                                        <connections>
+                                                            <action selector="ShiftGraphLeftWithSender:" target="Ady-hI-5gd" id="anZ-eS-mZ4"/>
+                                                        </connections>
+                                                    </menuItem>
+                                                </items>
+                                            </menu>
                                         </menuItem>
                                     </items>
                                 </menu>
@@ -742,7 +776,7 @@
                 <splitViewController id="gcb-96-FM9" customClass="SplitViewController" customModule="popgraphs" customModuleProvider="target" sceneMemberID="viewController">
                     <splitViewItems>
                         <splitViewItem holdingPriority="249" id="7dA-lH-d2t"/>
-                        <splitViewItem id="XyA-La-ufa"/>
+                        <splitViewItem holdingPriority="248" id="XyA-La-ufa"/>
                     </splitViewItems>
                     <splitView key="splitView" dividerStyle="thin" vertical="YES" id="ftC-Ng-7k4">
                         <rect key="frame" x="-367" y="0.0" width="993" height="697"/>

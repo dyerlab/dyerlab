@@ -23,6 +23,8 @@ class GraphScene: SKScene {
         
         self.scaleMode = .resizeFill
         self.isUserInteractionEnabled = true
+        
+        self.physicsBody = SKPhysicsBody(edgeLoopFrom: self.frame)
        
     }
     
@@ -55,6 +57,27 @@ extension GraphScene {
         if self.selectedNode != nil {
             self.selectedNode?.position = event.location(in: self)
             self.selectedNode?.didMove()
+        }
+    }
+    
+    
+    func didResize(rect: CGRect) {
+        print("didResize: \(rect)")
+        theGraph?.recenterNodes(newRect: rect)
+    }
+    
+    
+    // Override here to make sure edges catch up
+    override func didEvaluateActions() {
+        
+        if theGraph == nil {
+            return
+        }
+        
+        for node in (theGraph?.nodes)!  {
+            if node.canMove() {
+                node.didMove()
+            }
         }
     }
     
