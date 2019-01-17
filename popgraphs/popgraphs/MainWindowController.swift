@@ -65,25 +65,19 @@ class MainWindowController: NSWindowController {
     }
 
     @IBAction func OnImportFile(sender: Any?) {
-        theGraph = Graph()
-        theGraph!.makeNode(radius: 25, label: "Bob")
-        theGraph!.makeNode(radius: 12, label: "Alice")
-        theGraph!.makeNode(radius: 18, label: "Darius")
-        theGraph!.makeEdge(label1: "Bob", label2: "Alice", weight: 1.0)
-        theGraph!.makeEdge(label1: "Bob", label2: "Darius", weight: 2.0)
-        theGraph!.makeEdge(label1: "Darius", label2: "Alice", weight: 2.8)
 
-        popgraphVC!.theScene?.setGraph( graph: theGraph! )
-        sidebarVC!.setGraph( graph: theGraph! )
-
+        if let path = Bundle.main.path(forResource: "lopho", ofType: "json") {
+            print("path: \(path)")
+            theGraph = Graph.readFromJSON(path: path)
+            popgraphVC!.theScene?.setGraph( graph: theGraph! )
+            sidebarVC!.setGraph( graph: theGraph! )
+            mapviewVC!.setGraph( graph: theGraph! )
+        }
     }
     
     
     @IBAction func SwitchToGraphView( sender: Any? ) {
         print("toGraphView")
-//        splitviewVC?.removeSplitViewItem((splitviewVC?.splitViewItems.last)!)
-//        splitviewVC?.addSplitViewItem(NSSplitViewItem(viewController: popgraphVC!))
-//        splitviewVC?.splitViewItems.last?.holdingPriority = .defaultHigh
         
         if splitviewVC?.splitViewItems[1].viewController is MapviewViewController {
             splitviewVC?.splitViewItems[1] = NSSplitViewItem(viewController: popgraphVC!)
@@ -94,9 +88,6 @@ class MainWindowController: NSWindowController {
     
     @IBAction func SwitchToMapView( sender: Any? ) {
         print("toMapView")
-//        splitviewVC?.removeSplitViewItem((splitviewVC?.splitViewItems.last)!)
-//        splitviewVC?.addSplitViewItem(NSSplitViewItem(viewController: mapviewVC!))
-//        splitviewVC?.splitViewItems.last?.holdingPriority = .defaultLow
         if splitviewVC?.splitViewItems[1].viewController is PopgraphViewController {
             splitviewVC?.splitViewItems[1] = NSSplitViewItem(viewController: mapviewVC!)
         } else {

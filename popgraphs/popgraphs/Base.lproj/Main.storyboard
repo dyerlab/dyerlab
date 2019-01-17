@@ -742,7 +742,7 @@
                 <splitViewController id="gcb-96-FM9" customClass="SplitViewController" customModule="popgraphs" customModuleProvider="target" sceneMemberID="viewController">
                     <splitViewItems>
                         <splitViewItem holdingPriority="249" id="7dA-lH-d2t"/>
-                        <splitViewItem id="rrS-vc-ecl"/>
+                        <splitViewItem id="XyA-La-ufa"/>
                     </splitViewItems>
                     <splitView key="splitView" dividerStyle="thin" vertical="YES" id="ftC-Ng-7k4">
                         <rect key="frame" x="-367" y="0.0" width="993" height="697"/>
@@ -754,7 +754,7 @@
                     <connections>
                         <outlet property="splitView" destination="ftC-Ng-7k4" id="qUU-yO-Y5a"/>
                         <segue destination="2dV-bq-xPB" kind="relationship" relationship="splitItems" id="Ibp-Km-h6H"/>
-                        <segue destination="ifm-OM-aTH" kind="relationship" relationship="splitItems" id="wd6-s3-ShA"/>
+                        <segue destination="viZ-Qa-2N9" kind="relationship" relationship="splitItems" id="kvq-Fu-oiG"/>
                     </connections>
                 </splitViewController>
                 <customObject id="5MT-6X-oeY" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

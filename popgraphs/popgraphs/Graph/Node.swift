@@ -35,7 +35,7 @@ class Node: SKSpriteNode {
         
         super.init( texture: texture, color: NSColor.white, size: texture.size() )
         
-        // make effect node
+        self.name = label
         self.resize(radius: size)
         self.addChild(labelNode)
         self.registerForNotificaitons()
@@ -44,8 +44,6 @@ class Node: SKSpriteNode {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-
 
     func registerForNotificaitons() {
         NotificationCenter.default.addObserver(self,
@@ -84,6 +82,7 @@ extension Node {
         self.position = CGPoint(x: CGFloat.random(in: l...r),
                                 y: CGFloat.random(in: b...t) )
     }
+    
 }
 
 
@@ -97,12 +96,10 @@ extension Node {
         
     }
     
-    
     func rescale( scaleFactor: CGFloat ) {
         self.size = CGSize(width: self.size.width * scaleFactor,
                            height:  self.size.height * scaleFactor)
         self.labelNode.position = CGPoint(x: self.size.width, y: self.size.height)
-        
     }
     
     func toggleLabel() {
@@ -116,7 +113,6 @@ extension Node {
     
     
     @objc func toggleSelection(_ notification: Notification ) {
-        
         // not selected but should be cuz' this is your name.
         if !isSelected && self.name == (notification.userInfo!["Name"]) as? String {
             let effectNode = SKEffectNode()
@@ -140,33 +136,59 @@ extension Node {
                 }
             self.isSelected = false
         }
-
     }
 
+    func setProperty( key: String, value: Any ) {
+        if key.caseInsensitiveCompare("Longitude") == .orderedSame {
+            self.coordinate?.longitude = (value as! CLLocationDegrees)
+        } else if key.caseInsensitiveCompare("Latitude") == .orderedSame {
+            self.coordinate?.latitude = (value as! CLLocationDegrees)
+        } else if key.caseInsensitiveCompare("Color") == .orderedSame {
+            if let hex = value as? String {
+                let colorizeAction = SKAction.colorize(with: hex2NSColor(hex: hex),
+                                                       colorBlendFactor: 0.75,
+                                                       duration: 5)
+                self.run(colorizeAction)
+            }
+        }
+        else {
+            self.properties[key] = value
+        }
+    }
+}
+
+
+// Mark: Overload for CustomStringConvertible
+extension  Node  {
+    
+    override var description: String {
+        var ret = "Node: \(self.name ?? "node")\n"
+        ret += super.description + "\n"
+        ret += "degree: \(degree)\n"
+        for property in properties.keys {
+            ret += "\(property): \(self.properties[property] ?? "nil")\n"
+        }
+        return ret
+    }
+    
 }
 
 
 
-
+// MARK: Mapkit Integration
 import MapKit
 
 extension Node : Mappable {
     
     var coordinate: CLLocationCoordinate2D? {
         get {
-            if self.properties.keys.contains("Coordinates") {
-                if self.properties.keys.contains("Coordinates") {
-                    return  (self.properties["Coordinates"] as! CLLocationCoordinate2D)
-                } else {
-                    return nil
-                }
+            if !self.properties.keys.contains("Coordinate") {
+                self.properties["Coordinate"] = CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0)
             }
-            else {
-                return CLLocationCoordinate2D(latitude: 25.79, longitude: -111.35)
-            }
+            return self.properties["Coordinate"] as? CLLocationCoordinate2D
         }
         set {
-            self.properties["Coordinates"] = newValue
+            self.properties["Coordinate"] = newValue
         }
     }
 

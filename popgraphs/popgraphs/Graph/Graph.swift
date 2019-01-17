@@ -73,11 +73,43 @@ extension Graph {
 
 extension Graph {
 
-    func readFromJSON( path: String ) -> Graph? {
+    class func readFromJSON( path: String ) -> Graph? {
         let graph: Graph = Graph()
         
-        
-        
+        if let res  = readInJSON(path: path) {
+            print( res.keys )
+            
+            let nodes = res["nodes"] as! [Any]
+            for i in 0..<nodes.count {
+                let d = nodes[i] as! [String:Any]
+                let label: String = (d["name"] as? String) ?? String("node-\(i)")
+                let size: CGFloat = (d["size"] as? CGFloat) ?? 1.0
+                let node = Node(label: label, size: size)
+                
+                let keys = Array(d.keys)
+                let properties = ["name","size"].difference(from: keys)
+                for key in properties {
+                    node.setProperty(key: key, value: d[key]!)
+                }
+                print("Created Node")
+                print(node)
+                graph.nodes.append(node)
+            }
+            
+            let edges = res["links"] as! [Any]
+            for i in 0..<edges.count {
+                let d = edges[i] as! [String:Any]
+                let target: Int = (d["target"] as? Int) ?? -1
+                let source: Int = (d["source"] as? Int) ?? -1
+                let weight: CGFloat = (d["weight"] as? CGFloat) ?? 1.0
+                if target > 0 && source > 0 {
+                    let edge = Edge(n1: graph.nodes[source],
+                                    n2: graph.nodes[target],
+                                    weight: weight)
+                    graph.edges.append(edge)
+                }
+            }
+        }
         return graph
     }
     

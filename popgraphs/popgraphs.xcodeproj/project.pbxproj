@@ -33,6 +33,8 @@
 		2AA46B0F21E0E106003BFCD0 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA46B0E21E0E106003BFCD0 /* SidebarView.swift */; };
 		2AA46B1121E0E119003BFCD0 /* SidebarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AA46B1021E0E119003BFCD0 /* SidebarView.xib */; };
 		2AA46B1321E0E3AF003BFCD0 /* SidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA46B1221E0E3AF003BFCD0 /* SidebarViewController.swift */; };
+		2AA7941F21F0A0AF004E6E66 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA7941E21F0A0AF004E6E66 /* JSON.swift */; };
+		2AA7942121F0C9FE004E6E66 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA7942021F0C9FE004E6E66 /* Array.swift */; };
 		2ADC8C7121E69BCE00245DC2 /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADC8C7021E69BCE00245DC2 /* Mappable.swift */; };
 		2AFB43D321EE409E00C073E4 /* NSColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFB43D221EE409E00C073E4 /* NSColor.swift */; };
 /* End PBXBuildFile section */
@@ -80,6 +82,8 @@
 		2AA46B1021E0E119003BFCD0 /* SidebarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SidebarView.xib; sourceTree = "<group>"; };
 		2AA46B1221E0E3AF003BFCD0 /* SidebarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewController.swift; sourceTree = "<group>"; };
 		2AA7941D21EFC6C9004E6E66 /* popgraphs.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = popgraphs.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		2AA7941E21F0A0AF004E6E66 /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		2AA7942021F0C9FE004E6E66 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		2ADC8C7021E69BCE00245DC2 /* Mappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mappable.swift; sourceTree = "<group>"; };
 		2AFB43D221EE409E00C073E4 /* NSColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,6 +111,8 @@
 			children = (
 				2A6DA30621DEA15200E19F3A /* CGVector.swift */,
 				2AFB43D221EE409E00C073E4 /* NSColor.swift */,
+				2AA7941E21F0A0AF004E6E66 /* JSON.swift */,
+				2AA7942021F0C9FE004E6E66 /* Array.swift */,
 			);
 			path = Overloads;
 			sourceTree = "<group>";
@@ -326,7 +332,9 @@
 				2A44307C21E93919004987FA /* MappingFuncs.swift in Sources */,
 				2A0EA35521E23A93000F2514 /* PopgraphView.swift in Sources */,
 				2AA46B0621DFF971003BFCD0 /* PopgraphViewController.swift in Sources */,
+				2AA7941F21F0A0AF004E6E66 /* JSON.swift in Sources */,
 				2A43821E21E4F03600BFAE67 /* NodeOutlineWidget.swift in Sources */,
+				2AA7942121F0C9FE004E6E66 /* Array.swift in Sources */,
 				2AFB43D321EE409E00C073E4 /* NSColor.swift in Sources */,
 				2AA46AFF21DFF6C7003BFCD0 /* OutlineItem.swift in Sources */,
 				2A6DA30721DEA15200E19F3A /* CGVector.swift in Sources */,
