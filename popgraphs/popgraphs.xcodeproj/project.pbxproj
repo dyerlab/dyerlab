@@ -79,6 +79,7 @@
 		2AA46B0E21E0E106003BFCD0 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
 		2AA46B1021E0E119003BFCD0 /* SidebarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SidebarView.xib; sourceTree = "<group>"; };
 		2AA46B1221E0E3AF003BFCD0 /* SidebarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewController.swift; sourceTree = "<group>"; };
+		2AA7941D21EFC6C9004E6E66 /* popgraphs.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = popgraphs.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2ADC8C7021E69BCE00245DC2 /* Mappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mappable.swift; sourceTree = "<group>"; };
 		2AFB43D221EE409E00C073E4 /* NSColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +114,7 @@
 		2A6DA2CC21DE562900E19F3A = {
 			isa = PBXGroup;
 			children = (
+				2AA7941D21EFC6C9004E6E66 /* popgraphs.playground */,
 				2A6DA2D721DE562900E19F3A /* popgraphs */,
 				2A6DA2EA21DE562A00E19F3A /* popgraphsTests */,
 				2A6DA2D621DE562900E19F3A /* Products */,
