@@ -132,12 +132,12 @@ extension Graph {
         let bounds = (nodes[0].parent?.scene?.size)!
         let idealDist: CGFloat = 50.0 * (bounds.width * bounds.height) / CGFloat( nodes.count )
 
+        self.randomizePositions(size: bounds)
         
         print("Layout!!!!")
-        print("Bounds: \(bounds)")
         
-        for iter in 0..<100 {
-            print("iter: \(iter)")
+        for iter in 0..<250 {
+            print("iter: \(iter) \(temp)")
             
             // Repulsive Forces
             for i in 0..<nodes.count {
@@ -185,7 +185,9 @@ extension Graph {
 
                 // Limit X to within bounds
                 if newPos.x < 0 {
-                    node.displacement.x = -1.0 * node.position.x + 10.0
+                    //node.displacement.x = -1.0 * node.position.x + 10.0
+                    node.displacement.x = 0.0
+                    node.position.x = 40.0
                 }
                 else if newPos.x > bounds.width {
                     node.displacement.x = bounds.width - node.position.x - 10.0
@@ -193,7 +195,8 @@ extension Graph {
                 
                 // Limit Y to within bounds
                 if newPos.y < 0 {
-                    node.displacement.y = -1.0 * node.position.y + 10.0
+                    node.displacement.y = 0.0
+                    node.position.y = 40.0
                 }
                 else if newPos.y > bounds.height {
                     node.displacement.y = bounds.height - node.position.y - 10.0
@@ -203,8 +206,11 @@ extension Graph {
             }
             
             // Cool the annealing
-            temp = temp < 1.0 ? 1.0 : temp * 0.95
+            temp = temp <= 0.5 ? 0.5 : temp * 0.9999
         }
+        
+        self.recenterNodes(width: bounds.width, height: bounds.height)
+        
     }
     
 }

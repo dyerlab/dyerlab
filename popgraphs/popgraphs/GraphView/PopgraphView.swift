@@ -14,6 +14,8 @@ class PopgraphView: NSView {
     
     @IBOutlet var contentView: NSView!
     @IBOutlet weak var skView: SKView!
+    var temperature: CGFloat = 100.0
+    var timer: Timer?
     
     override init(frame frameRect: NSRect) {
         super.init(frame: frameRect)
@@ -37,6 +39,9 @@ class PopgraphView: NSView {
         skView.showsFPS = true
         skView.showsNodeCount = true
         
+        
+        
+        
     }
     
 
@@ -45,6 +50,40 @@ class PopgraphView: NSView {
         super.draw(dirtyRect)
 
         // Drawing code here.
+    }
+    
+    
+    
+    // Register for an "ITEM MOVED"
+    func itemMoved() {
+        if (self.timer?.isValid)! {
+            return
+        }
+        
+        self.timer = Timer(timeInterval: 0.1, target: self, selector: #selector(timerFired(sender:)), userInfo: nil, repeats: true)
+    }
+    
+}
+
+
+// MARK: Stuff for Layouts
+extension PopgraphView {
+    
+    @objc func timerFired(sender: Any?) {
+        
+        if let scene = self.skView.scene as? GraphScene {
+            temperature = (temperature >= 0.5) ? 0.999 * temperature : 0.45
+            if !scene.applyForces(temp: temperature) {
+                // kill timer
+                
+                self.timer?.invalidate()
+                
+                temperature = 100.0
+            }
+        }
+        else {
+            timer?.invalidate()
+        }
     }
     
 }
