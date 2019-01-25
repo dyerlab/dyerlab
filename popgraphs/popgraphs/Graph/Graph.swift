@@ -136,7 +136,7 @@ extension Graph {
         
         print("Layout!!!!")
         
-        for iter in 0..<250 {
+        for iter in 0..<1000 {
             print("iter: \(iter) \(temp)")
             
             // Repulsive Forces
@@ -147,7 +147,7 @@ extension Graph {
                         dist = nodes[i].position.distance(to: nodes[j].position )
                         delta = nodes[i].position - nodes[j].position
                         if dist < idealDist {
-                            force = delta / dist * ( pow(dist,2.0)/idealDist ) * 5.0
+                            force = delta / dist * ( pow(dist,2.0)/idealDist ) * 50.0
                             nodes[i].displacement = nodes[i].displacement + force 
                         }
                     }
