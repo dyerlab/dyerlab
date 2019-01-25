@@ -166,41 +166,5 @@ extension GraphScene {
         return ret
     }
     
-//    func calculateNodeForces(temp: CGFloat) -> Bool {
-//        var ret = false
-//        let numNodes = graph!.nodes.count
-//        let numEdges = graph!.edges.count
-//        let K = CGFloat(sqrtf( 1.0 * ( Float(self.size.width*self.size.height)/Float(numNodes))) * 50.0)
-//        
-//        for i in 0 ..< numNodes {
-//            let node1 = self.graph!.nodes[i]
-//            var xvel: CGFloat = 0.0
-//            var yvel: CGFloat = 0.0
-//            
-//            
-//            // repulsive Forces
-//            if node1 != self.selectedNode {
-//                for j in 0 ..< numNodes {
-//                    if i != j {
-//                        let node2 = self.graph!.nodes[j]
-//                        let vec = CGVector.init(pt1: node1.position, pt2: node2.position)
-//                        let l = CGFloat( (vec.dx * vec.dx + vec.dy * vec.dy) * 4.0 )
-//                        if l > 0 {
-//                            xvel = xvel + (vec.dx/l) * (K*K)/l
-//                            yvel = yvel + (vec.dy/l) * (K*K)/l
-//                        }
-//                    }
-//                }
-//            }
-//            
-//            // Attractive Forces
-//            for j in 0 ..< self.graph!.edges.count {
-//                let e = graph!.edges[j]
-//                
-//            }
-//        }
-//        
-//        
-//        return ret
-//    }
+
 }
