@@ -1,0 +1,1333 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A025AD026E9368200027F0F /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A025ACF26E9368200027F0F /* Sequence.swift */; };
+		2A025AD126E9368200027F0F /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A025ACF26E9368200027F0F /* Sequence.swift */; };
+		2A025AD326E93A1900027F0F /* Locale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A025AD226E93A1900027F0F /* Locale.swift */; };
+		2A025AD426E93A1900027F0F /* Locale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A025AD226E93A1900027F0F /* Locale.swift */; };
+		2A025AD726E958A700027F0F /* LocaleSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A025AD626E958A700027F0F /* LocaleSummaryView.swift */; };
+		2A025AD826E958A700027F0F /* LocaleSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A025AD626E958A700027F0F /* LocaleSummaryView.swift */; };
+		2A37052E26EA9F840019F3B7 /* IndividualListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A37052D26EA9F840019F3B7 /* IndividualListView.swift */; };
+		2A3E51D126E80ECC00DF4A00 /* DyerLabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E51D026E80ECC00DF4A00 /* DyerLabApp.swift */; };
+		2A3E51D326E80ECC00DF4A00 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E51D226E80ECC00DF4A00 /* ContentView.swift */; };
+		2A3E51D526E80ECC00DF4A00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A3E51D426E80ECC00DF4A00 /* Assets.xcassets */; };
+		2A3E51D826E80ECC00DF4A00 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A3E51D726E80ECC00DF4A00 /* Preview Assets.xcassets */; };
+		2A3E51E226E80ECD00DF4A00 /* DyerLabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E51E126E80ECD00DF4A00 /* DyerLabTests.swift */; };
+		2A3E51FA26E8119600DF4A00 /* DyerLabUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E51EB26E80ECD00DF4A00 /* DyerLabUITests.swift */; };
+		2A3E51FB26E8119600DF4A00 /* DyerLabUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E51ED26E80ECD00DF4A00 /* DyerLabUITestsLaunchTests.swift */; };
+		2A3E525626E813AD00DF4A00 /* AlleleFrequencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E51FE26E813AC00DF4A00 /* AlleleFrequencies.swift */; };
+		2A3E525726E813AD00DF4A00 /* AlleleFrequencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E51FE26E813AC00DF4A00 /* AlleleFrequencies.swift */; };
+		2A3E525826E813AD00DF4A00 /* AlleleFrequencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E51FF26E813AC00DF4A00 /* AlleleFrequencyView.swift */; };
+		2A3E525926E813AD00DF4A00 /* AlleleFrequencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E51FF26E813AC00DF4A00 /* AlleleFrequencyView.swift */; };
+		2A3E525A26E813AD00DF4A00 /* Frequencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E520026E813AC00DF4A00 /* Frequencies.swift */; };
+		2A3E525B26E813AD00DF4A00 /* Frequencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E520026E813AC00DF4A00 /* Frequencies.swift */; };
+		2A3E526626E813AD00DF4A00 /* DataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E520726E813AC00DF4A00 /* DataSet.swift */; };
+		2A3E526726E813AD00DF4A00 /* DataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E520726E813AC00DF4A00 /* DataSet.swift */; };
+		2A3E526826E813AD00DF4A00 /* PloidyEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E520926E813AC00DF4A00 /* PloidyEnum.swift */; };
+		2A3E526926E813AD00DF4A00 /* PloidyEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E520926E813AC00DF4A00 /* PloidyEnum.swift */; };
+		2A3E526A26E813AD00DF4A00 /* LocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E520A26E813AC00DF4A00 /* LocusView.swift */; };
+		2A3E526B26E813AD00DF4A00 /* LocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E520A26E813AC00DF4A00 /* LocusView.swift */; };
+		2A3E526C26E813AD00DF4A00 /* Locus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E520B26E813AC00DF4A00 /* Locus.swift */; };
+		2A3E526D26E813AD00DF4A00 /* Locus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E520B26E813AC00DF4A00 /* Locus.swift */; };
+		2A3E526E26E813AD00DF4A00 /* AlleleMaskEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E520C26E813AC00DF4A00 /* AlleleMaskEnum.swift */; };
+		2A3E526F26E813AD00DF4A00 /* AlleleMaskEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E520C26E813AC00DF4A00 /* AlleleMaskEnum.swift */; };
+		2A3E527026E813AD00DF4A00 /* IndividualView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E520E26E813AC00DF4A00 /* IndividualView.swift */; };
+		2A3E527126E813AD00DF4A00 /* IndividualView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E520E26E813AC00DF4A00 /* IndividualView.swift */; };
+		2A3E527226E813AD00DF4A00 /* Individual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E520F26E813AC00DF4A00 /* Individual.swift */; };
+		2A3E527326E813AD00DF4A00 /* Individual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E520F26E813AC00DF4A00 /* Individual.swift */; };
+		2A3E527426E813AD00DF4A00 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E521126E813AC00DF4A00 /* TreeNode.swift */; };
+		2A3E527526E813AD00DF4A00 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E521126E813AC00DF4A00 /* TreeNode.swift */; };
+		2A3E527626E813AD00DF4A00 /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E521326E813AC00DF4A00 /* Mappable.swift */; };
+		2A3E527726E813AD00DF4A00 /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E521326E813AC00DF4A00 /* Mappable.swift */; };
+		2A3E527826E813AD00DF4A00 /* ConvexHull.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E521426E813AC00DF4A00 /* ConvexHull.swift */; };
+		2A3E527926E813AD00DF4A00 /* ConvexHull.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E521426E813AC00DF4A00 /* ConvexHull.swift */; };
+		2A3E527A26E813AD00DF4A00 /* MapCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E521526E813AC00DF4A00 /* MapCoordinator.swift */; };
+		2A3E527B26E813AD00DF4A00 /* MapCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E521526E813AC00DF4A00 /* MapCoordinator.swift */; };
+		2A3E527C26E813AD00DF4A00 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E521626E813AC00DF4A00 /* MapView.swift */; };
+		2A3E527D26E813AD00DF4A00 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E521626E813AC00DF4A00 /* MapView.swift */; };
+		2A3E527E26E813AD00DF4A00 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E521726E813AC00DF4A00 /* Place.swift */; };
+		2A3E527F26E813AD00DF4A00 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E521726E813AC00DF4A00 /* Place.swift */; };
+		2A3E528026E813AD00DF4A00 /* IndividualMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E521826E813AC00DF4A00 /* IndividualMapView.swift */; };
+		2A3E528126E813AD00DF4A00 /* IndividualMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E521826E813AC00DF4A00 /* IndividualMapView.swift */; };
+		2A3E528226E813AD00DF4A00 /* ImportGenotypeFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E521A26E813AC00DF4A00 /* ImportGenotypeFile.swift */; };
+		2A3E528326E813AD00DF4A00 /* ImportGenotypeFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E521A26E813AC00DF4A00 /* ImportGenotypeFile.swift */; };
+		2A3E528426E813AD00DF4A00 /* GenotypeFileFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E521B26E813AC00DF4A00 /* GenotypeFileFormat.swift */; };
+		2A3E528526E813AD00DF4A00 /* GenotypeFileFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E521B26E813AC00DF4A00 /* GenotypeFileFormat.swift */; };
+		2A3E528626E813AD00DF4A00 /* ParseDelimitedFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E521C26E813AC00DF4A00 /* ParseDelimitedFile.swift */; };
+		2A3E528726E813AD00DF4A00 /* ParseDelimitedFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E521C26E813AC00DF4A00 /* ParseDelimitedFile.swift */; };
+		2A3E528826E813AD00DF4A00 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E521F26E813AC00DF4A00 /* Random.swift */; };
+		2A3E528926E813AD00DF4A00 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E521F26E813AC00DF4A00 /* Random.swift */; };
+		2A3E528A26E813AD00DF4A00 /* VectorScalarOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E522026E813AC00DF4A00 /* VectorScalarOperators.swift */; };
+		2A3E528B26E813AD00DF4A00 /* VectorScalarOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E522026E813AC00DF4A00 /* VectorScalarOperators.swift */; };
+		2A3E528C26E813AD00DF4A00 /* VectorConvertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E522126E813AC00DF4A00 /* VectorConvertable.swift */; };
+		2A3E528D26E813AD00DF4A00 /* VectorConvertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E522126E813AC00DF4A00 /* VectorConvertable.swift */; };
+		2A3E528E26E813AD00DF4A00 /* RangeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E522226E813AC00DF4A00 /* RangeEnum.swift */; };
+		2A3E528F26E813AD00DF4A00 /* RangeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E522226E813AC00DF4A00 /* RangeEnum.swift */; };
+		2A3E529026E813AD00DF4A00 /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E522326E813AC00DF4A00 /* Vector.swift */; };
+		2A3E529126E813AD00DF4A00 /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E522326E813AC00DF4A00 /* Vector.swift */; };
+		2A3E529226E813AD00DF4A00 /* VectorVectorOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E522426E813AC00DF4A00 /* VectorVectorOperators.swift */; };
+		2A3E529326E813AD00DF4A00 /* VectorVectorOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E522426E813AC00DF4A00 /* VectorVectorOperators.swift */; };
+		2A3E529426E813AD00DF4A00 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E522526E813AC00DF4A00 /* Operators.swift */; };
+		2A3E529526E813AD00DF4A00 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E522526E813AC00DF4A00 /* Operators.swift */; };
+		2A3E529626E813AD00DF4A00 /* MatrixConvertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E522926E813AC00DF4A00 /* MatrixConvertable.swift */; };
+		2A3E529726E813AD00DF4A00 /* MatrixConvertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E522926E813AC00DF4A00 /* MatrixConvertable.swift */; };
+		2A3E529826E813AD00DF4A00 /* MatrixMatrixOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E522A26E813AC00DF4A00 /* MatrixMatrixOperations.swift */; };
+		2A3E529926E813AD00DF4A00 /* MatrixMatrixOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E522A26E813AC00DF4A00 /* MatrixMatrixOperations.swift */; };
+		2A3E529A26E813AD00DF4A00 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E522B26E813AC00DF4A00 /* Matrix.swift */; };
+		2A3E529B26E813AD00DF4A00 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E522B26E813AC00DF4A00 /* Matrix.swift */; };
+		2A3E529C26E813AD00DF4A00 /* MatrixScalarOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E522C26E813AC00DF4A00 /* MatrixScalarOperators.swift */; };
+		2A3E529D26E813AD00DF4A00 /* MatrixScalarOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E522C26E813AC00DF4A00 /* MatrixScalarOperators.swift */; };
+		2A3E529E26E813AD00DF4A00 /* MatrixAlgebra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E522D26E813AC00DF4A00 /* MatrixAlgebra.swift */; };
+		2A3E529F26E813AD00DF4A00 /* MatrixAlgebra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E522D26E813AC00DF4A00 /* MatrixAlgebra.swift */; };
+		2A3E52A026E813AD00DF4A00 /* LosslessStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E522F26E813AD00DF4A00 /* LosslessStringConvertible.swift */; };
+		2A3E52A126E813AD00DF4A00 /* LosslessStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E522F26E813AD00DF4A00 /* LosslessStringConvertible.swift */; };
+		2A3E52A226E813AD00DF4A00 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E523026E813AD00DF4A00 /* Array.swift */; };
+		2A3E52A326E813AD00DF4A00 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E523026E813AD00DF4A00 /* Array.swift */; };
+		2A3E52A426E813AD00DF4A00 /* MKCoordinateRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E523126E813AD00DF4A00 /* MKCoordinateRegion.swift */; };
+		2A3E52A526E813AD00DF4A00 /* MKCoordinateRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E523126E813AD00DF4A00 /* MKCoordinateRegion.swift */; };
+		2A3E52A626E813AD00DF4A00 /* CLLocationCoordinate2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E523226E813AD00DF4A00 /* CLLocationCoordinate2D.swift */; };
+		2A3E52A726E813AD00DF4A00 /* CLLocationCoordinate2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E523226E813AD00DF4A00 /* CLLocationCoordinate2D.swift */; };
+		2A3E52A826E813AD00DF4A00 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E523326E813AD00DF4A00 /* Dictionary.swift */; };
+		2A3E52A926E813AD00DF4A00 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E523326E813AD00DF4A00 /* Dictionary.swift */; };
+		2A3E52AA26E813AD00DF4A00 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E523426E813AD00DF4A00 /* Color.swift */; };
+		2A3E52AB26E813AD00DF4A00 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E523426E813AD00DF4A00 /* Color.swift */; };
+		2A3E52AC26E813AD00DF4A00 /* Graph-Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E523826E813AD00DF4A00 /* Graph-Layout.swift */; };
+		2A3E52AD26E813AD00DF4A00 /* Graph-Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E523826E813AD00DF4A00 /* Graph-Layout.swift */; };
+		2A3E52AE26E813AD00DF4A00 /* Graph-Topology.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E523926E813AD00DF4A00 /* Graph-Topology.swift */; };
+		2A3E52AF26E813AD00DF4A00 /* Graph-Topology.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E523926E813AD00DF4A00 /* Graph-Topology.swift */; };
+		2A3E52B026E813AD00DF4A00 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E523A26E813AD00DF4A00 /* Graph.swift */; };
+		2A3E52B126E813AD00DF4A00 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E523A26E813AD00DF4A00 /* Graph.swift */; };
+		2A3E52B226E813AD00DF4A00 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E523C26E813AD00DF4A00 /* Edge.swift */; };
+		2A3E52B326E813AD00DF4A00 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E523C26E813AD00DF4A00 /* Edge.swift */; };
+		2A3E52B426E813AD00DF4A00 /* Node2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E523E26E813AD00DF4A00 /* Node2D.swift */; };
+		2A3E52B526E813AD00DF4A00 /* Node2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E523E26E813AD00DF4A00 /* Node2D.swift */; };
+		2A3E52B626E813AD00DF4A00 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E523F26E813AD00DF4A00 /* Node.swift */; };
+		2A3E52B726E813AD00DF4A00 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E523F26E813AD00DF4A00 /* Node.swift */; };
+		2A3E52B826E813AD00DF4A00 /* GraphScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E524126E813AD00DF4A00 /* GraphScene.swift */; };
+		2A3E52B926E813AD00DF4A00 /* GraphScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E524126E813AD00DF4A00 /* GraphScene.swift */; };
+		2A3E52BA26E813AD00DF4A00 /* SpriteKitable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E524226E813AD00DF4A00 /* SpriteKitable.swift */; };
+		2A3E52BB26E813AD00DF4A00 /* SpriteKitable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E524226E813AD00DF4A00 /* SpriteKitable.swift */; };
+		2A3E52C226E813AD00DF4A00 /* RadarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E524826E813AD00DF4A00 /* RadarChartView.swift */; };
+		2A3E52C326E813AD00DF4A00 /* RadarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E524826E813AD00DF4A00 /* RadarChartView.swift */; };
+		2A3E52C426E813AD00DF4A00 /* BarPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E524A26E813AD00DF4A00 /* BarPath.swift */; };
+		2A3E52C526E813AD00DF4A00 /* BarPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E524A26E813AD00DF4A00 /* BarPath.swift */; };
+		2A3E52C626E813AD00DF4A00 /* BarStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E524B26E813AD00DF4A00 /* BarStack.swift */; };
+		2A3E52C726E813AD00DF4A00 /* BarStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E524B26E813AD00DF4A00 /* BarStack.swift */; };
+		2A3E52C826E813AD00DF4A00 /* ChartAxis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E524C26E813AD00DF4A00 /* ChartAxis.swift */; };
+		2A3E52C926E813AD00DF4A00 /* ChartAxis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E524C26E813AD00DF4A00 /* ChartAxis.swift */; };
+		2A3E52CA26E813AD00DF4A00 /* BarChartBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E524D26E813AD00DF4A00 /* BarChartBar.swift */; };
+		2A3E52CB26E813AD00DF4A00 /* BarChartBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E524D26E813AD00DF4A00 /* BarChartBar.swift */; };
+		2A3E52CC26E813AD00DF4A00 /* PieSliceText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E524E26E813AD00DF4A00 /* PieSliceText.swift */; };
+		2A3E52CD26E813AD00DF4A00 /* PieSliceText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E524E26E813AD00DF4A00 /* PieSliceText.swift */; };
+		2A3E52CE26E813AD00DF4A00 /* BarChartGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E524F26E813AD00DF4A00 /* BarChartGrid.swift */; };
+		2A3E52CF26E813AD00DF4A00 /* BarChartGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E524F26E813AD00DF4A00 /* BarChartGrid.swift */; };
+		2A3E52D026E813AD00DF4A00 /* LabelStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E525026E813AD00DF4A00 /* LabelStack.swift */; };
+		2A3E52D126E813AD00DF4A00 /* LabelStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E525026E813AD00DF4A00 /* LabelStack.swift */; };
+		2A3E52D226E813AD00DF4A00 /* RadarChartPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E525126E813AD00DF4A00 /* RadarChartPath.swift */; };
+		2A3E52D326E813AD00DF4A00 /* RadarChartPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E525126E813AD00DF4A00 /* RadarChartPath.swift */; };
+		2A3E52D426E813AD00DF4A00 /* PieSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E525226E813AD00DF4A00 /* PieSlice.swift */; };
+		2A3E52D526E813AD00DF4A00 /* PieSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E525226E813AD00DF4A00 /* PieSlice.swift */; };
+		2A3E52D626E813AD00DF4A00 /* RadarChartGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E525326E813AD00DF4A00 /* RadarChartGrid.swift */; };
+		2A3E52D726E813AD00DF4A00 /* RadarChartGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E525326E813AD00DF4A00 /* RadarChartGrid.swift */; };
+		2A3E52D826E813AD00DF4A00 /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E525426E813AD00DF4A00 /* BarChartView.swift */; };
+		2A3E52D926E813AD00DF4A00 /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E525426E813AD00DF4A00 /* BarChartView.swift */; };
+		2A3E52DA26E813AD00DF4A00 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E525526E813AD00DF4A00 /* PieChartView.swift */; };
+		2A3E52DB26E813AD00DF4A00 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E525526E813AD00DF4A00 /* PieChartView.swift */; };
+		2A3E52F026E8141700DF4A00 /* TestConvexHull.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E52DD26E8141700DF4A00 /* TestConvexHull.swift */; };
+		2A3E52F126E8141700DF4A00 /* TestEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E52DF26E8141700DF4A00 /* TestEdge.swift */; };
+		2A3E52F226E8141700DF4A00 /* TestNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E52E026E8141700DF4A00 /* TestNode.swift */; };
+		2A3E52F326E8141700DF4A00 /* TestGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E52E126E8141700DF4A00 /* TestGraph.swift */; };
+		2A3E52F426E8141700DF4A00 /* TestParseDelimitedFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E52E326E8141700DF4A00 /* TestParseDelimitedFile.swift */; };
+		2A3E52F526E8141700DF4A00 /* TestFrequencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E52E526E8141700DF4A00 /* TestFrequencies.swift */; };
+		2A3E52F626E8141700DF4A00 /* TestDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E52E626E8141700DF4A00 /* TestDataSet.swift */; };
+		2A3E52F726E8141700DF4A00 /* TestLocus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E52E726E8141700DF4A00 /* TestLocus.swift */; };
+		2A3E52F926E8141700DF4A00 /* TestAlleleFequencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E52E926E8141700DF4A00 /* TestAlleleFequencies.swift */; };
+		2A3E52FA26E8141700DF4A00 /* TestIndividual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E52EA26E8141700DF4A00 /* TestIndividual.swift */; };
+		2A3E52FB26E8141700DF4A00 /* TestAlgebra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E52EC26E8141700DF4A00 /* TestAlgebra.swift */; };
+		2A3E52FC26E8141700DF4A00 /* TestMatrixAlgebra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E52ED26E8141700DF4A00 /* TestMatrixAlgebra.swift */; };
+		2A3E52FD26E8141700DF4A00 /* TestMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E52EE26E8141700DF4A00 /* TestMatrix.swift */; };
+		2A3E52FE26E8141700DF4A00 /* TestVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E52EF26E8141700DF4A00 /* TestVector.swift */; };
+		2A75995B26EA4D4500D362A1 /* LocalesSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A75995A26EA4D4500D362A1 /* LocalesSummaryView.swift */; };
+		2A75995F26EA509A00D362A1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A75995E26EA509A00D362A1 /* MapKit.framework */; };
+		2A75996126EA51F200D362A1 /* LocaleMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A75996026EA51F200D362A1 /* LocaleMap.swift */; };
+		2AE3A56626E8F75D005F741E /* PedimaFinalGenotypesRegions.csv in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCE5DC26E814B900933535 /* PedimaFinalGenotypesRegions.csv */; };
+		2AE3A56726E8F75D005F741E /* Araptus.csv in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCE5DD26E814B900933535 /* Araptus.csv */; };
+		2AE3A56826E8F75D005F741E /* DogwoodByCanopyType.csv in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCE5DB26E814B900933535 /* DogwoodByCanopyType.csv */; };
+		2AE3A56926E8F873005F741E /* PedimaFinalGenotypesRegions.csv in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCE5DC26E814B900933535 /* PedimaFinalGenotypesRegions.csv */; };
+		2AE3A56A26E8F873005F741E /* Araptus.csv in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCE5DD26E814B900933535 /* Araptus.csv */; };
+		2AE3A56B26E8F873005F741E /* DogwoodByCanopyType.csv in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCE5DB26E814B900933535 /* DogwoodByCanopyType.csv */; };
+		2AE3A56C26E8F879005F741E /* PedimaFinalGenotypesRegions.csv in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCE5DC26E814B900933535 /* PedimaFinalGenotypesRegions.csv */; };
+		2AE3A56D26E8F879005F741E /* Araptus.csv in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCE5DD26E814B900933535 /* Araptus.csv */; };
+		2AE3A56E26E8F879005F741E /* DogwoodByCanopyType.csv in Resources */ = {isa = PBXBuildFile; fileRef = 2ABCE5DB26E814B900933535 /* DogwoodByCanopyType.csv */; };
+		2AE3A57426E92C62005F741E /* LevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE3A57326E92C62005F741E /* LevelView.swift */; };
+		2AE3A57726E92C80005F741E /* LocaleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE3A57626E92C80005F741E /* LocaleListView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2A3E51DE26E80ECD00DF4A00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A3E51C526E80ECC00DF4A00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A3E51CC26E80ECC00DF4A00;
+			remoteInfo = DyerLab;
+		};
+		2A3E51E826E80ECD00DF4A00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A3E51C526E80ECC00DF4A00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A3E51CC26E80ECC00DF4A00;
+			remoteInfo = DyerLab;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A025ACF26E9368200027F0F /* Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
+		2A025AD226E93A1900027F0F /* Locale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locale.swift; sourceTree = "<group>"; };
+		2A025AD626E958A700027F0F /* LocaleSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleSummaryView.swift; sourceTree = "<group>"; };
+		2A37052D26EA9F840019F3B7 /* IndividualListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualListView.swift; sourceTree = "<group>"; };
+		2A3E51CD26E80ECC00DF4A00 /* DyerLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DyerLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A3E51D026E80ECC00DF4A00 /* DyerLabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DyerLabApp.swift; sourceTree = "<group>"; };
+		2A3E51D226E80ECC00DF4A00 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2A3E51D426E80ECC00DF4A00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A3E51D726E80ECC00DF4A00 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2A3E51DD26E80ECD00DF4A00 /* DyerLabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DyerLabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A3E51E126E80ECD00DF4A00 /* DyerLabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DyerLabTests.swift; sourceTree = "<group>"; };
+		2A3E51E726E80ECD00DF4A00 /* DyerLabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DyerLabUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A3E51EB26E80ECD00DF4A00 /* DyerLabUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DyerLabUITests.swift; sourceTree = "<group>"; };
+		2A3E51ED26E80ECD00DF4A00 /* DyerLabUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DyerLabUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2A3E51FE26E813AC00DF4A00 /* AlleleFrequencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlleleFrequencies.swift; sourceTree = "<group>"; };
+		2A3E51FF26E813AC00DF4A00 /* AlleleFrequencyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlleleFrequencyView.swift; sourceTree = "<group>"; };
+		2A3E520026E813AC00DF4A00 /* Frequencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Frequencies.swift; sourceTree = "<group>"; };
+		2A3E520226E813AC00DF4A00 /* StratumOverlayRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StratumOverlayRenderer.swift; sourceTree = "<group>"; };
+		2A3E520326E813AC00DF4A00 /* StratumOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StratumOverlay.swift; sourceTree = "<group>"; };
+		2A3E520426E813AC00DF4A00 /* Stratum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stratum.swift; sourceTree = "<group>"; };
+		2A3E520626E813AC00DF4A00 /* StratumSummaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StratumSummaryView.swift; sourceTree = "<group>"; };
+		2A3E520726E813AC00DF4A00 /* DataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSet.swift; sourceTree = "<group>"; };
+		2A3E520926E813AC00DF4A00 /* PloidyEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PloidyEnum.swift; sourceTree = "<group>"; };
+		2A3E520A26E813AC00DF4A00 /* LocusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocusView.swift; sourceTree = "<group>"; };
+		2A3E520B26E813AC00DF4A00 /* Locus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locus.swift; sourceTree = "<group>"; };
+		2A3E520C26E813AC00DF4A00 /* AlleleMaskEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlleleMaskEnum.swift; sourceTree = "<group>"; };
+		2A3E520E26E813AC00DF4A00 /* IndividualView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndividualView.swift; sourceTree = "<group>"; };
+		2A3E520F26E813AC00DF4A00 /* Individual.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Individual.swift; sourceTree = "<group>"; };
+		2A3E521126E813AC00DF4A00 /* TreeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
+		2A3E521326E813AC00DF4A00 /* Mappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mappable.swift; sourceTree = "<group>"; };
+		2A3E521426E813AC00DF4A00 /* ConvexHull.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvexHull.swift; sourceTree = "<group>"; };
+		2A3E521526E813AC00DF4A00 /* MapCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapCoordinator.swift; sourceTree = "<group>"; };
+		2A3E521626E813AC00DF4A00 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		2A3E521726E813AC00DF4A00 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		2A3E521826E813AC00DF4A00 /* IndividualMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndividualMapView.swift; sourceTree = "<group>"; };
+		2A3E521A26E813AC00DF4A00 /* ImportGenotypeFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImportGenotypeFile.swift; sourceTree = "<group>"; };
+		2A3E521B26E813AC00DF4A00 /* GenotypeFileFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenotypeFileFormat.swift; sourceTree = "<group>"; };
+		2A3E521C26E813AC00DF4A00 /* ParseDelimitedFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseDelimitedFile.swift; sourceTree = "<group>"; };
+		2A3E521F26E813AC00DF4A00 /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
+		2A3E522026E813AC00DF4A00 /* VectorScalarOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VectorScalarOperators.swift; sourceTree = "<group>"; };
+		2A3E522126E813AC00DF4A00 /* VectorConvertable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VectorConvertable.swift; sourceTree = "<group>"; };
+		2A3E522226E813AC00DF4A00 /* RangeEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeEnum.swift; sourceTree = "<group>"; };
+		2A3E522326E813AC00DF4A00 /* Vector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
+		2A3E522426E813AC00DF4A00 /* VectorVectorOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VectorVectorOperators.swift; sourceTree = "<group>"; };
+		2A3E522526E813AC00DF4A00 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		2A3E522726E813AC00DF4A00 /* DLabMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLabMatrix.h; sourceTree = "<group>"; };
+		2A3E522926E813AC00DF4A00 /* MatrixConvertable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixConvertable.swift; sourceTree = "<group>"; };
+		2A3E522A26E813AC00DF4A00 /* MatrixMatrixOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixMatrixOperations.swift; sourceTree = "<group>"; };
+		2A3E522B26E813AC00DF4A00 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
+		2A3E522C26E813AC00DF4A00 /* MatrixScalarOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixScalarOperators.swift; sourceTree = "<group>"; };
+		2A3E522D26E813AC00DF4A00 /* MatrixAlgebra.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixAlgebra.swift; sourceTree = "<group>"; };
+		2A3E522F26E813AD00DF4A00 /* LosslessStringConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LosslessStringConvertible.swift; sourceTree = "<group>"; };
+		2A3E523026E813AD00DF4A00 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		2A3E523126E813AD00DF4A00 /* MKCoordinateRegion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKCoordinateRegion.swift; sourceTree = "<group>"; };
+		2A3E523226E813AD00DF4A00 /* CLLocationCoordinate2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationCoordinate2D.swift; sourceTree = "<group>"; };
+		2A3E523326E813AD00DF4A00 /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		2A3E523426E813AD00DF4A00 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		2A3E523626E813AD00DF4A00 /* DLabGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLabGraph.h; sourceTree = "<group>"; };
+		2A3E523826E813AD00DF4A00 /* Graph-Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Graph-Layout.swift"; sourceTree = "<group>"; };
+		2A3E523926E813AD00DF4A00 /* Graph-Topology.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Graph-Topology.swift"; sourceTree = "<group>"; };
+		2A3E523A26E813AD00DF4A00 /* Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		2A3E523C26E813AD00DF4A00 /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
+		2A3E523E26E813AD00DF4A00 /* Node2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node2D.swift; sourceTree = "<group>"; };
+		2A3E523F26E813AD00DF4A00 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		2A3E524126E813AD00DF4A00 /* GraphScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphScene.swift; sourceTree = "<group>"; };
+		2A3E524226E813AD00DF4A00 /* SpriteKitable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpriteKitable.swift; sourceTree = "<group>"; };
+		2A3E524826E813AD00DF4A00 /* RadarChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadarChartView.swift; sourceTree = "<group>"; };
+		2A3E524A26E813AD00DF4A00 /* BarPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarPath.swift; sourceTree = "<group>"; };
+		2A3E524B26E813AD00DF4A00 /* BarStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarStack.swift; sourceTree = "<group>"; };
+		2A3E524C26E813AD00DF4A00 /* ChartAxis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartAxis.swift; sourceTree = "<group>"; };
+		2A3E524D26E813AD00DF4A00 /* BarChartBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartBar.swift; sourceTree = "<group>"; };
+		2A3E524E26E813AD00DF4A00 /* PieSliceText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieSliceText.swift; sourceTree = "<group>"; };
+		2A3E524F26E813AD00DF4A00 /* BarChartGrid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartGrid.swift; sourceTree = "<group>"; };
+		2A3E525026E813AD00DF4A00 /* LabelStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelStack.swift; sourceTree = "<group>"; };
+		2A3E525126E813AD00DF4A00 /* RadarChartPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadarChartPath.swift; sourceTree = "<group>"; };
+		2A3E525226E813AD00DF4A00 /* PieSlice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieSlice.swift; sourceTree = "<group>"; };
+		2A3E525326E813AD00DF4A00 /* RadarChartGrid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadarChartGrid.swift; sourceTree = "<group>"; };
+		2A3E525426E813AD00DF4A00 /* BarChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
+		2A3E525526E813AD00DF4A00 /* PieChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		2A3E52DD26E8141700DF4A00 /* TestConvexHull.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestConvexHull.swift; sourceTree = "<group>"; };
+		2A3E52DF26E8141700DF4A00 /* TestEdge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestEdge.swift; sourceTree = "<group>"; };
+		2A3E52E026E8141700DF4A00 /* TestNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestNode.swift; sourceTree = "<group>"; };
+		2A3E52E126E8141700DF4A00 /* TestGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestGraph.swift; sourceTree = "<group>"; };
+		2A3E52E326E8141700DF4A00 /* TestParseDelimitedFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestParseDelimitedFile.swift; sourceTree = "<group>"; };
+		2A3E52E526E8141700DF4A00 /* TestFrequencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestFrequencies.swift; sourceTree = "<group>"; };
+		2A3E52E626E8141700DF4A00 /* TestDataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDataSet.swift; sourceTree = "<group>"; };
+		2A3E52E726E8141700DF4A00 /* TestLocus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestLocus.swift; sourceTree = "<group>"; };
+		2A3E52E826E8141700DF4A00 /* TestStratum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStratum.swift; sourceTree = "<group>"; };
+		2A3E52E926E8141700DF4A00 /* TestAlleleFequencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAlleleFequencies.swift; sourceTree = "<group>"; };
+		2A3E52EA26E8141700DF4A00 /* TestIndividual.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestIndividual.swift; sourceTree = "<group>"; };
+		2A3E52EC26E8141700DF4A00 /* TestAlgebra.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAlgebra.swift; sourceTree = "<group>"; };
+		2A3E52ED26E8141700DF4A00 /* TestMatrixAlgebra.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestMatrixAlgebra.swift; sourceTree = "<group>"; };
+		2A3E52EE26E8141700DF4A00 /* TestMatrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestMatrix.swift; sourceTree = "<group>"; };
+		2A3E52EF26E8141700DF4A00 /* TestVector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestVector.swift; sourceTree = "<group>"; };
+		2A75995A26EA4D4500D362A1 /* LocalesSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalesSummaryView.swift; sourceTree = "<group>"; };
+		2A75995C26EA509A00D362A1 /* DyerLab.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DyerLab.entitlements; sourceTree = "<group>"; };
+		2A75995E26EA509A00D362A1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2A75996026EA51F200D362A1 /* LocaleMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleMap.swift; sourceTree = "<group>"; };
+		2ABCE5DB26E814B900933535 /* DogwoodByCanopyType.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = DogwoodByCanopyType.csv; sourceTree = "<group>"; };
+		2ABCE5DC26E814B900933535 /* PedimaFinalGenotypesRegions.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = PedimaFinalGenotypesRegions.csv; sourceTree = "<group>"; };
+		2ABCE5DD26E814B900933535 /* Araptus.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = Araptus.csv; sourceTree = "<group>"; };
+		2AE3A56F26E8FA70005F741E /* StratumListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StratumListView.swift; sourceTree = "<group>"; };
+		2AE3A57126E8FD6B005F741E /* StratumListViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StratumListViewItem.swift; sourceTree = "<group>"; };
+		2AE3A57326E92C62005F741E /* LevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelView.swift; sourceTree = "<group>"; };
+		2AE3A57626E92C80005F741E /* LocaleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleListView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A3E51CA26E80ECC00DF4A00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A75995F26EA509A00D362A1 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A3E51DA26E80ECD00DF4A00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A3E51E426E80ECD00DF4A00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A025AD526E9484C00027F0F /* Locale */ = {
+			isa = PBXGroup;
+			children = (
+				2A3E520726E813AC00DF4A00 /* DataSet.swift */,
+				2A025AD226E93A1900027F0F /* Locale.swift */,
+				2A75996026EA51F200D362A1 /* LocaleMap.swift */,
+				2AE3A57626E92C80005F741E /* LocaleListView.swift */,
+				2A025AD626E958A700027F0F /* LocaleSummaryView.swift */,
+				2A75995A26EA4D4500D362A1 /* LocalesSummaryView.swift */,
+			);
+			path = Locale;
+			sourceTree = "<group>";
+		};
+		2A3E51C426E80ECC00DF4A00 = {
+			isa = PBXGroup;
+			children = (
+				2A3E51CF26E80ECC00DF4A00 /* DyerLab */,
+				2A3E51E026E80ECD00DF4A00 /* DyerLabTests */,
+				2A3E51EA26E80ECD00DF4A00 /* DyerLabUITests */,
+				2A3E51CE26E80ECC00DF4A00 /* Products */,
+				2A75995D26EA509A00D362A1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2A3E51CE26E80ECC00DF4A00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A3E51CD26E80ECC00DF4A00 /* DyerLab.app */,
+				2A3E51DD26E80ECD00DF4A00 /* DyerLabTests.xctest */,
+				2A3E51E726E80ECD00DF4A00 /* DyerLabUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A3E51CF26E80ECC00DF4A00 /* DyerLab */ = {
+			isa = PBXGroup;
+			children = (
+				2A75995C26EA509A00D362A1 /* DyerLab.entitlements */,
+				2A3E51D026E80ECC00DF4A00 /* DyerLabApp.swift */,
+				2A3E51D226E80ECC00DF4A00 /* ContentView.swift */,
+				2AE3A57326E92C62005F741E /* LevelView.swift */,
+				2A3E524726E813AD00DF4A00 /* Charts */,
+				2ABCE5DA26E814B900933535 /* Data */,
+				2A3E521026E813AC00DF4A00 /* Data Structures */,
+				2A3E522E26E813AD00DF4A00 /* Extensions */,
+				2A3E521926E813AC00DF4A00 /* FileIO */,
+				2A3E51FC26E813AC00DF4A00 /* Genetics */,
+				2A3E523526E813AD00DF4A00 /* Graph */,
+				2A025AD526E9484C00027F0F /* Locale */,
+				2A3E521D26E813AC00DF4A00 /* Matrix */,
+				2A3E521226E813AC00DF4A00 /* Spatial */,
+				2A3E51D426E80ECC00DF4A00 /* Assets.xcassets */,
+				2A3E51D626E80ECC00DF4A00 /* Preview Content */,
+			);
+			path = DyerLab;
+			sourceTree = "<group>";
+		};
+		2A3E51D626E80ECC00DF4A00 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2A3E51D726E80ECC00DF4A00 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2A3E51E026E80ECD00DF4A00 /* DyerLabTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A3E51E126E80ECD00DF4A00 /* DyerLabTests.swift */,
+				2A3E52E226E8141700DF4A00 /* FileIOTests */,
+				2A3E52E426E8141700DF4A00 /* GeneticTests */,
+				2A3E52DE26E8141700DF4A00 /* GraphTests */,
+				2A3E52EB26E8141700DF4A00 /* MatrixTests */,
+				2A3E52DC26E8141700DF4A00 /* SpatialTests */,
+			);
+			path = DyerLabTests;
+			sourceTree = "<group>";
+		};
+		2A3E51EA26E80ECD00DF4A00 /* DyerLabUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2A3E51EB26E80ECD00DF4A00 /* DyerLabUITests.swift */,
+				2A3E51ED26E80ECD00DF4A00 /* DyerLabUITestsLaunchTests.swift */,
+			);
+			path = DyerLabUITests;
+			sourceTree = "<group>";
+		};
+		2A3E51FC26E813AC00DF4A00 /* Genetics */ = {
+			isa = PBXGroup;
+			children = (
+				2A3E51FD26E813AC00DF4A00 /* Frequencies */,
+				2A3E520126E813AC00DF4A00 /* Stratum */,
+				2A3E520826E813AC00DF4A00 /* Locus */,
+				2A3E520D26E813AC00DF4A00 /* Individual */,
+			);
+			path = Genetics;
+			sourceTree = "<group>";
+		};
+		2A3E51FD26E813AC00DF4A00 /* Frequencies */ = {
+			isa = PBXGroup;
+			children = (
+				2A3E51FE26E813AC00DF4A00 /* AlleleFrequencies.swift */,
+				2A3E51FF26E813AC00DF4A00 /* AlleleFrequencyView.swift */,
+				2A3E520026E813AC00DF4A00 /* Frequencies.swift */,
+			);
+			path = Frequencies;
+			sourceTree = "<group>";
+		};
+		2A3E520126E813AC00DF4A00 /* Stratum */ = {
+			isa = PBXGroup;
+			children = (
+				2A3E520426E813AC00DF4A00 /* Stratum.swift */,
+				2A3E520326E813AC00DF4A00 /* StratumOverlay.swift */,
+				2AE3A56F26E8FA70005F741E /* StratumListView.swift */,
+				2AE3A57126E8FD6B005F741E /* StratumListViewItem.swift */,
+				2A3E520226E813AC00DF4A00 /* StratumOverlayRenderer.swift */,
+				2A3E520626E813AC00DF4A00 /* StratumSummaryView.swift */,
+			);
+			path = Stratum;
+			sourceTree = "<group>";
+		};
+		2A3E520826E813AC00DF4A00 /* Locus */ = {
+			isa = PBXGroup;
+			children = (
+				2A3E520926E813AC00DF4A00 /* PloidyEnum.swift */,
+				2A3E520A26E813AC00DF4A00 /* LocusView.swift */,
+				2A3E520B26E813AC00DF4A00 /* Locus.swift */,
+				2A3E520C26E813AC00DF4A00 /* AlleleMaskEnum.swift */,
+			);
+			path = Locus;
+			sourceTree = "<group>";
+		};
+		2A3E520D26E813AC00DF4A00 /* Individual */ = {
+			isa = PBXGroup;
+			children = (
+				2A3E520E26E813AC00DF4A00 /* IndividualView.swift */,
+				2A3E520F26E813AC00DF4A00 /* Individual.swift */,
+				2A37052D26EA9F840019F3B7 /* IndividualListView.swift */,
+			);
+			path = Individual;
+			sourceTree = "<group>";
+		};
+		2A3E521026E813AC00DF4A00 /* Data Structures */ = {
+			isa = PBXGroup;
+			children = (
+				2A3E521126E813AC00DF4A00 /* TreeNode.swift */,
+			);
+			path = "Data Structures";
+			sourceTree = "<group>";
+		};
+		2A3E521226E813AC00DF4A00 /* Spatial */ = {
+			isa = PBXGroup;
+			children = (
+				2A3E521326E813AC00DF4A00 /* Mappable.swift */,
+				2A3E521426E813AC00DF4A00 /* ConvexHull.swift */,
+				2A3E521626E813AC00DF4A00 /* MapView.swift */,
+				2A3E521526E813AC00DF4A00 /* MapCoordinator.swift */,
+				2A3E521726E813AC00DF4A00 /* Place.swift */,
+				2A3E521826E813AC00DF4A00 /* IndividualMapView.swift */,
+			);
+			path = Spatial;
+			sourceTree = "<group>";
+		};
+		2A3E521926E813AC00DF4A00 /* FileIO */ = {
+			isa = PBXGroup;
+			children = (
+				2A3E521A26E813AC00DF4A00 /* ImportGenotypeFile.swift */,
+				2A3E521B26E813AC00DF4A00 /* GenotypeFileFormat.swift */,
+				2A3E521C26E813AC00DF4A00 /* ParseDelimitedFile.swift */,
+			);
+			path = FileIO;
+			sourceTree = "<group>";
+		};
+		2A3E521D26E813AC00DF4A00 /* Matrix */ = {
+			isa = PBXGroup;
+			children = (
+				2A3E521E26E813AC00DF4A00 /* Vectors */,
+				2A3E522526E813AC00DF4A00 /* Operators.swift */,
+				2A3E522626E813AC00DF4A00 /* Analyses */,
+				2A3E522726E813AC00DF4A00 /* DLabMatrix.h */,
+				2A3E522826E813AC00DF4A00 /* Matrices */,
+			);
+			path = Matrix;
+			sourceTree = "<group>";
+		};
+		2A3E521E26E813AC00DF4A00 /* Vectors */ = {
+			isa = PBXGroup;
+			children = (
+				2A3E521F26E813AC00DF4A00 /* Random.swift */,
+				2A3E522026E813AC00DF4A00 /* VectorScalarOperators.swift */,
+				2A3E522126E813AC00DF4A00 /* VectorConvertable.swift */,
+				2A3E522226E813AC00DF4A00 /* RangeEnum.swift */,
+				2A3E522326E813AC00DF4A00 /* Vector.swift */,
+				2A3E522426E813AC00DF4A00 /* VectorVectorOperators.swift */,
+			);
+			path = Vectors;
+			sourceTree = "<group>";
+		};
+		2A3E522626E813AC00DF4A00 /* Analyses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Analyses;
+			sourceTree = "<group>";
+		};
+		2A3E522826E813AC00DF4A00 /* Matrices */ = {
+			isa = PBXGroup;
+			children = (
+				2A3E522926E813AC00DF4A00 /* MatrixConvertable.swift */,
+				2A3E522A26E813AC00DF4A00 /* MatrixMatrixOperations.swift */,
+				2A3E522B26E813AC00DF4A00 /* Matrix.swift */,
+				2A3E522C26E813AC00DF4A00 /* MatrixScalarOperators.swift */,
+				2A3E522D26E813AC00DF4A00 /* MatrixAlgebra.swift */,
+			);
+			path = Matrices;
+			sourceTree = "<group>";
+		};
+		2A3E522E26E813AD00DF4A00 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2A3E523026E813AD00DF4A00 /* Array.swift */,
+				2A3E522F26E813AD00DF4A00 /* LosslessStringConvertible.swift */,
+				2A3E523126E813AD00DF4A00 /* MKCoordinateRegion.swift */,
+				2A3E523226E813AD00DF4A00 /* CLLocationCoordinate2D.swift */,
+				2A3E523326E813AD00DF4A00 /* Dictionary.swift */,
+				2A3E523426E813AD00DF4A00 /* Color.swift */,
+				2A025ACF26E9368200027F0F /* Sequence.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2A3E523526E813AD00DF4A00 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				2A3E523626E813AD00DF4A00 /* DLabGraph.h */,
+				2A3E523726E813AD00DF4A00 /* Graph */,
+				2A3E523B26E813AD00DF4A00 /* Edge */,
+				2A3E523D26E813AD00DF4A00 /* Node */,
+				2A3E524026E813AD00DF4A00 /* 2D */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+		2A3E523726E813AD00DF4A00 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				2A3E523826E813AD00DF4A00 /* Graph-Layout.swift */,
+				2A3E523926E813AD00DF4A00 /* Graph-Topology.swift */,
+				2A3E523A26E813AD00DF4A00 /* Graph.swift */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+		2A3E523B26E813AD00DF4A00 /* Edge */ = {
+			isa = PBXGroup;
+			children = (
+				2A3E523C26E813AD00DF4A00 /* Edge.swift */,
+			);
+			path = Edge;
+			sourceTree = "<group>";
+		};
+		2A3E523D26E813AD00DF4A00 /* Node */ = {
+			isa = PBXGroup;
+			children = (
+				2A3E523E26E813AD00DF4A00 /* Node2D.swift */,
+				2A3E523F26E813AD00DF4A00 /* Node.swift */,
+			);
+			path = Node;
+			sourceTree = "<group>";
+		};
+		2A3E524026E813AD00DF4A00 /* 2D */ = {
+			isa = PBXGroup;
+			children = (
+				2A3E524126E813AD00DF4A00 /* GraphScene.swift */,
+				2A3E524226E813AD00DF4A00 /* SpriteKitable.swift */,
+			);
+			path = 2D;
+			sourceTree = "<group>";
+		};
+		2A3E524726E813AD00DF4A00 /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				2A3E524826E813AD00DF4A00 /* RadarChartView.swift */,
+				2A3E524926E813AD00DF4A00 /* Components */,
+				2A3E525426E813AD00DF4A00 /* BarChartView.swift */,
+				2A3E525526E813AD00DF4A00 /* PieChartView.swift */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
+		2A3E524926E813AD00DF4A00 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2A3E524A26E813AD00DF4A00 /* BarPath.swift */,
+				2A3E524B26E813AD00DF4A00 /* BarStack.swift */,
+				2A3E524C26E813AD00DF4A00 /* ChartAxis.swift */,
+				2A3E524D26E813AD00DF4A00 /* BarChartBar.swift */,
+				2A3E524E26E813AD00DF4A00 /* PieSliceText.swift */,
+				2A3E524F26E813AD00DF4A00 /* BarChartGrid.swift */,
+				2A3E525026E813AD00DF4A00 /* LabelStack.swift */,
+				2A3E525126E813AD00DF4A00 /* RadarChartPath.swift */,
+				2A3E525226E813AD00DF4A00 /* PieSlice.swift */,
+				2A3E525326E813AD00DF4A00 /* RadarChartGrid.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2A3E52DC26E8141700DF4A00 /* SpatialTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A3E52DD26E8141700DF4A00 /* TestConvexHull.swift */,
+			);
+			path = SpatialTests;
+			sourceTree = "<group>";
+		};
+		2A3E52DE26E8141700DF4A00 /* GraphTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A3E52DF26E8141700DF4A00 /* TestEdge.swift */,
+				2A3E52E026E8141700DF4A00 /* TestNode.swift */,
+				2A3E52E126E8141700DF4A00 /* TestGraph.swift */,
+			);
+			path = GraphTests;
+			sourceTree = "<group>";
+		};
+		2A3E52E226E8141700DF4A00 /* FileIOTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A3E52E326E8141700DF4A00 /* TestParseDelimitedFile.swift */,
+			);
+			path = FileIOTests;
+			sourceTree = "<group>";
+		};
+		2A3E52E426E8141700DF4A00 /* GeneticTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A3E52E526E8141700DF4A00 /* TestFrequencies.swift */,
+				2A3E52E626E8141700DF4A00 /* TestDataSet.swift */,
+				2A3E52E726E8141700DF4A00 /* TestLocus.swift */,
+				2A3E52E826E8141700DF4A00 /* TestStratum.swift */,
+				2A3E52E926E8141700DF4A00 /* TestAlleleFequencies.swift */,
+				2A3E52EA26E8141700DF4A00 /* TestIndividual.swift */,
+			);
+			path = GeneticTests;
+			sourceTree = "<group>";
+		};
+		2A3E52EB26E8141700DF4A00 /* MatrixTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A3E52EC26E8141700DF4A00 /* TestAlgebra.swift */,
+				2A3E52ED26E8141700DF4A00 /* TestMatrixAlgebra.swift */,
+				2A3E52EE26E8141700DF4A00 /* TestMatrix.swift */,
+				2A3E52EF26E8141700DF4A00 /* TestVector.swift */,
+			);
+			path = MatrixTests;
+			sourceTree = "<group>";
+		};
+		2A75995D26EA509A00D362A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A75995E26EA509A00D362A1 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2ABCE5DA26E814B900933535 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2ABCE5DC26E814B900933535 /* PedimaFinalGenotypesRegions.csv */,
+				2ABCE5DD26E814B900933535 /* Araptus.csv */,
+				2ABCE5DB26E814B900933535 /* DogwoodByCanopyType.csv */,
+			);
+			name = Data;
+			path = ../Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A3E51CC26E80ECC00DF4A00 /* DyerLab */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A3E51F126E80ECD00DF4A00 /* Build configuration list for PBXNativeTarget "DyerLab" */;
+			buildPhases = (
+				2A3E51C926E80ECC00DF4A00 /* Sources */,
+				2A3E51CA26E80ECC00DF4A00 /* Frameworks */,
+				2A3E51CB26E80ECC00DF4A00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DyerLab;
+			productName = DyerLab;
+			productReference = 2A3E51CD26E80ECC00DF4A00 /* DyerLab.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2A3E51DC26E80ECD00DF4A00 /* DyerLabTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A3E51F426E80ECD00DF4A00 /* Build configuration list for PBXNativeTarget "DyerLabTests" */;
+			buildPhases = (
+				2A3E51D926E80ECD00DF4A00 /* Sources */,
+				2A3E51DA26E80ECD00DF4A00 /* Frameworks */,
+				2A3E51DB26E80ECD00DF4A00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A3E51DF26E80ECD00DF4A00 /* PBXTargetDependency */,
+			);
+			name = DyerLabTests;
+			productName = DyerLabTests;
+			productReference = 2A3E51DD26E80ECD00DF4A00 /* DyerLabTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2A3E51E626E80ECD00DF4A00 /* DyerLabUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A3E51F726E80ECD00DF4A00 /* Build configuration list for PBXNativeTarget "DyerLabUITests" */;
+			buildPhases = (
+				2A3E51E326E80ECD00DF4A00 /* Sources */,
+				2A3E51E426E80ECD00DF4A00 /* Frameworks */,
+				2A3E51E526E80ECD00DF4A00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A3E51E926E80ECD00DF4A00 /* PBXTargetDependency */,
+			);
+			name = DyerLabUITests;
+			productName = DyerLabUITests;
+			productReference = 2A3E51E726E80ECD00DF4A00 /* DyerLabUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A3E51C526E80ECC00DF4A00 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				ORGANIZATIONNAME = "Rodney J. Dyer";
+				TargetAttributes = {
+					2A3E51CC26E80ECC00DF4A00 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					2A3E51DC26E80ECD00DF4A00 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 2A3E51CC26E80ECC00DF4A00;
+					};
+					2A3E51E626E80ECD00DF4A00 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 2A3E51CC26E80ECC00DF4A00;
+					};
+				};
+			};
+			buildConfigurationList = 2A3E51C826E80ECC00DF4A00 /* Build configuration list for PBXProject "DyerLab" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2A3E51C426E80ECC00DF4A00;
+			productRefGroup = 2A3E51CE26E80ECC00DF4A00 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A3E51CC26E80ECC00DF4A00 /* DyerLab */,
+				2A3E51DC26E80ECD00DF4A00 /* DyerLabTests */,
+				2A3E51E626E80ECD00DF4A00 /* DyerLabUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A3E51CB26E80ECC00DF4A00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AE3A56926E8F873005F741E /* PedimaFinalGenotypesRegions.csv in Resources */,
+				2AE3A56A26E8F873005F741E /* Araptus.csv in Resources */,
+				2AE3A56B26E8F873005F741E /* DogwoodByCanopyType.csv in Resources */,
+				2A3E51D826E80ECC00DF4A00 /* Preview Assets.xcassets in Resources */,
+				2A3E51D526E80ECC00DF4A00 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A3E51DB26E80ECD00DF4A00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AE3A56C26E8F879005F741E /* PedimaFinalGenotypesRegions.csv in Resources */,
+				2AE3A56D26E8F879005F741E /* Araptus.csv in Resources */,
+				2AE3A56E26E8F879005F741E /* DogwoodByCanopyType.csv in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A3E51E526E80ECD00DF4A00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AE3A56626E8F75D005F741E /* PedimaFinalGenotypesRegions.csv in Resources */,
+				2AE3A56726E8F75D005F741E /* Araptus.csv in Resources */,
+				2AE3A56826E8F75D005F741E /* DogwoodByCanopyType.csv in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A3E51C926E80ECC00DF4A00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A3E527E26E813AD00DF4A00 /* Place.swift in Sources */,
+				2A3E526C26E813AD00DF4A00 /* Locus.swift in Sources */,
+				2A3E52D826E813AD00DF4A00 /* BarChartView.swift in Sources */,
+				2A3E528C26E813AD00DF4A00 /* VectorConvertable.swift in Sources */,
+				2A3E526E26E813AD00DF4A00 /* AlleleMaskEnum.swift in Sources */,
+				2A3E527C26E813AD00DF4A00 /* MapView.swift in Sources */,
+				2A3E52A626E813AD00DF4A00 /* CLLocationCoordinate2D.swift in Sources */,
+				2A3E52B826E813AD00DF4A00 /* GraphScene.swift in Sources */,
+				2A3E527026E813AD00DF4A00 /* IndividualView.swift in Sources */,
+				2A3E52AA26E813AD00DF4A00 /* Color.swift in Sources */,
+				2A025AD726E958A700027F0F /* LocaleSummaryView.swift in Sources */,
+				2A3E52D226E813AD00DF4A00 /* RadarChartPath.swift in Sources */,
+				2A025AD326E93A1900027F0F /* Locale.swift in Sources */,
+				2A3E52C626E813AD00DF4A00 /* BarStack.swift in Sources */,
+				2A3E52AE26E813AD00DF4A00 /* Graph-Topology.swift in Sources */,
+				2A37052E26EA9F840019F3B7 /* IndividualListView.swift in Sources */,
+				2A3E52CC26E813AD00DF4A00 /* PieSliceText.swift in Sources */,
+				2A3E525826E813AD00DF4A00 /* AlleleFrequencyView.swift in Sources */,
+				2A3E52D626E813AD00DF4A00 /* RadarChartGrid.swift in Sources */,
+				2A3E527826E813AD00DF4A00 /* ConvexHull.swift in Sources */,
+				2AE3A57726E92C80005F741E /* LocaleListView.swift in Sources */,
+				2A3E528A26E813AD00DF4A00 /* VectorScalarOperators.swift in Sources */,
+				2AE3A57426E92C62005F741E /* LevelView.swift in Sources */,
+				2A3E527A26E813AD00DF4A00 /* MapCoordinator.swift in Sources */,
+				2A3E528E26E813AD00DF4A00 /* RangeEnum.swift in Sources */,
+				2A3E52A226E813AD00DF4A00 /* Array.swift in Sources */,
+				2A75995B26EA4D4500D362A1 /* LocalesSummaryView.swift in Sources */,
+				2A3E526626E813AD00DF4A00 /* DataSet.swift in Sources */,
+				2A3E528226E813AD00DF4A00 /* ImportGenotypeFile.swift in Sources */,
+				2A3E52D026E813AD00DF4A00 /* LabelStack.swift in Sources */,
+				2A3E528626E813AD00DF4A00 /* ParseDelimitedFile.swift in Sources */,
+				2A3E525626E813AD00DF4A00 /* AlleleFrequencies.swift in Sources */,
+				2A3E527626E813AD00DF4A00 /* Mappable.swift in Sources */,
+				2A3E52B026E813AD00DF4A00 /* Graph.swift in Sources */,
+				2A3E527226E813AD00DF4A00 /* Individual.swift in Sources */,
+				2A3E52AC26E813AD00DF4A00 /* Graph-Layout.swift in Sources */,
+				2A3E52CE26E813AD00DF4A00 /* BarChartGrid.swift in Sources */,
+				2A3E52B626E813AD00DF4A00 /* Node.swift in Sources */,
+				2A3E527426E813AD00DF4A00 /* TreeNode.swift in Sources */,
+				2A3E525A26E813AD00DF4A00 /* Frequencies.swift in Sources */,
+				2A3E528826E813AD00DF4A00 /* Random.swift in Sources */,
+				2A3E51D326E80ECC00DF4A00 /* ContentView.swift in Sources */,
+				2A75996126EA51F200D362A1 /* LocaleMap.swift in Sources */,
+				2A3E526826E813AD00DF4A00 /* PloidyEnum.swift in Sources */,
+				2A3E529226E813AD00DF4A00 /* VectorVectorOperators.swift in Sources */,
+				2A3E529026E813AD00DF4A00 /* Vector.swift in Sources */,
+				2A3E52C826E813AD00DF4A00 /* ChartAxis.swift in Sources */,
+				2A3E52BA26E813AD00DF4A00 /* SpriteKitable.swift in Sources */,
+				2A3E528426E813AD00DF4A00 /* GenotypeFileFormat.swift in Sources */,
+				2A3E529826E813AD00DF4A00 /* MatrixMatrixOperations.swift in Sources */,
+				2A3E52D426E813AD00DF4A00 /* PieSlice.swift in Sources */,
+				2A3E52DA26E813AD00DF4A00 /* PieChartView.swift in Sources */,
+				2A3E52A026E813AD00DF4A00 /* LosslessStringConvertible.swift in Sources */,
+				2A3E52CA26E813AD00DF4A00 /* BarChartBar.swift in Sources */,
+				2A3E529426E813AD00DF4A00 /* Operators.swift in Sources */,
+				2A3E528026E813AD00DF4A00 /* IndividualMapView.swift in Sources */,
+				2A3E529C26E813AD00DF4A00 /* MatrixScalarOperators.swift in Sources */,
+				2A3E52A426E813AD00DF4A00 /* MKCoordinateRegion.swift in Sources */,
+				2A025AD026E9368200027F0F /* Sequence.swift in Sources */,
+				2A3E52A826E813AD00DF4A00 /* Dictionary.swift in Sources */,
+				2A3E529E26E813AD00DF4A00 /* MatrixAlgebra.swift in Sources */,
+				2A3E52C226E813AD00DF4A00 /* RadarChartView.swift in Sources */,
+				2A3E52B426E813AD00DF4A00 /* Node2D.swift in Sources */,
+				2A3E529A26E813AD00DF4A00 /* Matrix.swift in Sources */,
+				2A3E52B226E813AD00DF4A00 /* Edge.swift in Sources */,
+				2A3E529626E813AD00DF4A00 /* MatrixConvertable.swift in Sources */,
+				2A3E51D126E80ECC00DF4A00 /* DyerLabApp.swift in Sources */,
+				2A3E526A26E813AD00DF4A00 /* LocusView.swift in Sources */,
+				2A3E52C426E813AD00DF4A00 /* BarPath.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A3E51D926E80ECD00DF4A00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A3E525926E813AD00DF4A00 /* AlleleFrequencyView.swift in Sources */,
+				2A3E52B726E813AD00DF4A00 /* Node.swift in Sources */,
+				2A3E529F26E813AD00DF4A00 /* MatrixAlgebra.swift in Sources */,
+				2A3E528526E813AD00DF4A00 /* GenotypeFileFormat.swift in Sources */,
+				2A3E528326E813AD00DF4A00 /* ImportGenotypeFile.swift in Sources */,
+				2A3E52FC26E8141700DF4A00 /* TestMatrixAlgebra.swift in Sources */,
+				2A3E52FD26E8141700DF4A00 /* TestMatrix.swift in Sources */,
+				2A3E528726E813AD00DF4A00 /* ParseDelimitedFile.swift in Sources */,
+				2A3E52CD26E813AD00DF4A00 /* PieSliceText.swift in Sources */,
+				2A3E527926E813AD00DF4A00 /* ConvexHull.swift in Sources */,
+				2A3E527526E813AD00DF4A00 /* TreeNode.swift in Sources */,
+				2A3E52A526E813AD00DF4A00 /* MKCoordinateRegion.swift in Sources */,
+				2A3E51E226E80ECD00DF4A00 /* DyerLabTests.swift in Sources */,
+				2A3E52C326E813AD00DF4A00 /* RadarChartView.swift in Sources */,
+				2A3E52A126E813AD00DF4A00 /* LosslessStringConvertible.swift in Sources */,
+				2A3E52FB26E8141700DF4A00 /* TestAlgebra.swift in Sources */,
+				2A025AD126E9368200027F0F /* Sequence.swift in Sources */,
+				2A3E52D926E813AD00DF4A00 /* BarChartView.swift in Sources */,
+				2A025AD426E93A1900027F0F /* Locale.swift in Sources */,
+				2A3E52C526E813AD00DF4A00 /* BarPath.swift in Sources */,
+				2A3E528D26E813AD00DF4A00 /* VectorConvertable.swift in Sources */,
+				2A3E52AB26E813AD00DF4A00 /* Color.swift in Sources */,
+				2A3E52F426E8141700DF4A00 /* TestParseDelimitedFile.swift in Sources */,
+				2A3E528126E813AD00DF4A00 /* IndividualMapView.swift in Sources */,
+				2A3E52F526E8141700DF4A00 /* TestFrequencies.swift in Sources */,
+				2A3E527326E813AD00DF4A00 /* Individual.swift in Sources */,
+				2A3E527D26E813AD00DF4A00 /* MapView.swift in Sources */,
+				2A3E525B26E813AD00DF4A00 /* Frequencies.swift in Sources */,
+				2A3E52CB26E813AD00DF4A00 /* BarChartBar.swift in Sources */,
+				2A3E52F626E8141700DF4A00 /* TestDataSet.swift in Sources */,
+				2A3E52FE26E8141700DF4A00 /* TestVector.swift in Sources */,
+				2A3E527F26E813AD00DF4A00 /* Place.swift in Sources */,
+				2A3E52CF26E813AD00DF4A00 /* BarChartGrid.swift in Sources */,
+				2A3E527726E813AD00DF4A00 /* Mappable.swift in Sources */,
+				2A3E527126E813AD00DF4A00 /* IndividualView.swift in Sources */,
+				2A3E52B126E813AD00DF4A00 /* Graph.swift in Sources */,
+				2A3E529526E813AD00DF4A00 /* Operators.swift in Sources */,
+				2A3E52C726E813AD00DF4A00 /* BarStack.swift in Sources */,
+				2A3E529926E813AD00DF4A00 /* MatrixMatrixOperations.swift in Sources */,
+				2A3E52A326E813AD00DF4A00 /* Array.swift in Sources */,
+				2A3E526F26E813AD00DF4A00 /* AlleleMaskEnum.swift in Sources */,
+				2A3E52D526E813AD00DF4A00 /* PieSlice.swift in Sources */,
+				2A3E52F726E8141700DF4A00 /* TestLocus.swift in Sources */,
+				2A3E52B326E813AD00DF4A00 /* Edge.swift in Sources */,
+				2A3E52AD26E813AD00DF4A00 /* Graph-Layout.swift in Sources */,
+				2A3E529B26E813AD00DF4A00 /* Matrix.swift in Sources */,
+				2A3E52C926E813AD00DF4A00 /* ChartAxis.swift in Sources */,
+				2A3E525726E813AD00DF4A00 /* AlleleFrequencies.swift in Sources */,
+				2A3E526726E813AD00DF4A00 /* DataSet.swift in Sources */,
+				2A3E52F326E8141700DF4A00 /* TestGraph.swift in Sources */,
+				2A3E52DB26E813AD00DF4A00 /* PieChartView.swift in Sources */,
+				2A3E52D326E813AD00DF4A00 /* RadarChartPath.swift in Sources */,
+				2A3E528F26E813AD00DF4A00 /* RangeEnum.swift in Sources */,
+				2A3E52B526E813AD00DF4A00 /* Node2D.swift in Sources */,
+				2A3E529726E813AD00DF4A00 /* MatrixConvertable.swift in Sources */,
+				2A3E52D726E813AD00DF4A00 /* RadarChartGrid.swift in Sources */,
+				2A3E52F226E8141700DF4A00 /* TestNode.swift in Sources */,
+				2A3E527B26E813AD00DF4A00 /* MapCoordinator.swift in Sources */,
+				2A3E526926E813AD00DF4A00 /* PloidyEnum.swift in Sources */,
+				2A3E52FA26E8141700DF4A00 /* TestIndividual.swift in Sources */,
+				2A3E52F126E8141700DF4A00 /* TestEdge.swift in Sources */,
+				2A3E52AF26E813AD00DF4A00 /* Graph-Topology.swift in Sources */,
+				2A3E52A926E813AD00DF4A00 /* Dictionary.swift in Sources */,
+				2A3E529126E813AD00DF4A00 /* Vector.swift in Sources */,
+				2A3E526D26E813AD00DF4A00 /* Locus.swift in Sources */,
+				2A3E528B26E813AD00DF4A00 /* VectorScalarOperators.swift in Sources */,
+				2A3E529D26E813AD00DF4A00 /* MatrixScalarOperators.swift in Sources */,
+				2A3E529326E813AD00DF4A00 /* VectorVectorOperators.swift in Sources */,
+				2A3E52BB26E813AD00DF4A00 /* SpriteKitable.swift in Sources */,
+				2A3E526B26E813AD00DF4A00 /* LocusView.swift in Sources */,
+				2A3E528926E813AD00DF4A00 /* Random.swift in Sources */,
+				2A3E52D126E813AD00DF4A00 /* LabelStack.swift in Sources */,
+				2A025AD826E958A700027F0F /* LocaleSummaryView.swift in Sources */,
+				2A3E52F026E8141700DF4A00 /* TestConvexHull.swift in Sources */,
+				2A3E52F926E8141700DF4A00 /* TestAlleleFequencies.swift in Sources */,
+				2A3E52A726E813AD00DF4A00 /* CLLocationCoordinate2D.swift in Sources */,
+				2A3E52B926E813AD00DF4A00 /* GraphScene.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A3E51E326E80ECD00DF4A00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A3E51FB26E8119600DF4A00 /* DyerLabUITestsLaunchTests.swift in Sources */,
+				2A3E51FA26E8119600DF4A00 /* DyerLabUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A3E51DF26E80ECD00DF4A00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A3E51CC26E80ECC00DF4A00 /* DyerLab */;
+			targetProxy = 2A3E51DE26E80ECD00DF4A00 /* PBXContainerItemProxy */;
+		};
+		2A3E51E926E80ECD00DF4A00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A3E51CC26E80ECC00DF4A00 /* DyerLab */;
+			targetProxy = 2A3E51E826E80ECD00DF4A00 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2A3E51EF26E80ECD00DF4A00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2A3E51F026E80ECD00DF4A00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		2A3E51F226E80ECD00DF4A00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DyerLab/DyerLab.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DyerLab/Preview Content\"";
+				DEVELOPMENT_TEAM = 3L9D67FVN7;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dyerlab.DyerLab;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2A3E51F326E80ECD00DF4A00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DyerLab/DyerLab.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DyerLab/Preview Content\"";
+				DEVELOPMENT_TEAM = 3L9D67FVN7;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dyerlab.DyerLab;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2A3E51F526E80ECD00DF4A00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3L9D67FVN7;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dyerlab.DyerLabTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DyerLab.app/Contents/MacOS/DyerLab";
+			};
+			name = Debug;
+		};
+		2A3E51F626E80ECD00DF4A00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3L9D67FVN7;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dyerlab.DyerLabTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DyerLab.app/Contents/MacOS/DyerLab";
+			};
+			name = Release;
+		};
+		2A3E51F826E80ECD00DF4A00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3L9D67FVN7;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dyerlab.DyerLabUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = DyerLab;
+			};
+			name = Debug;
+		};
+		2A3E51F926E80ECD00DF4A00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3L9D67FVN7;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dyerlab.DyerLabUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = DyerLab;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A3E51C826E80ECC00DF4A00 /* Build configuration list for PBXProject "DyerLab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A3E51EF26E80ECD00DF4A00 /* Debug */,
+				2A3E51F026E80ECD00DF4A00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A3E51F126E80ECD00DF4A00 /* Build configuration list for PBXNativeTarget "DyerLab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A3E51F226E80ECD00DF4A00 /* Debug */,
+				2A3E51F326E80ECD00DF4A00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A3E51F426E80ECD00DF4A00 /* Build configuration list for PBXNativeTarget "DyerLabTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A3E51F526E80ECD00DF4A00 /* Debug */,
+				2A3E51F626E80ECD00DF4A00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A3E51F726E80ECD00DF4A00 /* Build configuration list for PBXNativeTarget "DyerLabUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A3E51F826E80ECD00DF4A00 /* Debug */,
+				2A3E51F926E80ECD00DF4A00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A3E51C526E80ECC00DF4A00 /* Project object */;
+}
