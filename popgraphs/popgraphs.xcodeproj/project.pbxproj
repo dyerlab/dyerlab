@@ -498,7 +498,7 @@
 				CODE_SIGN_ENTITLEMENTS = popgraphs/popgraphs.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 626QFAP74Z;
+				DEVELOPMENT_TEAM = 3L9D67FVN7;
 				INFOPLIST_FILE = popgraphs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -517,7 +517,7 @@
 				CODE_SIGN_ENTITLEMENTS = popgraphs/popgraphs.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 626QFAP74Z;
+				DEVELOPMENT_TEAM = 3L9D67FVN7;
 				INFOPLIST_FILE = popgraphs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

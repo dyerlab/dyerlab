@@ -12,12 +12,12 @@ import Foundation
 
 public extension CGVector {
     
-    public var length: CGFloat {
+    var length: CGFloat {
         return CGFloat( sqrtf( Float(self.dx * self.dx + self.dy * self.dy) ) )
     }
     
     
-    public init( pt1: CGPoint, pt2: CGPoint) {
+    init( pt1: CGPoint, pt2: CGPoint) {
         self.init(dx: (pt1.x - pt2.x),
                   dy: (pt1.y - pt2.y) )
     }

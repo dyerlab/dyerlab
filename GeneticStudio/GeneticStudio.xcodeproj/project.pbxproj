@@ -546,7 +546,7 @@
 				CODE_SIGN_ENTITLEMENTS = GeneticStudio/GeneticStudio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 626QFAP74Z;
+				DEVELOPMENT_TEAM = 3L9D67FVN7;
 				INFOPLIST_FILE = GeneticStudio/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -565,7 +565,7 @@
 				CODE_SIGN_ENTITLEMENTS = GeneticStudio/GeneticStudio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 626QFAP74Z;
+				DEVELOPMENT_TEAM = 3L9D67FVN7;
 				INFOPLIST_FILE = GeneticStudio/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
