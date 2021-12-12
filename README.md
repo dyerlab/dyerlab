@@ -46,4 +46,4 @@ This is the default repository for all publically available code developed by [R
 
 ## GitHub Stats
 
-[![DyerLab's GitHub stats](https://github-readme-stats.vercel.app/api?username=dyerlab)](https://github.com/anuraghazra/github-readme-stats)
+[![DyerLab's GitHub stats](https://github-readme-stats.vercel.app/api?username=dyerlab&count_private=true&show_icons=true)](https://github.com/anuraghazra/github-readme-stats)
