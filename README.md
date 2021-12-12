@@ -33,7 +33,7 @@ This is the default repository for all publically available code developed by [R
 
 ## YouTube Videos
 
-<!-- YOUTUBE-LIST:START -->
-<!-- YOUTUBE-LIST:END -->
+<!-- YOUTUBE:START -->
+<!-- YOUTUBE:END -->
 
 <br />
