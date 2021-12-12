@@ -34,6 +34,8 @@ This is the default repository for all publically available code developed by [R
 ## YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [ENVS222 - ePortfolios Big Picture](https://www.youtube.com/watch?v=lM6lE27qmYU)
+- [Hopewell Pandora Project](https://www.youtube.com/watch?v=Ko9ijjLiVb0)
 <!-- YOUTUBE:END -->
 
 <br />
