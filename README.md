@@ -20,6 +20,7 @@ This is the default repository for all publically available code developed by [R
 
 <br />
 
+---
 
 ## Blog Posts
 
@@ -30,6 +31,7 @@ This is the default repository for all publically available code developed by [R
 
 <br />
 
+---
 
 ## YouTube Videos
 
@@ -39,3 +41,9 @@ This is the default repository for all publically available code developed by [R
 <!-- YOUTUBE:END -->
 
 <br />
+
+---
+
+## GitHub Stats
+
+[![DyerLab's GitHub stats](https://github-readme-stats.vercel.app/api?username=dyerlab)](https://github.com/anuraghazra/github-readme-stats)
