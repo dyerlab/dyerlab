@@ -8,3 +8,5 @@ This is the default repository for all publically available code developed by [R
 ## Connect With Me
 
  [<img align="left" alt="dyerlab" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />](https://dyerlab.org)
+
+[![dyerlab youtube](https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/youtube.svg)](https://www.youtube.com/channel/UCSNNGU9iPk7Rns0EpvaQsKg)
