@@ -8,7 +8,7 @@ This is the default repository for all publically available code developed by [R
 
  [<img align="left" alt="dyerlab" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />](https://dyerlab.org)
 
-[<img align="left" alt="dyerlab" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/youtube.svg" />](https://www.youtube.com/channel/UCSNNGU9iPk7Rns0EpvaQsKg)
+[<img align="left" alt="dyerlab" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/youtube.svg" />](https://www.youtube.com/c/RodneyJDyer)
 
 [<img align="left" alt="dyerlab" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/twitter.svg" />](https://www.twitter.com/RodneyDyer)
 
@@ -19,11 +19,19 @@ This is the default repository for all publically available code developed by [R
 [<img align="left" alt="dyerlab" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/github.svg" />](https://www.github.com/dyerlab)
 
 <br />
-<br />
 
-## Blog posts
+
+## Blog Posts
 
 <!-- BLOG-POST-LIST:START -->
 <!-- BLOG-POST-LIST:END -->
 
+<br />
 
+
+## YouTube Videos
+
+<!-- YOUTUBE-LIST:START -->
+<!-- YOUTUBE-LIST:END -->
+
+<br />
