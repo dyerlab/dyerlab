@@ -18,6 +18,8 @@ This is the default repository for all publically available code developed by [R
 
 [<img align="left" alt="dyerlab" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/github.svg" />](https://www.github.com/dyerlab)
 
+<br />
+<br />
 
 ## Blog posts
 
