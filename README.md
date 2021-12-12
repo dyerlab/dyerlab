@@ -24,6 +24,8 @@ This is the default repository for all publically available code developed by [R
 ## Blog posts
 
 <!-- BLOG-POST-LIST:START -->
+- [DLab Swift](https://dyerlab.github.io/DLabWebsite/posts/2021-12-12-dlab-swift)
+- [Welcome to The Dyer Laboratory](https://dyerlab.github.io/DLabWebsite/posts/welcome)
 <!-- BLOG-POST-LIST:END -->
 
 
