@@ -25,9 +25,10 @@ This is the default repository for all publically available code developed by [R
 ## Blog Posts
 
 <!-- BLOG-POST-LIST:START -->
-- [DLab Swift](https://dyerlab.github.io/DLabWebsite/posts/2021-12-12-dlab-swift)
 - [Moving Manuscripts from Hugo](https://dyerlab.github.io/DLabWebsite/posts/2021-12-12-moving-manuscripts-from-hugo)
+- [DLab Swift](https://dyerlab.github.io/DLabWebsite/posts/2021-12-12-dlab-swift)
 - [Welcome to The Dyer Laboratory](https://dyerlab.github.io/DLabWebsite/posts/welcome)
+- [Moving from HUGO to distill](https://dyerlab.github.io/DLabWebsite/posts/2021-06-11-moving-from-hugo-to-distill)
 <!-- BLOG-POST-LIST:END -->
 
 <br />
