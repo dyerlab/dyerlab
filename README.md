@@ -27,8 +27,9 @@ This is the default repository for all publically available code developed by [R
 <!-- BLOG-POST-LIST:START -->
 - [Moving Manuscripts from Hugo](https://dyerlab.github.io/DLabWebsite/posts/2021-12-12-moving-manuscripts-from-hugo)
 - [DLab Swift](https://dyerlab.github.io/DLabWebsite/posts/2021-12-12-dlab-swift)
-- [Welcome to The Dyer Laboratory](https://dyerlab.github.io/DLabWebsite/posts/welcome)
 - [Moving from HUGO to distill](https://dyerlab.github.io/DLabWebsite/posts/2021-06-11-moving-from-hugo-to-distill)
+- [MacOS Monterey beta](https://dyerlab.github.io/DLabWebsite/posts/2021-06-09-macos-monterey-beta)
+- [Spring 2021 Landscape Genetics Workshop](https://dyerlab.github.io/DLabWebsite/posts/2021-05-23-spring-2021-landscape-genetics-workshop)
 <!-- BLOG-POST-LIST:END -->
 
 <br />
