@@ -25,11 +25,11 @@ This is the default repository for all publically available code developed by [R
 ## Blog Posts
 
 <!-- BLOG-POST-LIST:START -->
+- [Smoothing rasters](https://dyerlab.github.io/DLabWebsite/posts/2021-12-15-smoothing-rasters)
 - [Moving Old Markdown Posts](https://dyerlab.github.io/DLabWebsite/posts/2021-12-14-moving-old-markdown-posts)
 - [Moving Manuscripts from Hugo](https://dyerlab.github.io/DLabWebsite/posts/2021-12-12-moving-manuscripts-from-hugo)
 - [DLab Swift](https://dyerlab.github.io/DLabWebsite/posts/2021-12-12-dlab-swift)
 - [Moving from HUGO to distill](https://dyerlab.github.io/DLabWebsite/posts/2021-06-11-moving-from-hugo-to-distill)
-- [MacOS Monterey beta](https://dyerlab.github.io/DLabWebsite/posts/2021-06-09-macos-monterey-beta)
 <!-- BLOG-POST-LIST:END -->
 
 <br />
