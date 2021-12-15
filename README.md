@@ -26,10 +26,10 @@ This is the default repository for all publically available code developed by [R
 
 <!-- BLOG-POST-LIST:START -->
 - [Smoothing rasters](https://dyerlab.github.io/DLabWebsite/posts/2021-12-15-smoothing-rasters)
+- [3-D topographies in R](https://dyerlab.github.io/DLabWebsite/posts/2021-12-15-threeD-topographies-in-r)
 - [Moving Old Markdown Posts](https://dyerlab.github.io/DLabWebsite/posts/2021-12-14-moving-old-markdown-posts)
 - [Moving Manuscripts from Hugo](https://dyerlab.github.io/DLabWebsite/posts/2021-12-12-moving-manuscripts-from-hugo)
 - [DLab Swift](https://dyerlab.github.io/DLabWebsite/posts/2021-12-12-dlab-swift)
-- [Moving from HUGO to distill](https://dyerlab.github.io/DLabWebsite/posts/2021-06-11-moving-from-hugo-to-distill)
 <!-- BLOG-POST-LIST:END -->
 
 <br />
