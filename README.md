@@ -25,11 +25,11 @@ This is the default repository for all publically available code developed by [R
 ## Blog Posts
 
 <!-- BLOG-POST-LIST:START -->
+- [Craft.app + rstudio::distill = blogging](https://dyerlab.github.io/DLabWebsite/posts/2021-12-21-craft-app-rstudio-distill-blogging)
+- [Craft + RStudio + Distill = Post](https://dyerlab.github.io/DLabWebsite/posts/2021-12-21-craft-rstudio-distill-post)
 - [Smoothing rasters](https://dyerlab.github.io/DLabWebsite/posts/2021-12-15-smoothing-rasters)
 - [3-D topographies in R](https://dyerlab.github.io/DLabWebsite/posts/2021-12-15-threeD-topographies-in-r)
 - [Moving Old Markdown Posts](https://dyerlab.github.io/DLabWebsite/posts/2021-12-14-moving-old-markdown-posts)
-- [Moving Manuscripts from Hugo](https://dyerlab.github.io/DLabWebsite/posts/2021-12-12-moving-manuscripts-from-hugo)
-- [DLab Swift](https://dyerlab.github.io/DLabWebsite/posts/2021-12-12-dlab-swift)
 <!-- BLOG-POST-LIST:END -->
 
 <br />
