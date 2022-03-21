@@ -22,32 +22,24 @@ This is the default repository for all publically available code developed by [R
 
 ---
 
-## Blog Posts
-
+# Blog posts
 <!-- BLOG-POST-LIST:START -->
-- [Workshop on R Data Literacy](https://dyerlab.github.io/DLabWebsite/posts/2022-03-04-deq-r-workshop-day-1)
-- [Guest Lecture in ENVS102](https://dyerlab.github.io/DLabWebsite/posts/2022-02-15-guest-lecture-in-envs102)
-- [Unneceessary Output by dplyr](https://dyerlab.github.io/DLabWebsite/posts/2022-02-01-unneceessary-output-by-ttdplyrtt)
-- [Craft.app + rstudio::distill = blogging](https://dyerlab.github.io/DLabWebsite/posts/2021-12-21-craft-app-rstudio-distill-blogging)
-- [Craft + RStudio + Distill = Post](https://dyerlab.github.io/DLabWebsite/posts/2021-12-21-craft-rstudio-distill-post)
 <!-- BLOG-POST-LIST:END -->
 
 <br />
 
 ---
 
-## YouTube Videos
+# YouTube Videos
 
 <!-- YOUTUBE:START -->
-- [ENVS222 - ePortfolios Big Picture](https://www.youtube.com/watch?v=lM6lE27qmYU)
-- [Hopewell Pandora Project](https://www.youtube.com/watch?v=Ko9ijjLiVb0)
 <!-- YOUTUBE:END -->
 
 <br />
 
 ---
 
-## GitHub Stats
+# GitHub Stats
 
 [![DyerLab's GitHub stats](https://github-readme-stats.vercel.app/api?username=dyerlab&count_private=true&show_icons=true&hide_title=true)](https://github.com/anuraghazra/github-readme-stats)
 
