@@ -24,11 +24,11 @@ This is the default repository for all publically available code developed by [R
 
 # Blog posts
 <!-- BLOG-POST-LIST:START -->
-- [Update to the R POPGRAPH library](https://dyerlab.github.io/DLabWebsite/posts/2022-03-22-update-to-popgraph-library)
-- [Github Distill Manuscript Automation](https://dyerlab.github.io/DLabWebsite/posts/2022-03-18-github-distill-manuscript-automation)
-- [Workshop on R Data Literacy](https://dyerlab.github.io/DLabWebsite/posts/2022-03-04-deq-r-workshop-day-1)
-- [Guest Lecture in ENVS102](https://dyerlab.github.io/DLabWebsite/posts/2022-02-15-guest-lecture-in-envs102)
-- [Unneceessary Output by dplyr](https://dyerlab.github.io/DLabWebsite/posts/2022-02-01-unneceessary-output-by-ttdplyrtt)
+- [First Filtering Pass for SNP Calling](https://dyerlab.org/posts/2023-02-22-first-pass/index.html)
+- [Run FreeBayes, Run!!](https://dyerlab.org/posts/2023-02-21-freebayes2/index.html)
+- [Running freebayes](https://dyerlab.org/posts/2023-02-16-Runing-freebayes/index.html)
+- [Pre-Processing Bam Files 🐢](https://dyerlab.org/posts/2023-02-20-processing-bam-files/index.html)
+- [Scrolling Back using ‘Screen’](https://dyerlab.org/posts/2023-02-20-screen-scrolling/index.html)
 <!-- BLOG-POST-LIST:END -->
 
 <br />
