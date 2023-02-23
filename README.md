@@ -24,11 +24,11 @@ This is the default repository for all publically available code developed by [R
 
 # Blog posts
 <!-- BLOG-POST-LIST:START -->
+- [Full Data Run](https://dyerlab.org/posts/2023-02-23-full-dataset/index.html)
 - [First Filtering Pass for SNP Calling](https://dyerlab.org/posts/2023-02-22-first-pass/index.html)
 - [Run FreeBayes, Run!!](https://dyerlab.org/posts/2023-02-21-freebayes2/index.html)
 - [Running freebayes](https://dyerlab.org/posts/2023-02-16-Runing-freebayes/index.html)
 - [Pre-Processing Bam Files 🐢](https://dyerlab.org/posts/2023-02-20-processing-bam-files/index.html)
-- [Scrolling Back using ‘Screen’](https://dyerlab.org/posts/2023-02-20-screen-scrolling/index.html)
 <!-- BLOG-POST-LIST:END -->
 
 <br />
