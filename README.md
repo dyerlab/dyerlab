@@ -24,7 +24,7 @@ This is the default repository for all publically available code developed by [R
 
 # Blog posts
 <!-- BLOG-POST-LIST:START -->
-- [ENVS Presenatation at VCESS](https://dyerlab.org/posts/2023-03-28-Varina-Center-for-Environmenatal-Studies-and-Sustainability/index.html)
+- [ENVS Presenatation at VCESS](https://dyerlab.org/posts/2023-04-18-Varina-Center-for-Environmenatal-Studies-and-Sustainability/index.html)
 - [Full Data Run](https://dyerlab.org/posts/2023-02-24-full-dataset/index.html)
 - [Removing .DS_Store](https://dyerlab.org/posts/2023-02-23-remove-ds-store/index.html)
 - [First Filtering Pass for SNP Calling](https://dyerlab.org/posts/2023-02-22-first-pass/index.html)
