@@ -24,11 +24,11 @@ This is the default repository for all publically available code developed by [R
 
 # Blog posts
 <!-- BLOG-POST-LIST:START -->
+- [Coagulating Samples By Hydrologic Units; or‘How I learned to HUC my data…’](https://dyerlab.org/posts/2023-07-19-HUCs/index.html)
 - [Emydine Conservation Symposium](https://dyerlab.org/posts/2023-07-11-Emydine_Conservation_Symposium/index.html)
 - [gstudio 1.6.0](https://dyerlab.org/posts/2023-05-15-gstudio-1.6.0/index.html)
 - [Population Assignment for Confiscated Spotted Turtles](https://dyerlab.org/posts/2023-04-27-Population-Assignment/index.html)
 - [ENVS Presenatation at VCESS](https://dyerlab.org/posts/2023-04-18-Varina-Center-for-Environmenatal-Studies-and-Sustainability/index.html)
-- [Full Data Run](https://dyerlab.org/posts/2023-02-24-full-dataset/index.html)
 <!-- BLOG-POST-LIST:END -->
 
 <br />
