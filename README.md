@@ -24,11 +24,11 @@ This is the default repository for all publically available code developed by [R
 
 # Blog posts
 <!-- BLOG-POST-LIST:START -->
+- [Population Graphs Re-Incarnated](https://dyerlab.org/posts/2023-11-03-PopulationGraphs_Reincarnated/index.html)
 - [Student Orientation](https://dyerlab.org/posts/2023-10-21-Orientation/index.html)
 - [Continued Enrollment Increases](https://dyerlab.org/posts/2023-08-28-Enrollment/index.html)
 - [Coagulating Samples By Hydrologic Units; or‘How I learned to HUC my data…’](https://dyerlab.org/posts/2023-07-19-HUCs/index.html)
 - [Emydine Conservation Symposium](https://dyerlab.org/posts/2023-07-11-Emydine_Conservation_Symposium/index.html)
-- [gstudio 1.6.0](https://dyerlab.org/posts/2023-05-15-gstudio-1.6.0/index.html)
 <!-- BLOG-POST-LIST:END -->
 
 <br />
