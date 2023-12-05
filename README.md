@@ -24,11 +24,11 @@ This is the default repository for all publically available code developed by [R
 
 # Blog posts
 <!-- BLOG-POST-LIST:START -->
+- [ENVS 543 Narrative](https://dyerlab.org/posts/2023-12-05-ENVS543_Narrative/index.html)
 - [Spotted Turtel Assignment Presentation](https://dyerlab.org/posts/2023-11-20-Turtle-Assignment/index.html)
 - [Population Graphs Re-Incarnated](https://dyerlab.org/posts/2023-11-03-PopulationGraphs_Reincarnated/index.html)
 - [Student Orientation](https://dyerlab.org/posts/2023-10-21-Orientation/index.html)
 - [Continued Enrollment Increases](https://dyerlab.org/posts/2023-08-28-Enrollment/index.html)
-- [Coagulating Samples By Hydrologic Units; or‘How I learned to HUC my data…’](https://dyerlab.org/posts/2023-07-19-HUCs/index.html)
 <!-- BLOG-POST-LIST:END -->
 
 <br />
