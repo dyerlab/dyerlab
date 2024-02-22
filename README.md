@@ -24,11 +24,11 @@ This is the default repository for all publically available code developed by [R
 
 # Blog posts
 <!-- BLOG-POST-LIST:START -->
+- [Characteristics of Successful Academic Leadership](https://dyerlab.org/posts/2024-02-22-Characteristics-of-Successful-Leadership/index.html)
 - [Population Graphs on Vision Pro](https://dyerlab.org/posts/2024-02-17-Popgraphs-On-AVP/index.html)
 - [Spring Semester Faculty Meeting](https://dyerlab.org/posts/2024-02-14-faculty-meeting/index.html)
 - [2024 A Year for Tool Deployment](https://dyerlab.org/posts/2023-12-29-2024_Intentions/index.html)
 - [ENVS 543 Narrative](https://dyerlab.org/posts/2023-12-05-ENVS543_Narrative/index.html)
-- [Spotted Turtel Assignment Presentation](https://dyerlab.org/posts/2023-11-20-Turtle-Assignment/index.html)
 <!-- BLOG-POST-LIST:END -->
 
 <br />
