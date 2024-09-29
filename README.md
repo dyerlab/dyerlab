@@ -22,11 +22,11 @@ This is the default repository for all publically available code developed by [R
 
 # Blog posts
 <!-- BLOG-POST-LIST:START -->
-- [FOTJ in the AppStore](https://dyerlab.org/posts/2024-05-18-FOTJ-in-the-AppStore/)
-- [Characteristics of Successful Academic Leadership](https://dyerlab.org/posts/2024-02-22-Characteristics-of-Successful-Leadership/)
-- [Population Graphs on Vision Pro](https://dyerlab.org/posts/2024-02-17-Popgraphs-On-AVP/)
-- [Spring Semester Faculty Meeting](https://dyerlab.org/posts/2024-02-14-faculty-meeting/)
-- [2024 A Year for Tool Deployment](https://dyerlab.org/posts/2023-12-29-2024_Intentions/)
+- [Frequency-Dependent Linguistic Embedding of Course Descriptions](https://www.rodneydyer.com/frequency-dependent-linguistic-embedding/)
+- [Linguistic Taxonomies of STEM Programs: Parsing Course Descriptions](https://www.rodneydyer.com/parsing-course-descriptions/)
+- [Intentional Curriculum Design: A Data-Centric Approach for STEM Curricula](https://www.rodneydyer.com/intentional-curriculum-design-a-data-centric-approach-for-stem-curricula/)
+- [Backflow.Studio](https://www.rodneydyer.com/backflow-studio/)
+- [Backwards Design](https://www.rodneydyer.com/backwards-design/)
 <!-- BLOG-POST-LIST:END -->
 
 <br />
