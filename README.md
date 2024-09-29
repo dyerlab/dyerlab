@@ -6,11 +6,9 @@ This is the default repository for all publically available code developed by [R
 
 ## Connect With Me
 
- [<img align="left" alt="dyerlab webpage" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />](https://dyerlab.org)
+[<img align="left" alt="dyerlab webpage" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />](https://dyerlab.org)
 
 [<img align="left" alt="dyerlab youtube" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/youtube.svg" />](https://www.youtube.com/c/RodneyJDyer)
-
-[<img align="left" alt="dyerlab twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/twitter.svg" />](https://www.twitter.com/dyerlab)
 
 [<img align="left" alt="dyerlab linkedin" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/linkedin.svg" />](https://www.linkedin.com/in/dr-rodney-dyer/)
 
