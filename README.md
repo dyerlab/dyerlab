@@ -22,11 +22,11 @@ This is the default repository for all publically available code developed by [R
 
 # Blog posts
 <!-- BLOG-POST-LIST:START -->
-- [Powers of discerning: challenges to understanding dispersal processes in natural populations](https://www.rodneydyer.com/powers-of-discerning-challenges-to-understanding-dispersal-processes-in-natural-populations/)
-- [Comparison of Pollination Graphs](https://www.rodneydyer.com/comparison-of-pollination-graphs/)
 - [An AI-Derived Podcast of The Environmental Studies Academic Program Review](https://www.rodneydyer.com/an-ai-derived-podcast-of-our-academic-program-review-in-environmental-studies-2/)
 - [Personal Knowledge Management: Building Your AI-Supported Second Brain.](https://www.rodneydyer.com/personal-knowledge-management-building-your-ai-supported-second-brain/)
 - [Frequency-Dependent Linguistic Embedding of Course Descriptions](https://www.rodneydyer.com/frequency-dependent-linguistic-embedding/)
+- [Linguistic Taxonomies of STEM Programs: Parsing Course Descriptions](https://www.rodneydyer.com/parsing-course-descriptions/)
+- [Intentional Curriculum Design: A Data-Centric Approach for STEM Curricula](https://www.rodneydyer.com/intentional-curriculum-design-a-data-centric-approach-for-stem-curricula/)
 <!-- BLOG-POST-LIST:END -->
 
 <br />
