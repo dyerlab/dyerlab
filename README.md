@@ -22,11 +22,11 @@ This is the default repository for all publically available code developed by [R
 
 # Blog posts
 <!-- BLOG-POST-LIST:START -->
+- [The Linguistic Covariance Space of Undergraduate STEM Programs at Virginia Commonwealth University](https://www.rodneydyer.com/the-linguistic-covariance-space-of-undergraduate-stem-programs-at-virginia-commonwealth-university/)
 - [RStudio to Ulysses to Ghost](https://www.rodneydyer.com/rstudio-to-ulysses-to-ghost/)
 - [An AI-Derived Podcast of The Environmental Studies Academic Program Review](https://www.rodneydyer.com/an-ai-derived-podcast-of-our-academic-program-review-in-environmental-studies-2/)
 - [Personal Knowledge Management: Building Your AI-Supported Second Brain.](https://www.rodneydyer.com/personal-knowledge-management-building-your-ai-supported-second-brain/)
 - [Frequency-Dependent Linguistic Embedding of Course Descriptions](https://www.rodneydyer.com/frequency-dependent-linguistic-embedding/)
-- [Linguistic Taxonomies of STEM Programs: Parsing Course Descriptions](https://www.rodneydyer.com/parsing-course-descriptions/)
 <!-- BLOG-POST-LIST:END -->
 
 <br />
