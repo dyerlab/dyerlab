@@ -22,11 +22,11 @@ This is the default repository for all publically available code developed by [R
 
 # Blog posts
 <!-- BLOG-POST-LIST:START -->
+- [Sometimes, the Universe tells you it is quitting time.](https://www.rodneydyer.com/sometimes-the-universe-tells-you-it-is-quitting-time-2/)
 - [Why I’m Closing My Research Laboratory](https://www.rodneydyer.com/why-im-closing-my-research-laboratory/)
 - [The Linguistic Covariance Space of Undergraduate STEM Programs at Virginia Commonwealth University](https://www.rodneydyer.com/the-linguistic-covariance-space-of-undergraduate-stem-programs-at-virginia-commonwealth-university/)
 - [RStudio to Ulysses to Ghost](https://www.rodneydyer.com/rstudio-to-ulysses-to-ghost/)
 - [An AI-Derived Podcast of The Environmental Studies Academic Program Review](https://www.rodneydyer.com/an-ai-derived-podcast-of-our-academic-program-review-in-environmental-studies-2/)
-- [Personal Knowledge Management: Building Your AI-Supported Second Brain.](https://www.rodneydyer.com/personal-knowledge-management-building-your-ai-supported-second-brain/)
 <!-- BLOG-POST-LIST:END -->
 
 <br />
