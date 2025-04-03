@@ -22,11 +22,11 @@ This is the default repository for all publically available code developed by [R
 
 # Blog posts
 <!-- BLOG-POST-LIST:START -->
+- [GStudio Package Update](https://www.rodneydyer.com/gstudio-package-update/)
 - [EcoConnect](https://www.rodneydyer.com/ecoconnect/)
 - [Sometimes, the Universe tells you it is quitting time.](https://www.rodneydyer.com/sometimes-the-universe-tells-you-it-is-quitting-time-2/)
 - [Why I’m Closing My Research Laboratory](https://www.rodneydyer.com/why-im-closing-my-research-laboratory/)
 - [The Linguistic Covariance Space of Undergraduate STEM Programs at Virginia Commonwealth University](https://www.rodneydyer.com/the-linguistic-covariance-space-of-undergraduate-stem-programs-at-virginia-commonwealth-university/)
-- [RStudio to Ulysses to Ghost](https://www.rodneydyer.com/rstudio-to-ulysses-to-ghost/)
 <!-- BLOG-POST-LIST:END -->
 
 <br />
