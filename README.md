@@ -22,11 +22,11 @@ This is the default repository for all publically available code developed by [R
 
 # Blog posts
 <!-- BLOG-POST-LIST:START -->
+- [Deploying Swift to Android?](https://www.rodneydyer.com/deploying-swift-to-android/)
 - [Upgrading Python on MacOS for Local LLM Training](https://www.rodneydyer.com/upgrading-python-on-macos-for-local-llm-training/)
 - [GStudio Package Update](https://www.rodneydyer.com/gstudio-package-update/)
 - [EcoConnect](https://www.rodneydyer.com/ecoconnect/)
 - [Sometimes, the Universe tells you it is quitting time.](https://www.rodneydyer.com/sometimes-the-universe-tells-you-it-is-quitting-time-2/)
-- [Why I’m Closing My Research Laboratory](https://www.rodneydyer.com/why-im-closing-my-research-laboratory/)
 <!-- BLOG-POST-LIST:END -->
 
 <br />
