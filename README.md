@@ -25,8 +25,8 @@ This is the default repository for all publically available code developed by [R
 - [Deploying Swift to Android?](https://www.rodneydyer.com/deploying-swift-to-android/)
 - [Upgrading Python on MacOS for Local LLM Training](https://www.rodneydyer.com/upgrading-python-on-macos-for-local-llm-training/)
 - [GStudio Package Update](https://www.rodneydyer.com/gstudio-package-update/)
+- [Population Genetics](https://www.rodneydyer.com/population-genetics/)
 - [EcoConnect](https://www.rodneydyer.com/ecoconnect/)
-- [Sometimes, the Universe tells you it is quitting time.](https://www.rodneydyer.com/sometimes-the-universe-tells-you-it-is-quitting-time-2/)
 <!-- BLOG-POST-LIST:END -->
 
 <br />
