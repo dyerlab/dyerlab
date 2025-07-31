@@ -22,11 +22,11 @@ This is the default repository for all publically available code developed by [R
 
 # Blog posts
 <!-- BLOG-POST-LIST:START -->
+- [Extracting FujiFilm Simulation Data](https://www.rodneydyer.com/extracting-fujifilm-simulation-data/)
 - [Deploying Swift to Android?](https://www.rodneydyer.com/deploying-swift-to-android/)
 - [Upgrading Python on MacOS for Local LLM Training](https://www.rodneydyer.com/upgrading-python-on-macos-for-local-llm-training/)
 - [GStudio Package Update](https://www.rodneydyer.com/gstudio-package-update/)
 - [Personal Knowledge Management: Building Your AI-Supported Second Brain](https://www.rodneydyer.com/pkm-building-an-ai-supported-second-brain/)
-- [Population Genetics](https://www.rodneydyer.com/population-genetics/)
 <!-- BLOG-POST-LIST:END -->
 
 <br />
