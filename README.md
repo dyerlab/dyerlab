@@ -22,11 +22,11 @@ This is the default repository for all publically available code developed by [R
 
 # Blog posts
 <!-- BLOG-POST-LIST:START -->
+- [Escaping Walled Chat Gardens—A Chat History Converter](https://www.rodneydyer.com/escaping-walled-chat-gardens-a-chat-history-converter/)
 - [BloomSpread: A Course Design Framework for Quantifying Cognitive Scaffolding](https://www.rodneydyer.com/bloomspread-a-course-design-framework-for-quantifying-cognitive-scaffolding/)
 - [Population Genetics](https://www.rodneydyer.com/population-genetics/)
 - [Environmental Data Literacy](https://www.rodneydyer.com/environmental-data-literacy/)
-- [Extracting FujiFilm Simulation Data](https://www.rodneydyer.com/extracting-fujifilm-simulation-data/)
-- [Deploying Swift to Android?](https://www.rodneydyer.com/deploying-swift-to-android/)
+- [South Florida Morning](https://www.rodneydyer.com/south-florida-morning/)
 <!-- BLOG-POST-LIST:END -->
 
 <br />
