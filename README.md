@@ -22,11 +22,11 @@ This is the default repository for all publically available code developed by [R
 
 # Blog posts
 <!-- BLOG-POST-LIST:START -->
+- [Urbanization and the Reshaping of Plant–Insect Interactions: Reproduction, Pollination, Herbivory, and Parasitism in American Holly &lpar;Ilex opaca&rpar;](https://www.rodneydyer.com/licensed_to_ilex/)
 - [Infrastructure following pedagogy: Focusing LLMs on a Structured &amp; Embedded Curriculum](https://www.rodneydyer.com/infrastructure-following-pedagogy-focusing-llms-on-a-structured-embedded-curriculum/)
 - [Your Vault, Your Vectors — Building a Local-First MCP Server for Your PKM](https://www.rodneydyer.com/your-vault-your-vectors-building-a-local-first-mcp-server-for-obsidian/)
 - [Escaping Walled Chat Gardens—A Chat History Converter](https://www.rodneydyer.com/escaping-walled-chat-gardens-a-chat-history-converter/)
 - [BloomSpread: A Course Design Framework for Quantifying Cognitive Scaffolding](https://www.rodneydyer.com/bloomspread-a-course-design-framework-for-quantifying-cognitive-scaffolding/)
-- [Population Genetics](https://www.rodneydyer.com/population-genetics/)
 <!-- BLOG-POST-LIST:END -->
 
 <br />
